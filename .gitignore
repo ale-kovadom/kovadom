@@ -1,1 +1,10 @@
 .DS_Store
+.settings
+*.iml
+.idea
+target/
+npm-debug.log
+node_tmp
+build
+node_modules
+src/main/webapp/js
