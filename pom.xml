@@ -180,7 +180,7 @@
                             <outputDirectory>${project.basedir}/src/main/webapp/js/app</outputDirectory>
                             <resources>
                                 <resource>
-                                    <directory>src/main/frontend/ts/build/js</directory>
+                                    <directory>src/main/frontend/app-out</directory>
                                     <includes>
                                         <include>bundle.js</include>
                                     </includes>

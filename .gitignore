@@ -6,5 +6,6 @@ target/
 npm-debug.log
 node_tmp
 build
+app-out
 node_modules
 src/main/webapp/js
