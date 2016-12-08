@@ -14,9 +14,13 @@
     <script src="js/systemjs/dist/system.src.js"></script>
 
     <script src="js/systemjs.config.js"></script>
+    <script src="js/app/bundle.js"></script>
 
     <script>
-        System.import('app').catch(function(err){ console.error(err); });
+        document.addEventListener('DOMContentLoaded', function () {
+            System.import('main')
+                    .then(null, console.error.bind(console));
+        });
     </script>
 </head>
 

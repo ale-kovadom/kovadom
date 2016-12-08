@@ -87,7 +87,6 @@
                         </goals>
                         <configuration>
                             <nodeVersion>v4.6.0</nodeVersion>
-                            <!--<npmVersion>2.13.0</npmVersion>-->
                         </configuration>
                     </execution>
                     <execution>
@@ -181,9 +180,9 @@
                             <outputDirectory>${project.basedir}/src/main/webapp/js/app</outputDirectory>
                             <resources>
                                 <resource>
-                                    <directory>src/main/frontend/js/app/build/js</directory>
+                                    <directory>src/main/frontend/ts/build/js</directory>
                                     <includes>
-                                        <include>*.js</include>
+                                        <include>bundle.js</include>
                                     </includes>
                                 </resource>
                             </resources>

@@ -1,44 +1,47 @@
 var gulp = require('gulp');
+var ts = require('gulp-typescript');
 var plugins = require('gulp-load-plugins')();
+//var sourcemaps = require('gulp-sourcemaps');
 
 var paths = { // keep in mind we are in frontend folder for paths
     src: {
-        ts: './js/app/**/*.ts',
-        main: './js/app/main.ts'
+        ts: './ts/**/*.ts'
     },
     dest: {
-        js: './build/js'
+        js: './ts/build/js'
     }
 };
-              //TODO app.js quasi vide puis aller voir dans systemjs.congig.js
-// inline template + compile typescript + concatenate + uglify
-gulp.task('compile:typescript', function () {
-    var result = gulp.src([paths.src.ts])
-        // .pipe(plugins.inlineNg2Template({
-        //     base: '/',
-        //     html: true,
-        //     css: false,
-        //     jade: false,
-        //     target: 'es5',
-        //     useRelativePaths: true
-        // }))
-        .pipe(plugins.typescript(plugins.typescript.createProject('tsconfig.json', {
-            typescript: require('typescript'),
-         //   outFile: paths.dest.js + '/app.js'
-        })));
-    result.js
-     //   .pipe(plugins.uglify())
-        .pipe(gulp.dest("./js/app/build/js"));
 
-    // var resultMain = gulp.src([paths.src.main])
-    //     .pipe(plugins.typescript(plugins.typescript.createProject('tsconfigmain.json', {
-    //         typescript: require('typescript'),
-    //      //   outFile: paths.dest.js + '/main.js'
-    //     })));
-    // return resultMain.js
-    // // .pipe(plugins.uglify())
-    //     .pipe(gulp.dest("./js/app/build/js"));
-
+var tsProject = ts.createProject('tsconfig.json', {
+    typescript: require('typescript'),
+    outFile: 'bundle.js'
 });
 
-gulp.task('default', gulp.parallel('compile:typescript'));
+gulp.task('ts', function () {
+    // var result = gulp.src([paths.src.ts])
+    // .pipe(plugins.inlineNg2Template({
+    //     base: '/',
+    //     html: true,
+    //     css: false,
+    //     jade: false,
+    //     target: 'es5',
+    //     useRelativePaths: true
+    // }))
+    // .pipe(plugins.typescript(plugins.typescript.createProject('tsconfig.json', {
+    //     typescript: require('typescript'),
+    //  //   outFile: paths.dest.js + '/app.js'
+    // })));
+    //result.js
+    //   .pipe(plugins.uglify())
+    //    .pipe(gulp.dest("./js/app/build/js"));
+    return gulp.src([paths.src.ts])
+        // .pipe(sourcemaps.init({
+        //     loadMaps: true
+        // }))
+        .pipe(ts(tsProject))
+        //.pipe(sourcemaps.write('.'))
+        .pipe(plugins.uglify())
+        .pipe(gulp.dest(paths.dest.js));
+});
+
+gulp.task('default', gulp.series(['ts']));
