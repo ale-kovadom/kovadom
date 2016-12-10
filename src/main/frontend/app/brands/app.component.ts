@@ -13,6 +13,6 @@ export class AppComponent {
     }
 
     ngOnInit(): void {
-        name = this.helloWorldService.getGreeting().then(greeting => this.name = greeting.content);
+        this.helloWorldService.getGreeting().then(greeting => this.name = greeting.content.toString());
     }
 }

@@ -10,21 +10,13 @@
     <script src="js/core-js/client/shim.min.js"></script>
 
     <script src="js/zone.js/dist/zone.min.js"></script>
-    <script src="js/reflect-metadata/Reflect.js"></script>
-    <script src="js/systemjs/dist/system.src.js"></script>
-
-    <script src="js/systemjs.config.js"></script>
-    <script src="js/app/bundle.js"></script>
-
-    <script>
-        document.addEventListener('DOMContentLoaded', function () {
-            System.import('main')
-                    .then(null, console.error.bind(console));
-        });
-    </script>
+    <script>window.module = 'aot';</script>
 </head>
 
 <body>
-<my-app>Loading AppComponent content here ...</my-app>
+<my-app>Kovadom is loading...</my-app>
 </body>
+
+<script src="js/app/build.js"></script>
+
 </html>

@@ -150,40 +150,8 @@
                                 <resource>
                                     <directory>src/main/frontend/node_modules</directory>
                                     <includes>
-                                        <include>@angular/common/bundles/common.umd.min.js</include>
-                                        <include>@angular/compiler/bundles/compiler.umd.min.js</include>
-                                        <include>@angular/core/bundles/core.umd.min.js</include>
-                                        <include>@angular/forms/bundles/forms.umd.min.js</include>
-                                        <include>@angular/http/bundles/http.umd.min.js</include>
-                                        <include>@angular/platform-browser/bundles/platform-browser.umd.min.js</include>
-                                        <include>
-                                            @angular/platform-browser-dynamic/bundles/platform-browser-dynamic.umd.min.js
-                                        </include>
-                                        <include>@angular/router/bundles/router.umd.min.js</include>
-                                        <include>@angular/router/bundles/router-upgrade.umd.min.js</include>
-                                        <include>rxjs/bundles/Rx.min.js</include>
-                                        <include>systemjs/dist/system.src.js</include>
-                                        <include>reflect-metadata/Reflect.js</include>
                                         <include>zone.js/dist/zone.min.js</include>
                                         <include>core-js/client/shim.min.js</include>
-                                    </includes>
-                                </resource>
-                            </resources>
-                        </configuration>
-                    </execution>
-                    <execution>
-                        <id>copy-static.js</id>
-                        <phase>generate-resources</phase>
-                        <goals>
-                            <goal>copy-resources</goal>
-                        </goals>
-                        <configuration>
-                            <outputDirectory>${project.basedir}/src/main/webapp/js</outputDirectory>
-                            <resources>
-                                <resource>
-                                    <directory>src/main/frontend/js/static</directory>
-                                    <includes>
-                                        <include>*.js</include>
                                     </includes>
                                 </resource>
                             </resources>
@@ -199,9 +167,9 @@
                             <outputDirectory>${project.basedir}/src/main/webapp/js/app</outputDirectory>
                             <resources>
                                 <resource>
-                                    <directory>src/main/frontend/app-out</directory>
+                                    <directory>src/main/frontend/dist</directory>
                                     <includes>
-                                        <include>bundle.js</include>
+                                        <include>build.js</include>
                                     </includes>
                                 </resource>
                             </resources>

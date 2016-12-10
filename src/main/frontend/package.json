@@ -7,9 +7,11 @@
   "dependencies": {
     "@angular/common": "~2.2.0",
     "@angular/compiler": "~2.2.0",
+    "@angular/compiler-cli": "~2.2.0",
     "@angular/core": "~2.2.0",
     "@angular/forms": "~2.2.0",
     "@angular/http": "~2.2.0",
+    "@angular/platform-server": "~2.2.0",
     "@angular/platform-browser": "~2.2.0",
     "@angular/platform-browser-dynamic": "~2.2.0",
     "@angular/router": "~3.2.0",
@@ -21,13 +23,23 @@
   },
   "devDependencies": {
     "gulp": "gulpjs/gulp#4.0",
+    "gulp-copy": "1.0.0",
     "gulp-inline-ng2-template": "0.0.10",
     "gulp-load-plugins": "1.1.0",
     "gulp-rename": "1.2.2",
+    "gulp-sourcemaps": "1.9.1",
     "gulp-typescript": "2.10.0",
     "gulp-uglify": "1.5.1",
+    "rollup": "^0.36.4",
+    "rollup-plugin-commonjs": "^5.0.5",
+    "rollup-plugin-node-resolve": "^2.0.0",
+    "rollup-plugin-uglify": "^1.0.1",
+    "systemjs-builder": "0.15.0",
     "typescript": "^2.0.10",
-    "gulp-sourcemaps": "1.9.1",
-    "systemjs-builder": "0.15.0"
+    "typescript@next": "2.1.4",
+    "typings": "2.0.0"
+  },
+  "scripts": {
+    "preinstall": "npm i typings -g; typings install dt~es6-shim --global --save; npm install rollup rollup-plugin-node-resolve rollup-plugin-commonjs rollup-plugin-uglify --save-dev"
   }
 }

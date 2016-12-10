@@ -1,34 +1,45 @@
 var gulp = require('gulp');
-var ts = require('gulp-typescript');
 var plugins = require('gulp-load-plugins')();
+var gulpCopy = require('gulp-copy');
 
-var paths = { // keep in mind we are in frontend folder for paths
-    src: {
-        ts: './app/**/*.ts'
-    },
-    dest: {
-        js: './app-out'
-    }
+var isWin = /^win/.test(process.platform);
+
+var exec = require('child_process').exec;
+
+// helper function for running ngc and tree shaking tasks
+const run_proc = (cmd, callBack, options) => {
+    // if (!isProd) return;
+    exec(cmd, (err, stdout, stderr) => {
+        if (options === undefined) options = {};
+        if (options.outFilter !== undefined) stdout = options.outFilter(stdout);
+        if (options.errFilter !== undefined) stderr = options.errFilter(stderr);
+        process.stdout.write(stdout);
+        process.stdout.write(stderr);
+        callBack(err);
+    });
 };
 
-var tsProject = ts.createProject('tsconfig.json', {
-    typescript: require('typescript'),
-    outFile: 'bundle.js'
+gulp.task('copy-js-to-aot', cb => {
+    return gulp
+        .src("app/**")
+        .pipe(gulpCopy("aot", {}));
 });
 
-gulp.task('ts', function () {
-    return gulp.src([paths.src.ts])
-        .pipe(plugins.inlineNg2Template({
-            base: '/',
-            html: true,
-            css: false,
-            jade: false,
-            target: 'es5',
-            useRelativePaths: true
-        }))
-        .pipe(ts(tsProject))
-      //  .pipe(plugins.uglify())
-        .pipe(gulp.dest(paths.dest.js));
+gulp.task('ngc', cb => {
+    var cmd = 'node_modules/.bin/ngc -p tsconfig-aot.json';
+    if (isWin) {
+        cmd = '"node_modules/.bin/ngc" -p tsconfig-aot.json';
+    }
+    return run_proc(cmd, cb);
 });
 
-gulp.task('default', gulp.series(['ts']));
+gulp.task('rollup', cb => {
+    var cmd = 'node_modules/.bin/rollup -c rollup-config.js';
+    if (isWin) {
+        cmd = '"node_modules/.bin/rollup" -c rollup-config.js';
+    }
+    return run_proc(cmd, cb);
+});
+
+
+gulp.task('default', gulp.series(['copy-js-to-aot', 'ngc', 'rollup']));
