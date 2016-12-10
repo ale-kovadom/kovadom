@@ -27,7 +27,7 @@ gulp.task('ts', function () {
             useRelativePaths: true
         }))
         .pipe(ts(tsProject))
-        .pipe(plugins.uglify())
+      //  .pipe(plugins.uglify())
         .pipe(gulp.dest(paths.dest.js));
 });
 

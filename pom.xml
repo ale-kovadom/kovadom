@@ -12,8 +12,15 @@
     <packaging>war</packaging>
     <name>Kovadom</name>
 
+    <parent>
+        <groupId>org.springframework.boot</groupId>
+        <artifactId>spring-boot-starter-parent</artifactId>
+        <version>1.4.2.RELEASE</version>
+    </parent>
+
     <properties>
         <frontend.skip>false</frontend.skip>
+        <java.version>1.8</java.version>
     </properties>
 
     <dependencies>
@@ -22,6 +29,16 @@
             <artifactId>javaee-api</artifactId>
             <version>7.0</version>
             <scope>provided</scope>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-web</artifactId>
+            <exclusions>
+                <exclusion>
+                    <groupId>org.springframework.boot</groupId>
+                    <artifactId>spring-boot-starter-logging</artifactId>
+                </exclusion>
+            </exclusions>
         </dependency>
     </dependencies>
 
@@ -52,6 +69,8 @@
                 <configuration>
                     <classpathAsWar>true</classpathAsWar>
                     <context>/</context>
+                    <debugPort>5005</debugPort>
+                    <debug>true</debug>
                 </configuration>
             </plugin>
             <plugin>
@@ -195,4 +214,11 @@
             </plugin>
         </plugins>
     </build>
+
+    <repositories>
+        <repository>
+            <id>spring-releases</id>
+            <url>https://repo.spring.io/libs-release</url>
+        </repository>
+    </repositories>
 </project>
