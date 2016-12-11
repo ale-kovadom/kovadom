@@ -2,12 +2,15 @@ package com.kovadom;
 
 import org.springframework.boot.Banner;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
-import org.springframework.boot.autoconfigure.web.DispatcherServletAutoConfiguration;
+import org.springframework.boot.autoconfigure.web.ErrorViewResolver;
 import org.springframework.boot.builder.SpringApplicationBuilder;
-import org.springframework.boot.web.servlet.ServletRegistrationBean;
 import org.springframework.boot.web.support.SpringBootServletInitializer;
 import org.springframework.context.annotation.Bean;
+import org.springframework.http.HttpStatus;
 import org.springframework.web.servlet.DispatcherServlet;
+import org.springframework.web.servlet.ModelAndView;
+
+import java.util.Collections;
 
 @SpringBootApplication
 public class Application extends SpringBootServletInitializer {
@@ -30,19 +33,11 @@ public class Application extends SpringBootServletInitializer {
         return new DispatcherServlet();
     }
 
-    /**
-     * Register dispatcherServlet programmatically
-     *
-     * @return ServletRegistrationBean
-     */
+
     @Bean
-    public ServletRegistrationBean dispatcherServletRegistration() {
-
-        ServletRegistrationBean registration = new ServletRegistrationBean(dispatcherServlet(), "/rest/*");
-
-        registration
-                .setName(DispatcherServletAutoConfiguration.DEFAULT_DISPATCHER_SERVLET_REGISTRATION_BEAN_NAME);
-
-        return registration;
+    public ErrorViewResolver supportPathBasedLocationStrategyWithoutHashes() {
+        return (request, status, model) -> status == HttpStatus.NOT_FOUND
+                ? new ModelAndView("index.html", Collections.emptyMap(), HttpStatus.OK)
+                : null;
     }
 }

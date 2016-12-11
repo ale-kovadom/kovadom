@@ -7,7 +7,8 @@ import org.springframework.web.bind.annotation.RestController;
 
 import java.util.concurrent.atomic.AtomicLong;
 
-@RestController
+@RestController()
+@RequestMapping("/rest")
 public class HelloWorldController {
 
     private static final String template = "Hello, %s!";
@@ -18,4 +19,6 @@ public class HelloWorldController {
         return new Greeting(counter.incrementAndGet(),
                 String.format(template, name));
     }
+
+
 }
