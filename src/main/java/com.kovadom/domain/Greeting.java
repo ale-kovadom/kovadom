@@ -1,17 +1,23 @@
 package com.kovadom.domain;
 
-public class Greeting {
+import org.springframework.data.jpa.domain.AbstractPersistable;
 
-    private final long id;
-    private final String content;
+import javax.persistence.Column;
+import javax.persistence.Entity;
 
-    public Greeting(long id, String content) {
-        this.id = id;
-        this.content = content;
+@Entity
+public class Greeting extends AbstractPersistable<Long>  {
+
+    @Column(name = "name")
+    private String content;
+
+    // JPA
+    public Greeting() {
     }
 
-    public long getId() {
-        return id;
+    public Greeting(long id, String content) {
+        setId(id);
+        this.content = content;
     }
 
     public String getContent() {
