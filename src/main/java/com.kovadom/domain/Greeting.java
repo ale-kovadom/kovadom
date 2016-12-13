@@ -4,8 +4,10 @@ import org.springframework.data.jpa.domain.AbstractPersistable;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
+import javax.persistence.Table;
 
 @Entity
+@Table(name = "greeting")
 public class Greeting extends AbstractPersistable<Long>  {
 
     @Column(name = "name")
