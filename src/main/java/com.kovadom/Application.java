@@ -40,4 +40,5 @@ public class Application extends SpringBootServletInitializer {
                 ? new ModelAndView("index.html", Collections.emptyMap(), HttpStatus.OK)
                 : null;
     }
+
 }

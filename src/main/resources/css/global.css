@@ -1,0 +1,45 @@
+body {
+    min-width: 305px;
+    background-color: #f1f1f1;
+}
+
+span {
+    display: inline-block;
+    position: relative;
+    vertical-align: middle;
+}
+
+span:before, span:after {
+    content: "";
+    position: absolute;
+}
+
+span:after {
+    color: white;
+    font-size: inherit;
+    padding: 0.5em;
+    pointer-events: none;
+    right: 0.3em;
+    top: 25%;
+    vertical-align: middle;
+}
+
+
+.btn.btn-primary {
+    border-radius: 2px;
+    text-shadow: none;
+    color: #e54c45;
+    background-color: #ffffff;
+    border: 2px solid white;
+    font-size: 22px;
+    letter-spacing: 0;
+    margin-left: 10px;
+    transition: all .25s ease;
+    -webkit-transition: all .25s ease;
+}
+
+.btn.btn-primary:hover {
+    background-color: rgb(239, 112, 105);
+    color: white;
+    border-color: #ffe8e7;
+}

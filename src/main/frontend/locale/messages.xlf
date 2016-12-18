@@ -5,6 +5,37 @@
       <trans-unit id="0e591c79c51be0937d449094b2cacc2b6bc8784e" datatype="html">
         <source>Home sale</source>
         <target/>
+        <note priority="1" from="description">home sale explanation link</note>
+      </trans-unit>
+      <trans-unit id="196999199d13ea9bd42ed35126e0eeb4b2794bca" datatype="html">
+        <source>Home sales of Bio products</source>
+        <target/>
+        <note priority="1" from="description">bio products</note>
+        <note priority="1" from="meaning">footer</note>
+      </trans-unit>
+      <trans-unit id="0d56197d02226cf1d428aa9d2d22b5452e79451b" datatype="html">
+        <source>Home sales of lingerie</source>
+        <target/>
+        <note priority="1" from="description">lingerie</note>
+        <note priority="1" from="meaning">footer</note>
+      </trans-unit>
+      <trans-unit id="f73299a790406c8c51565323acd48148774e7823" datatype="html">
+        <source>Home sales of kids clothes</source>
+        <target/>
+        <note priority="1" from="description">kids clothes</note>
+        <note priority="1" from="meaning">footer</note>
+      </trans-unit>
+      <trans-unit id="8b1aa08a5fcdff4c57120bbb3de670820d2559f1" datatype="html">
+        <source>Home sales of sex toys</source>
+        <target/>
+        <note priority="1" from="description">sex toys</note>
+        <note priority="1" from="meaning">footer</note>
+      </trans-unit>
+      <trans-unit id="7b7acbd38baaa3220ebb80d2fa4dce03d32233ca" datatype="html">
+        <source>Home sales of vine tasting</source>
+        <target/>
+        <note priority="1" from="description">vine tasting</note>
+        <note priority="1" from="meaning">footer</note>
       </trans-unit>
     </body>
   </file>

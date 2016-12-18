@@ -2,7 +2,7 @@ import {NgModule}      from '@angular/core';
 import {BrowserModule} from '@angular/platform-browser';
 import {HttpModule}    from '@angular/http';
 
-import {AppComponent}  from './app.component';
+import {KovadomComponent}  from './kovadom/kovadom.component';
 import {HelloWorldService}  from './service/hello-world.service';
 import {AppRoutingModule} from "./app-routing.module";
 import {DetailComponent} from "./brands/detail.component";
@@ -14,9 +14,9 @@ import {HomeComponent} from "./home/home.component";
         HttpModule,
         AppRoutingModule
     ],
-    declarations: [AppComponent, HomeComponent, DetailComponent],
+    declarations: [KovadomComponent, HomeComponent, DetailComponent],
     providers: [HelloWorldService],
-    bootstrap: [AppComponent]
+    bootstrap: [KovadomComponent]
 })
 export class AppModule {
 }
