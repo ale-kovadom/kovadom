@@ -22,6 +22,7 @@
     "zone.js": "^0.6.26"
   },
   "devDependencies": {
+    "del": "2.2.2",
     "gulp": "gulpjs/gulp#4.0",
     "gulp-copy": "1.0.0",
     "gulp-inline-ng2-template": "0.0.10",
@@ -40,6 +41,6 @@
     "typings": "2.0.0"
   },
   "scripts": {
-    "preinstall": "npm i typings -g; typings install dt~es6-shim --global --save; npm install rollup rollup-plugin-node-resolve rollup-plugin-commonjs rollup-plugin-uglify --save-dev"
+    "preinstall": "npm i typings -g; typings install dt~es6-shim --global --save; npm install rollup rollup-plugin-node-resolve rollup-plugin-commonjs rollup-plugin-uglify --save-dev;"
   }
 }

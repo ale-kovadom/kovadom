@@ -7,3 +7,6 @@
 * Install Mysql 5+
 * mvn clean compile tomee-embedded:run
 * Connect to http://localhost:8080
+
+## Useful command
+* mvn clean compile tomee-embedded:run -Dskip.npm

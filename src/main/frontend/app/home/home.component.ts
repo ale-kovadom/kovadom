@@ -4,13 +4,13 @@ import { Router } from '@angular/router';
 
 @Component({
     selector: 'my-app',
-    templateUrl: 'my.app.html',
-    styleUrls: [ 'greeting.css' ]
+    templateUrl: 'home.html',
+    styleUrls: [ 'home.css' ]
 })
-export class AppComponent {
-    
+export class HomeComponent {
+
     name = 'Angular';
-    
+
     constructor(private helloWorldService:HelloWorldService, private router: Router) {
     }
 

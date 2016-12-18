@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
+  <file source-language="en" datatype="plaintext" original="ng2.template">
+    <body>
+      <trans-unit id="0e591c79c51be0937d449094b2cacc2b6bc8784e" datatype="html">
+        <source>Home sale</source>
+        <target>Vente à domicile</target>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>
