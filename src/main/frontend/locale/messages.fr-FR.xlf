@@ -37,6 +37,96 @@
           <note priority="1" from="description">vine tasting</note>
           <note priority="1" from="meaning">footer</note>
         </trans-unit>
+        <trans-unit id="b6fd756e77629a3392e5b01f1e7ecad09f935f88" datatype="html">
+          <source>Organize simply your home sale</source>
+          <target>Organisez simplement votre vente à domicile</target>
+          <note priority="1" from="description">organize your sale</note>
+          <note priority="1" from="meaning">home</note>
+        </trans-unit>
+        <trans-unit id="ec6f21ff3b0a90d6f64ff370fdb2214e28a1e6f3" datatype="html">
+          <source>Conviviality, products of quality, moments of pleasure</source>
+          <target>Un espace de convivialité, des produits de qualité, des moments de plaisir</target>
+          <note priority="1" from="description">focus on quality</note>
+          <note priority="1" from="meaning">home</note>
+        </trans-unit>
+        <trans-unit id="5746a4ee4284194f4dd25bbd1d6b104a9c8f8bf5" datatype="html">
+          <source>Search</source>
+          <target>Rechercher</target>
+          <note priority="1" from="description">Search an ambiance</note>
+          <note priority="1" from="meaning">home</note>
+        </trans-unit>
+        <trans-unit id="b5993dfa5341eab031c3de79c1c976d679334dbf" datatype="html">
+          <source>Access all sales at home in just a few clicks!</source>
+          <target>Accédez à toutes les ventes à domicile en quelques clics!</target>
+          <note priority="1" from="description">Accessibility</note>
+          <note priority="1" from="meaning">home</note>
+        </trans-unit>
+        <trans-unit id="8e72a5258c2c25a0e57df98ad8cc3b80d4c604c3" datatype="html">
+          <source>Choose your sale</source>
+          <target>Choisissez votre vente</target>
+          <note priority="1" from="description">step1 title</note>
+          <note priority="1" from="meaning">home</note>
+        </trans-unit>
+        <trans-unit id="b88320c70c3da2d9958ef902870bbd09cd166543" datatype="html">
+          <source>In a few clicks find the sale and </source>
+          <target>En quelques clics trouvez la vente et </target>
+          <note priority="1" from="description">step1 description - part1</note>
+          <note priority="1" from="meaning">home</note>
+        </trans-unit>
+        <trans-unit id="9f614de1966b15afdc3eb0d52f94d0b60819f9be" datatype="html">
+          <source>the ambiance you would like to share</source>
+          <target>l'ambiance que vous voulez partager</target>
+          <note priority="1" from="description">step1 emphasized description - part2</note>
+          <note priority="1" from="meaning">home</note>
+        </trans-unit>
+        <trans-unit id="368baab82e09f0eddc357994d7055edf7111efa1" datatype="html">
+          <source>with your friends.</source>
+          <target>avec vos ami(e)s.</target>
+          <note priority="1" from="description">step1 description - part3</note>
+          <note priority="1" from="meaning">home</note>
+        </trans-unit>
+        <trans-unit id="b3eb7af65736dc801d13866d6080f48ba7778637" datatype="html">
+          <source>Send your request</source>
+          <target>Envoyez votre demande</target>
+          <note priority="1" from="description">step2 description</note>
+          <note priority="1" from="meaning">home</note>
+        </trans-unit>
+        <trans-unit id="3a0852e4c7f7bf11fbc45cc359343db183dcb2ee" datatype="html">
+          <source>Requests the brands you would like to test.</source>
+          <target>Faites des demandes pour les marques vous voulez tester.</target>
+          <note priority="1" from="description">step2 description - part1</note>
+          <note priority="1" from="meaning">home</note>
+        </trans-unit>
+        <trans-unit id="4eac721b3b38d62365dfdfedd5e3cdff6077e466" datatype="html">
+          <source>It is free without any commitment!</source>
+          <target>C'est gratuit et sans engagement !</target>
+          <note priority="1" from="description">step2 emphasized description - part2</note>
+          <note priority="1" from="meaning">home</note>
+        </trans-unit>
+        <trans-unit id="1c71428d401a4ad455e9a83f1ae8486ebf386328" datatype="html">
+          <source>Follow your requests</source>
+          <target>Suivez vos demandes</target>
+          <note priority="1" from="description">step3 description</note>
+          <note priority="1" from="meaning">home</note>
+        </trans-unit>
+        <trans-unit id="1c677c8d0866ea54a93b2ebf45ed838c4b8b91e3" datatype="html">
+          <source>Follow the progress of your requests, meet your seller and </source>
+          <target>Suivez l'avancée de vos demandes, rencontrez votre vendeur(se) à domicile et</target>
+          <note priority="1" from="description">step3 description - part1</note>
+          <note priority="1" from="meaning">home</note>
+        </trans-unit>
+        <trans-unit id="35b8bf28abebe9bb3a9834c38f351a6056f0c509" datatype="html">
+          <source>confirm your reservation in one click.</source>
+          <target>validez votre reservation en 1 clic.</target>
+          <note priority="1" from="description">step3 emphasized description - part2</note>
+          <note priority="1" from="meaning">home</note>
+        </trans-unit>
+        <trans-unit id="117fecefb733a49244be00f3f9e905940fa010d8" datatype="html">
+          <source>How it works?</source>
+          <target>Comment ça marche ?</target>
+          <note priority="1" from="description">how it works?</note>
+          <note priority="1" from="meaning">home</note>
+          </trans-unit>
     </body>
   </file>
 </xliff>

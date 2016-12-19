@@ -37,9 +37,73 @@ header a:hover {
     color: rgb(239, 112, 105);
 }
 
+@media only screen and (max-width: 425px) {
+
+    header h1 {
+        font-size: 28px;
+    }
+
+}
+
+@media only screen and (max-width: 680px) {
+    header h1 {
+        font-size: 30px;
+    }
+
+    .container-fluid nav p {
+        font-family: 'Roboto', sans-serif;
+        font-size: 16px;
+    }
+
+    .container p {
+        padding: 0 45px;
+    }
+
+    header .row a {
+        margin-left: 45px;
+    }
+
+    .container-fluid nav p {
+        margin-right: 45px;
+    }
+}
+
+@media only screen and (max-width: 492px) {
+    .container-fluid nav p {
+        margin-right: 21px;
+    }
+
+    header .row a {
+        margin-left: 21px;
+    }
+
+    .container p {
+        padding: 0 20px;
+    }
+
+    .container-fluid nav p {
+        font-size: 15px;
+    }
+
+    header h1 {
+        font-size: 26px;
+    }
+}
+
+@media only screen and (max-width: 425px) {
+    header h1 {
+        font-size: 22px;
+    }
+}
+
 .container-fluid nav p {
     font-family: 'Roboto', sans-serif;
     font-size: 18px;
+}
+
+nav {
+    background-color: #1D2B4A;
+    border-radius: 0 !important;
 }
 
 nav p {
