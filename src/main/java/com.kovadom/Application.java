@@ -6,6 +6,7 @@ import org.springframework.boot.autoconfigure.web.ErrorViewResolver;
 import org.springframework.boot.builder.SpringApplicationBuilder;
 import org.springframework.boot.web.support.SpringBootServletInitializer;
 import org.springframework.context.annotation.Bean;
+import org.springframework.data.jpa.repository.config.EnableJpaAuditing;
 import org.springframework.http.HttpStatus;
 import org.springframework.web.servlet.DispatcherServlet;
 import org.springframework.web.servlet.ModelAndView;
@@ -13,6 +14,7 @@ import org.springframework.web.servlet.ModelAndView;
 import java.util.Collections;
 
 @SpringBootApplication
+@EnableJpaAuditing
 public class Application extends SpringBootServletInitializer {
 
     @Override

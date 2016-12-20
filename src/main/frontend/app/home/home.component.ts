@@ -1,24 +1,22 @@
 import {Component} from '@angular/core';
-import {HelloWorldService} from "../service/hello-world.service";
-import { Router } from '@angular/router';
+import {ActivityService} from "../domain/activity/activity.service";
+import {Activity} from "../domain/activity/activity";
 
 @Component({
     selector: 'my-app',
     templateUrl: 'home.html',
-    styleUrls: [ 'home.css' ]
+    styleUrls: ['home.css']
 })
 export class HomeComponent {
 
-    name = 'Angular';
+    activities:Activity[] = [];
 
-    constructor(private helloWorldService:HelloWorldService, private router: Router) {
+    constructor(private activityService:ActivityService) {
+
     }
 
-    ngOnInit(): void {
-        this.helloWorldService.getGreeting().then(greeting => this.name = greeting.content.toString());
+    ngOnInit():void {
+        this.activityService.getActivities().then(activities => this.activities = activities.sort(Activity.byLabelComparator));
     }
 
-    gotoDetail(): void {
-        this.router.navigate(['/detail', this.name]);
-    }
 }

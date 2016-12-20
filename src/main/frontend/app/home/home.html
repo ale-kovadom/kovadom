@@ -8,11 +8,9 @@
     <div class="search-container">
         <div class="inner-container-of-search-box">
               <span>
-                <select id="ambiance-combo">
-                  <option value="../../Documents/VDI/page resultat entreprise.html">Vente de lingerie</option>
-                  <option value="../../plongee/index.html">La plongée</option>
-                  <option value="http://www.google.com">Recherche</option>
-                </select>
+                  <select id="ambiance-combo">
+                       <option *ngFor="let activity of activities" value="{{activity.id}}">{{activity.label}}</option>
+                  </select>
               </span>
             <div i18n="home|search an ambiance" class="btn btn-primary clicked">Search</div>
         </div>
@@ -33,7 +31,8 @@
         <h3 i18n="home|step1 title">Choose your sale</h3>
         <p>
             <ng-container i18n="home|step1 description - part1">In a few clicks find the sale and</ng-container>
-            <span i18n="home|step1 emphasized description - part2" class="bold">the ambiance you would like to share</span>
+            <span i18n="home|step1 emphasized description - part2"
+                  class="bold">the ambiance you would like to share</span>
             <ng-container i18n="home|step1 description - part3">with your friends.</ng-container>
         </p>
     </figure>
@@ -42,8 +41,10 @@
         <img src="img/home/step2-send-request.png">
         <h3 i18n="home|step2 description">Send your request</h3>
         <p>
-            <ng-container i18n="home|step2 description - part1">Requests the brands you would like to test.</ng-container>
-            <span i18n="home|step2 emphasized description - part2"class="bold">It is free without any commitment!</span>
+            <ng-container i18n="home|step2 description - part1">Requests the brands you would like to test.
+            </ng-container>
+            <span i18n="home|step2 emphasized description - part2"
+                  class="bold">It is free without any commitment!</span>
         </p>
     </figure>
 
@@ -51,8 +52,11 @@
         <img src="img/home/step3-follow-request.png">
         <h3 i18n="home|step3 description">Follow your requests</h3>
         <p>
-            <ng-container i18n="home|step3 description - part1">Follow the progress of your requests, meet your seller and</ng-container>
-            <span i18n="home|step3 emphasized description - part2" class="bold">confirm your reservation in one click.</span>
+            <ng-container i18n="home|step3 description - part1">Follow the progress of your requests, meet your seller
+                and
+            </ng-container>
+            <span i18n="home|step3 emphasized description - part2"
+                  class="bold">confirm your reservation in one click.</span>
         </p>
     </figure>
 </section>

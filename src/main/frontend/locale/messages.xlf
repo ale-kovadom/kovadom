@@ -91,8 +91,9 @@
         <note priority="1" from="description">step2 description</note>
         <note priority="1" from="meaning">home</note>
       </trans-unit>
-      <trans-unit id="3a0852e4c7f7bf11fbc45cc359343db183dcb2ee" datatype="html">
-        <source>Requests the brands you would like to test.</source>
+      <trans-unit id="92fea13ff6ec8191e22f328da33cdae0163fc5ae" datatype="html">
+        <source>Requests the brands you would like to test.
+            </source>
         <target/>
         <note priority="1" from="description">step2 description - part1</note>
         <note priority="1" from="meaning">home</note>
@@ -109,8 +110,10 @@
         <note priority="1" from="description">step3 description</note>
         <note priority="1" from="meaning">home</note>
       </trans-unit>
-      <trans-unit id="1c677c8d0866ea54a93b2ebf45ed838c4b8b91e3" datatype="html">
-        <source>Follow the progress of your requests, meet your seller and</source>
+      <trans-unit id="84ff6245d249e6dcc40f60cf2846040ce6d7f5fe" datatype="html">
+        <source>Follow the progress of your requests, meet your seller
+                and
+            </source>
         <target/>
         <note priority="1" from="description">step3 description - part1</note>
         <note priority="1" from="meaning">home</note>
