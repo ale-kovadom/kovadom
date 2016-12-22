@@ -1,6 +1,6 @@
 import {Component} from '@angular/core';
-import {ActivityService} from "../domain/activity/activity.service";
-import {Activity} from "../domain/activity/activity";
+import {Activity} from "../../domain/activity/activity";
+import {ActivityService} from "../../domain/activity/activity.service";
 
 @Component({
     selector: 'my-app',

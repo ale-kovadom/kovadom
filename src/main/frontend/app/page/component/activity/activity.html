@@ -1,0 +1,17 @@
+<div class="container">
+
+    <h1 class="text-center text-muted">Quelle ambiance allez-vous choisir?</h1>
+
+    <div *ngFor="let row of rows" class="row">
+
+        <div *ngFor="let col of row" class="col-xs-12 col-sm-4 hover-zoomin">
+            <div class="wrapper">
+                <a href="todo">
+                    <h2>{{col.label}}</h2>
+                    <div class="second image"></div>
+                </a>
+            </div>
+        </div>
+    </div>
+
+</div>
