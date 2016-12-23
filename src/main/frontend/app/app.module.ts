@@ -7,6 +7,7 @@ import {ActivityService}  from './domain/activity/activity.service';
 import {AppRoutingModule} from "./app-routing.module";
 import {HomeComponent} from "./page/home/home.component";
 import {ActivityComponent} from "./page/component/activity/activity.component";
+import {ContactComponent} from "./page/component/contact/contact.component";
 
 @NgModule({
     imports: [
@@ -14,7 +15,7 @@ import {ActivityComponent} from "./page/component/activity/activity.component";
         HttpModule,
         AppRoutingModule
     ],
-    declarations: [KovadomComponent, HomeComponent, ActivityComponent],
+    declarations: [KovadomComponent, HomeComponent, ActivityComponent, ContactComponent],
     providers: [ActivityService],
     bootstrap: [KovadomComponent]
 })

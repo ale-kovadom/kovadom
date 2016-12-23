@@ -24,22 +24,30 @@ span:after {
     vertical-align: middle;
 }
 
-
-.btn.btn-primary {
+.btn.red{
     border-radius: 2px;
+    border: 0;
+    color: white;
+    font-size: 18px;
     text-shadow: none;
-    color: #e54c45;
-    background-color: #ffffff;
-    border: 2px solid white;
-    font-size: 22px;
-    letter-spacing: 0;
-    margin-left: 10px;
-    transition: all .25s ease;
-    -webkit-transition: all .25s ease;
+    background-color: rgb(236, 83, 74);
 }
 
-.btn.btn-primary:hover {
-    background-color: rgb(239, 112, 105);
+.btn.red:hover {
     color: white;
-    border-color: #ffe8e7;
+    background-color: rgb(255, 30, 30);
 }
+
+.btn.btn-discreet {
+    border-radius: 2px;
+    border: 0;
+    color: black;
+    text-shadow: none;
+    background-color: rgb(221, 219, 217);
+}
+
+.btn.btn-discreet:hover {
+    background-color: rgb(199, 196, 192);
+    color: black;
+}
+

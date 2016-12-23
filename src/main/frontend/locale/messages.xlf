@@ -130,6 +130,48 @@
         <note priority="1" from="description">how it works?</note>
         <note priority="1" from="meaning">home</note>
       </trans-unit>
+      <trans-unit id="1f136607151f0481e3cf061c2a4a519a6da86340" datatype="html">
+        <source>Discover all the sales</source>
+        <target/>
+        <note priority="1" from="description">Discover all the sale button</note>
+        <note priority="1" from="meaning">home</note>
+      </trans-unit>
+      <trans-unit id="baa4f5ccf9c98ae8af8e8861eb941f28901c71b7" datatype="html">
+        <source>What atmosphere will you choose?</source>
+        <target/>
+        <note priority="1" from="description">Which activity ?</note>
+        <note priority="1" from="meaning">activity title</note>
+      </trans-unit>
+      <trans-unit id="04ec277554c87fcd31e29b22dc6b35e313e6ae8f" datatype="html">
+        <source>You are a home sales company?</source>
+        <target/>
+        <note priority="1" from="description">Home sales business</note>
+        <note priority="1" from="meaning">contact</note>
+      </trans-unit>
+      <trans-unit id="b5b9d1d44bb8300d09c5a997c8d40bd6efc5c8fa" datatype="html">
+        <source>Register your company</source>
+        <target/>
+        <note priority="1" from="description">Company registration</note>
+        <note priority="1" from="meaning">contact</note>
+      </trans-unit>
+      <trans-unit id="adfc7ed34849cc474e47280ed3252578095a3d1c" datatype="html">
+        <source>Contact</source>
+        <target/>
+        <note priority="1" from="description">contact-info1</note>
+        <note priority="1" from="meaning">contact</note>
+      </trans-unit>
+      <trans-unit id="b495131a874894369b62f6311382241867a0d8e6" datatype="html">
+        <source>E-mail:</source>
+        <target/>
+        <note priority="1" from="description">contact-info2 (email)</note>
+        <note priority="1" from="meaning">contact</note>
+      </trans-unit>
+      <trans-unit id="5b62245b586345080939b3dcdae1d5dbb5ccc967" datatype="html">
+        <source>Phone:</source>
+        <target/>
+        <note priority="1" from="description">contact-info3 (phone)</note>
+        <note priority="1" from="meaning">contact</note>
+      </trans-unit>
     </body>
   </file>
 </xliff>

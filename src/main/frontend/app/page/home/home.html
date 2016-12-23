@@ -12,7 +12,7 @@
                        <option *ngFor="let activity of activities" value="{{activity.id}}">{{activity.label}}</option>
                   </select>
               </span>
-            <div i18n="home|search an ambiance" class="btn btn-primary clicked">Search</div>
+            <div i18n="home|search an ambiance" class="btn btn-primary search-activity">Search</div>
         </div>
     </div>
 
@@ -63,7 +63,7 @@
 
 <div class="container4 hidden-xs">
     <div class="row text-center">
-        <a i18n="home|how it works?" class="btn btn-howto" href="@todo">How it works?</a>
+        <a i18n="home|how it works?" class="btn red" href="@todo">How it works?</a>
     </div>
 </div>
 
@@ -72,43 +72,11 @@
 
     <activity [activities]=activities max="6"></activity>
 
-    <div class="container2">
+    <div class="more-activity-container">
         <div class="row text-center">
-            <a class="btn btn-discret" href="www.lemonde.fr">D&eacutecouvrez toutes les ventes</a>
+            <a i18n="home|Discover all the sale button" class="btn btn-discreet" href="todo">Discover all the sales</a>
         </div>
     </div>
 </div>
 
-
-<div class="contact">
-    <section class="containerlayer3">
-        <div class="row">
-            <div class="col-sm-4 col-sm-offset-1 text-center">
-                <p> Vous &ecirctes une entreprise de vente &agrave domicile?</p>
-                <a class="btn btn-referencer" href="www.lemonde.fr">R&eacutef&eacuterencer votre entreprise</a>
-            </div>
-            <div class="col-sm-5 col-sm-offset-2">
-                <ul>
-                    <li>Contact</li>
-                    <li>E-mail:contact@eventhome.fr</li>
-                    <li>T&eacutel&eacutephone: 01 87 64 56 35</li>
-                </ul>
-
-                <div class="row">
-                    <ul class="icone">
-                        <li class="col-sm-1"><img
-                                src="https://s3.amazonaws.com/codecademy-content/projects/make-a-website/lesson-4/instagram.svg">
-                        <li>
-                        <li class="col-sm-1"><img
-                                src="https://s3.amazonaws.com/codecademy-content/projects/make-a-website/lesson-4/instagram.svg">
-                        <li>
-                        <li class="col-sm-1"><img
-                                src="https://s3.amazonaws.com/codecademy-content/projects/make-a-website/lesson-4/instagram.svg">
-                        <li>
-                    </ul>
-
-                </div>
-            </div>
-        </div>
-    </section>
-</div>
+<contact></contact>

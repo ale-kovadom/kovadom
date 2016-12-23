@@ -112,6 +112,25 @@ ul {
 
 }
 
+.btn.btn-primary.search-activity {
+    border-radius: 2px;
+    text-shadow: none;
+    color: #e54c45;
+    background-color: #ffffff;
+    border: 2px solid white;
+    font-size: 22px;
+    letter-spacing: 0;
+    margin-left: 10px;
+    transition: all .25s ease;
+    -webkit-transition: all .25s ease;
+}
+
+.btn.btn-primary.search-activity:hover {
+    background-color: rgb(239, 112, 105);
+    color: white;
+    border-color: #ffe8e7;
+}
+
 .search-container {
     position: absolute;
     margin-top: 130px;
@@ -205,87 +224,14 @@ ul {
     margin-bottom: 40px;
 }
 
-.btn.btn-howto {
-    border-radius: 2px;
-    border: 0px;
-    color: #fbd1d5;
-    font-size: 18px;
-    text-shadow: none;
-    background-color: rgb(236, 83, 74);
-}
-
-.btn.btn-howto:hover {
-    color: #ffffff;
-    background-color: rgb(239, 112, 105);
-}
+/*** Activity ***/
 
 .activity {
     background-color: #F5F2F3;
     padding-top: 30px;
 }
 
-/***************************** TODO **********************/
-/*Partie contact*/
-.contact {
-    background-color: #3B5796;
-    height: auto;
-    padding-top: 20px;
-    padding-bottom: 20px;
-}
-
-.contact p {
-    color: black;
-    font-family: 'Roboto', sans-serif;
-    font-size: 18px;
-}
-
-.contact li {
-    color: black;
-}
-
-.contact .icone img {
-    width: 32px;
-    height: 32px;
-}
-
-.contact ul {
-    list-style-type: none;
-}
-
-.btn.btn-referencer {
-    border-radius: 2px;
-    border: 0px;
-    color: black;
-    font-size: 18px;
-    text-shadow: none;
-    background-color: rgb(236, 83, 74);
-}
-
-.btn.btn-referencer:hover {
-    color: black;
-    background-color: rgb(239, 112, 105);
-}
-
-/*Fin partie contact*/
-
-
-
-/*Container bouton discret*/
-.container2 {
+.more-activity-container {
     margin-top: 10px;
     padding-bottom: 50px;
 }
-
-.btn.btn-discret {
-    border-radius: 2px;
-    border: 0px;
-    color: black;
-    text-shadow: none;
-    background-color: rgb(221, 219, 217);
-}
-
-.btn.btn-discret:hover {
-    background-color: rgb(199, 196, 192);
-}
-
-/*Fin bouton discret*/

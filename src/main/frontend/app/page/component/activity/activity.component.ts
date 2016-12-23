@@ -23,6 +23,4 @@ export class ActivityComponent implements OnChanges {
         this.rows = Arrays.split(slicesActivities, ActivityComponent.NUMBER_COLS);
     }
 
-    //TODO chemin en dur dans static + passer sous tomcat
-
 }

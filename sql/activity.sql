@@ -11,3 +11,4 @@ INSERT INTO activity (code, description, label) values ('LINGERI', 'Lingerie', '
 INSERT INTO activity (code, description, label) values ('WINE', 'Wine', 'Dégustation de vin');
 INSERT INTO activity (code, description, label) values ('SEXT', 'Sex toys', 'Sex toys');
 INSERT INTO activity (code, description, label) values ('BIO', 'Bio products', 'Produits bio');
+INSERT INTO activity (code, description, label) values ('FASHKID', 'Fashion kid', 'Mode enfant');

@@ -1,0 +1,25 @@
+.contact {
+    background-color: #3B5796;
+    height: auto;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.contact p {
+    color: black;
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+}
+
+.contact li {
+    color: black;
+}
+
+.contact .icone img {
+    width: 32px;
+    height: 32px;
+}
+
+.contact ul {
+    list-style-type: none;
+}
