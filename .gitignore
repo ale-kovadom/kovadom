@@ -10,6 +10,5 @@ src/main/frontend/aot
 src/main/frontend/node_modules
 src/main/frontend/typings
 src/main/webapp/js
-src/main/webapp/css
-src/main/webapp/img
 src/main/frontend/dist
+static

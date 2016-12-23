@@ -53,30 +53,7 @@
     -ms-transition: all 0.5s ease-in-out;
     transition: all 0.5s ease-in-out;
     z-index: 0;
-}
-
-.first, .second, .third, .fourth, .fifth {
     background-size: cover;
     width: 100%;
     height: 100%;
-}
-
-.first {
-    background-image: url(img/todo/lingerie6.jpg);
-}
-
-.second {
-    background-image: url(img/todo/degustation-vin-accueil.jpg);
-}
-
-.third {
-    background-image: url(img/todo/sex-toys.jpg);
-}
-
-.fourth {
-    background-image: url(img/todo/vente-produit-bio.jpg);
-}
-
-.fifth {
-    background-image: url(img/todo/mode-enfant4.jpg);
 }

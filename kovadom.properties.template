@@ -1,0 +1,4 @@
+####### Development properties #######
+
+# Static resources directory considered as data (images, etc.).
+dev.static-dir = XXX/static

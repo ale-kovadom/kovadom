@@ -19,6 +19,7 @@
     </parent>
 
     <properties>
+        <project.build.devDirectory>${project.build.directory}/dev</project.build.devDirectory>
         <frontend.skip>false</frontend.skip>
         <java.version>1.8</java.version>
     </properties>
@@ -68,6 +69,18 @@
     </dependencies>
 
     <build>
+        <filters>
+            <filter>kovadom.properties</filter>
+        </filters>
+        <!--<resources>-->
+            <!--<resource>-->
+                <!--<directory>src/main/resources</directory>-->
+            <!--</resource>-->
+            <!--<resource>-->
+                <!--<directory>dev</directory>-->
+                <!--<filtering>true</filtering>-->
+            <!--</resource>-->
+        <!--</resources>-->
         <plugins>
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
@@ -92,7 +105,8 @@
                 <artifactId>tomee-embedded-maven-plugin</artifactId>
                 <version>7.0.0-M1</version>
                 <configuration>
-                    <classpathAsWar>true</classpathAsWar>
+                    <serverXml>${project.build.devDirectory}/server.xml</serverXml>
+                    <!--<classpathAsWar>true</classpathAsWar>-->
                     <context>/</context>
                 </configuration>
             </plugin>
@@ -101,11 +115,14 @@
                 <artifactId>maven-clean-plugin</artifactId>
                 <version>3.0.0</version>
                 <configuration>
-                    <filesets> <!-- this is out app -->
+                    <filesets>
                         <fileset>
-                            <directory>src/main/frontend/js/app/build</directory>
+                            <directory>src/main/frontend/aot</directory>
                         </fileset>
-                        <fileset> <!-- this is where we copy our resources (deps + app) -->
+                        <fileset>
+                            <directory>src/main/frontend/dist</directory>
+                        </fileset>
+                        <fileset>
                             <directory>src/main/webapp/js</directory>
                         </fileset>
                         <!-- not deleted for time it can take
@@ -116,6 +133,43 @@
                     </filesets>
                 </configuration>
             </plugin>
+            <!--<plugin>-->
+                <!--<artifactId>maven-resources-plugin</artifactId>-->
+                <!--<version>3.0.0</version>-->
+                <!--<executions>-->
+                    <!--<execution>-->
+                        <!--<id>copy-resources</id>-->
+                        <!--<phase>validate</phase>-->
+                        <!--<goals>-->
+                            <!--<goal>copy-resources</goal>-->
+                        <!--</goals>-->
+                        <!--<configuration>-->
+                            <!--<outputDirectory>${project.build.outputDirectory}</outputDirectory>-->
+                            <!--<resources>-->
+                                <!--<resource>-->
+                                    <!--<directory>src/main/resources</directory>-->
+                                <!--</resource>-->
+                            <!--</resources>-->
+                        <!--</configuration>-->
+                    <!--</execution>-->
+                    <!--<execution>-->
+                        <!--<id>copy-dev-resources</id>-->
+                        <!--<phase>validate</phase>-->
+                        <!--<goals>-->
+                            <!--<goal>copy-resources</goal>-->
+                        <!--</goals>-->
+                        <!--<configuration>-->
+                            <!--<outputDirectory>${project.build.devDirectory)</outputDirectory>-->
+                            <!--<resources>-->
+                                <!--<resource>-->
+                                    <!--<directory>dev</directory>-->
+                                    <!--<filtering>true</filtering>-->
+                                <!--</resource>-->
+                            <!--</resources>-->
+                        <!--</configuration>-->
+                    <!--</execution>-->
+                <!--</executions>-->
+            <!--</plugin>-->
             <plugin>
                 <groupId>com.github.eirslett</groupId>
                 <artifactId>frontend-maven-plugin</artifactId>
@@ -221,36 +275,6 @@
                         </configuration>
                     </execution>
                     <execution>
-                        <id>copy-css-resources</id>
-                        <phase>generate-resources</phase>
-                        <goals>
-                            <goal>copy-resources</goal>
-                        </goals>
-                        <configuration>
-                            <outputDirectory>${project.basedir}/src/main/webapp/css</outputDirectory>
-                            <resources>
-                                <resource>
-                                    <directory>src/main/resources/css</directory>
-                                </resource>
-                            </resources>
-                        </configuration>
-                    </execution>
-                    <execution>
-                        <id>copy-img-resources</id>
-                        <phase>generate-resources</phase>
-                        <goals>
-                            <goal>copy-resources</goal>
-                        </goals>
-                        <configuration>
-                            <outputDirectory>${project.basedir}/src/main/webapp/img</outputDirectory>
-                            <resources>
-                                <resource>
-                                    <directory>src/main/resources/images</directory>
-                                </resource>
-                            </resources>
-                        </configuration>
-                    </execution>
-                    <execution>
                         <id>copy-app.js</id>
                         <phase>generate-resources</phase>
                         <goals>
@@ -264,6 +288,22 @@
                                     <includes>
                                         <include>build.js</include>
                                     </includes>
+                                </resource>
+                            </resources>
+                        </configuration>
+                    </execution>
+                    <execution>
+                        <id>copy-dev-resources</id>
+                        <phase>validate</phase>
+                        <goals>
+                            <goal>copy-resources</goal>
+                        </goals>
+                        <configuration>
+                            <outputDirectory>${project.build.devDirectory}</outputDirectory>
+                            <resources>
+                                <resource>
+                                    <directory>dev</directory>
+                                    <filtering>true</filtering>
                                 </resource>
                             </resources>
                         </configuration>

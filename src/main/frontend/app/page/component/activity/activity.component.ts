@@ -14,10 +14,15 @@ export class ActivityComponent implements OnChanges {
 
     @Input() public activities:Activity[];
 
+    @Input() public max:number;
+
     public rows:Activity[][];
 
     ngOnChanges(changes: SimpleChanges) {
-        this.rows = Arrays.split(changes['activities'].currentValue as Activity[], ActivityComponent.NUMBER_COLS);
+        var slicesActivities = (changes['activities'].currentValue as Activity[]).slice(0, this.max);
+        this.rows = Arrays.split(slicesActivities, ActivityComponent.NUMBER_COLS);
     }
+
+    //TODO chemin en dur dans static + passer sous tomcat
 
 }
