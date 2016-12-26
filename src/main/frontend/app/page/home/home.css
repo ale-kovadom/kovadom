@@ -41,6 +41,7 @@ ul {
 }
 
 @media only screen and (min-width: 851px) and (max-width: 995px) {
+
     .jumbotron h2 {
         font-size: 37px;
     }
@@ -51,17 +52,23 @@ ul {
 }
 
 @media only screen and (min-width: 708px) and (max-width: 850px) {
+
     .jumbotron h2 {
         font-size: 32px;
     }
 
     .jumbotron h3 {
-        font-size: 18px;
+        font-size: 19px;
     }
 
 }
 
 @media only screen and (min-width: 526px) and (max-width: 707px) {
+
+    .jumbotron h1 {
+        font-size: 52px;
+    }
+
     .jumbotron h2, .jumbotron h3 {
         display: inline-block;
     }
@@ -72,13 +79,18 @@ ul {
     }
 
     .jumbotron h3 {
-        font-size: 17px;
-        max-width: 310px;
+        font-size: 18px;
+        max-width: 330px;
     }
 
 }
 
 @media only screen and (min-width: 426px) and (max-width: 525px) {
+
+    .jumbotron h1 {
+        font-size: 52px;
+    }
+
     .jumbotron h2, .jumbotron h3 {
         display: inline-block;
     }
@@ -89,13 +101,18 @@ ul {
     }
 
     .jumbotron h3 {
-        font-size: 17px;
-        max-width: 310px;
+        font-size: 18px;
+        max-width: 320px;
     }
 
 }
 
 @media only screen and (max-width: 425px) {
+
+    .jumbotron h1 {
+        font-size: 31px;
+    }
+
     .jumbotron h2, .jumbotron h3 {
         display: inline-block;
     }
@@ -106,13 +123,31 @@ ul {
     }
 
     .jumbotron h3 {
-        font-size: 13px;
+        font-size: 16px;
         max-width: 300px;
     }
 
 }
 
-.btn.btn-primary.search-activity {
+.inner-container-of-search-box {
+    padding: 15px 15px;
+}
+
+#search-combo-wrapper {
+    text-align: right;
+    display: inline-block;
+    float: none;
+    vertical-align: middle;
+}
+
+#search-btn-wrapper {
+    text-align: left;
+    display: inline-block;
+    float: none;
+    vertical-align: middle;
+}
+
+#search-btn-wrapper .search-activity {
     border-radius: 2px;
     text-shadow: none;
     color: #e54c45;
@@ -125,10 +160,40 @@ ul {
     -webkit-transition: all .25s ease;
 }
 
-.btn.btn-primary.search-activity:hover {
+#search-btn-wrapper .search-activity:hover {
     background-color: rgb(239, 112, 105);
     color: white;
     border-color: #ffe8e7;
+}
+
+#activity-combo {
+    color: red;
+    cursor: pointer;
+    background: white;
+    border: 2px solid white;
+    padding: 0.37em 2em 0.37em 0.37em;
+    outline: none;
+    width: 100%;
+    border-radius: 2px;
+    font-size: 22px;
+}
+
+@media only screen and (max-width: 768px) {
+
+    #activity-combo {
+        width: 80%;
+    }
+
+    #search-btn-wrapper, #search-combo-wrapper {
+        text-align: center;
+    }
+
+    #search-btn-wrapper .search-activity {
+        margin-left: 0;
+        margin-top: 10px;
+        width: 80%;
+    }
+
 }
 
 .search-container {
@@ -140,52 +205,12 @@ ul {
     transform: translate(0, -40%);
 }
 
-.search-container select {
-    color: red;
-    cursor: pointer;
-    background: white;
-    border: 2px solid white;
-    padding: 0.37em 2em 0.37em 0.37em;
-    outline: none;
-    width: 400px;
-    border-radius: 2px;
-    font-size: 22px;
-}
 
 .search-container option {
     background: white;
     color: #e54c45;
     font-size: 15px;
     outline: none !important;
-}
-
-.inner-container-of-search-box {
-    padding: 15px 15px;
-}
-
-@media only screen and (min-width: 426px) and (max-width: 767px) {
-    .jumbotron h1 {
-        font-size: 52px;
-    }
-}
-
-@media only screen and (max-width: 425px) {
-    .jumbotron h1 {
-        font-size: 27px;
-    }
-
-    #ambiance-combo, .btn.btn-primary {
-        width: 93vw;
-    }
-
-    #ambiance-combo {
-        margin-bottom: 10px;
-
-    }
-
-    .btn.btn-primary {
-        margin-left: 0;
-    }
 }
 
 /*** Steps 1 2 3 ***/
@@ -203,7 +228,7 @@ ul {
 }
 
 .container .col-sm-4 h3 {
-    color:;
+    color: black;
     text-align: center;
 }
 

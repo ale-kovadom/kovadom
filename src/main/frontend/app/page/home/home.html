@@ -6,13 +6,17 @@
     </div>
 
     <div class="search-container">
-        <div class="inner-container-of-search-box">
-              <span>
-                  <select id="ambiance-combo">
+        <div class="container-fluid">
+            <div class="row inner-container-of-search-box">
+              <span id="search-combo-wrapper" class="col-xs-12 col-sm-offset-2 col-sm-6 col-md-offset-3 col-md-5 col-lg-offset-3 col-lg-4">
+                  <select id="activity-combo">
                        <option *ngFor="let activity of activities" value="{{activity.id}}">{{activity.label}}</option>
                   </select>
+              </span><!-- "no space hack" to align vertically
+              --><span id="search-btn-wrapper" class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
+                  <div i18n="home|search an ambiance" class="btn btn-primary search-activity">Search</div>
               </span>
-            <div i18n="home|search an ambiance" class="btn btn-primary search-activity">Search</div>
+            </div>
         </div>
     </div>
 

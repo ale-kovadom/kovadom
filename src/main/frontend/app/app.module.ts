@@ -2,7 +2,7 @@ import {NgModule}      from '@angular/core';
 import {BrowserModule} from '@angular/platform-browser';
 import {HttpModule}    from '@angular/http';
 
-import {KovadomComponent}  from './kovadom/kovadom.component';
+import {KovadomComponent}  from './page/component/kovadom/kovadom.component';
 import {ActivityService}  from './domain/activity/activity.service';
 import {AppRoutingModule} from "./app-routing.module";
 import {HomeComponent} from "./page/home/home.component";
