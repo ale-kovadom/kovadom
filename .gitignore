@@ -12,3 +12,4 @@ src/main/frontend/typings
 src/main/webapp/js
 src/main/frontend/dist
 static
+kovadom.properties
