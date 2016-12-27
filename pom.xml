@@ -26,6 +26,21 @@
         <liquibase-version>3.4.1</liquibase-version>
     </properties>
 
+    <profiles>
+        <profile>
+            <id>dev</id>
+            <activation>
+                <property>
+                    <name>env</name>
+                    <value>dev</value>
+                </property>
+            </activation>
+            <properties>
+                <orm.show-sql>true</orm.show-sql>
+            </properties>
+        </profile>
+    </profiles>
+
     <dependencies>
         <dependency>
             <groupId>org.apache.tomee</groupId>

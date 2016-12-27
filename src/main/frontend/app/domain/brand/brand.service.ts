@@ -1,21 +1,21 @@
 import {Injectable} from "@angular/core";
 import {Http} from "@angular/http";
 import "rxjs/add/operator/toPromise";
-import {Activity} from "./activity";
+import {Brand} from "./brand";
 
 
 @Injectable()
-export class ActivityService {
+export class BrandService {
 
-    private activitiesUrl = 'rest/activities';
+    private brandsByActivityCodeUrl = 'rest/brands';
 
     constructor(private http:Http) {
     }
 
-    getActivities():Promise<Activity[]> {
-        return this.http.get(this.activitiesUrl)
+    public getBrandsByActivityCode(activityCode: String):Promise<Brand[]> {
+        return this.http.get(this.brandsByActivityCodeUrl + `?activityCode=${activityCode}`)
             .toPromise()
-            .then(response => response.json() as Activity[])
+            .then(response => response.json() as Brand[])
             .catch(this.handleError);
     }
 

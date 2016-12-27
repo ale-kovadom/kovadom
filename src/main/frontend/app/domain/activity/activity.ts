@@ -10,10 +10,8 @@ export class Activity {
         return 0;
     };
 
-    public readonly id:Number;
 
-    public readonly code:String;
-
-    public readonly label:String;
+    constructor(public id:Number, public code:String, public label:String) {
+    }
 
 }

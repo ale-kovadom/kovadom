@@ -1,0 +1,57 @@
+<div class="jumbotron">
+    <div class="search-container">
+        <div class="inner-container-of-search-box">
+      <span>
+        <select id="choix">
+          <option value="../../Documents/VDI/page resultat entreprise.html">Résultat</option>
+          <option value="../../plongee/index.html">La plongée</option>
+          <option value="http://www.google.com">Recherche</option>
+        </select>
+      </span>
+            <div class="btn btn-primary clicked">Search</div>
+        </div>
+    </div>
+</div>
+
+
+<section class="container">
+
+    <h4>D&eacutecouvrez toutes les ventes de lingerie &agrave domicile</h4>
+
+    <!-- @TODO revoir la liste des activités en une seule row -->
+    <div class="row">
+
+        <div *ngFor="let brand of brands" class="col-sm-6 col-md-4">
+            <div class="subway">
+                <div class="subway-photo" style="background-image: url('static/brands/{{brand.code}}.jpg');">
+                    <div class="texte">{{brand.name}}</div>
+                    <div class="texte2">{{brand.catchWords}}</div>
+                </div>
+                <div class="subway-content">
+                    <a class="btn btn-liste" href="../VDI/page entreprise slideshow2.html">J'organise ma vente</a>
+                </div>
+            </div>
+        </div>
+
+        <!--<div class="figure col-sm-6 col-md-4">-->
+            <!--<div class="subway">-->
+                <!--<div class="subway-photo" style="background-image: url('3.jpg');">-->
+                    <!--<div class="texte">Texte Ici</div>-->
+                    <!--<div class="texte2">Texte Ici</div>-->
+                <!--</div>-->
+                <!--<div class="subway-content">-->
+                    <!--<a class="btn btn-liste" href="../VDI/page entreprise slideshow2.html">J'organise ma vente</a>-->
+                <!--</div>-->
+            <!--</div>-->
+        <!--</div>-->
+
+    </div>
+
+</section>
+
+<!-- @TODO faire un composant: utilisé ailleurs -->
+<div class="container">
+    <div class="row text-center">
+        <a class="btn btn-secondary" href="www.lemonde.fr">Voir toutes les ventes</a>
+    </div>
+</div>

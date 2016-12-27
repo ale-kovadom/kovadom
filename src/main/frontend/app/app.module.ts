@@ -8,15 +8,24 @@ import {AppRoutingModule} from "./app-routing.module";
 import {HomeComponent} from "./page/home/home.component";
 import {ActivityComponent} from "./page/component/activity/activity.component";
 import {ContactComponent} from "./page/component/contact/contact.component";
+import {BrandsComponent} from "./page/brands/list/brands.component";
+import {FormsModule} from '@angular/forms';
+import {BrandService} from "./domain/brand/brand.service";
 
 @NgModule({
     imports: [
         BrowserModule,
         HttpModule,
-        AppRoutingModule
+        AppRoutingModule,
+        FormsModule
     ],
-    declarations: [KovadomComponent, HomeComponent, ActivityComponent, ContactComponent],
-    providers: [ActivityService],
+    declarations: [
+        KovadomComponent,
+        HomeComponent,
+        ActivityComponent,
+        ContactComponent,
+        BrandsComponent],
+    providers: [ActivityService, BrandService],
     bootstrap: [KovadomComponent]
 })
 export class AppModule {

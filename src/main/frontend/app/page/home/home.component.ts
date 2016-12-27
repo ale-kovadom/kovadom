@@ -1,6 +1,7 @@
 import {Component} from '@angular/core';
 import {Activity} from "../../domain/activity/activity";
 import {ActivityService} from "../../domain/activity/activity.service";
+import {Router}            from '@angular/router';
 
 @Component({
     selector: 'home',
@@ -9,14 +10,31 @@ import {ActivityService} from "../../domain/activity/activity.service";
 })
 export class HomeComponent {
 
-    activities:Activity[] = [];
+    public activities:Activity[] = [];
 
-    constructor(private activityService:ActivityService) {
+    public selectedActivity:Activity;
+
+    constructor(private activityService:ActivityService, private router:Router) {
 
     }
 
     ngOnInit():void {
-        this.activityService.getActivities().then(activities => this.activities = activities.sort(Activity.byLabelComparator));
+        this.activityService.getActivities().then(
+            activities => {
+                this.activities = activities.sort(Activity.byLabelComparator);
+                if(this.activities.length > 0) {
+                    this.selectedActivity = this.activities[0];
+                }
+            });
+    }
+
+    public displayActivity() {
+        if (this.selectedActivity == undefined) {
+            return;
+        }
+
+        let link = ['/brands', this.selectedActivity.code];
+        this.router.navigate(link);
     }
 
 }
