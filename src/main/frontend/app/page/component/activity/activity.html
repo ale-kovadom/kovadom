@@ -2,13 +2,13 @@
 
     <h1 i18n="activity title|Which activity ?" class="text-center text-muted">What atmosphere will you choose?</h1>
 
-    <div *ngFor="let row of rows" class="row">
+    <div class="row">
 
-        <div *ngFor="let col of row" class="col-xs-offset-1 col-xs-10 col-sm-offset-0 col-sm-4 hover-zoomin">
+        <div *ngFor="let activity of activityToDisplay" class="activity col-xs-offset-1 col-xs-10 col-sm-offset-0 col-sm-4 hover-zoomin">
             <div class="wrapper">
                 <a href="TODO">
-                    <h2>{{col.label}}</h2>
-                    <img class="image" src="static/activities/{{col.code}}.jpg">
+                    <h2>{{activity.label}}</h2>
+                    <img class="image" src="static/activities/{{activity.code}}.jpg">
                 </a>
             </div>
         </div>
