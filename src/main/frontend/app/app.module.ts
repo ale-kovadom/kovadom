@@ -11,6 +11,7 @@ import {ContactComponent} from "./page/component/contact/contact.component";
 import {BrandsComponent} from "./page/brands/list/brands.component";
 import {FormsModule} from '@angular/forms';
 import {BrandService} from "./domain/brand/brand.service";
+import {AllBrandsButtonComponent} from "./page/component/brands/all_brands_button/all-brands.button.component";
 
 @NgModule({
     imports: [
@@ -23,6 +24,7 @@ import {BrandService} from "./domain/brand/brand.service";
         KovadomComponent,
         HomeComponent,
         ActivityComponent,
+        AllBrandsButtonComponent,
         ContactComponent,
         BrandsComponent],
     providers: [ActivityService, BrandService],

@@ -15,38 +15,39 @@
 
 
 <section class="brand-result container">
+
     <h4 *ngIf="brands?.length == 0" i18n="brand list | No brands for a given activity">
-        No brands associated with {{activity?.label | lowercase}}
+        No sales associated with {{activity?.label | lowercase}}
     </h4>
 
     <ng-container *ngIf="brands?.length > 0">
         <h4 i18n="brand list | Discover all brands for a given activity">
-            Discover all brands of {{activity?.label | lowercase}}
+            Discover all sales of {{activity?.label | lowercase}}
         </h4>
 
         <div class="row">
 
             <div *ngFor="let brand of brands" class="figure col-sm-6 col-md-4">
                 <div class="subway">
+
                     <div class="subway-photo"
                          [ngStyle]="{'background-image': 'url(static/brands/' + brand.code + '.png)'}">
                         <div class="brand-name">{{brand.name}}</div>
                         <div class="brand-catchworld">{{brand.catchWords}}</div>
                     </div>
+
                     <div class="subway-footer">
-                        <a class="btn red" href="../VDI/page entreprise slideshow2.html">J'organise ma vente</a>
+                        <a class="btn red" href="@todo">
+                            <ng-container i18n="brand list | Organise a sale">Start my sale</ng-container>
+                        </a>
                     </div>
+
                 </div>
             </div>
 
         </div>
     </ng-container>
 
-    <!-- @TODO faire un composant: utilisé ailleurs -->
-    <div class="container">
-        <div class="row text-center">
-            <a class="btn btn-secondary" href="www.lemonde.fr">Voir toutes les ventes</a>
-        </div>
-    </div>
+    <all-brands-button></all-brands-button>
 
 </section>
