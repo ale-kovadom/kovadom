@@ -6,6 +6,6 @@ import java.util.List;
 
 public interface BrandRepository extends CrudRepository<Brand, Long> {
 
-    List<Brand> findByActivityCode(String activityCode);
+    List<Brand> findByActivitiesCode(String activityCode);
 
 }

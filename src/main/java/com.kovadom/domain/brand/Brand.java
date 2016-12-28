@@ -10,15 +10,14 @@ import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.EntityListeners;
 import javax.persistence.JoinColumn;
-import javax.persistence.ManyToOne;
+import javax.persistence.JoinTable;
+import javax.persistence.ManyToMany;
 import javax.persistence.Table;
-
-import static javax.persistence.FetchType.LAZY;
+import java.util.List;
 
 @Entity
 @Table(name = "brand")
 @EntityListeners(AuditingEntityListener.class)
-//@JsonIdentityInfo(generator = ObjectIdGenerators.PropertyGenerator.class, property = "id")
 public class Brand extends AbstractAuditablePersistable<Long> {
 
     @Column(name = "code")
@@ -34,9 +33,11 @@ public class Brand extends AbstractAuditablePersistable<Long> {
     private String catchWords;
 
     @JsonIgnore
-    @ManyToOne(cascade= CascadeType.ALL, fetch=LAZY)
-    @JoinColumn(name="activity_id")
-    private Activity activity;
+    @ManyToMany(cascade = CascadeType.ALL)
+    @JoinTable(name = "brand_activity",
+            joinColumns = @JoinColumn(name = "brand_id", referencedColumnName = "id"),
+            inverseJoinColumns = @JoinColumn(name = "activity_id", referencedColumnName = "id"))
+    private List<Activity> activities;
 
     // JPA
     public Brand() {
@@ -58,7 +59,7 @@ public class Brand extends AbstractAuditablePersistable<Long> {
         return catchWords;
     }
 
-    public Activity getActivity() {
-        return activity;
+    public List<Activity> getActivities() {
+        return activities;
     }
 }

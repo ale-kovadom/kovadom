@@ -8,14 +8,13 @@ import org.springframework.data.jpa.domain.support.AuditingEntityListener;
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.EntityListeners;
-import javax.persistence.OneToMany;
+import javax.persistence.ManyToMany;
 import javax.persistence.Table;
 import java.util.List;
 
 @Entity
 @Table(name = "activity")
 @EntityListeners(AuditingEntityListener.class)
-//@JsonIdentityInfo(generator = ObjectIdGenerators.PropertyGenerator.class, property = "id")
 public class Activity extends AbstractAuditablePersistable<Long> {
 
     @Column(name = "code")
@@ -28,7 +27,7 @@ public class Activity extends AbstractAuditablePersistable<Long> {
     private String label;
 
     @JsonIgnore
-    @OneToMany(mappedBy="activity")
+    @ManyToMany(mappedBy="activities")
     private List<Brand> brands;
 
     // JPA

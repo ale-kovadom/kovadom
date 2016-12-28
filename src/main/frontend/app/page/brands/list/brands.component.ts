@@ -13,7 +13,7 @@ import {ActivityService} from "../../../domain/activity/activity.service";
 })
 export class BrandsComponent {
 
-    public brands:Brand[] = [];
+    public brands:Brand[];
 
     public activity:Activity;
 
