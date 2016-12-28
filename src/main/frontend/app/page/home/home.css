@@ -40,8 +40,10 @@ ul {
     color: #EFF7FF;
 }
 
-#activity-search-combo-wrapper {
-    margin-top: 130px;
+#brand-search-combo-wrapper {
+    margin-top: 80px;
+    height: 100px;
+    position: relative;
 }
 
 @media only screen and (min-width: 851px) and (max-width: 995px) {
