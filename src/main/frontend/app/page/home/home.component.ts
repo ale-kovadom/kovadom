@@ -33,7 +33,7 @@ export class HomeComponent {
             return;
         }
 
-        let link = ['/brands', this.selectedActivity.code];
+        let link = ['/brands', this.selectedActivity.code.toLowerCase()];
         this.router.navigate(link);
     }
 

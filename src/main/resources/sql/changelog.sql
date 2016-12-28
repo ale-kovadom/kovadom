@@ -9,3 +9,7 @@ create table if not exists activity (
   created_date TIMESTAMP NOT NULL DEFAULT NOW(),
   modified_date TIMESTAMP NOT NULL DEFAULT NOW()
 );
+
+--changeset alescaroux:2
+ALTER TABLE activity MODIFY code VARCHAR(20);
+ALTER TABLE activity MODIFY id INT UNSIGNED;

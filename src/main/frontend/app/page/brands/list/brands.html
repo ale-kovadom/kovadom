@@ -16,7 +16,7 @@
 
 <section class="brand-result container">
 
-    <h4 *ngIf="brands?.length == 0" i18n="brand list | No brands for a given activity">
+    <h4 class="no-brands" *ngIf="brands?.length == 0" i18n="brand list | No brands for a given activity">
         No sales associated with {{activity?.label | lowercase}}
     </h4>
 
