@@ -12,6 +12,7 @@ import {BrandsComponent} from "./page/brands/list/brands.component";
 import {FormsModule} from '@angular/forms';
 import {BrandService} from "./domain/brand/brand.service";
 import {AllBrandsButtonComponent} from "./page/component/brands/all_brands_button/all-brands.button.component";
+import {ActivitySearchComboComponent} from "./page/component/brands/by_activity_search_combo/brand-search-by-activity.combo.component";
 
 @NgModule({
     imports: [
@@ -25,6 +26,7 @@ import {AllBrandsButtonComponent} from "./page/component/brands/all_brands_butto
         HomeComponent,
         ActivityComponent,
         AllBrandsButtonComponent,
+        ActivitySearchComboComponent,
         ContactComponent,
         BrandsComponent],
     providers: [ActivityService, BrandService],

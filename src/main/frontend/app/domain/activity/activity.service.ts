@@ -19,7 +19,7 @@ export class ActivityService {
             .catch(this.handleError);
     }
 
-    public getActivityByCode(activityCode:String) {
+    public getActivityByCode(activityCode:String):Promise<Activity> {
         return this.http.get(this.activitiesUrl + `?activityCode=${activityCode}`)
             .toPromise()
             .then(response => response.json() as Activity)

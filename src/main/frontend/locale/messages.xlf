@@ -49,12 +49,6 @@
         <note priority="1" from="description">focus on quality</note>
         <note priority="1" from="meaning">home</note>
       </trans-unit>
-      <trans-unit id="5746a4ee4284194f4dd25bbd1d6b104a9c8f8bf5" datatype="html">
-        <source>Search</source>
-        <target/>
-        <note priority="1" from="description">search an ambiance</note>
-        <note priority="1" from="meaning">home</note>
-      </trans-unit>
       <trans-unit id="b5993dfa5341eab031c3de79c1c976d679334dbf" datatype="html">
         <source>Access all sales at home in just a few clicks!</source>
         <target/>
@@ -140,6 +134,12 @@
         <source>Discover all the sales</source>
         <target/>
         <note priority="1" from="description">Discover all the sale button</note>
+        <note priority="1" from="meaning">home</note>
+      </trans-unit>
+      <trans-unit id="5746a4ee4284194f4dd25bbd1d6b104a9c8f8bf5" datatype="html">
+        <source>Search</source>
+        <target/>
+        <note priority="1" from="description">search an ambiance</note>
         <note priority="1" from="meaning">home</note>
       </trans-unit>
       <trans-unit id="04ec277554c87fcd31e29b22dc6b35e313e6ae8f" datatype="html">
