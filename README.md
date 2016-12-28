@@ -16,3 +16,4 @@ mvn clean compile tomee-embedded:run -Denv=dev
 mvn clean compile tomee-embedded:run -Dskip.npm -Denv=dev
 ### Only java in development mode
 mvn compile war:war tomee-embedded:run -Dskip.npm -Dfrontend.skip -Denv=dev
+

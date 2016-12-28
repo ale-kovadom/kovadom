@@ -3,6 +3,8 @@ import {ActivatedRoute, Params} from "@angular/router";
 import {BrandService} from "../../../domain/brand/brand.service";
 import {Brand} from "../../../domain/brand/brand";
 import "rxjs/add/operator/switchMap";
+import {Activity} from "../../../domain/activity/activity";
+import {ActivityService} from "../../../domain/activity/activity.service";
 
 @Component({
     selector: 'brands',
@@ -13,10 +15,18 @@ export class BrandsComponent {
 
     public brands:Brand[] = [];
 
-    constructor(private route:ActivatedRoute, private brandService:BrandService) {
+    public activity:Activity;
+
+    constructor(private route:ActivatedRoute,
+                private brandService:BrandService,
+                private activityService:ActivityService) {
     }
 
     ngOnInit():void {
+        this.route.params
+            .switchMap((params:Params) => this.activityService.getActivityByCode(params['activityCode']))
+            .subscribe(activity => this.activity = activity);
+        
         this.route.params
             .switchMap((params:Params) => this.brandService.getBrandsByActivityCode(params['activityCode']))
             .subscribe(brands => this.brands = brands);

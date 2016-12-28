@@ -1,5 +1,6 @@
 package com.kovadom.domain.activity;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.kovadom.domain.brand.Brand;
 import com.kovadom.orm.AbstractAuditablePersistable;
 import org.springframework.data.jpa.domain.support.AuditingEntityListener;
@@ -14,6 +15,7 @@ import java.util.List;
 @Entity
 @Table(name = "activity")
 @EntityListeners(AuditingEntityListener.class)
+//@JsonIdentityInfo(generator = ObjectIdGenerators.PropertyGenerator.class, property = "id")
 public class Activity extends AbstractAuditablePersistable<Long> {
 
     @Column(name = "code")
@@ -25,6 +27,7 @@ public class Activity extends AbstractAuditablePersistable<Long> {
     @Column(name = "label")
     private String label;
 
+    @JsonIgnore
     @OneToMany(mappedBy="activity")
     private List<Brand> brands;
 
@@ -44,4 +47,7 @@ public class Activity extends AbstractAuditablePersistable<Long> {
         return label;
     }
 
+    public List<Brand> getBrands() {
+        return brands;
+    }
 }

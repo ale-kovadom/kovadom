@@ -18,6 +18,7 @@ import static javax.persistence.FetchType.LAZY;
 @Entity
 @Table(name = "brand")
 @EntityListeners(AuditingEntityListener.class)
+//@JsonIdentityInfo(generator = ObjectIdGenerators.PropertyGenerator.class, property = "id")
 public class Brand extends AbstractAuditablePersistable<Long> {
 
     @Column(name = "code")
@@ -55,5 +56,9 @@ public class Brand extends AbstractAuditablePersistable<Long> {
 
     public String getCatchWords() {
         return catchWords;
+    }
+
+    public Activity getActivity() {
+        return activity;
     }
 }

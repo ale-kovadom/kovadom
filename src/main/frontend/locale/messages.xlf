@@ -172,6 +172,22 @@
         <note priority="1" from="description">contact-info3 (phone)</note>
         <note priority="1" from="meaning">contact</note>
       </trans-unit>
+      <trans-unit id="21daf9f8937c389898f8edc97acc9dda64078a57" datatype="html">
+        <source>
+        No brands associated with <x id="INTERPOLATION"/>
+    </source>
+        <target/>
+        <note priority="1" from="description"> No brands for a given activity</note>
+        <note priority="1" from="meaning">brand list </note>
+      </trans-unit>
+      <trans-unit id="779dd87388e57f9ec8aede6513a2cffd4d48f7b0" datatype="html">
+        <source>
+            Discover all brands of <x id="INTERPOLATION"/>
+        </source>
+        <target/>
+        <note priority="1" from="description"> Discover all brands for a given activity</note>
+        <note priority="1" from="meaning">brand list </note>
+      </trans-unit>
     </body>
   </file>
 </xliff>

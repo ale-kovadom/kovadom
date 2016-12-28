@@ -14,44 +14,39 @@
 </div>
 
 
-<section class="container">
+<section class="brand-result container">
+    <h4 *ngIf="brands?.length == 0" i18n="brand list | No brands for a given activity">
+        No brands associated with {{activity?.label | lowercase}}
+    </h4>
 
-    <h4>D&eacutecouvrez toutes les ventes de lingerie &agrave domicile</h4>
+    <ng-container *ngIf="brands?.length > 0">
+        <h4 i18n="brand list | Discover all brands for a given activity">
+            Discover all brands of {{activity?.label | lowercase}}
+        </h4>
 
-    <!-- @TODO revoir la liste des activités en une seule row -->
-    <div class="row">
+        <div class="row">
 
-        <div *ngFor="let brand of brands" class="col-sm-6 col-md-4">
-            <div class="subway">
-                <div class="subway-photo" style="background-image: url('static/brands/{{brand.code}}.jpg');">
-                    <div class="texte">{{brand.name}}</div>
-                    <div class="texte2">{{brand.catchWords}}</div>
-                </div>
-                <div class="subway-content">
-                    <a class="btn btn-liste" href="../VDI/page entreprise slideshow2.html">J'organise ma vente</a>
+            <div *ngFor="let brand of brands" class="figure col-sm-6 col-md-4">
+                <div class="subway">
+                    <div class="subway-photo"
+                         [ngStyle]="{'background-image': 'url(static/brands/' + brand.code + '.png)'}">
+                        <div class="brand-name">{{brand.name}}</div>
+                        <div class="brand-catchworld">{{brand.catchWords}}</div>
+                    </div>
+                    <div class="subway-footer">
+                        <a class="btn red" href="../VDI/page entreprise slideshow2.html">J'organise ma vente</a>
+                    </div>
                 </div>
             </div>
+
         </div>
+    </ng-container>
 
-        <!--<div class="figure col-sm-6 col-md-4">-->
-            <!--<div class="subway">-->
-                <!--<div class="subway-photo" style="background-image: url('3.jpg');">-->
-                    <!--<div class="texte">Texte Ici</div>-->
-                    <!--<div class="texte2">Texte Ici</div>-->
-                <!--</div>-->
-                <!--<div class="subway-content">-->
-                    <!--<a class="btn btn-liste" href="../VDI/page entreprise slideshow2.html">J'organise ma vente</a>-->
-                <!--</div>-->
-            <!--</div>-->
-        <!--</div>-->
-
+    <!-- @TODO faire un composant: utilisé ailleurs -->
+    <div class="container">
+        <div class="row text-center">
+            <a class="btn btn-secondary" href="www.lemonde.fr">Voir toutes les ventes</a>
+        </div>
     </div>
 
 </section>
-
-<!-- @TODO faire un composant: utilisé ailleurs -->
-<div class="container">
-    <div class="row text-center">
-        <a class="btn btn-secondary" href="www.lemonde.fr">Voir toutes les ventes</a>
-    </div>
-</div>

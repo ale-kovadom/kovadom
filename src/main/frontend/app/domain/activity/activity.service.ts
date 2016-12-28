@@ -12,10 +12,17 @@ export class ActivityService {
     constructor(private http:Http) {
     }
 
-    getActivities():Promise<Activity[]> {
+    public getActivities():Promise<Activity[]> {
         return this.http.get(this.activitiesUrl)
             .toPromise()
             .then(response => response.json() as Activity[])
+            .catch(this.handleError);
+    }
+
+    public getActivityByCode(activityCode:String) {
+        return this.http.get(this.activitiesUrl + `?activityCode=${activityCode}`)
+            .toPromise()
+            .then(response => response.json() as Activity)
             .catch(this.handleError);
     }
 
@@ -23,5 +30,4 @@ export class ActivityService {
         console.error('An error occurred', error);
         return Promise.reject(error.message || error);
     }
-
 }

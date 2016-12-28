@@ -17,9 +17,8 @@ public class BrandController {
     private BrandRepository brandRepository;
 
     @RequestMapping(method = GET)
-    public Iterable<Brand> getActivities(@RequestParam(value = "activityCode") String activityCode) {
+    public Iterable<Brand> getBrands(@RequestParam(value = "activityCode") String activityCode) {
         return brandRepository.findByActivityCode(activityCode);
     }
-
 
 }
