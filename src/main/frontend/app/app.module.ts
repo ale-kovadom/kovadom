@@ -13,6 +13,7 @@ import {FormsModule} from '@angular/forms';
 import {BrandService} from "./domain/brand/brand.service";
 import {AllBrandsButtonComponent} from "./page/component/brands/all_brands_button/all-brands.button.component";
 import {ActivitySearchComboComponent} from "./page/component/brands/by_activity_search_combo/brand-search-by-activity.combo.component";
+import {BrandDetailComponent} from "./page/brands/detail/brand-detail.component";
 
 @NgModule({
     imports: [
@@ -28,7 +29,8 @@ import {ActivitySearchComboComponent} from "./page/component/brands/by_activity_
         AllBrandsButtonComponent,
         ActivitySearchComboComponent,
         ContactComponent,
-        BrandsComponent],
+        BrandsComponent,
+        BrandDetailComponent],
     providers: [ActivityService, BrandService],
     bootstrap: [KovadomComponent]
 })

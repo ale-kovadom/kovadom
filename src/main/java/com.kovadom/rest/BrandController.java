@@ -21,4 +21,9 @@ public class BrandController {
         return brandRepository.findByActivitiesCode(activityCode);
     }
 
+    @RequestMapping(method = GET, params = "brandCode")
+    public Brand getBrandByCode(@RequestParam(value = "brandCode") String brandCode) {
+        return brandRepository.findByCode(brandCode);
+    }
+
 }

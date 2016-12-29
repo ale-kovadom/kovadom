@@ -22,19 +22,10 @@ export class HomeComponent {
         this.activityService.getActivities().then(
             activities => {
                 this.activities = activities.sort(Activity.byLabelComparator);
-                if(this.activities.length > 0) {
+                if (this.activities.length > 0) {
                     this.selectedActivity = this.activities[0];
                 }
             });
-    }
-
-    public displayActivity() {
-        if (this.selectedActivity == undefined) {
-            return;
-        }
-
-        let link = ['/brands', this.selectedActivity.code.toLowerCase()];
-        this.router.navigate(link);
     }
 
 }

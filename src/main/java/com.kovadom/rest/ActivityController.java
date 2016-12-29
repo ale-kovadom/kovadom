@@ -22,7 +22,7 @@ public class ActivityController {
     }
 
     @RequestMapping(method = GET, params = "activityCode")
-    public Activity getActivity(@RequestParam(value = "activityCode") String code) {
+    public Activity getActivityByCode(@RequestParam(value = "activityCode") String code) {
         return activityRepository.findByCode(code);
     }
 

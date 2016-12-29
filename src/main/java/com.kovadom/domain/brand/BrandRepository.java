@@ -8,4 +8,5 @@ public interface BrandRepository extends CrudRepository<Brand, Long> {
 
     List<Brand> findByActivitiesCode(String activityCode);
 
+    Brand findByCode(String code);
 }

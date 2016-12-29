@@ -23,12 +23,12 @@ export class BrandsComponent {
     }
 
     ngOnInit():void {
-        this.route.params
-            .switchMap((params:Params) => this.activityService.getActivityByCode(params['activityCode']))
+        this.route.queryParams
+            .switchMap((params:Params) => this.activityService.getActivityByCode(params['activity']))
             .subscribe(activity => this.activity = activity);
         
-        this.route.params
-            .switchMap((params:Params) => this.brandService.getBrandsByActivityCode(params['activityCode']))
+        this.route.queryParams
+            .switchMap((params:Params) => this.brandService.getBrandsByActivityCode(params['activity']))
             .subscribe(brands => this.brands = brands);
     }
 }

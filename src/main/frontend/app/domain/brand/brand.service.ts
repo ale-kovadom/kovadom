@@ -19,9 +19,15 @@ export class BrandService {
             .catch(this.handleError);
     }
 
+    public getBrand(brandCode:String) {
+        return this.http.get(this.brandsByActivityCodeUrl + `?brandCode=${brandCode}`)
+            .toPromise()
+            .then(response => response.json() as Brand)
+            .catch(this.handleError);
+    }
+
     private handleError(error:any):Promise<any> {
         console.error('An error occurred', error);
         return Promise.reject(error.message || error);
     }
-
 }

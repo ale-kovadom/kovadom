@@ -46,8 +46,12 @@ export class ActivitySearchComboComponent {
             return;
         }
 
-        let link = ['/brands', this.selectedActivity.code.toLowerCase()];
-        this.router.navigate(link);
+        // let link = ['/brands', this.selectedActivity.code.toLowerCase()];
+        // this.router.navigate(link);
+        let navigationExtras = {
+            queryParams: {'activity': this.selectedActivity.code.toLowerCase()}
+        };
+        this.router.navigate(['/brands'], navigationExtras);
     }
 
     private selectActivity(sortedActivities:Activity[], activityCode:String) {
