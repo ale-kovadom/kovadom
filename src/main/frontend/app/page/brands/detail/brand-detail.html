@@ -1,32 +1,49 @@
-<div class="container-fluid top">
-    <div class="row">
-        <div class="container">
-            <div class="col-md-5 col-sm-5 col-xs-12"><h1>{{brand?.name}}</h1>
-                <h6>{{brand?.catchWords}}</h6>
-            </div>
-            <div class="col-md-7 col-sm-7 col-xs-12"><div><img style="margin-top: 20px;" src="./Eventhome _ vente et prestation à domicile_files/charlott.png"></div></div>
+<div class="container-fluid top-container">
+
+    <div class="row brand-row">
+        <div class="col-xs-12 col-sm-offset-1 col-sm-4 col-md-offset-1 col-md-4 brand-catchwords-wrapper">
+            <span>
+                <h1>{{brand?.name}}</h1>
+                <h4>{{brand?.catchWords}}</h4>
+            </span>
+        </div>
+        <div class="col-xs-12 col-sm-7 col-md-7 brand-logo-wrapper">
+            <img class="brand-logo" [src]="'static/brands/' + brand?.code + '/LOGO-' + brand?.code + '.png'">
         </div>
     </div>
 
 </div>
+
 <div class="main">
     <div class="container">
         <div class="row">
             <div class="col-sm-12 col-md-7 col-lg-8">
 
                 <div class="swiper-container block swiper-container-horizontal swiper-container-autoheight swiper-container-fade">
-                    <div class="swiper-wrapper" style="height: 456px; transition-duration: 0ms;"><div class="swiper-slide swiper-slide-duplicate swiper-slide-prev" data-swiper-slide-index="2" style="width: 730px; transform: translate3d(0px, 0px, 0px); opacity: 1; transition-duration: 0ms;"><img src="./Eventhome _ vente et prestation à domicile_files/3.jpg"></div>
-                        <div class="swiper-slide swiper-slide-active" data-swiper-slide-index="0" style="width: 730px; transform: translate3d(-730px, 0px, 0px); opacity: 1; transition-duration: 0ms;"><img src="./Eventhome _ vente et prestation à domicile_files/1.jpg"></div>
-                        <div class="swiper-slide swiper-slide-next" data-swiper-slide-index="1" style="width: 730px; transform: translate3d(-1460px, 0px, 0px); opacity: 0; transition-duration: 0ms;"><img src="./Eventhome _ vente et prestation à domicile_files/2.jpg"></div>
-                        <div class="swiper-slide swiper-slide-duplicate-prev" data-swiper-slide-index="2" style="width: 730px; transform: translate3d(-2190px, 0px, 0px); opacity: 0; transition-duration: 0ms;"><img src="./Eventhome _ vente et prestation à domicile_files/3.jpg"></div>
-                        <div class="swiper-slide swiper-slide-duplicate swiper-slide-duplicate-active" data-swiper-slide-index="0" style="width: 730px; transform: translate3d(-2920px, 0px, 0px); opacity: 0; transition-duration: 0ms;"><img src="./Eventhome _ vente et prestation à domicile_files/1.jpg"></div></div>
+                    <div class="swiper-wrapper" style="height: 456px; transition-duration: 0ms;">
+                        <div class="swiper-slide swiper-slide-duplicate swiper-slide-prev" data-swiper-slide-index="2"
+                             style="width: 730px; transform: translate3d(0px, 0px, 0px); opacity: 1; transition-duration: 0ms;"><img src="./Eventhome _ vente et prestation à domicile_files/3.jpg">
+                        </div>
+                        <div class="swiper-slide swiper-slide-active" data-swiper-slide-index="0" style="width: 730px; transform: translate3d(-730px, 0px, 0px); opacity: 1; transition-duration: 0ms;">
+                            <img src="./Eventhome _ vente et prestation à domicile_files/1.jpg"></div>
+                        <div class="swiper-slide swiper-slide-next" data-swiper-slide-index="1" style="width: 730px; transform: translate3d(-1460px, 0px, 0px); opacity: 0; transition-duration: 0ms;">
+                            <img src="./Eventhome _ vente et prestation à domicile_files/2.jpg"></div>
+                        <div class="swiper-slide swiper-slide-duplicate-prev" data-swiper-slide-index="2"
+                             style="width: 730px; transform: translate3d(-2190px, 0px, 0px); opacity: 0; transition-duration: 0ms;"><img src="./Eventhome _ vente et prestation à domicile_files/3.jpg">
+                        </div>
+                        <div class="swiper-slide swiper-slide-duplicate swiper-slide-duplicate-active" data-swiper-slide-index="0"
+                             style="width: 730px; transform: translate3d(-2920px, 0px, 0px); opacity: 0; transition-duration: 0ms;"><img src="./Eventhome _ vente et prestation à domicile_files/1.jpg">
+                        </div>
+                    </div>
 
 
-                    <div class="swiper-pagination swiper-pagination-white swiper-pagination-clickable swiper-pagination-bullets"><span class="swiper-pagination-bullet swiper-pagination-bullet-active"></span><span class="swiper-pagination-bullet"></span><span class="swiper-pagination-bullet"></span></div>
+                    <div class="swiper-pagination swiper-pagination-white swiper-pagination-clickable swiper-pagination-bullets"><span
+                            class="swiper-pagination-bullet swiper-pagination-bullet-active"></span><span class="swiper-pagination-bullet"></span><span class="swiper-pagination-bullet"></span></div>
 
                     <div class="swiper-button-next swiper-button-white"></div>
                     <div class="swiper-button-prev swiper-button-white"></div>
                 </div>
+
                 <div class="description block decorator content">
                     <div class="entreprise">
                         <h3>A propos de Charlott'</h3>
@@ -68,7 +85,8 @@
                                     <label for="date">Date and time</label>
                                     <div class="input-group">
                                         <div class="input-group-addon"><i class="icon-calendar"></i></div>
-                                        <input type="text" class="form-control" id="timepicker-actions" required="" pattern="^(0?[1-9]|[12][0-9]|3[01])\/(0?[1-9]|1[0-2])\/\d\d\d\d ([01]\d|2[0-3]):([0-5]\d)$" placeholder="JJ/MM/AAAA HH:MM" name="date">
+                                        <input type="text" class="form-control" id="timepicker-actions" required=""
+                                               pattern="^(0?[1-9]|[12][0-9]|3[01])\/(0?[1-9]|1[0-2])\/\d\d\d\d ([01]\d|2[0-3]):([0-5]\d)$" placeholder="JJ/MM/AAAA HH:MM" name="date">
                                     </div>
                                 </div>
                                 <div class="form-group col-sm-12">
@@ -98,7 +116,8 @@
                                     <div class="form-group col-sm-12">
                                         <div class="input-group">
                                             <div class="input-group-addon"><i class="icon-phone"></i></div>
-                                            <input type="text" class="form-control" required="" pattern="^(?:0|\(?\+33\)?\s?|0033\s?)[1-79](?:[\.\-\s]?\d\d){4}$" placeholder="Votre téléphone" name="phone">
+                                            <input type="text" class="form-control" required="" pattern="^(?:0|\(?\+33\)?\s?|0033\s?)[1-79](?:[\.\-\s]?\d\d){4}$" placeholder="Votre téléphone"
+                                                   name="phone">
                                         </div>
                                     </div>
                                     <div class="form-group col-sm-12">
@@ -127,128 +146,128 @@
 <!--<script src="./Eventhome _ vente et prestation à domicile_files/moment.min.js"></script>-->
 <!--<script src="./Eventhome _ vente et prestation à domicile_files/datepicker.min.js"></script>-->
 <!--<script type="text/javascript">-->
-    <!--$(document).ready(function(){-->
-        <!--var swiper = new Swiper('.swiper-container', {-->
-            <!--pagination: '.swiper-pagination',-->
-            <!--paginationClickable: true,-->
-            <!--nextButton: '.swiper-button-next',-->
-            <!--prevButton: '.swiper-button-prev',-->
-            <!--spaceBetween: 30,-->
-            <!--effect: 'fade',-->
-            <!--loop: true,-->
-            <!--autoHeight: true-->
-        <!--});-->
-        <!--$(function() {-->
-            <!--$('#kovadom').on('submit', function(e) {-->
-                <!--$.ajax({-->
-                    <!--dataType: 'json',-->
-                    <!--url: 'mail.php',-->
-                    <!--data: $('#kovadom').serialize(),-->
-                    <!--success: function(jsondata){-->
-                        <!--if(jsondata.status == 1)-->
-                        <!--{-->
-                            <!--$('#myModal').modal();-->
-                        <!--}-->
-                        <!--else-->
-                        <!--{-->
-                            <!--alert(jsondata);-->
-                        <!--}-->
-                    <!--}-->
-                <!--});-->
-                <!--e.preventDefault();-->
-            <!--});-->
+<!--$(document).ready(function(){-->
+<!--var swiper = new Swiper('.swiper-container', {-->
+<!--pagination: '.swiper-pagination',-->
+<!--paginationClickable: true,-->
+<!--nextButton: '.swiper-button-next',-->
+<!--prevButton: '.swiper-button-prev',-->
+<!--spaceBetween: 30,-->
+<!--effect: 'fade',-->
+<!--loop: true,-->
+<!--autoHeight: true-->
+<!--});-->
+<!--$(function() {-->
+<!--$('#kovadom').on('submit', function(e) {-->
+<!--$.ajax({-->
+<!--dataType: 'json',-->
+<!--url: 'mail.php',-->
+<!--data: $('#kovadom').serialize(),-->
+<!--success: function(jsondata){-->
+<!--if(jsondata.status == 1)-->
+<!--{-->
+<!--$('#myModal').modal();-->
+<!--}-->
+<!--else-->
+<!--{-->
+<!--alert(jsondata);-->
+<!--}-->
+<!--}-->
+<!--});-->
+<!--e.preventDefault();-->
+<!--});-->
 
-        <!--});-->
-        <!--$('#verify').click(function(e){-->
+<!--});-->
+<!--$('#verify').click(function(e){-->
 
-            <!--if ($("#moreFields").css('display') == 'none'){-->
-                <!--e.preventDefault();-->
-                <!--$("#moreFields").slideToggle();-->
-            <!--}-->
-        <!--});-->
-        <!--$('#push').click(function(e){-->
-            <!--if ($("#moreFields").css('display') == 'none'){-->
-                <!--e.preventDefault();-->
-                <!--$("#moreFields").slideToggle();-->
-            <!--}-->
-        <!--});-->
+<!--if ($("#moreFields").css('display') == 'none'){-->
+<!--e.preventDefault();-->
+<!--$("#moreFields").slideToggle();-->
+<!--}-->
+<!--});-->
+<!--$('#push').click(function(e){-->
+<!--if ($("#moreFields").css('display') == 'none'){-->
+<!--e.preventDefault();-->
+<!--$("#moreFields").slideToggle();-->
+<!--}-->
+<!--});-->
 
 <!--//http://idangero.us/swiper/demos/#.WCNnLCRWF0w-->
-        <!--$(function () {-->
-            <!--$('#date').datepicker();-->
-        <!--});-->
-    <!--});-->
+<!--$(function () {-->
+<!--$('#date').datepicker();-->
+<!--});-->
+<!--});-->
 
-    <!--// Create start date-->
-    <!--var start = new Date(),-->
-            <!--prevDay,-->
-            <!--startHours = 0;-->
+<!--// Create start date-->
+<!--var start = new Date(),-->
+<!--prevDay,-->
+<!--startHours = 0;-->
 
-    <!--// 09:00 AM-->
-    <!--start.setHours(0);-->
-    <!--start.setMinutes(0);-->
+<!--// 09:00 AM-->
+<!--start.setHours(0);-->
+<!--start.setMinutes(0);-->
 
-    <!--// If today is Saturday or Sunday set 10:00 AM-->
-    <!--if ([6, 0].indexOf(start.getDay()) != -1) {-->
-        <!--start.setHours(0);-->
-        <!--startHours = 0-->
-    <!--}-->
+<!--// If today is Saturday or Sunday set 10:00 AM-->
+<!--if ([6, 0].indexOf(start.getDay()) != -1) {-->
+<!--start.setHours(0);-->
+<!--startHours = 0-->
+<!--}-->
 
-    <!--;(function ($) { $.fn.datepicker.language['fr'] = {-->
-        <!--days: ['Dimanche', 'Lundi', 'Mardi', 'Mercredi', 'Jeudi', 'Vendredi', 'Samedi'],-->
-        <!--daysShort: ['Dim', 'Lun', 'Mar', 'Mer', 'Jeu', 'Ven', 'Sam'],-->
-        <!--daysMin: ['Di', 'Lu', 'Ma', 'Me', 'Je', 'Ve', 'Sa'],-->
-        <!--months: ['Janvier','Février','Mars','Avril','Mai','Juin', 'Juillet','Août','Septembre','Octobre','Novembre','Decembre'],-->
-        <!--monthsShort: ['Jan', 'Fév', 'Mars', 'Avr', 'Mai', 'Juin', 'Juil', 'Août', 'Sep', 'Oct', 'Nov', 'Dec'],-->
-        <!--today: "Aujourd'hui",-->
-        <!--clear: 'Effacer',-->
-        <!--dateFormat: 'dd/mm/yyyy',-->
-        <!--timeFormat: 'hh:ii',-->
-        <!--firstDay: 1-->
-    <!--}; })(jQuery);-->
+<!--;(function ($) { $.fn.datepicker.language['fr'] = {-->
+<!--days: ['Dimanche', 'Lundi', 'Mardi', 'Mercredi', 'Jeudi', 'Vendredi', 'Samedi'],-->
+<!--daysShort: ['Dim', 'Lun', 'Mar', 'Mer', 'Jeu', 'Ven', 'Sam'],-->
+<!--daysMin: ['Di', 'Lu', 'Ma', 'Me', 'Je', 'Ve', 'Sa'],-->
+<!--months: ['Janvier','Février','Mars','Avril','Mai','Juin', 'Juillet','Août','Septembre','Octobre','Novembre','Decembre'],-->
+<!--monthsShort: ['Jan', 'Fév', 'Mars', 'Avr', 'Mai', 'Juin', 'Juil', 'Août', 'Sep', 'Oct', 'Nov', 'Dec'],-->
+<!--today: "Aujourd'hui",-->
+<!--clear: 'Effacer',-->
+<!--dateFormat: 'dd/mm/yyyy',-->
+<!--timeFormat: 'hh:ii',-->
+<!--firstDay: 1-->
+<!--}; })(jQuery);-->
 
-    <!--$('#timepicker-actions').datepicker({-->
-        <!--timepicker: true,-->
-        <!--language: 'fr',-->
-        <!--startDate: start,-->
-        <!--minHours: startHours,-->
-        <!--maxHours: 24,-->
-        <!--onSelect: function (fd, d, picker) {-->
-            <!--// Do nothing if selection was cleared-->
-            <!--if (!d) return;-->
+<!--$('#timepicker-actions').datepicker({-->
+<!--timepicker: true,-->
+<!--language: 'fr',-->
+<!--startDate: start,-->
+<!--minHours: startHours,-->
+<!--maxHours: 24,-->
+<!--onSelect: function (fd, d, picker) {-->
+<!--// Do nothing if selection was cleared-->
+<!--if (!d) return;-->
 
-            <!--var day = d.getDay();-->
+<!--var day = d.getDay();-->
 
-            <!--// Trigger only if date is changed-->
-            <!--if (prevDay != undefined && prevDay == day) return;-->
-            <!--prevDay = day;-->
+<!--// Trigger only if date is changed-->
+<!--if (prevDay != undefined && prevDay == day) return;-->
+<!--prevDay = day;-->
 
-            <!--// If chosen day is Saturday or Sunday when set-->
-            <!--// hour value for weekends, else restore defaults-->
-            <!--if (day == 6 || day == 0) {-->
-                <!--picker.update({-->
-                    <!--minHours: 0,-->
-                    <!--maxHours: 24-->
-                <!--})-->
-            <!--} else {-->
-                <!--picker.update({-->
-                    <!--minHours: 0,-->
-                    <!--maxHours: 24-->
-                <!--})-->
-            <!--}-->
-        <!--}-->
-    <!--})-->
+<!--// If chosen day is Saturday or Sunday when set-->
+<!--// hour value for weekends, else restore defaults-->
+<!--if (day == 6 || day == 0) {-->
+<!--picker.update({-->
+<!--minHours: 0,-->
+<!--maxHours: 24-->
+<!--})-->
+<!--} else {-->
+<!--picker.update({-->
+<!--minHours: 0,-->
+<!--maxHours: 24-->
+<!--})-->
+<!--}-->
+<!--}-->
+<!--})-->
 <!--</script><div class="datepickers-container" id="datepickers-container"><div class="datepicker -bottom-left- -from-bottom-"><i class="datepicker&#45;&#45;pointer"></i><nav class="datepicker&#45;&#45;nav"><div class="datepicker&#45;&#45;nav-action" data-action="prev"><svg><path d="M 17,12 l -5,5 l 5,5"></path></svg></div><div class="datepicker&#45;&#45;nav-title">Decembre, <i>2016</i></div><div class="datepicker&#45;&#45;nav-action" data-action="next"><svg><path d="M 14,12 l 5,5 l -5,5"></path></svg></div></nav><div class="datepicker&#45;&#45;content"><div class="datepicker&#45;&#45;days datepicker&#45;&#45;body active"><div class="datepicker&#45;&#45;days-names"><div class="datepicker&#45;&#45;day-name">Lu</div><div class="datepicker&#45;&#45;day-name">Ma</div><div class="datepicker&#45;&#45;day-name">Me</div><div class="datepicker&#45;&#45;day-name">Je</div><div class="datepicker&#45;&#45;day-name">Ve</div><div class="datepicker&#45;&#45;day-name -weekend-">Sa</div><div class="datepicker&#45;&#45;day-name -weekend-">Di</div></div><div class="datepicker&#45;&#45;cells datepicker&#45;&#45;cells-days"><div class="datepicker&#45;&#45;cell datepicker&#45;&#45;cell-day -other-month-" data-date="28" data-month="10" data-year="2016">28</div><div class="datepicker&#45;&#45;cell datepicker&#45;&#45;cell-day -other-month-" data-date="29" data-month="10" data-year="2016">29</div><div class="datepicker&#45;&#45;cell datepicker&#45;&#45;cell-day -other-month-" data-date="30" data-month="10" data-year="2016">30</div><div class="datepicker&#45;&#45;cell datepicker&#45;&#45;cell-day" data-date="1" data-month="11" data-year="2016">1</div><div class="datepicker&#45;&#45;cell datepicker&#45;&#45;cell-day" data-date="2" data-month="11" data-year="2016">2</div><div class="datepicker&#45;&#45;cell datepicker&#45;&#45;cell-day -weekend-" data-date="3" data-month="11" data-year="2016">3</div><div class="datepicker&#45;&#45;cell datepicker&#45;&#45;cell-day -weekend-" data-date="4" data-month="11" data-year="2016">4</div><div class="datepicker&#45;&#45;cell datepicker&#45;&#45;cell-day" data-date="5" data-month="11" data-year="2016">5</div><div class="datepicker&#45;&#45;cell datepicker&#45;&#45;cell-day" data-date="6" data-month="11" data-year="2016">6</div><div class="datepicker&#45;&#45;cell datepicker&#45;&#45;cell-day" data-date="7" data-month="11" data-year="2016">7</div><div class="datepicker&#45;&#45;cell datepicker&#45;&#45;cell-day" data-date="8" data-month="11" data-year="2016">8</div><div class="datepicker&#45;&#45;cell datepicker&#45;&#45;cell-day" data-date="9" data-month="11" data-year="2016">9</div><div class="datepicker&#45;&#45;cell datepicker&#45;&#45;cell-day -weekend-" data-date="10" data-month="11" data-year="2016">10</div><div class="datepicker&#45;&#45;cell datepicker&#45;&#45;cell-day -weekend-" data-date="11" data-month="11" data-year="2016">11</div><div class="datepicker&#45;&#45;cell datepicker&#45;&#45;cell-day" data-date="12" data-month="11" data-year="2016">12</div><div class="datepicker&#45;&#45;cell datepicker&#45;&#45;cell-day" data-date="13" data-month="11" data-year="2016">13</div><div class="datepicker&#45;&#45;cell datepicker&#45;&#45;cell-day" data-date="14" data-month="11" data-year="2016">14</div><div class="datepicker&#45;&#45;cell datepicker&#45;&#45;cell-day" data-date="15" data-month="11" data-year="2016">15</div><div class="datepicker&#45;&#45;cell datepicker&#45;&#45;cell-day" data-date="16" data-month="11" data-year="2016">16</div><div class="datepicker&#45;&#45;cell datepicker&#45;&#45;cell-day -weekend-" data-date="17" data-month="11" data-year="2016">17</div><div class="datepicker&#45;&#45;cell datepicker&#45;&#45;cell-day -weekend-" data-date="18" data-month="11" data-year="2016">18</div><div class="datepicker&#45;&#45;cell datepicker&#45;&#45;cell-day" data-date="19" data-month="11" data-year="2016">19</div><div class="datepicker&#45;&#45;cell datepicker&#45;&#45;cell-day" data-date="20" data-month="11" data-year="2016">20</div><div class="datepicker&#45;&#45;cell datepicker&#45;&#45;cell-day" data-date="21" data-month="11" data-year="2016">21</div><div class="datepicker&#45;&#45;cell datepicker&#45;&#45;cell-day" data-date="22" data-month="11" data-year="2016">22</div><div class="datepicker&#45;&#45;cell datepicker&#45;&#45;cell-day" data-date="23" data-month="11" data-year="2016">23</div><div class="datepicker&#45;&#45;cell datepicker&#45;&#45;cell-day -weekend-" data-date="24" data-month="11" data-year="2016">24</div><div class="datepicker&#45;&#45;cell datepicker&#45;&#45;cell-day -weekend-" data-date="25" data-month="11" data-year="2016">25</div><div class="datepicker&#45;&#45;cell datepicker&#45;&#45;cell-day" data-date="26" data-month="11" data-year="2016">26</div><div class="datepicker&#45;&#45;cell datepicker&#45;&#45;cell-day" data-date="27" data-month="11" data-year="2016">27</div><div class="datepicker&#45;&#45;cell datepicker&#45;&#45;cell-day" data-date="28" data-month="11" data-year="2016">28</div><div class="datepicker&#45;&#45;cell datepicker&#45;&#45;cell-day -current-" data-date="29" data-month="11" data-year="2016">29</div><div class="datepicker&#45;&#45;cell datepicker&#45;&#45;cell-day" data-date="30" data-month="11" data-year="2016">30</div><div class="datepicker&#45;&#45;cell datepicker&#45;&#45;cell-day -weekend-" data-date="31" data-month="11" data-year="2016">31</div><div class="datepicker&#45;&#45;cell datepicker&#45;&#45;cell-day -weekend- -other-month-" data-date="1" data-month="0" data-year="2017">1</div></div></div></div><div class="datepicker&#45;&#45;time"><div class="datepicker&#45;&#45;time-current">   <span class="datepicker&#45;&#45;time-current-hours">00</span>   <span class="datepicker&#45;&#45;time-current-colon">:</span>   <span class="datepicker&#45;&#45;time-current-minutes">00</span></div><div class="datepicker&#45;&#45;time-sliders">   <div class="datepicker&#45;&#45;time-row">      <input type="range" name="hours" value="0" min="0" max="23" step="1">   </div>   <div class="datepicker&#45;&#45;time-row">      <input type="range" name="minutes" value="00" min="0" max="59" step="1">   </div></div></div></div></div>-->
 <!--<div class="modal fade" id="myModal" tabindex="-1" role="dialog">-->
-    <!--<div class="modal-dialog" role="document">-->
-        <!--<div class="modal-content">-->
+<!--<div class="modal-dialog" role="document">-->
+<!--<div class="modal-content">-->
 
-            <!--<div class="modal-body">-->
-                <!--<p>Votre demande a bien été prise en compte.</p>-->
-                <!--<p><button type="button" class="btn btn-default" data-dismiss="modal">Fermer</button></p>-->
-            <!--</div>-->
-        <!--</div>-->
-    <!--</div>-->
+<!--<div class="modal-body">-->
+<!--<p>Votre demande a bien été prise en compte.</p>-->
+<!--<p><button type="button" class="btn btn-default" data-dismiss="modal">Fermer</button></p>-->
+<!--</div>-->
+<!--</div>-->
+<!--</div>-->
 <!--</div>-->
 <!--<link rel="stylesheet" type="text/css" href="./Eventhome _ vente et prestation à domicile_files/datepicker.min.css">-->
 
