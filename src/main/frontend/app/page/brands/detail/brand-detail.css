@@ -39,3 +39,7 @@
 }
 
 /*** Image slider ***/
+
+:host >>> .swiper-container {
+    height:456px;
+}

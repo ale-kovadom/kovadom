@@ -8,8 +8,6 @@ import {Activity} from "../../../domain/activity/activity";
 })
 export class ActivityComponent implements OnChanges {
 
-    private static NUMBER_COLS:Number = 3;
-
     @Input() public activities:Activity[];
 
     @Input() public max:number;

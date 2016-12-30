@@ -15,6 +15,10 @@ var i18nLocales = {
 };
 var i18nOutputDir = "./locale";
 
+var nodeDependenciesDir = {
+    swiperInstallationDir:  "./node_modules/"
+};
+
 // helper function for running ngc and tree shaking tasks
 const run_proc = (cmd, callBack, options) => {
     // if (!isProd) return;
@@ -28,7 +32,7 @@ const run_proc = (cmd, callBack, options) => {
     });
 };
 
-gulp.task('copy-js-to-aot', cb => {
+gulp.task('copy-app-to-aot', cb => {
     return gulp
         .src("app/**")
         .pipe(gulpCopy("aot", {}));
@@ -44,7 +48,7 @@ gulp.task('i18n', cb => {
 
 gulp.task('i18n-move-to-locale-dir', cb => {
     gulp.src(i18nOutputFile)
-    .pipe(gulp.dest(i18nOutputDir));
+        .pipe(gulp.dest(i18nOutputDir));
     return del([i18nOutputFile]);
 });
 
@@ -65,4 +69,4 @@ gulp.task('rollup', cb => {
 });
 
 
-gulp.task('default', gulp.series(['copy-js-to-aot', 'i18n', 'i18n-move-to-locale-dir', 'ngc', 'rollup']));
+gulp.task('default', gulp.series(['copy-app-to-aot', 'i18n', 'i18n-move-to-locale-dir', 'ngc', 'rollup']));

@@ -14,6 +14,7 @@ import {BrandService} from "./domain/brand/brand.service";
 import {AllBrandsButtonComponent} from "./page/component/brands/all_brands_button/all-brands.button.component";
 import {ActivitySearchComboComponent} from "./page/component/brands/by_activity_search_combo/brand-search-by-activity.combo.component";
 import {BrandDetailComponent} from "./page/brands/detail/brand-detail.component";
+import {KSSwiperContainer} from "./page/component/ui/swiper/ui.swiper.component";
 
 @NgModule({
     imports: [
@@ -28,6 +29,7 @@ import {BrandDetailComponent} from "./page/brands/detail/brand-detail.component"
         ActivityComponent,
         AllBrandsButtonComponent,
         ActivitySearchComboComponent,
+        KSSwiperContainer,
         ContactComponent,
         BrandsComponent,
         BrandDetailComponent],

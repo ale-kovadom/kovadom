@@ -22,9 +22,9 @@ export class ActivitySearchComboComponent {
     ngOnInit():void {
         let activityCode:String;
 
-        this.route.params
+        this.route.queryParams
             .switchMap((params:Params) => {
-                    activityCode = params['activityCode'];
+                    activityCode = params['activity'];
                     if (activityCode) {
                         activityCode = activityCode.toUpperCase();
                     }

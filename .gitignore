@@ -9,7 +9,8 @@ build
 src/main/frontend/aot
 src/main/frontend/node_modules
 src/main/frontend/typings
-src/main/webapp/js
 src/main/frontend/dist
+src/main/webapp/js/generated
+src/main/webapp/css/generated
 static
 kovadom.properties

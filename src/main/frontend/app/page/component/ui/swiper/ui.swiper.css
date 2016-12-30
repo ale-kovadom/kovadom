@@ -1,0 +1,13 @@
+.swiper-slide img
+{
+    height: 100%;
+}
+
+/* Avoid non-active slides to be displayed (bug ?) */
+.swiper-slide:not(.swiper-slide-active) {
+    opacity: 0 !important;
+}
+
+.swiper-slide {
+    text-align: center;
+}

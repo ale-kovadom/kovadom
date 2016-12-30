@@ -8,7 +8,9 @@
             </span>
         </div>
         <div class="col-xs-12 col-sm-7 col-md-7 brand-logo-wrapper">
-            <img class="brand-logo" [src]="'static/brands/' + brand?.code + '/LOGO-' + brand?.code + '.png'">
+            <ng-container *ngIf="brand">
+                <img class="brand-logo" [src]="'static/brands/' + brand.code + '/LOGO-' + brand.code + '.png'">
+            </ng-container>
         </div>
     </div>
 
@@ -19,30 +21,12 @@
         <div class="row">
             <div class="col-sm-12 col-md-7 col-lg-8">
 
-                <div class="swiper-container block swiper-container-horizontal swiper-container-autoheight swiper-container-fade">
-                    <div class="swiper-wrapper" style="height: 456px; transition-duration: 0ms;">
-                        <div class="swiper-slide swiper-slide-duplicate swiper-slide-prev" data-swiper-slide-index="2"
-                             style="width: 730px; transform: translate3d(0px, 0px, 0px); opacity: 1; transition-duration: 0ms;"><img src="./Eventhome _ vente et prestation à domicile_files/3.jpg">
-                        </div>
-                        <div class="swiper-slide swiper-slide-active" data-swiper-slide-index="0" style="width: 730px; transform: translate3d(-730px, 0px, 0px); opacity: 1; transition-duration: 0ms;">
-                            <img src="./Eventhome _ vente et prestation à domicile_files/1.jpg"></div>
-                        <div class="swiper-slide swiper-slide-next" data-swiper-slide-index="1" style="width: 730px; transform: translate3d(-1460px, 0px, 0px); opacity: 0; transition-duration: 0ms;">
-                            <img src="./Eventhome _ vente et prestation à domicile_files/2.jpg"></div>
-                        <div class="swiper-slide swiper-slide-duplicate-prev" data-swiper-slide-index="2"
-                             style="width: 730px; transform: translate3d(-2190px, 0px, 0px); opacity: 0; transition-duration: 0ms;"><img src="./Eventhome _ vente et prestation à domicile_files/3.jpg">
-                        </div>
-                        <div class="swiper-slide swiper-slide-duplicate swiper-slide-duplicate-active" data-swiper-slide-index="0"
-                             style="width: 730px; transform: translate3d(-2920px, 0px, 0px); opacity: 0; transition-duration: 0ms;"><img src="./Eventhome _ vente et prestation à domicile_files/1.jpg">
-                        </div>
+                <ng-container *ngIf="slides.length > 0">
+                    <div class="myslides">
+                        <ks-swiper-container [options]="swiperOption" [slides]="slides">
+                        </ks-swiper-container>
                     </div>
-
-
-                    <div class="swiper-pagination swiper-pagination-white swiper-pagination-clickable swiper-pagination-bullets"><span
-                            class="swiper-pagination-bullet swiper-pagination-bullet-active"></span><span class="swiper-pagination-bullet"></span><span class="swiper-pagination-bullet"></span></div>
-
-                    <div class="swiper-button-next swiper-button-white"></div>
-                    <div class="swiper-button-prev swiper-button-white"></div>
-                </div>
+                </ng-container>
 
                 <div class="description block decorator content">
                     <div class="entreprise">
