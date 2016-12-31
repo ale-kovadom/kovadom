@@ -194,6 +194,18 @@
         <note priority="1" from="description"> Organise a sale</note>
         <note priority="1" from="meaning">brand list </note>
       </trans-unit>
+      <trans-unit id="89f5a1f775bf8943a86b8c9ba9b649bca00c40aa" datatype="html">
+        <source>About <x id="INTERPOLATION"/></source>
+        <target/>
+        <note priority="1" from="description"> company description</note>
+        <note priority="1" from="meaning">brand-detail </note>
+      </trans-unit>
+      <trans-unit id="9586fd9bee4f6a74ba3b0d5d2a02da3fe3660a26" datatype="html">
+        <source>The sale process</source>
+        <target/>
+        <note priority="1" from="description"> sale process</note>
+        <note priority="1" from="meaning">brand-detail </note>
+      </trans-unit>
     </body>
   </file>
 </xliff>

@@ -1,9 +1,10 @@
 export class Brand {
 
-    constructor(public id:Number,
-                public code:String,
+    constructor(public code:String,
                 public name:String,
-                public catchWords:String) {
+                public catchWords:String,
+                public description:String,
+                public saleProcess:String) {
     }
 
 }

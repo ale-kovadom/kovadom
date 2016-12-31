@@ -23,14 +23,17 @@ public class Brand extends AbstractAuditablePersistable<Long> {
     @Column(name = "code")
     private String code;
 
-    @Column(name = "description")
-    private String description;
-
     @Column(name = "name")
     private String name;
 
     @Column(name = "catch_words")
     private String catchWords;
+
+    @Column(name = "description")
+    private String description;
+
+    @Column(name = "sale_process")
+    private String saleProcess;
 
     @JsonIgnore
     @ManyToMany(cascade = CascadeType.ALL)
@@ -47,10 +50,6 @@ public class Brand extends AbstractAuditablePersistable<Long> {
         return code;
     }
 
-    public String getDescription() {
-        return description;
-    }
-
     public String getName() {
         return name;
     }
@@ -61,5 +60,13 @@ public class Brand extends AbstractAuditablePersistable<Long> {
 
     public List<Activity> getActivities() {
         return activities;
+    }
+
+    public String getDescription() {
+        return description;
+    }
+
+    public String getSaleProcess() {
+        return saleProcess;
     }
 }

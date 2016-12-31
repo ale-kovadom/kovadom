@@ -20,9 +20,6 @@ public class Activity extends AbstractAuditablePersistable<Long> {
     @Column(name = "code")
     private String code;
 
-    @Column(name = "description")
-    private String description;
-
     @Column(name = "label")
     private String label;
 
@@ -36,10 +33,6 @@ public class Activity extends AbstractAuditablePersistable<Long> {
 
     public String getCode() {
         return code;
-    }
-
-    public String getDescription() {
-        return description;
     }
 
     public String getLabel() {

@@ -18,12 +18,12 @@ export class BrandDetailComponent {
 
     public slides:Array<String> = [];
 
-    swiperOption:any;
+    swiperOptions:any;
 
     constructor(private route:ActivatedRoute,
                 private brandService:BrandService) {
 
-        this.swiperOption = {
+        this.swiperOptions = {
             pagination: '.swiper-pagination',
             paginationClickable: true,
             nextButton: '.swiper-button-next',

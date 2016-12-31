@@ -11,7 +11,7 @@ export class Activity {
     };
 
 
-    constructor(public id:Number, public code:String, public label:String) {
+    constructor(public code:String, public label:String) {
     }
 
 }
