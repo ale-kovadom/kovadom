@@ -218,6 +218,12 @@
            <note priority="1" from="description"> Form with user&apos;s info - sub-header</note>
            <note priority="1" from="meaning">book a sale form </note>
         </trans-unit>
+        <trans-unit id="99c0cebd7ad25fe825f2a918d4e4a2cf55092f92" datatype="html">
+           <source>Date and time</source>
+           <target>Date et heure</target>
+           <note priority="1" from="description"> Date time for the sale</note>
+           <note priority="1" from="meaning">book a sale form </note>
+        </trans-unit>
         <trans-unit id="7de557f21d8dcc009b82694a1b85f3573fe54259" datatype="html">
            <source>City</source>
            <target>Ville</target>

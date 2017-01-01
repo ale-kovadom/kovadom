@@ -3,18 +3,18 @@ body {
     background-color: #f1f1f1;
 }
 
-span {
+span.kov {
     display: inline-block;
     position: relative;
     vertical-align: middle;
 }
 
-span:before, span:after {
+span.kov:before , span.kov:after {
     content: "";
     position: absolute;
 }
 
-span:after {
+span.kov:after {
     color: white;
     font-size: inherit;
     padding: 0.5em;

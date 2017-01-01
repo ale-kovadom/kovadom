@@ -16,6 +16,7 @@ import {ActivitySearchComponent} from "./page/component/brands/by_activity_searc
 import {BrandDetailComponent} from "./page/brands/detail/brand-detail.component";
 import {KSSwiperContainer} from "./page/component/ui/swiper/ui.swiper.component";
 import {CalendarModule} from "primeng/components/calendar/calendar";
+import {CalendarComponent} from "./page/component/ui/calendar/ui.calendar.component";
 
 @NgModule({
     imports: [
@@ -32,6 +33,7 @@ import {CalendarModule} from "primeng/components/calendar/calendar";
         AllBrandsButtonComponent,
         ActivitySearchComponent,
         KSSwiperContainer,
+        CalendarComponent,
         ContactComponent,
         BrandsComponent,
         BrandDetailComponent],

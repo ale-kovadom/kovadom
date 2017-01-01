@@ -203,7 +203,7 @@
                             <goal>copy-resources</goal>
                         </goals>
                         <configuration>
-                            <outputDirectory>${project.basedir}/src/main/webapp/js/generated</outputDirectory>
+                            <outputDirectory>${project.basedir}/src/main/webapp/resources/generated</outputDirectory>
                             <resources>
                                 <resource>
                                     <directory>src/main/frontend/node_modules</directory>
@@ -211,32 +211,57 @@
                                         <include>zone.js/dist/zone.min.js</include>
                                         <include>core-js/client/shim.min.js</include>
                                         <include>swiper/dist/js/swiper.min.js</include>
-                                    </includes>
-                                </resource>
-                            </resources>
-                        </configuration>
-                    </execution>
-                    <execution>
-                        <id>copy-css-resources</id>
-                        <phase>generate-resources</phase>
-                        <goals>
-                            <goal>copy-resources</goal>
-                        </goals>
-                        <configuration>
-                            <outputDirectory>${project.basedir}/src/main/webapp/css/generated</outputDirectory>
-                            <resources>
-                                <resource>
-                                    <directory>src/main/frontend/node_modules</directory>
-                                    <includes>
                                         <include>swiper/dist/css/swiper.min.css</include>
+                                        <include>primeng/resources/primeng.min.css</include>
                                         <include>primeng/resources/themes/omega/**</include>
                                         <include>font-awesome/css/font-awesome.min.css</include>
-                                        <include>font-awesome/fonts</include>
+                                        <include>font-awesome/fonts/**</include>
                                     </includes>
                                 </resource>
                             </resources>
                         </configuration>
                     </execution>
+                    <!--<execution>-->
+                        <!--<id>copy-js-resources</id>-->
+                        <!--<phase>generate-resources</phase>-->
+                        <!--<goals>-->
+                            <!--<goal>copy-resources</goal>-->
+                        <!--</goals>-->
+                        <!--<configuration>-->
+                            <!--<outputDirectory>${project.basedir}/src/main/webapp/js/generated</outputDirectory>-->
+                            <!--<resources>-->
+                                <!--<resource>-->
+                                    <!--<directory>src/main/frontend/node_modules</directory>-->
+                                    <!--<includes>-->
+                                        <!--<include>zone.js/dist/zone.min.js</include>-->
+                                        <!--<include>core-js/client/shim.min.js</include>-->
+                                        <!--<include>swiper/dist/js/swiper.min.js</include>-->
+                                    <!--</includes>-->
+                                <!--</resource>-->
+                            <!--</resources>-->
+                        <!--</configuration>-->
+                    <!--</execution>-->
+                    <!--<execution>-->
+                        <!--<id>copy-css-resources</id>-->
+                        <!--<phase>generate-resources</phase>-->
+                        <!--<goals>-->
+                            <!--<goal>copy-resources</goal>-->
+                        <!--</goals>-->
+                        <!--<configuration>-->
+                            <!--<outputDirectory>${project.basedir}/src/main/webapp/css/generated</outputDirectory>-->
+                            <!--<resources>-->
+                                <!--<resource>-->
+                                    <!--<directory>src/main/frontend/node_modules</directory>-->
+                                    <!--<includes>-->
+                                        <!--<include>swiper/dist/css/swiper.min.css</include>-->
+                                        <!--<include>primeng/resources/themes/omega/**</include>-->
+                                        <!--<include>font-awesome/css/font-awesome.min.css</include>-->
+                                        <!--<include>font-awesome/fonts</include>-->
+                                    <!--</includes>-->
+                                <!--</resource>-->
+                            <!--</resources>-->
+                        <!--</configuration>-->
+                    <!--</execution>-->
                     <execution>
                         <id>copy-app.js</id>
                         <phase>generate-resources</phase>
@@ -244,7 +269,7 @@
                             <goal>copy-resources</goal>
                         </goals>
                         <configuration>
-                            <outputDirectory>${project.basedir}/src/main/webapp/js/generated/app</outputDirectory>
+                            <outputDirectory>${project.basedir}/src/main/webapp/resources/generated/kovadom</outputDirectory>
                             <resources>
                                 <resource>
                                     <directory>src/main/frontend/dist</directory>

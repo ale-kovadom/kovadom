@@ -12,7 +12,7 @@
 }
 
 .brand-name {
-    font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
 }
 
 /* Center vertically the containing logo */
@@ -48,10 +48,12 @@
     background-color: rgba(255, 255, 255, 0.4);
 }
 
+/* @formatter:off */
 :host >>> .swiper-container {
     height: 460px;
     margin-top: 40px;
 }
+/* @formatter:on */
 
 /*** Company infos ***/
 
@@ -66,7 +68,7 @@
     margin-bottom: 30px;
 }
 
-.brand-about h3{
+.brand-about h3 {
     margin-top: 0;
 }
 
@@ -76,15 +78,13 @@
 
 /*** Sale book ***/
 
-.book-form
-{
+.book-form-container {
     border-radius: 5px;
     margin-top: 40px;
     background-color: #ffffff;
 }
 
-.book-form-header
-{
+.book-form-header {
     background-color: #33405c;
     margin-bottom: 15px;
     padding: 15px 20px;
@@ -92,15 +92,22 @@
     border-top-right-radius: 5px;
 }
 
-.book-form-header h2
-{
+#book-sale-form {
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.book-form-header h2 {
     color: #ff5449;
     margin-top: 10px;
 }
 
-.book-form-header h5
-{
+.book-form-header h5 {
     color: #ffffff;
+}
+
+#sale-date {
+    display: block;
 }
 
 
