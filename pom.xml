@@ -229,6 +229,9 @@
                                     <directory>src/main/frontend/node_modules</directory>
                                     <includes>
                                         <include>swiper/dist/css/swiper.min.css</include>
+                                        <include>primeng/resources/themes/omega/**</include>
+                                        <include>font-awesome/css/font-awesome.min.css</include>
+                                        <include>font-awesome/fonts</include>
                                     </includes>
                                 </resource>
                             </resources>

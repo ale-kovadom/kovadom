@@ -20,6 +20,8 @@ export class BrandDetailComponent {
 
     public sale: Sale = new Sale("", "");
 
+    public date: Date;
+
     constructor(private route: ActivatedRoute,
                 private brandService: BrandService) {
 

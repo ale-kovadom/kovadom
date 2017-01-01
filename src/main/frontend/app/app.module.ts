@@ -15,13 +15,15 @@ import {AllBrandsButtonComponent} from "./page/component/brands/all_brands_butto
 import {ActivitySearchComponent} from "./page/component/brands/by_activity_search/brand-search-by-activity.component";
 import {BrandDetailComponent} from "./page/brands/detail/brand-detail.component";
 import {KSSwiperContainer} from "./page/component/ui/swiper/ui.swiper.component";
+import {CalendarModule} from "primeng/components/calendar/calendar";
 
 @NgModule({
     imports: [
         BrowserModule,
         HttpModule,
         AppRoutingModule,
-        FormsModule
+        FormsModule,
+        CalendarModule
     ],
     declarations: [
         KovadomComponent,
