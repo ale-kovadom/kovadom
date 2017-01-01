@@ -42,67 +42,66 @@
             </div>
 
             <div class="col-sm-12 col-md-5 col-lg-4">
-                <div class="reservation block decorator">
-                    <div class="participation">
-                        <div class="titre">
-                            <h2>Réserver en ligne</h2>
-                            <h6>Gratuit et sans engagement</h6>
-                        </div>
-                        <form id="kovadom">
-                            <div class="row">
-                                <div class="form-group col-sm-12">
-                                    <label for="date">Date and time</label>
-                                    <div class="input-group">
-                                        <div class="input-group-addon"><i class="icon-calendar"></i></div>
-                                        <input type="text" class="form-control" id="timepicker-actions" required=""
-                                               pattern="^(0?[1-9]|[12][0-9]|3[01])\/(0?[1-9]|1[0-2])\/\d\d\d\d ([01]\d|2[0-3]):([0-5]\d)$" placeholder="JJ/MM/AAAA HH:MM" name="date">
-                                    </div>
-                                </div>
-                                <div class="form-group col-sm-12">
-                                    <label for="ville">Ville</label>
-                                    <input type="text" class="form-control" required="" placeholder="Lieu de la réunion" name="city">
-                                </div>
-                                <div class="form-group col-sm-12">
-                                    <label for="participants">Nombre de participants</label>
-                                    <input type="text" class="form-control" required="" placeholder="&gt;4" name="participants">
-                                </div>
-                                <div id="moreFields" style="display:none;">
-                                    <div class="form-group col-xs-12 col-sm-6 col-md-12 col-lg-6">
-                                        <label for="date">Nom</label>
-                                        <input type="text" class="form-control" required="" placeholder="Votre nom" name="name">
-                                    </div>
-                                    <div class="form-group col-xs-12 col-sm-6 col-md-12 col-lg-6">
-                                        <label for="ville">Prénom</label>
-                                        <input type="text" class="form-control" required="" placeholder="Votre prénom" name="lastname">
-                                    </div>
-                                    <div class="form-group col-sm-12">
-
-                                        <div class="input-group">
-                                            <div class="input-group-addon"><i class="icon-mail"></i></div>
-                                            <input type="text" class="form-control" required="" pattern="^[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,10}$" placeholder="Votre E-mail" name="mail">
-                                        </div>
-                                    </div>
-                                    <div class="form-group col-sm-12">
-                                        <div class="input-group">
-                                            <div class="input-group-addon"><i class="icon-phone"></i></div>
-                                            <input type="text" class="form-control" required="" pattern="^(?:0|\(?\+33\)?\s?|0033\s?)[1-79](?:[\.\-\s]?\d\d){4}$" placeholder="Votre téléphone"
-                                                   name="phone">
-                                        </div>
-                                    </div>
-                                    <div class="form-group col-sm-12">
-                                        <textarea placeholder="Des questions, des informations à transmettre" class="form-control" id="exampleTextarea" name="commentary" rows="3"></textarea>
-                                        <input type="hidden" name="url" value="/new/">
-                                    </div>
-                                </div>
-                                <div class="form-group col-xl-8 col-lg-12 col-md-12 col-sm-6 col-xs-12">
-                                    <button type="submit" id="verify" class="btn btn-verify subm">Vérifier disponibilité</button>
-                                </div>
-                                <div class="form-group col-xl-4 col-lg-12 col-md-12 col-sm-6 col-xs-12">
-                                    <button type="submit" id="push" class="btn btn-submit subm">Submit</button>
+                <div class="book-form">
+                    <div class="book-form-header">
+                        <h2 i18n="book a sale form | Form with user's info - header">Book online</h2>
+                        <h5 i18n="book a sale form | Form with user's info - sub-header">Free, no commitment</h5>
+                    </div>
+                    <form id="kovadom">
+                        <div class="row">
+                            <div class="form-group col-sm-12">
+                                <label for="date">Date and time</label>
+                                <div class="input-group">
+                                    <div class="input-group-addon"><i class="icon-calendar"></i></div>
+                                    <input type="text" class="form-control" id="timepicker-actions" required=""
+                                           pattern="^(0?[1-9]|[12][0-9]|3[01])\/(0?[1-9]|1[0-2])\/\d\d\d\d ([01]\d|2[0-3]):([0-5]\d)$" placeholder="JJ/MM/AAAA HH:MM" name="date">
                                 </div>
                             </div>
-                        </form>
-                    </div>
+                            <div class="form-group col-sm-12">
+                                <label for="city" i18n="book a sale form | City">City</label>
+                                <input type="text" placeholder="Meeting place" i18n-placeholder="book a sale form | city placeholder" class="form-control" id="city" [(ngModel)]="sale.city" name="city" required>
+                            </div>
+                            <div class="form-group col-sm-12">
+                                <label for="stakeholders" i18n="book a sale form | stakeholders count">Number of stakeholders</label>
+                                <input type="number" min="3" max="100" class="form-control" placeholder="10"
+                                       id="stakeholders"  name="stakeholders" [(ngModel)]="sale.stakeholderCount" required>
+                            </div>
+                            <div id="moreFields" style="display:none;">
+                                <div class="form-group col-xs-12 col-sm-6 col-md-12 col-lg-6">
+                                    <label for="date">Nom</label>
+                                    <input type="text" class="form-control" required="" placeholder="Votre nom" name="name">
+                                </div>
+                                <div class="form-group col-xs-12 col-sm-6 col-md-12 col-lg-6">
+                                    <label for="ville">Prénom</label>
+                                    <input type="text" class="form-control" required="" placeholder="Votre prénom" name="lastname">
+                                </div>
+                                <div class="form-group col-sm-12">
+
+                                    <div class="input-group">
+                                        <div class="input-group-addon"><i class="icon-mail"></i></div>
+                                        <input type="text" class="form-control" required="" pattern="^[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,10}$" placeholder="Votre E-mail" name="mail">
+                                    </div>
+                                </div>
+                                <div class="form-group col-sm-12">
+                                    <div class="input-group">
+                                        <div class="input-group-addon"><i class="icon-phone"></i></div>
+                                        <input type="text" class="form-control" required="" pattern="^(?:0|\(?\+33\)?\s?|0033\s?)[1-79](?:[\.\-\s]?\d\d){4}$" placeholder="Votre téléphone"
+                                               name="phone">
+                                    </div>
+                                </div>
+                                <div class="form-group col-sm-12">
+                                    <textarea placeholder="Des questions, des informations à transmettre" class="form-control" id="exampleTextarea" name="commentary" rows="3"></textarea>
+                                    <input type="hidden" name="url" value="/new/">
+                                </div>
+                            </div>
+                            <div class="form-group col-xl-8 col-lg-12 col-md-12 col-sm-6 col-xs-12">
+                                <button type="submit" id="verify" class="btn btn-verify subm">Vérifier disponibilité</button>
+                            </div>
+                            <div class="form-group col-xl-4 col-lg-12 col-md-12 col-sm-6 col-xs-12">
+                                <button type="submit" id="push" class="btn btn-submit subm">Submit</button>
+                            </div>
+                        </div>
+                    </form>
                 </div>
             </div>
         </div>

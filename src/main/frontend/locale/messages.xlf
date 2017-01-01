@@ -206,6 +206,36 @@
         <note priority="1" from="description"> sale process</note>
         <note priority="1" from="meaning">brand-detail </note>
       </trans-unit>
+      <trans-unit id="709bd3e918405536a65a712243389c2823383eba" datatype="html">
+        <source>Book online</source>
+        <target/>
+        <note priority="1" from="description"> Form with user&apos;s info - header</note>
+        <note priority="1" from="meaning">book a sale form </note>
+      </trans-unit>
+      <trans-unit id="7759aa64414fe5b0141adc7148dc1682e29619c5" datatype="html">
+        <source>Free, no commitment</source>
+        <target/>
+        <note priority="1" from="description"> Form with user&apos;s info - sub-header</note>
+        <note priority="1" from="meaning">book a sale form </note>
+      </trans-unit>
+      <trans-unit id="7de557f21d8dcc009b82694a1b85f3573fe54259" datatype="html">
+        <source>City</source>
+        <target/>
+        <note priority="1" from="description"> City</note>
+        <note priority="1" from="meaning">book a sale form </note>
+      </trans-unit>
+      <trans-unit id="7be2641756a0fbe89222562d2bca2ac915ca71b5" datatype="html">
+        <source>Meeting place</source>
+        <target/>
+        <note priority="1" from="description"> city placeholder</note>
+        <note priority="1" from="meaning">book a sale form </note>
+      </trans-unit>
+      <trans-unit id="f502938ddd4b4e09670e20e4832e69bc7ab750c2" datatype="html">
+        <source>Number of stakeholders</source>
+        <target/>
+        <note priority="1" from="description"> stakeholders count</note>
+        <note priority="1" from="meaning">book a sale form </note>
+      </trans-unit>
     </body>
   </file>
 </xliff>

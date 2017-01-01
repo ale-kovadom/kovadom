@@ -5,11 +5,11 @@ import {Router} from "@angular/router";
 import {ActivatedRoute, Params} from "@angular/router";
 
 @Component({
-    selector: 'brand-search-by-activity-combo',
-    templateUrl: 'brand-search-by-activity.combo.html',
-    styleUrls: ['brand-search-by-activity.combo.css']
+    selector: 'brand-search-by-activity',
+    templateUrl: 'brand-search-by-activity.html',
+    styleUrls: ['brand-search-by-activity.css']
 })
-export class ActivitySearchComboComponent {
+export class ActivitySearchComponent {
 
     public activities:Activity[] = [];
 
@@ -46,8 +46,6 @@ export class ActivitySearchComboComponent {
             return;
         }
 
-        // let link = ['/brands', this.selectedActivity.code.toLowerCase()];
-        // this.router.navigate(link);
         let navigationExtras = {
             queryParams: {'activity': this.selectedActivity.code.toLowerCase()}
         };

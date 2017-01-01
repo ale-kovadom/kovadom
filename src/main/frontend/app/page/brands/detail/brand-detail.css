@@ -73,3 +73,34 @@
 .sale-process {
     margin-top: 35px;
 }
+
+/*** Sale book ***/
+
+.book-form
+{
+    border-radius: 5px;
+    margin-top: 40px;
+    background-color: #ffffff;
+}
+
+.book-form-header
+{
+    background-color: #33405c;
+    margin-bottom: 15px;
+    padding: 15px 20px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+.book-form-header h2
+{
+    color: #ff5449;
+    margin-top: 10px;
+}
+
+.book-form-header h5
+{
+    color: #ffffff;
+}
+
+

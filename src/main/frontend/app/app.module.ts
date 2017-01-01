@@ -12,7 +12,7 @@ import {BrandsComponent} from "./page/brands/list/brands.component";
 import {FormsModule} from '@angular/forms';
 import {BrandService} from "./domain/brand/brand.service";
 import {AllBrandsButtonComponent} from "./page/component/brands/all_brands_button/all-brands.button.component";
-import {ActivitySearchComboComponent} from "./page/component/brands/by_activity_search_combo/brand-search-by-activity.combo.component";
+import {ActivitySearchComponent} from "./page/component/brands/by_activity_search/brand-search-by-activity.component";
 import {BrandDetailComponent} from "./page/brands/detail/brand-detail.component";
 import {KSSwiperContainer} from "./page/component/ui/swiper/ui.swiper.component";
 
@@ -28,7 +28,7 @@ import {KSSwiperContainer} from "./page/component/ui/swiper/ui.swiper.component"
         HomeComponent,
         ActivityComponent,
         AllBrandsButtonComponent,
-        ActivitySearchComboComponent,
+        ActivitySearchComponent,
         KSSwiperContainer,
         ContactComponent,
         BrandsComponent,
