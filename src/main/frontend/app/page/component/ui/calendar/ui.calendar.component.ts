@@ -56,6 +56,9 @@ export class CalendarComponent implements ControlValueAccessor, OnInit {
     @Input()
     public lang: string = "en-us";
 
+    @Input()
+    public required: boolean = false;
+
     public messageLocale: any;
 
     public hourFormat: String;

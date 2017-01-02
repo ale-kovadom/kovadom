@@ -242,6 +242,60 @@
         <note priority="1" from="description"> stakeholders count</note>
         <note priority="1" from="meaning">book a sale form </note>
       </trans-unit>
+      <trans-unit id="ecfe99042a2bab635c4b9b88ff2cbee808442e9a" datatype="html">
+        <source>Last name</source>
+        <target/>
+        <note priority="1" from="description"> lastname</note>
+        <note priority="1" from="meaning">book a sale form </note>
+      </trans-unit>
+      <trans-unit id="6a019bc356f240e4722e4ae034b872c010148677" datatype="html">
+        <source>Your last name</source>
+        <target/>
+        <note priority="1" from="description"> last name placeholder</note>
+        <note priority="1" from="meaning">book a sale form </note>
+      </trans-unit>
+      <trans-unit id="d79ef1bf3f1829cee04927920d55160e79f05000" datatype="html">
+        <source>First name</source>
+        <target/>
+        <note priority="1" from="description"> firstname</note>
+        <note priority="1" from="meaning">book a sale form </note>
+      </trans-unit>
+      <trans-unit id="9dcc0f3560eb81a3f8605fef65f7c0a8c28cae7d" datatype="html">
+        <source>Your first name</source>
+        <target/>
+        <note priority="1" from="description"> first name placeholder</note>
+        <note priority="1" from="meaning">book a sale form </note>
+      </trans-unit>
+      <trans-unit id="49a9028076ef41f008fd607fc4fb63c36120570e" datatype="html">
+        <source>Your email</source>
+        <target/>
+        <note priority="1" from="description"> email placeholder</note>
+        <note priority="1" from="meaning">book a sale form </note>
+      </trans-unit>
+      <trans-unit id="b75a849245ddb1357d8d40763b6395b9b16fc80f" datatype="html">
+        <source>Your phone number</source>
+        <target/>
+        <note priority="1" from="description"> phone number</note>
+        <note priority="1" from="meaning">book a sale form </note>
+      </trans-unit>
+      <trans-unit id="8c3959e214acbbcbbfc43118172d7992b08b7dbf" datatype="html">
+        <source>Question ?</source>
+        <target/>
+        <note priority="1" from="description"> Extra information </note>
+        <note priority="1" from="meaning">book a sale form </note>
+      </trans-unit>
+      <trans-unit id="b9336d4322389cee95d04b7938a87b999a0f2566" datatype="html">
+        <source>Verify availability</source>
+        <target/>
+        <note priority="1" from="description"> verify availabilities</note>
+        <note priority="1" from="meaning">book a sale form </note>
+      </trans-unit>
+      <trans-unit id="60055364cb999d0762e65a038b6f879ca65d1725" datatype="html">
+        <source>Submit</source>
+        <target/>
+        <note priority="1" from="description"> Submit</note>
+        <note priority="1" from="meaning">book a sale form </note>
+      </trans-unit>
     </body>
   </file>
 </xliff>

@@ -22,6 +22,11 @@ export class BrandDetailComponent {
 
     public date: Date;
 
+    public moreFieldClass: String = "";
+
+    public shouldNotValidate: boolean = true;
+
+
     constructor(private route: ActivatedRoute,
                 private brandService: BrandService) {
 
@@ -38,7 +43,7 @@ export class BrandDetailComponent {
 
     }
 
-    ngOnInit(): void {
+    public ngOnInit(): void {
         this.route.params
             .switchMap((params: Params) => this.brandService.getBrand(params['brandCode']))
             .subscribe(brand => {
@@ -46,6 +51,11 @@ export class BrandDetailComponent {
                 [1, 2, 3].forEach(i => this.slides.push(`static/brands/${this.brand.code}/slider/${i}.png`));
                 this.sale.brandCode = this.brand.code;
             });
+    }
+
+    public onSubmit() {
+        this.moreFieldClass = "expanded";
+        this.shouldNotValidate = false;
     }
 
 }

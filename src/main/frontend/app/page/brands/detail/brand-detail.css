@@ -110,4 +110,31 @@
     display: block;
 }
 
+#moreFields {
+    width: 100%;
+    max-height: 0;
+    height: auto;
+    overflow: hidden;
+    -webkit-transition: max-height 0.6s ease-out;
+    -moz-transition: max-height 0.6s ease-out;
+    -o-transition: max-height 0.6s ease-out;
+    transition: max-height 0.6s ease-out;
+}
+
+#moreFields.expanded {
+    max-height: 400px !important;
+}
+
+.btn-verify, .btn-verify:hover, .btn-verify:active, .btn-verify:visited .btn-verify:focus{
+    background-color: #33405c !important;
+    border-color: #33405c !important;
+    color: #ffffff !important;
+}
+
+.btn-submit, .btn-submit:hover, .btn-submit:active, .btn-submit:visited .btn-submit:focus{
+    background-color: #ff5449 !important;
+    border-color: #ff5449 !important;
+    color: #ffffff !important;
+}
+
 
