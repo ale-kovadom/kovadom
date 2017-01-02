@@ -96,3 +96,9 @@ span.kov:after {
 .icon-calendar:before {
     content: "\e900";
 }
+
+#verify, #book
+{
+    width: 100%;
+}
+

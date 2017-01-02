@@ -1,4 +1,4 @@
-import {Component, forwardRef, Input, OnInit} from "@angular/core";
+import {Component, forwardRef, Input, OnInit, ElementRef, ViewChild, Renderer, AfterViewInit} from "@angular/core";
 import {NG_VALUE_ACCESSOR, ControlValueAccessor} from "@angular/forms";
 
 export const CUSTOM_INPUT_CONTROL_VALUE_ACCESSOR: any = {
@@ -13,7 +13,7 @@ export const CUSTOM_INPUT_CONTROL_VALUE_ACCESSOR: any = {
     styleUrls: ['ui.calendar.css'],
     providers: [CUSTOM_INPUT_CONTROL_VALUE_ACCESSOR]
 })
-export class CalendarComponent implements ControlValueAccessor, OnInit {
+export class CalendarComponent implements ControlValueAccessor, OnInit, AfterViewInit {
 
     private static LOCALE_CONF: any = {
         'en-gb': {
@@ -52,12 +52,12 @@ export class CalendarComponent implements ControlValueAccessor, OnInit {
     };
 
     _value: Date;
-
     @Input()
     public lang: string = "en-us";
 
     @Input()
     public required: boolean = false;
+
 
     public messageLocale: any;
 
@@ -65,14 +65,21 @@ export class CalendarComponent implements ControlValueAccessor, OnInit {
 
     public dateFormat: String;
 
-    constructor() {
+    constructor(private rd: Renderer) {
 
     }
 
-    ngOnInit() {
+    public ngOnInit() {
         this.messageLocale = CalendarComponent.LOCALE_CONF[this.lang];
         this.hourFormat = CalendarComponent.LOCALE_CONF[this.lang].hourFormat;
         this.dateFormat = CalendarComponent.LOCALE_CONF[this.lang].dateFormat;
+    }
+
+
+    public ngAfterViewInit() {
+        // Fix css with bootstrap
+        let inputElement = this.rd.selectRootElement(".ui-inputtext");
+        this.rd.setElementClass(inputElement, "form-control", true);
     }
 
     public get value() {
@@ -84,15 +91,15 @@ export class CalendarComponent implements ControlValueAccessor, OnInit {
         this.propagateChange(this._value);
     }
 
-    registerOnChange(fn: any) {
+    public registerOnChange(fn: any) {
         this.propagateChange = fn;
     }
 
-    writeValue(val: any) {
+    public writeValue(val: any) {
         this._value = val;
     }
 
-    registerOnTouched() {
+    public registerOnTouched() {
     }
 
 

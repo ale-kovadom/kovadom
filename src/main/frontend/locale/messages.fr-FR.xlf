@@ -262,7 +262,7 @@
       </trans-unit>
       <trans-unit id="9dcc0f3560eb81a3f8605fef65f7c0a8c28cae7d" datatype="html">
         <source>Your first name</source>
-        <target>Votre pénom</target>
+        <target>Votre prénom</target>
         <note priority="1" from="description"> first name placeholder</note>
         <note priority="1" from="meaning">book a sale form </note>
       </trans-unit>

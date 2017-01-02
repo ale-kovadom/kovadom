@@ -52,10 +52,10 @@
                             <div class="form-group col-sm-12">
                                 <label for="sale-date" i18n="book a sale form | Date time for the sale">Date and time</label>
                                 <!-- @TODO i18n -->
-                                <!--<div class="input-group">-->
-                                    <!--<div class="input-group-addon"><i class="icon-calendar"></i></div>-->
-                                    <calendar class="form-control" lang="fr-fr" [(ngModel)]="date" name="sale-date" id="sale-date" required="true"></calendar>
-                                <!--</div>-->
+                                <div class="input-group">
+                                    <div class="input-group-addon"><i class="icomoon-liga icon-calendar"></i></div>
+                                    <calendar lang="fr-fr" [(ngModel)]="date" name="sale-date" id="sale-date" required="true"></calendar>
+                                </div>
                             </div>
                             <div class="form-group col-sm-12">
                                 <label for="city" i18n="book a sale form | City">City</label>
@@ -96,11 +96,11 @@
                                     <textarea placeholder="Question ?" i18n-placeholder="book a sale form | Extra information "  class="form-control" id="extra-information" name="extra-information" rows="3"></textarea>
                                 </div>
                             </div>
-                            <div class="form-group col-lg-8 col-md-12 col-sm-6 col-xs-12">
+                            <div class="form-group col-lg-8 col-sm-6 col-xs-12">
                                 <button i18n="book a sale form | verify availabilities" type="submit" id="verify" class="btn btn-verify">Verify availability</button>
                             </div>
-                            <div class="form-group col-lg-4 col-md-12 col-sm-6 col-xs-12">
-                                <button i18n="book a sale form | Submit" type="submit" id="push" class="btn btn-submit">Submit</button>
+                            <div class="form-group col-lg-4 col-sm-6 col-xs-12">
+                                <button i18n="book a sale form | Submit" type="submit" id="book" class="btn btn-submit">Submit</button>
                             </div>
                         </div>
                     </form>
