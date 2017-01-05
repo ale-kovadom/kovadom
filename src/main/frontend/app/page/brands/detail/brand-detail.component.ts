@@ -1,12 +1,10 @@
-import {Component, ViewChild} from "@angular/core";
+import {Component} from "@angular/core";
 import {ActivatedRoute, Params} from "@angular/router";
 import {BrandService} from "../../../domain/brand/brand.service";
 import {Brand} from "../../../domain/brand/brand";
 import "rxjs/add/operator/switchMap";
 import {Sale} from "../../../domain/sale/sale";
 import {Host} from "../../../domain/host/host";
-import {NgForm, AbstractControl} from "@angular/forms";
-import {forEach} from "@angular/router/src/utils/collection";
 
 @Component({
     selector: 'brand-detail',

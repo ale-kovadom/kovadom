@@ -13,9 +13,7 @@ import {BrandService} from "./domain/brand/brand.service";
 import {AllBrandsButtonComponent} from "./page/component/brands/all_brands_button/all-brands.button.component";
 import {ActivitySearchComponent} from "./page/component/brands/by_activity_search/brand-search-by-activity.component";
 import {BrandDetailComponent} from "./page/brands/detail/brand-detail.component";
-import {KSSwiperContainer} from "./page/component/ui/swiper/ui.swiper.component";
-import {CalendarModule} from "primeng/components/calendar/calendar";
-import {CalendarComponent} from "./page/component/ui/calendar/ui.calendar.component";
+import {FrameworkModule} from "./framework/framework.module";
 
 @NgModule({
     imports: [
@@ -23,7 +21,7 @@ import {CalendarComponent} from "./page/component/ui/calendar/ui.calendar.compon
         HttpModule,
         AppRoutingModule,
         FormsModule,
-        CalendarModule
+        FrameworkModule
     ],
     declarations: [
         KovadomComponent,
@@ -31,8 +29,6 @@ import {CalendarComponent} from "./page/component/ui/calendar/ui.calendar.compon
         ActivityComponent,
         AllBrandsButtonComponent,
         ActivitySearchComponent,
-        KSSwiperContainer,
-        CalendarComponent,
         ContactComponent,
         BrandsComponent,
         BrandDetailComponent],
