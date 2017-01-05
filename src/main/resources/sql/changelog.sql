@@ -34,3 +34,10 @@ CREATE TABLE if not exists brand_activity (
 ) DEFAULT CHARSET=utf8;
 
 ALTER TABLE activity CONVERT TO CHARACTER SET utf8 COLLATE utf8_unicode_ci;
+
+--changeset alescaroux:4
+ALTER TABLE activity DROP COLUMN description;
+ALTER TABLE brand DROP COLUMN description;
+
+ALTER TABLE brand ADD COLUMN description VARCHAR(1300);
+ALTER TABLE brand ADD COLUMN sale_process VARCHAR(1300);

@@ -31,7 +31,7 @@
     padding-left: 0;
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 767px) {
     #contact-info {
         text-align: center;
         margin-top: 30px;

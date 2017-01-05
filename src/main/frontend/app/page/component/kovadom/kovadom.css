@@ -19,7 +19,7 @@ header.container-fluid {
     line-height: 80px;
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 767px) {
 
     .container-fluid nav p {
         text-align: center !important;
@@ -84,7 +84,7 @@ footer a:hover {
     color: rgb(239, 112, 105);
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 767px) {
 
     .ativity-refs {
         text-align: center;

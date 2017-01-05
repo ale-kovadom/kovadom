@@ -13,18 +13,17 @@
 
 .brand-name {
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    display: table-cell;
 }
 
-/* Center vertically the containing logo */
-.brand-logo-wrapper:before, .brand-catchwords-wrapper::before {
-    content: ' ';
-    display: inline-block;
-    vertical-align: middle;
-    height: 100%;
+/* Used to center vertically */
+.logo {
+    display: table-cell;
 }
 
 .brand-logo-wrapper, .brand-catchwords-wrapper {
     height: 100%;
+    display: table;
 }
 
 .brand-catchwords-wrapper h1 {
@@ -38,8 +37,16 @@
 }
 
 .brand-logo {
-    max-width: 40%;
-    max-height: 85%;
+    max-width: 250px;
+    max-height: 100px;
+}
+
+@media only screen and (max-width: 767px) {
+
+    .brand-logo-wrapper, .brand-catchwords-wrapper {
+        text-align: center;
+    }
+
 }
 
 /*** Image slider ***/
@@ -132,20 +139,19 @@
     max-height: 400px !important;
 }
 
-.btn-verify, .btn-verify:hover, .btn-verify:active, .btn-verify:visited .btn-verify:focus{
+.btn-verify, .btn-verify:hover, .btn-verify:active, .btn-verify:visited .btn-verify:focus {
     background-color: #33405c !important;
     border-color: #33405c !important;
     color: #ffffff !important;
 }
 
-.btn-submit, .btn-submit:hover, .btn-submit:active, .btn-submit:visited .btn-submit:focus{
+.btn-submit, .btn-submit:hover, .btn-submit:active, .btn-submit:visited .btn-submit:focus {
     background-color: #ff5449 !important;
     border-color: #ff5449 !important;
     color: #ffffff !important;
 }
 
-#verify, #book
-{
+#verify, #book {
     width: 100%;
 }
 

@@ -9,7 +9,9 @@
         </div>
         <div class="col-xs-12 col-sm-7 col-md-7 brand-logo-wrapper">
             <ng-container *ngIf="brand">
-                <img class="brand-logo" [src]="'static/brands/' + brand.code + '/LOGO-' + brand.code + '.png'">
+                <span class="kov logo">
+                    <img class="brand-logo" [src]="'static/brands/' + brand.code + '/LOGO-' + brand.code + '.png'">
+                </span>
             </ng-container>
         </div>
     </div>

@@ -1,6 +1,8 @@
 .swiper-slide img
 {
     height: 100%;
+    /* Responsive */
+    max-width: 100%;
 }
 
 /* Avoid non-active slides to be displayed (bug ?) */
