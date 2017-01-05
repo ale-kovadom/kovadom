@@ -1,9 +1,12 @@
-import {Component} from "@angular/core";
+import {Component, ViewChild} from "@angular/core";
 import {ActivatedRoute, Params} from "@angular/router";
 import {BrandService} from "../../../domain/brand/brand.service";
 import {Brand} from "../../../domain/brand/brand";
 import "rxjs/add/operator/switchMap";
 import {Sale} from "../../../domain/sale/sale";
+import {Host} from "../../../domain/host/host";
+import {NgForm, AbstractControl} from "@angular/forms";
+import {forEach} from "@angular/router/src/utils/collection";
 
 @Component({
     selector: 'brand-detail',
@@ -18,14 +21,13 @@ export class BrandDetailComponent {
 
     public swiperOptions: any;
 
-    public sale: Sale = new Sale("", "");
+    public sale: Sale = new Sale("", "", new Host("", "", "", ""));
 
     public date: Date;
 
     public moreFieldClass: String = "";
 
-    public shouldNotValidate: boolean = true;
-
+    public hasBeenSubmitted: boolean = false;
 
     constructor(private route: ActivatedRoute,
                 private brandService: BrandService) {
@@ -54,8 +56,14 @@ export class BrandDetailComponent {
     }
 
     public onSubmit() {
-        this.moreFieldClass = "expanded";
-        this.shouldNotValidate = false;
+        let hasBeenExpanded = this.moreFieldClass != "";
+
+        if (hasBeenExpanded) {
+            this.hasBeenSubmitted = true;
+        } else {
+            this.moreFieldClass = "expanded";
+        }
     }
+
 
 }

@@ -1,5 +1,5 @@
 import {Component, forwardRef, Input, OnInit, ElementRef, ViewChild, Renderer, AfterViewInit} from "@angular/core";
-import {NG_VALUE_ACCESSOR, ControlValueAccessor} from "@angular/forms";
+import {NG_VALUE_ACCESSOR, ControlValueAccessor, NgModel} from "@angular/forms";
 
 export const CUSTOM_INPUT_CONTROL_VALUE_ACCESSOR: any = {
     provide: NG_VALUE_ACCESSOR,
@@ -52,6 +52,7 @@ export class CalendarComponent implements ControlValueAccessor, OnInit, AfterVie
     };
 
     _value: Date;
+
     @Input()
     public lang: string = "en-us";
 

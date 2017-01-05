@@ -97,8 +97,31 @@ span.kov:after {
     content: "\e900";
 }
 
-#verify, #book
-{
-    width: 100%;
+/*** Form ***/
+
+/* Remove Bootstrap input border on focus */
+html body .form-control:focus {
+    border-color:#ccc;
+    outline: 0;
+    -webkit-box-shadow: none;
+    box-shadow: none;
 }
+
+/* Form validation */
+.ng-dirty.ng-invalid:not(form)  {
+    border-bottom-color: #f44336 !important; /* Should override Bootstrap "blue border cancellation" */
+}
+
+.form-error-msg {
+    color: #a94442;
+    background-color: #f2dede;
+    padding: 10px;
+    border: 1px solid transparent;
+    border-radius: 4px;
+}
+
+.form-submit {
+    margin-top: 20px;
+}
+
 

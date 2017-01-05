@@ -224,6 +224,10 @@
         <note priority="1" from="description"> Date time for the sale</note>
         <note priority="1" from="meaning">book a sale form </note>
       </trans-unit>
+      <trans-unit id="cd8d6b563bc6cc84fea1841fa0e84d244af5a0b8" datatype="html">
+        <source>This field is incorrect</source>
+        <target/>
+      </trans-unit>
       <trans-unit id="7de557f21d8dcc009b82694a1b85f3573fe54259" datatype="html">
         <source>City</source>
         <target/>
@@ -235,6 +239,10 @@
         <target/>
         <note priority="1" from="description"> city placeholder</note>
         <note priority="1" from="meaning">book a sale form </note>
+      </trans-unit>
+      <trans-unit id="5e6548eb9cbb0467c307b4079bc989cd21f44355" datatype="html">
+        <source>This field is required</source>
+        <target/>
       </trans-unit>
       <trans-unit id="f502938ddd4b4e09670e20e4832e69bc7ab750c2" datatype="html">
         <source>Number of stakeholders</source>
@@ -271,6 +279,10 @@
         <target/>
         <note priority="1" from="description"> email placeholder</note>
         <note priority="1" from="meaning">book a sale form </note>
+      </trans-unit>
+      <trans-unit id="da82914908a0bb31e159f70f79890705758a886e" datatype="html">
+        <source>This field is malformed</source>
+        <target/>
       </trans-unit>
       <trans-unit id="b75a849245ddb1357d8d40763b6395b9b16fc80f" datatype="html">
         <source>Your phone number</source>

@@ -47,59 +47,86 @@
                         <h2 i18n="book a sale form | Form with user's info - header">Book online</h2>
                         <h5 i18n="book a sale form | Form with user's info - sub-header">Free, no commitment</h5>
                     </div>
-                    <form (ngSubmit)="onSubmit()" id="book-sale-form" [attr.novalidate]="shouldNotValidate ? true : null">
+                    <form (ngSubmit)="onSubmit()" #saleForm="ngForm" id="book-sale-form" novalidate>
                         <div class="row">
                             <div class="form-group col-sm-12">
                                 <label for="sale-date" i18n="book a sale form | Date time for the sale">Date and time</label>
                                 <!-- @TODO i18n -->
                                 <div class="input-group">
                                     <div class="input-group-addon"><i class="icomoon-liga icon-calendar"></i></div>
-                                    <calendar lang="fr-fr" [(ngModel)]="date" name="sale-date" id="sale-date" required="true"></calendar>
+                                    <calendar lang="fr-fr" [(ngModel)]="date" name="sale-date" id="sale-date" required="true" #saleDate="ngModel"></calendar>
                                 </div>
+                                <!-- Only required error is supported, not "pattern" -->
+                                <div *ngIf="!saleDate.valid && hasBeenSubmitted" class="form-error-msg" i18n>This field is incorrect</div>
                             </div>
                             <div class="form-group col-sm-12">
                                 <label for="city" i18n="book a sale form | City">City</label>
                                 <input type="text" placeholder="Meeting place" i18n-placeholder="book a sale form | city placeholder" class="form-control" id="city" [(ngModel)]="sale.city" name="city"
-                                       required>
+                                       required #city="ngModel">
+                                <ng-container *ngIf="!city.valid && hasBeenSubmitted">
+                                    <div *ngIf="city.hasError('required')" class="form-error-msg" i18n>This field is required</div>
+                                </ng-container>
                             </div>
                             <div class="form-group col-sm-12">
                                 <label for="stakeholders" i18n="book a sale form | stakeholders count">Number of stakeholders</label>
                                 <input type="number" min="3" max="100" class="form-control" placeholder="10"
-                                       id="stakeholders" name="stakeholders" [(ngModel)]="sale.stakeholderCount" required>
+                                       id="stakeholders" name="stakeholders" [(ngModel)]="sale.stakeholderCount" required #stakeholders="ngModel">
+                                <ng-container *ngIf="!stakeholders.valid && hasBeenSubmitted">
+                                    <div *ngIf="stakeholders.hasError('required')" class="form-error-msg" i18n>This field is required</div>
+                                </ng-container>
                             </div>
                             <div [ngClass]="moreFieldClass" id="moreFields">
                                 <div class="form-group col-xs-12 col-sm-6 col-md-12 col-lg-6">
                                     <label i18n="book a sale form | lastname" for="lastname">Last name</label>
-                                    <input type="text" class="form-control" placeholder="Your last name" i18n-placeholder="book a sale form | last name placeholder" name="lastname" id="lastname" required>
+                                    <input type="text" class="form-control" placeholder="Your last name" i18n-placeholder="book a sale form | last name placeholder" name="lastname" id="lastname"
+                                           required #lastName="ngModel" [(ngModel)]="sale.host.lastName">
+                                    <ng-container *ngIf="!lastName.valid && hasBeenSubmitted">
+                                        <div *ngIf="lastName.hasError('required')" class="form-error-msg" i18n>This field is required</div>
+                                    </ng-container>
                                 </div>
                                 <div class="form-group col-xs-12 col-sm-6 col-md-12 col-lg-6">
                                     <label i18n="book a sale form | firstname" for="firstname">First name</label>
-                                    <input type="text" class="form-control" placeholder="Your first name" i18n-placeholder="book a sale form | first name placeholder" name="firstname" id="firstname" required>
+                                    <input type="text" class="form-control" placeholder="Your first name" i18n-placeholder="book a sale form | first name placeholder" name="firstname" id="firstname"
+                                           required #firstName="ngModel" [(ngModel)]="sale.host.firstName">
+                                    <ng-container *ngIf="!firstName.valid && hasBeenSubmitted">
+                                        <div *ngIf="firstName.hasError('required')" class="form-error-msg" i18n>This field is required</div>
+                                    </ng-container>
                                 </div>
                                 <div class="form-group col-sm-12">
                                     <div class="input-group">
                                         <div class="input-group-addon"><i class="icomoon-liga icon-email"></i></div>
-                                        <input type="text" class="form-control" pattern="^[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,10}$" placeholder="Your email"  i18n-placeholder="book a sale form | email placeholder" name="email"
-                                               required>
+                                        <input type="text" class="form-control" pattern="^[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,10}$" placeholder="Your email"
+                                               i18n-placeholder="book a sale form | email placeholder" name="email"
+                                               required #email="ngModel" [(ngModel)]="sale.host.email">
                                     </div>
+                                    <ng-container *ngIf="!email.valid && hasBeenSubmitted">
+                                        <div *ngIf="email.hasError('required')" class="form-error-msg" i18n>This field is required</div>
+                                        <div *ngIf="email.hasError('pattern')" class="form-error-msg" i18n>This field is malformed</div>
+                                    </ng-container>
                                 </div>
                                 <div class="form-group col-sm-12">
                                     <div class="input-group">
                                         <div class="input-group-addon"><i class="icomoon-liga icon-phone"></i></div>
 
                                         <!-- @TODO i18n -->
-                                        <input type="text" class="form-control" pattern="^(?:0|\(?\+33\)?\s?|0033\s?)[1-79](?:[\.\-\s]?\d\d){4}$" placeholder="Your phone number" i18n-placeholder="book a sale form | phone number"
-                                               name="phone" required>
+                                        <input type="text" class="form-control" [(ngModel)]="sale.host.phone" pattern="^(?:0|\(?\+33\)?\s?|0033\s?)[1-79](?:[\.\-\s]?\d\d){4}$"
+                                               placeholder="Your phone number" i18n-placeholder="book a sale form | phone number"
+                                               name="phone" #phone="ngModel" required>
                                     </div>
+                                    <ng-container *ngIf="!phone.valid && hasBeenSubmitted">
+                                        <div *ngIf="phone.hasError('required')" class="form-error-msg" i18n>This field is required</div>
+                                        <div *ngIf="phone.hasError('pattern')" class="form-error-msg" i18n>This field is malformed</div>
+                                    </ng-container>
                                 </div>
                                 <div class="form-group col-sm-12">
-                                    <textarea placeholder="Question ?" i18n-placeholder="book a sale form | Extra information "  class="form-control" id="extra-information" name="extra-information" rows="3"></textarea>
+                                    <textarea placeholder="Question ?" i18n-placeholder="book a sale form | Extra information " class="form-control" id="extra-information" name="extra-information"
+                                              rows="3" [(ngModel)]="sale.extraInformation"></textarea>
                                 </div>
                             </div>
-                            <div class="form-group col-lg-8 col-sm-6 col-xs-12">
+                            <div class="form-submit form-group col-lg-8 col-sm-6 col-xs-12">
                                 <button i18n="book a sale form | verify availabilities" type="submit" id="verify" class="btn btn-verify">Verify availability</button>
                             </div>
-                            <div class="form-group col-lg-4 col-sm-6 col-xs-12">
+                            <div class="form-submit form-group col-lg-4 col-sm-6 col-xs-12">
                                 <button i18n="book a sale form | Submit" type="submit" id="book" class="btn btn-submit">Submit</button>
                             </div>
                         </div>
