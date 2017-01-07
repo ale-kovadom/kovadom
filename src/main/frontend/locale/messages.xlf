@@ -218,6 +218,12 @@
         <note priority="1" from="description"> Form with user&apos;s info - sub-header</note>
         <note priority="1" from="meaning">book a sale form </note>
       </trans-unit>
+      <trans-unit id="338fa2473919c2abe27dae976a9af38974ce9772" datatype="html">
+        <source>Your request has been registered</source>
+        <target/>
+        <note priority="1" from="description"> book registered</note>
+        <note priority="1" from="meaning">book a sale form </note>
+      </trans-unit>
       <trans-unit id="99c0cebd7ad25fe825f2a918d4e4a2cf55092f92" datatype="html">
         <source>Date and time</source>
         <target/>

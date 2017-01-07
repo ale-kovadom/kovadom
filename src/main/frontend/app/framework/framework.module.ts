@@ -1,9 +1,9 @@
-import { NgModule }       from '@angular/core';
-import { CommonModule }   from '@angular/common';
-import { FormsModule }    from '@angular/forms';
-import {CalendarComponent} from "./ui/calendar/ui.calendar.component";
+import {NgModule} from "@angular/core";
+import {CommonModule} from "@angular/common";
+import {FormsModule} from "@angular/forms";
 import {CalendarModule} from "primeng/components/calendar/calendar";
 import {SwiperContainer} from "./ui/swiper/ui.swiper.component";
+import {CalendarDirective} from "./ui/calendar/ui.calendar.directive";
 
 @NgModule({
     imports: [
@@ -12,11 +12,12 @@ import {SwiperContainer} from "./ui/swiper/ui.swiper.component";
         CalendarModule
     ],
     declarations: [
-        CalendarComponent,
-        SwiperContainer
+        SwiperContainer,
+        CalendarDirective,
     ],
     exports: [
-        CalendarComponent,
+        CalendarModule,
+        CalendarDirective,
         SwiperContainer
     ]
 })

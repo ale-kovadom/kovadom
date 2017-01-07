@@ -1,19 +1,8 @@
-import {Component, forwardRef, Input, OnInit, Renderer, AfterViewInit} from "@angular/core";
-import {NG_VALUE_ACCESSOR, ControlValueAccessor} from "@angular/forms";
+import {Directive, Input, OnInit} from "@angular/core";
+import {Calendar} from "primeng/components/calendar/calendar";
 
-export const CUSTOM_INPUT_CONTROL_VALUE_ACCESSOR: any = {
-    provide: NG_VALUE_ACCESSOR,
-    useExisting: forwardRef(() => CalendarComponent),
-    multi: true
-};
-
-@Component({
-    selector: 'calendar',
-    templateUrl: 'ui.calendar.html',
-    styleUrls: ['ui.calendar.css'],
-    providers: [CUSTOM_INPUT_CONTROL_VALUE_ACCESSOR]
-})
-export class CalendarComponent implements ControlValueAccessor, OnInit, AfterViewInit {
+@Directive({selector: '[calendarOptions]'})
+export class CalendarDirective implements OnInit {
 
     private static LOCALE_CONF: any = {
         'en-gb': {
@@ -48,60 +37,22 @@ export class CalendarComponent implements ControlValueAccessor, OnInit, AfterVie
         }
     };
 
-    private propagateChange = (_: any) => {
-    };
+    @Input('lang')
+    public lang: string;
 
-    _value: Date;
+    private pCalendar: Calendar;
 
-    @Input()
-    public lang: string = "en-us";
-
-    @Input()
-    public required: boolean = false;
-
-
-    public messageLocale: any;
-
-    public hourFormat: String;
-
-    public dateFormat: String;
-
-    constructor(private rd: Renderer) {
-
+    constructor(pCalendar: Calendar) {
+        this.pCalendar = pCalendar;
     }
 
     public ngOnInit() {
-        this.messageLocale = CalendarComponent.LOCALE_CONF[this.lang];
-        this.hourFormat = CalendarComponent.LOCALE_CONF[this.lang].hourFormat;
-        this.dateFormat = CalendarComponent.LOCALE_CONF[this.lang].dateFormat;
+        if (!this.lang) {
+            throw new ReferenceError("No 'lang' parameter has been specified in CalendarDirective");
+        }
+        this.pCalendar.locale = CalendarDirective.LOCALE_CONF[this.lang];
+        this.pCalendar.hourFormat = CalendarDirective.LOCALE_CONF[this.lang].hourFormat;
+        this.pCalendar.dateFormat = CalendarDirective.LOCALE_CONF[this.lang].dateFormat;
     }
-
-
-    public ngAfterViewInit() {
-        // Fix css with bootstrap
-        let inputElement = this.rd.selectRootElement(".ui-inputtext");
-        this.rd.setElementClass(inputElement, "form-control", true);
-    }
-
-    public get value() {
-        return this._value;
-    }
-
-    public set value(val: Date) {
-        this._value = val;
-        this.propagateChange(this._value);
-    }
-
-    public registerOnChange(fn: any) {
-        this.propagateChange = fn;
-    }
-
-    public writeValue(val: any) {
-        this._value = val;
-    }
-
-    public registerOnTouched() {
-    }
-
 
 }

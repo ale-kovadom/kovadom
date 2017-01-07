@@ -218,6 +218,12 @@
            <note priority="1" from="description"> Form with user&apos;s info - sub-header</note>
            <note priority="1" from="meaning">book a sale form </note>
         </trans-unit>
+        <trans-unit id="338fa2473919c2abe27dae976a9af38974ce9772" datatype="html">
+           <source>Your request has been registered</source>
+           <target>Votre demande a été prise en compte.</target>
+           <note priority="1" from="description"> book registered</note>
+           <note priority="1" from="meaning">book a sale form </note>
+        </trans-unit>
         <trans-unit id="99c0cebd7ad25fe825f2a918d4e4a2cf55092f92" datatype="html">
            <source>Date and time</source>
            <target>Date et heure</target>
@@ -280,15 +286,15 @@
         <note priority="1" from="description"> email placeholder</note>
         <note priority="1" from="meaning">book a sale form </note>
       </trans-unit>
+      <trans-unit id="da82914908a0bb31e159f70f79890705758a886e" datatype="html">
+        <source>This field is malformed</source>
+        <target>Le format de ce champ est incorrect</target>
+      </trans-unit>
       <trans-unit id="b75a849245ddb1357d8d40763b6395b9b16fc80f" datatype="html">
         <source>Your phone number</source>
         <target>Votre téléphone</target>
         <note priority="1" from="description"> phone number</note>
         <note priority="1" from="meaning">book a sale form </note>
-      </trans-unit>
-      <trans-unit id="da82914908a0bb31e159f70f79890705758a886e" datatype="html">
-        <source>This field is malformed</source>
-        <target>Le format de ce champ est incorrect</target>
       </trans-unit>
       <trans-unit id="8c3959e214acbbcbbfc43118172d7992b08b7dbf" datatype="html">
         <source>Question ?</source>

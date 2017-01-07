@@ -1,10 +1,10 @@
-import {Component} from "@angular/core";
+import {Component, ViewChild} from "@angular/core";
 import {ActivatedRoute, Params} from "@angular/router";
 import {BrandService} from "../../../domain/brand/brand.service";
 import {Brand} from "../../../domain/brand/brand";
 import "rxjs/add/operator/switchMap";
 import {Sale} from "../../../domain/sale/sale";
-import {Host} from "../../../domain/host/host";
+import {NgForm} from "@angular/forms";
 
 @Component({
     selector: 'brand-detail',
@@ -13,19 +13,34 @@ import {Host} from "../../../domain/host/host";
 })
 export class BrandDetailComponent {
 
+    private static STATUS_NOT_SUBMITTED = "notSubmitted";
+
+    private static STATUS_SENT = "sent";
+
+    private static STATUS_CONFIRMED = "confirmed";
+
+    private static SUCCESS_ALERT_CLASS: string = "alert alert-success";
+
+    private static MORE_FIELD_CLASS: string = "";
+
     public brand: Brand;
 
     public slides: Array<String> = [];
 
     public swiperOptions: any;
 
-    public sale: Sale = new Sale("", "", new Host("", "", "", ""));
+    public sale: Sale = Sale.empty();
 
-    public date: Date;
+    public moreFieldClass: String;
 
-    public moreFieldClass: String = "";
+    public isFormFullyOpened: boolean = false;
 
-    public hasBeenSubmitted: boolean = false;
+    public submitStatus: string;
+
+    public successAlertClass: string;
+
+    @ViewChild("saleForm")
+    public form: NgForm;
 
     constructor(private route: ActivatedRoute,
                 private brandService: BrandService) {
@@ -40,6 +55,10 @@ export class BrandDetailComponent {
             loop: true,
             autoHeight: false
         };
+
+        this.resetMoreFieldsClass();
+        this.resetSuccessAlertClass();
+        this.resetSubmitStatus();
 
     }
 
@@ -57,11 +76,40 @@ export class BrandDetailComponent {
         let hasBeenExpanded = this.moreFieldClass != "";
 
         if (hasBeenExpanded) {
-            this.hasBeenSubmitted = true;
+            this.isFormFullyOpened = true;
+            if (this.form.form.valid) {
+                this.submitStatus = BrandDetailComponent.STATUS_SENT;
+                //TODO requete
+                //TODO scroll
+                this.submitStatus = BrandDetailComponent.STATUS_CONFIRMED;
+                setTimeout(() => {
+                    this.successAlertClass += " fade-out";
+                    setTimeout(() => {
+                        // After fade-out
+                        this.resetMoreFieldsClass();
+                        this.resetSuccessAlertClass();
+                        this.resetSubmitStatus();
+                        this.isFormFullyOpened = false;
+                        this.form.reset();
+                        this.sale = Sale.empty();
+                    }, 2000);
+                }, 3000);
+            }
         } else {
             this.moreFieldClass = "expanded";
         }
     }
 
+    private resetSuccessAlertClass() {
+        this.successAlertClass = BrandDetailComponent.SUCCESS_ALERT_CLASS;
+    }
+
+    private resetSubmitStatus() {
+        this.submitStatus = BrandDetailComponent.STATUS_NOT_SUBMITTED;
+    }
+
+    private resetMoreFieldsClass() {
+        this.moreFieldClass = BrandDetailComponent.MORE_FIELD_CLASS;
+    }
 
 }

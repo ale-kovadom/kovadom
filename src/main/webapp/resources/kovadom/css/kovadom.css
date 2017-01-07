@@ -108,9 +108,10 @@ html body .form-control:focus {
 }
 
 /* Form validation */
-.ng-dirty.ng-invalid:not(form)  {
+.ng-dirty.ng-invalid:not(form) {
     border-bottom-color: #f44336 !important; /* Should override Bootstrap "blue border cancellation" */
 }
+
 
 .form-error-msg {
     color: #a94442;
@@ -118,6 +119,12 @@ html body .form-control:focus {
     padding: 10px;
     border: 1px solid transparent;
     border-radius: 4px;
+}
+
+.fade-out {
+    /*visibility: hidden;*/
+    opacity: 0;
+    transition: visibility 0s 2s, opacity 2s linear;
 }
 
 

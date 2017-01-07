@@ -49,6 +49,7 @@
                         <h2 i18n="book a sale form | Form with user's info - header">Book online</h2>
                         <h5 i18n="book a sale form | Form with user's info - sub-header">Free, no commitment</h5>
                     </div>
+                    <div [hidden]="submitStatus != 'confirmed'" [ngClass]="successAlertClass" role="alert" i18n="book a sale form | book registered">Your request has been registered</div>
                     <form (ngSubmit)="onSubmit()" #saleForm="ngForm" id="book-sale-form" novalidate>
                         <div class="row">
                             <div class="form-group col-sm-12">
@@ -56,16 +57,25 @@
                                 <!-- @TODO i18n -->
                                 <div class="input-group">
                                     <div class="input-group-addon"><i class="icomoon-liga icon-calendar"></i></div>
-                                    <calendar lang="fr-fr" [(ngModel)]="date" name="sale-date" id="sale-date" required="true" #saleDate="ngModel"></calendar>
+                                    <p-calendar
+                                            [(ngModel)]="sale.date"
+                                            showTime="showTime"
+                                            required="true"
+                                            #saleDate="ngModel"
+                                            inputStyleClass="form-control"
+                                            name="sale-date"
+                                            id="sale-date"
+                                            calendarOptions lang="fr-fr">
+                                    </p-calendar>
                                 </div>
                                 <!-- Only required error is supported, not "pattern" -->
-                                <div *ngIf="!saleDate.valid && hasBeenSubmitted" class="form-error-msg" i18n>This field is incorrect</div>
+                                <div *ngIf="!saleDate.valid && isFormFullyOpened" class="form-error-msg" i18n>This field is incorrect</div>
                             </div>
                             <div class="form-group col-sm-12">
                                 <label for="city" i18n="book a sale form | City">City</label>
                                 <input type="text" placeholder="Meeting place" i18n-placeholder="book a sale form | city placeholder" class="form-control" id="city" [(ngModel)]="sale.city" name="city"
                                        required #city="ngModel">
-                                <ng-container *ngIf="!city.valid && hasBeenSubmitted">
+                                <ng-container *ngIf="!city.valid && isFormFullyOpened">
                                     <div *ngIf="city.hasError('required')" class="form-error-msg" i18n>This field is required</div>
                                 </ng-container>
                             </div>
@@ -73,7 +83,7 @@
                                 <label for="stakeholders" i18n="book a sale form | stakeholders count">Number of stakeholders</label>
                                 <input type="number" min="3" max="100" class="form-control" placeholder="10"
                                        id="stakeholders" name="stakeholders" [(ngModel)]="sale.stakeholderCount" required #stakeholders="ngModel">
-                                <ng-container *ngIf="!stakeholders.valid && hasBeenSubmitted">
+                                <ng-container *ngIf="!stakeholders.valid && isFormFullyOpened">
                                     <div *ngIf="stakeholders.hasError('required')" class="form-error-msg" i18n>This field is required</div>
                                 </ng-container>
                             </div>
@@ -82,7 +92,7 @@
                                     <label i18n="book a sale form | lastname" for="lastname">Last name</label>
                                     <input type="text" class="form-control" placeholder="Your last name" i18n-placeholder="book a sale form | last name placeholder" name="lastname" id="lastname"
                                            required #lastName="ngModel" [(ngModel)]="sale.host.lastName">
-                                    <ng-container *ngIf="!lastName.valid && hasBeenSubmitted">
+                                    <ng-container *ngIf="!lastName.valid && isFormFullyOpened">
                                         <div *ngIf="lastName.hasError('required')" class="form-error-msg" i18n>This field is required</div>
                                     </ng-container>
                                 </div>
@@ -90,7 +100,7 @@
                                     <label i18n="book a sale form | firstname" for="firstname">First name</label>
                                     <input type="text" class="form-control" placeholder="Your first name" i18n-placeholder="book a sale form | first name placeholder" name="firstname" id="firstname"
                                            required #firstName="ngModel" [(ngModel)]="sale.host.firstName">
-                                    <ng-container *ngIf="!firstName.valid && hasBeenSubmitted">
+                                    <ng-container *ngIf="!firstName.valid && isFormFullyOpened">
                                         <div *ngIf="firstName.hasError('required')" class="form-error-msg" i18n>This field is required</div>
                                     </ng-container>
                                 </div>
@@ -101,7 +111,7 @@
                                                i18n-placeholder="book a sale form | email placeholder" name="email"
                                                required #email="ngModel" [(ngModel)]="sale.host.email">
                                     </div>
-                                    <ng-container *ngIf="!email.valid && hasBeenSubmitted">
+                                    <ng-container *ngIf="!email.valid && isFormFullyOpened">
                                         <div *ngIf="email.hasError('required')" class="form-error-msg" i18n>This field is required</div>
                                         <div *ngIf="email.hasError('pattern')" class="form-error-msg" i18n>This field is malformed</div>
                                     </ng-container>
@@ -115,7 +125,7 @@
                                                placeholder="Your phone number" i18n-placeholder="book a sale form | phone number"
                                                name="phone" #phone="ngModel" required>
                                     </div>
-                                    <ng-container *ngIf="!phone.valid && hasBeenSubmitted">
+                                    <ng-container *ngIf="!phone.valid && isFormFullyOpened">
                                         <div *ngIf="phone.hasError('required')" class="form-error-msg" i18n>This field is required</div>
                                         <div *ngIf="phone.hasError('pattern')" class="form-error-msg" i18n>This field is malformed</div>
                                     </ng-container>
@@ -126,10 +136,10 @@
                                 </div>
                             </div>
                             <div class="form-submit form-group col-lg-8 col-sm-6 col-xs-12">
-                                <button i18n="book a sale form | verify availabilities" type="submit" id="verify" class="btn btn-verify">Verify availability</button>
+                                <button i18n="book a sale form | verify availabilities" type="submit" id="verify" class="btn btn-verify" [disabled]="submitStatus != 'notSubmitted'">Verify availability</button>
                             </div>
                             <div class="form-submit form-group col-lg-4 col-sm-6 col-xs-12">
-                                <button i18n="book a sale form | Submit" type="submit" id="book" class="btn btn-submit">Submit</button>
+                                <button i18n="book a sale form | Submit" type="submit" id="book" class="btn btn-submit" [disabled]="submitStatus != 'notSubmitted'">Submit</button>
                             </div>
                         </div>
                     </form>
