@@ -70,7 +70,7 @@ export class BrandDetailComponent {
             .subscribe(brand => {
                 this.brand = brand;
                 [1, 2, 3].forEach(i => this.slides.push(`static/brands/${this.brand.code}/slider/${i}.png`));
-                this.sale.brandCode = this.brand.code;
+                this.sale = this.emptySale(this.brand);
             });
     }
 
@@ -81,27 +81,33 @@ export class BrandDetailComponent {
             this.isFormFullyOpened = true;
             if (this.form.form.valid) {
                 this.submitStatus = BrandDetailComponent.STATUS_SENT;
-                this.saleService.create(this.sale).then(this.onConfirmed);   //TODO error ? validaton ?
+                this.saleService.create(this.sale).then(
+                    () => {
+                        this.submitStatus = BrandDetailComponent.STATUS_CONFIRMED;
+                        setTimeout(() => {
+                            this.successAlertClass += " fade-out";
+                            setTimeout(() => {
+                                // After fade-out
+                                this.resetMoreFieldsClass();
+                                this.resetSuccessAlertClass();
+                                this.resetSubmitStatus();
+                                this.isFormFullyOpened = false;
+                                this.form.reset();
+                                this.sale = this.emptySale(this.brand );
+                            }, 2000);
+                        }, 3000);
+                    }
+                );   //TODO error ? validaton ?
             }
         } else {
             this.moreFieldClass = "expanded";
         }
     }
 
-    private onConfirmed() {
-        this.submitStatus = BrandDetailComponent.STATUS_CONFIRMED;
-        setTimeout(() => {
-            this.successAlertClass += " fade-out";
-            setTimeout(() => {
-                // After fade-out
-                this.resetMoreFieldsClass();
-                this.resetSuccessAlertClass();
-                this.resetSubmitStatus();
-                this.isFormFullyOpened = false;
-                this.form.reset();
-                this.sale = Sale.empty();
-            }, 2000);
-        }, 3000);
+    private emptySale(brand: Brand) {
+        let sale = Sale.empty();
+        sale.brandCode = brand.code;
+        return sale;
     }
 
     private resetSuccessAlertClass() {
