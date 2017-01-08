@@ -5,6 +5,7 @@ import {Brand} from "../../../domain/brand/brand";
 import "rxjs/add/operator/switchMap";
 import {Sale} from "../../../domain/sale/sale";
 import {NgForm} from "@angular/forms";
+import {SaleService} from "../../../domain/sale/sale.service";
 
 @Component({
     selector: 'brand-detail',
@@ -43,7 +44,8 @@ export class BrandDetailComponent {
     public form: NgForm;
 
     constructor(private route: ActivatedRoute,
-                private brandService: BrandService) {
+                private brandService: BrandService,
+                private saleService: SaleService) {
 
         this.swiperOptions = {
             pagination: '.swiper-pagination',
@@ -79,25 +81,27 @@ export class BrandDetailComponent {
             this.isFormFullyOpened = true;
             if (this.form.form.valid) {
                 this.submitStatus = BrandDetailComponent.STATUS_SENT;
-                //TODO requete
-                //TODO scroll
-                this.submitStatus = BrandDetailComponent.STATUS_CONFIRMED;
-                setTimeout(() => {
-                    this.successAlertClass += " fade-out";
-                    setTimeout(() => {
-                        // After fade-out
-                        this.resetMoreFieldsClass();
-                        this.resetSuccessAlertClass();
-                        this.resetSubmitStatus();
-                        this.isFormFullyOpened = false;
-                        this.form.reset();
-                        this.sale = Sale.empty();
-                    }, 2000);
-                }, 3000);
+                this.saleService.create(this.sale).then(this.onConfirmed);   //TODO error ? validaton ?
             }
         } else {
             this.moreFieldClass = "expanded";
         }
+    }
+
+    private onConfirmed() {
+        this.submitStatus = BrandDetailComponent.STATUS_CONFIRMED;
+        setTimeout(() => {
+            this.successAlertClass += " fade-out";
+            setTimeout(() => {
+                // After fade-out
+                this.resetMoreFieldsClass();
+                this.resetSuccessAlertClass();
+                this.resetSubmitStatus();
+                this.isFormFullyOpened = false;
+                this.form.reset();
+                this.sale = Sale.empty();
+            }, 2000);
+        }, 3000);
     }
 
     private resetSuccessAlertClass() {

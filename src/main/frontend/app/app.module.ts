@@ -14,6 +14,7 @@ import {AllBrandsButtonComponent} from "./page/component/brands/all_brands_butto
 import {ActivitySearchComponent} from "./page/component/brands/by_activity_search/brand-search-by-activity.component";
 import {BrandDetailComponent} from "./page/brands/detail/brand-detail.component";
 import {FrameworkModule} from "./framework/framework.module";
+import {SaleService} from "./domain/sale/sale.service";
 
 @NgModule({
     imports: [
@@ -32,7 +33,7 @@ import {FrameworkModule} from "./framework/framework.module";
         ContactComponent,
         BrandsComponent,
         BrandDetailComponent],
-    providers: [ActivityService, BrandService],
+    providers: [ActivityService, BrandService, SaleService],
     bootstrap: [KovadomComponent]
 })
 export class AppModule {

@@ -7,20 +7,20 @@ import {Brand} from "./brand";
 @Injectable()
 export class BrandService {
 
-    private brandsByActivityCodeUrl = 'rest/brands';
+    private brandsUrl = 'rest/brands';
 
     constructor(private http:Http) {
     }
 
     public getBrandsByActivityCode(activityCode: String):Promise<Brand[]> {
-        return this.http.get(this.brandsByActivityCodeUrl + `?activityCode=${activityCode}`)
+        return this.http.get(this.brandsUrl + `?activityCode=${activityCode}`)
             .toPromise()
             .then(response => response.json() as Brand[])
             .catch(this.handleError);
     }
 
     public getBrand(brandCode:String) {
-        return this.http.get(this.brandsByActivityCodeUrl + `?brandCode=${brandCode}`)
+        return this.http.get(this.brandsUrl + `?brandCode=${brandCode}`)
             .toPromise()
             .then(response => response.json() as Brand)
             .catch(this.handleError);
