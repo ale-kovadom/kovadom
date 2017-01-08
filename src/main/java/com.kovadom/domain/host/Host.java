@@ -1,25 +1,33 @@
 package com.kovadom.domain.host;
 
-public class Host {
+import com.kovadom.orm.AbstractAuditablePersistable;
+import org.springframework.data.jpa.domain.support.AuditingEntityListener;
 
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.EntityListeners;
+import javax.persistence.Table;
+
+@Entity
+@Table(name = "host")
+@EntityListeners(AuditingEntityListener.class)
+public class Host extends AbstractAuditablePersistable<Long> {
+
+    @Column(name = "email")
     private String email;
 
+    @Column(name = "first_name")
     private String firstName;
 
+    @Column(name = "last_name")
     private String lastName;
 
+    @Column(name = "phone")
     private String phone;
 
     // JPA
     public Host() {
 
-    }
-
-    public Host(final String email, final String firstName, final String lastName, final String phone) {
-        this.email = email;
-        this.firstName = firstName;
-        this.lastName = lastName;
-        this.phone = phone;
     }
 
     public String getEmail() {
