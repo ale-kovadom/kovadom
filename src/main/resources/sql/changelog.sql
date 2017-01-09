@@ -41,3 +41,29 @@ ALTER TABLE brand DROP COLUMN description;
 
 ALTER TABLE brand ADD COLUMN description VARCHAR(1300);
 ALTER TABLE brand ADD COLUMN sale_process VARCHAR(1300);
+
+--changeset alescaroux:5
+create table if not exists host (
+  id INT UNSIGNED PRIMARY KEY AUTO_INCREMENT,
+  first_name VARCHAR(255) NOT NULL,
+  last_name VARCHAR(255) NOT NULL,
+  phone VARCHAR(255) NOT NULL,
+  email VARCHAR(500) NULL,
+  created_date TIMESTAMP NOT NULL DEFAULT NOW(),
+  modified_date TIMESTAMP NOT NULL DEFAULT NOW()
+) DEFAULT CHARSET=utf8;
+
+
+create table if not exists sale (
+  id INT UNSIGNED PRIMARY KEY AUTO_INCREMENT,
+  brand_id INT UNSIGNED NOT NULL,
+  host_id INT UNSIGNED NOT NULL,
+  city VARCHAR(255) NOT NULL,
+  stakeholder_count SMALLINT NOT NULL,
+  extra_information VARCHAR(1500) ,
+  date TIMESTAMP NOT NULL,
+  created_date TIMESTAMP NOT NULL DEFAULT NOW(),
+  modified_date TIMESTAMP NOT NULL DEFAULT NOW(),
+  CONSTRAINT `fk_sale_brandId_brand_id` FOREIGN KEY (`brand_id`) REFERENCES `brand` (`id`),
+  CONSTRAINT `fk_host_hostId_host_id` FOREIGN KEY (`host_id`) REFERENCES `host` (`id`)
+) DEFAULT CHARSET=utf8;
