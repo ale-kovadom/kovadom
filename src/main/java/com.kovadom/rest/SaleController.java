@@ -13,24 +13,24 @@ import org.springframework.web.bind.annotation.RestController;
 
 import java.io.IOException;
 
+import static java.util.Objects.requireNonNull;
 import static org.springframework.web.bind.annotation.RequestMethod.POST;
 
 @RestController()
 @RequestMapping("/rest/sale")
 public class SaleController {
 
+    private final SaleRepository saleRepository;
+
     @Autowired
-    private SaleRepository saleRepository;
+    public SaleController(final SaleRepository saleRepository) {
+        requireNonNull(saleRepository);
+        this.saleRepository = saleRepository;
+    }
 
     @RequestMapping(method = POST, consumes = MediaType.APPLICATION_JSON_VALUE)
     public ResponseEntity<Void> createSale(@RequestBody final Sale sale) throws IOException {
-
-        //TODO validation
         saleRepository.save(sale);
-
-
-
-        //TODO return success or error
         HttpHeaders headers = new HttpHeaders();
         return new ResponseEntity<>(headers, HttpStatus.CREATED);
     }
