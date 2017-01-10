@@ -218,11 +218,17 @@
            <note priority="1" from="description"> Form with user&apos;s info - sub-header</note>
            <note priority="1" from="meaning">book a sale form </note>
         </trans-unit>
-        <trans-unit id="338fa2473919c2abe27dae976a9af38974ce9772" datatype="html">
+        <trans-unit id="2ab8d82ac40b17f91766899087520919cf554f8a" datatype="html">
            <source>Your request has been registered</source>
            <target>Votre demande a été prise en compte.</target>
            <note priority="1" from="description"> book registered</note>
            <note priority="1" from="meaning">book a sale form </note>
+        </trans-unit>
+        <trans-unit id="72cf57adaf435b3de4bbc963a1e7a061ab0b4923" datatype="html">
+          <source>An error has occurred while processing your request</source>
+          <target>Une erreur est survenue lors de l'envoi du formulaire.</target>
+          <note priority="1" from="description"> failed</note>
+          <note priority="1" from="meaning">generic form saving message </note>
         </trans-unit>
         <trans-unit id="99c0cebd7ad25fe825f2a918d4e4a2cf55092f92" datatype="html">
            <source>Date and time</source>

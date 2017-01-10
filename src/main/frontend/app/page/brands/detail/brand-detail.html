@@ -49,7 +49,8 @@
                         <h2 i18n="book a sale form | Form with user's info - header">Book online</h2>
                         <h5 i18n="book a sale form | Form with user's info - sub-header">Free, no commitment</h5>
                     </div>
-                    <div [hidden]="submitStatus != 'confirmed'" [ngClass]="successAlertClass" role="alert" i18n="book a sale form | book registered">Your request has been registered</div>
+                    <div [hidden]="submitStatus != 'confirmed'" [ngClass]="alertClass" role="alert" i18n="generic form saving message | success">Your request has been registered</div>
+                    <div [hidden]="submitStatus != 'failed'" [ngClass]="alertClass" role="alert" i18n="generic form saving message | failed">An error has occurred while processing your request</div>
                     <form (ngSubmit)="onSubmit()" #saleForm="ngForm" id="book-sale-form" novalidate>
                         <div class="row">
                             <div class="form-group col-sm-12">
@@ -69,13 +70,13 @@
                                     </p-calendar>
                                 </div>
                                 <!-- Only required error is supported, not "pattern" -->
-                                <div *ngIf="!saleDate.valid && isFormFullyOpened" class="form-error-msg" i18n>This field is incorrect</div>
+                                <div *ngIf="!saleDate.valid && showExplicitErrorMessage" class="form-error-msg" i18n>This field is incorrect</div>
                             </div>
                             <div class="form-group col-sm-12">
                                 <label for="city" i18n="book a sale form | City">City</label>
                                 <input type="text" placeholder="Meeting place" i18n-placeholder="book a sale form | city placeholder" class="form-control" id="city" [(ngModel)]="sale.city" name="city"
                                        required #city="ngModel">
-                                <ng-container *ngIf="!city.valid && isFormFullyOpened">
+                                <ng-container *ngIf="!city.valid && showExplicitErrorMessage">
                                     <div *ngIf="city.hasError('required')" class="form-error-msg" i18n>This field is required</div>
                                 </ng-container>
                             </div>
@@ -83,7 +84,7 @@
                                 <label for="stakeholders" i18n="book a sale form | stakeholders count">Number of stakeholders</label>
                                 <input type="number" min="3" max="100" class="form-control" placeholder="10"
                                        id="stakeholders" name="stakeholders" [(ngModel)]="sale.stakeholderCount" required #stakeholders="ngModel">
-                                <ng-container *ngIf="!stakeholders.valid && isFormFullyOpened">
+                                <ng-container *ngIf="!stakeholders.valid && showExplicitErrorMessage">
                                     <div *ngIf="stakeholders.hasError('required')" class="form-error-msg" i18n>This field is required</div>
                                 </ng-container>
                             </div>
@@ -92,7 +93,7 @@
                                     <label i18n="book a sale form | lastname" for="lastname">Last name</label>
                                     <input type="text" class="form-control" placeholder="Your last name" i18n-placeholder="book a sale form | last name placeholder" name="lastname" id="lastname"
                                            required #lastName="ngModel" [(ngModel)]="sale.host.lastName">
-                                    <ng-container *ngIf="!lastName.valid && isFormFullyOpened">
+                                    <ng-container *ngIf="!lastName.valid && showExplicitErrorMessage">
                                         <div *ngIf="lastName.hasError('required')" class="form-error-msg" i18n>This field is required</div>
                                     </ng-container>
                                 </div>
@@ -100,7 +101,7 @@
                                     <label i18n="book a sale form | firstname" for="firstname">First name</label>
                                     <input type="text" class="form-control" placeholder="Your first name" i18n-placeholder="book a sale form | first name placeholder" name="firstname" id="firstname"
                                            required #firstName="ngModel" [(ngModel)]="sale.host.firstName">
-                                    <ng-container *ngIf="!firstName.valid && isFormFullyOpened">
+                                    <ng-container *ngIf="!firstName.valid && showExplicitErrorMessage">
                                         <div *ngIf="firstName.hasError('required')" class="form-error-msg" i18n>This field is required</div>
                                     </ng-container>
                                 </div>
@@ -111,7 +112,7 @@
                                                i18n-placeholder="book a sale form | email placeholder" name="email"
                                                required #email="ngModel" [(ngModel)]="sale.host.email">
                                     </div>
-                                    <ng-container *ngIf="!email.valid && isFormFullyOpened">
+                                    <ng-container *ngIf="!email.valid && showExplicitErrorMessage">
                                         <div *ngIf="email.hasError('required')" class="form-error-msg" i18n>This field is required</div>
                                         <div *ngIf="email.hasError('pattern')" class="form-error-msg" i18n>This field is malformed</div>
                                     </ng-container>
@@ -125,7 +126,7 @@
                                                placeholder="Your phone number" i18n-placeholder="book a sale form | phone number"
                                                name="phone" #phone="ngModel" required>
                                     </div>
-                                    <ng-container *ngIf="!phone.valid && isFormFullyOpened">
+                                    <ng-container *ngIf="!phone.valid && showExplicitErrorMessage">
                                         <div *ngIf="phone.hasError('required')" class="form-error-msg" i18n>This field is required</div>
                                         <div *ngIf="phone.hasError('pattern')" class="form-error-msg" i18n>This field is malformed</div>
                                     </ng-container>

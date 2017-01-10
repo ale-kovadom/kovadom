@@ -17,13 +17,7 @@ export class SaleService {
     public create(sale: Sale): Promise<void> {
         return this.http
             .post(this.saleUrl, JSON.stringify(sale), {headers: this.headers})
-            .toPromise()
-            .then(() => null)
-            .catch(this.handleError);
+            .toPromise();
     }
 
-    private handleError(error: any): Promise<any> {
-        console.error('An error occurred', error);
-        return Promise.reject(error.message || error);
-    }
 }
