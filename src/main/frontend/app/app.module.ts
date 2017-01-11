@@ -15,6 +15,7 @@ import {ActivitySearchComponent} from "./page/component/brands/by_activity_searc
 import {BrandDetailComponent} from "./page/brands/detail/brand-detail.component";
 import {FrameworkModule} from "./framework/framework.module";
 import {SaleService} from "./domain/sale/sale.service";
+import {Ng2PageScrollModule} from 'ng2-page-scroll';
 
 @NgModule({
     imports: [
@@ -22,7 +23,8 @@ import {SaleService} from "./domain/sale/sale.service";
         HttpModule,
         AppRoutingModule,
         FormsModule,
-        FrameworkModule
+        FrameworkModule,
+        Ng2PageScrollModule.forRoot()
     ],
     declarations: [
         KovadomComponent,

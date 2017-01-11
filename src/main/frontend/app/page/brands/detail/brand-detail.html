@@ -49,8 +49,10 @@
                         <h2 i18n="book a sale form | Form with user's info - header">Book online</h2>
                         <h5 i18n="book a sale form | Form with user's info - sub-header">Free, no commitment</h5>
                     </div>
-                    <div [hidden]="submitStatus != 'confirmed'" [ngClass]="alertClass" role="alert" i18n="generic form saving message | success">Your request has been registered</div>
-                    <div [hidden]="submitStatus != 'failed'" [ngClass]="alertClass" role="alert" i18n="generic form saving message | failed">An error has occurred while processing your request</div>
+                    <div id="alert-form" [hidden]="submitStatus != 'confirmed' && submitStatus != 'failed'" [ngClass]="alertClass" role="alert">
+                        <ng-container *ngIf="submitStatus == 'confirmed'" i18n="generic form saving message | success">Your request has been registered</ng-container>
+                        <ng-container *ngIf="submitStatus == 'failed'" i18n="generic form saving message | failed">An error has occurred while processing your request</ng-container>
+                    </div>
                     <form (ngSubmit)="onSubmit()" #saleForm="ngForm" id="book-sale-form" novalidate>
                         <div class="row">
                             <div class="form-group col-sm-12">

@@ -1,4 +1,4 @@
-import {Component, ViewChild} from "@angular/core";
+import {Component, ViewChild, Inject} from "@angular/core";
 import {ActivatedRoute, Params} from "@angular/router";
 import {BrandService} from "../../../domain/brand/brand.service";
 import {Brand} from "../../../domain/brand/brand";
@@ -6,6 +6,8 @@ import "rxjs/add/operator/switchMap";
 import {Sale} from "../../../domain/sale/sale";
 import {NgForm} from "@angular/forms";
 import {SaleService} from "../../../domain/sale/sale.service";
+import {PageScrollService, PageScrollInstance, PageScrollConfig, EasingLogic} from "ng2-page-scroll";
+import {DOCUMENT} from "@angular/platform-browser";
 
 @Component({
     selector: 'brand-detail',
@@ -55,9 +57,12 @@ export class BrandDetailComponent {
     @ViewChild("saleForm")
     public form: NgForm;
 
+
     constructor(private route: ActivatedRoute,
                 private brandService: BrandService,
-                private saleService: SaleService) {
+                private saleService: SaleService,
+                private pageScrollService: PageScrollService,
+                @Inject(DOCUMENT) private document: any) {
 
         this.swiperOptions = {
             pagination: '.swiper-pagination',
@@ -71,12 +76,13 @@ export class BrandDetailComponent {
         };
 
         this.collapseForm();
-        //this.resetSuccessAlertClass();
         this.resetSubmitStatus();
 
     }
 
     public ngOnInit(): void {
+        PageScrollConfig.defaultScrollOffset = 200;
+        PageScrollConfig.defaultDuration = 300;
         this.route.params
             .switchMap((params: Params) => this.brandService.getBrand(params['brandCode']))
             .subscribe(brand => {
@@ -139,6 +145,7 @@ export class BrandDetailComponent {
         return new Promise((resolve, reject) => {
             self.alertClass = alertClass;
             self.submitStatus = newStatus;
+            this.goToAlert();
             setTimeout(() => {
                 resolve();
             }, 3000);
@@ -165,6 +172,10 @@ export class BrandDetailComponent {
 
     private collapseForm() {
         this.moreFieldClass = BrandDetailComponent.FORM_COLLAPSE_CLASS;
+    }
+
+    private goToAlert() {
+        this.pageScrollService.start(PageScrollInstance.simpleInstance(this.document, '#alert-form'));
     }
 
 }
