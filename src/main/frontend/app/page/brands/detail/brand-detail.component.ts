@@ -81,8 +81,8 @@ export class BrandDetailComponent {
     }
 
     public ngOnInit(): void {
-        PageScrollConfig.defaultScrollOffset = 200;
-        PageScrollConfig.defaultDuration = 300;
+        PageScrollConfig.defaultScrollOffset = 300;
+        PageScrollConfig.defaultDuration = 400;
         this.route.params
             .switchMap((params: Params) => this.brandService.getBrand(params['brandCode']))
             .subscribe(brand => {
