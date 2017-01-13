@@ -48,6 +48,8 @@ nav {
 
 header div.logo img {
     display: inline-block;
+    height: 115px;
+    padding: 7px 0 ;
 }
 
 header div.logo {
