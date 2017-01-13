@@ -1,22 +1,27 @@
-import {Component, Input, SimpleChanges, OnChanges} from "@angular/core";
+import {Component, Input, OnInit} from "@angular/core";
 import {Activity} from "../../../domain/activity/activity";
+import {ActivityService} from "../../../domain/activity/activity.service";
 
 @Component({
     selector: 'activity',
     templateUrl: 'activity.html',
     styleUrls: ['activity.css']
 })
-export class ActivityComponent implements OnChanges {
-
-    @Input() public activities: Activity[];
+export class ActivityComponent implements OnInit {
 
     @Input() public max: number = -1;
 
     public activityToDisplay: Activity[];
 
-    ngOnChanges(changes: SimpleChanges) {
-        let allActivities = changes['activities'].currentValue as Activity[];
-        this.activityToDisplay = this.max > 0 ? allActivities.slice(0, this.max) : allActivities;
+    constructor(private activityService: ActivityService) {
+    }
+
+    ngOnInit(): void {
+        this.activityService.getActivities().then(
+            activities => {
+                let allActivities = activities.sort(Activity.byLabelComparator);
+                this.activityToDisplay = this.max > 0 ? allActivities.slice(0, this.max) : allActivities;
+            });
     }
 
 }
