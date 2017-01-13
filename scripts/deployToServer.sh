@@ -10,6 +10,6 @@ cp ROOT ROOT_OLD
 rm -rf ROOT
 rm -rf ROOT.war
 cp /tmp/kovadom-*.war ROOT.war
-rm -rf /tmp kovadom-*.war
 ../bin/startup.sh
+rm -rf /tmp kovadom-*.war
 EOF

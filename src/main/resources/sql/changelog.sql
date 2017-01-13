@@ -67,3 +67,8 @@ create table if not exists sale (
   CONSTRAINT `fk_sale_brandId_brand_id` FOREIGN KEY (`brand_id`) REFERENCES `brand` (`id`),
   CONSTRAINT `fk_host_hostId_host_id` FOREIGN KEY (`host_id`) REFERENCES `host` (`id`)
 ) DEFAULT CHARSET=utf8;
+
+--changeset alescaroux:6
+alter table brand_activity drop FOREIGN KEY fk_brandActivity_activityId_activity_id;
+ALTER TABLE activity MODIFY id INT UNSIGNED AUTO_INCREMENT;
+ALTER table brand_activity add CONSTRAINT `fk_brandActivity_activityId_activity_id` FOREIGN KEY (`activity_id`) REFERENCES `activity` (`id`);

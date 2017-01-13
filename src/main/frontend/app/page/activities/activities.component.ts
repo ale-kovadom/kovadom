@@ -1,17 +1,15 @@
 import {Component} from "@angular/core";
-import {Activity} from "../../domain/activity/activity";
 import {ActivityService} from "../../domain/activity/activity.service";
+import {Activity} from "../../domain/activity/activity";
 
 @Component({
-    selector: 'home',
-    templateUrl: 'home.html',
-    styleUrls: ['home.css']
+    selector: 'activities',
+    templateUrl: 'activities.html',
+    styleUrls: ['activities.css']
 })
-export class HomeComponent {
+export class ActivitiesComponent {
 
-    public activities: Activity[] = [];
-
-    public selectedActivity: Activity;
+    public activities: Activity[];
 
     constructor(private activityService: ActivityService) {
     }
@@ -20,9 +18,6 @@ export class HomeComponent {
         this.activityService.getActivities().then(
             activities => {
                 this.activities = activities.sort(Activity.byLabelComparator);
-                if (this.activities.length > 0) {
-                    this.selectedActivity = this.activities[0];
-                }
             });
     }
 

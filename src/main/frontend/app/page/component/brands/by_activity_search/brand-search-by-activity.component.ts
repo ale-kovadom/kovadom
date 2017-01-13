@@ -11,19 +11,19 @@ import {ActivatedRoute, Params} from "@angular/router";
 })
 export class ActivitySearchComponent {
 
-    public activities:Activity[] = [];
+    public activities: Activity[] = [];
 
-    public selectedActivity:Activity;
+    public selectedActivity: Activity;
 
-    constructor(private activityService:ActivityService, private router:Router, private route:ActivatedRoute) {
+    constructor(private activityService: ActivityService, private router: Router, private route: ActivatedRoute) {
 
     }
 
-    ngOnInit():void {
-        let activityCode:String;
+    ngOnInit(): void {
+        let activityCode: String;
 
         this.route.queryParams
-            .switchMap((params:Params) => {
+            .switchMap((params: Params) => {
                     activityCode = params['activity'];
                     if (activityCode) {
                         activityCode = activityCode.toUpperCase();
@@ -32,7 +32,7 @@ export class ActivitySearchComponent {
                 }
             )
             .subscribe(activities => {
-                let sortedActivities:Activity[] = activities.sort(Activity.byLabelComparator);
+                let sortedActivities: Activity[] = activities.sort(Activity.byLabelComparator);
                 if (sortedActivities.length > 0) {
                     this.selectedActivity = this.selectActivity(sortedActivities, activityCode);
                 }
@@ -52,7 +52,7 @@ export class ActivitySearchComponent {
         this.router.navigate(['/brands'], navigationExtras);
     }
 
-    private selectActivity(sortedActivities:Activity[], activityCode:String) {
+    private selectActivity(sortedActivities: Activity[], activityCode: String) {
         let selectedActivity = sortedActivities[0];
         if (activityCode) {
             let selectedActivities = sortedActivities.filter(a => {

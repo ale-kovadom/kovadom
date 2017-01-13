@@ -16,6 +16,7 @@ import {BrandDetailComponent} from "./page/brands/detail/brand-detail.component"
 import {FrameworkModule} from "./framework/framework.module";
 import {SaleService} from "./domain/sale/sale.service";
 import {Ng2PageScrollModule} from 'ng2-page-scroll';
+import {ActivitiesComponent} from "./page/activities/activities.component";
 
 @NgModule({
     imports: [
@@ -34,7 +35,9 @@ import {Ng2PageScrollModule} from 'ng2-page-scroll';
         ActivitySearchComponent,
         ContactComponent,
         BrandsComponent,
-        BrandDetailComponent],
+        BrandDetailComponent,
+        ActivitiesComponent
+    ],
     providers: [ActivityService, BrandService, SaleService],
     bootstrap: [KovadomComponent]
 })

@@ -124,6 +124,12 @@
         <note priority="1" from="description">how it works?</note>
         <note priority="1" from="meaning">home</note>
       </trans-unit>
+      <trans-unit id="b860914a42729cf0cef258dba7965467bdc35c60" datatype="html">
+        <source>&gt;Discover all the activities</source>
+        <target/>
+        <note priority="1" from="description">Discover all the activities button</note>
+        <note priority="1" from="meaning">home</note>
+      </trans-unit>
       <trans-unit id="baa4f5ccf9c98ae8af8e8861eb941f28901c71b7" datatype="html">
         <source>What atmosphere will you choose?</source>
         <target/>

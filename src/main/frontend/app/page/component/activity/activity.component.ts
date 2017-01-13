@@ -8,14 +8,15 @@ import {Activity} from "../../../domain/activity/activity";
 })
 export class ActivityComponent implements OnChanges {
 
-    @Input() public activities:Activity[];
+    @Input() public activities: Activity[];
 
-    @Input() public max:number;
+    @Input() public max: number = -1;
 
-    public activityToDisplay:Activity[];
+    public activityToDisplay: Activity[];
 
     ngOnChanges(changes: SimpleChanges) {
-        this.activityToDisplay = (changes['activities'].currentValue as Activity[]).slice(0, this.max);
+        let allActivities = changes['activities'].currentValue as Activity[];
+        this.activityToDisplay = this.max > 0 ? allActivities.slice(0, this.max) : allActivities;
     }
 
 }
