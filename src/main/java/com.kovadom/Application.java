@@ -1,5 +1,7 @@
 package com.kovadom;
 
+import com.kovadom.configuration.async.DefaultAsyncUncaughtExceptionHandler;
+import org.springframework.aop.interceptor.AsyncUncaughtExceptionHandler;
 import org.springframework.boot.Banner;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.boot.autoconfigure.web.ErrorViewResolver;
@@ -8,14 +10,19 @@ import org.springframework.boot.web.support.SpringBootServletInitializer;
 import org.springframework.context.annotation.Bean;
 import org.springframework.data.jpa.repository.config.EnableJpaAuditing;
 import org.springframework.http.HttpStatus;
+import org.springframework.scheduling.annotation.AsyncConfigurer;
+import org.springframework.scheduling.annotation.EnableAsync;
+import org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor;
 import org.springframework.web.servlet.DispatcherServlet;
 import org.springframework.web.servlet.ModelAndView;
 
 import java.util.Collections;
+import java.util.concurrent.Executor;
 
 @SpringBootApplication
 @EnableJpaAuditing
-public class Application extends SpringBootServletInitializer {
+@EnableAsync
+public class Application extends SpringBootServletInitializer implements AsyncConfigurer {
 
     @Override
     protected SpringApplicationBuilder configure(SpringApplicationBuilder builder) {
@@ -43,4 +50,19 @@ public class Application extends SpringBootServletInitializer {
                 : null;
     }
 
+    @Override
+    public Executor getAsyncExecutor() {
+        ThreadPoolTaskExecutor executor = new ThreadPoolTaskExecutor();
+        executor.setCorePoolSize(2);
+        executor.setMaxPoolSize(2);
+        executor.setQueueCapacity(500);
+        executor.setThreadNamePrefix("DefaultAsync-");
+        executor.initialize();
+        return executor;
+    }
+
+    @Override
+    public AsyncUncaughtExceptionHandler getAsyncUncaughtExceptionHandler() {
+        return new DefaultAsyncUncaughtExceptionHandler();
+    }
 }
