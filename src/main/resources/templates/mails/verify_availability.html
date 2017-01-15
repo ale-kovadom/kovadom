@@ -1,0 +1,11 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org">
+<head></head>
+<body>
+<h4 th:text="#{mail.verify-availability.hello(${sale.getHost().getFirstName()})}">Hello</h4>
+<p th:text="#{mail.verify-availability.thank-you}">What you asked</p>
+<p th:text="#{mail.verify-availability.answer(${sale.getBrand().getName()})}">We are working on it</p>
+<p th:text="#{mail.verify-availability.feedback}">Keep in touch</p>
+<p th:text="#{mail.verify-availability.signature}">Signature</p>
+</body>
+</html>

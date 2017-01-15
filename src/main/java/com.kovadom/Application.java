@@ -66,26 +66,4 @@ public class Application extends SpringBootServletInitializer implements AsyncCo
         return new DefaultAsyncUncaughtExceptionHandler();
     }
 
-//    @Bean
-//    public TemplateEngine emailTemplateEngine() {
-//        final SpringTemplateEngine templateEngine = new SpringTemplateEngine();
-//        // Resolver for HTML emails (except the editable one)
-//        templateEngine.addTemplateResolver(htmlTemplateResolver());
-//        // Message source, internationalization specific to emails
-//        //templateEngine.setTemplateEngineMessageSource(emailMessageSource());
-//        return templateEngine;
-//    }
-//
-//    private ITemplateResolver htmlTemplateResolver() {
-//        final ClassLoaderTemplateResolver templateResolver = new ClassLoaderTemplateResolver();
-//        templateResolver.setOrder(1);
-//     //   templateResolver.setResolvablePatterns(Collections.singleton("html/*"));
-//        templateResolver.setPrefix("/mail/");
-//        templateResolver.setSuffix(".html");
-//        templateResolver.setTemplateMode(TemplateMode.HTML);
-//        templateResolver.setCharacterEncoding("UFT-8");
-//        templateResolver.setCacheable(false);
-//        return templateResolver;
-//    }
-
 }

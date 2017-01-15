@@ -41,18 +41,11 @@ public class DefaultSaleEmailService implements SaleEmailService {
             Host host = sale.getHost();
             log.debug(format("Sending email to '%s'", host.getEmail()));
 
-//            mimeMessage.setRecipient(TO, new InternetAddress(host.getEmail()));
-//            mimeMessage.setFrom(new InternetAddress(from));
-//            mimeMessage.setSubject(sale.getStatus().name()); //TODO i18n
-//
-//            mimeMessage.setText(message);
-
             MimeMessageHelper message = new MimeMessageHelper(mimeMessage);
             message.setTo(host.getEmail());
             message.setFrom(from);
             Context context = new Context();
-            context.setVariable("message", "toto l'asticot");
-
+            context.setVariable("sale", sale);
             message.setText(templateEngine.process(VERIFY_AVAILABILITY_TEMPLATE, context), true);
         };
 
