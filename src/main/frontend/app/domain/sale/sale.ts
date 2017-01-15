@@ -1,11 +1,13 @@
 import {Host} from "../host/host";
 export class Sale {
 
+
     public static empty() {
-        return new Sale("", "", new Host("", "", "", ""));
+        return new Sale("", SaleStatus.Availability, "", new Host("", "", "", ""));
     }
 
     constructor(public brandCode: String,
+                public status: SaleStatus,
                 public city: String,
                 public host: Host,
                 public stakeholderCount?: Number,
@@ -16,6 +18,7 @@ export class Sale {
     public toJSON(): any {
         return {
             brand: this.brandCode,  // The name changes, for server communication.
+            status: SaleStatus[this.status], // Name of the status
             city: this.city,
             host: this.host,
             stakeholderCount: this.stakeholderCount,
@@ -25,4 +28,9 @@ export class Sale {
     }
 
 
+}
+
+export enum SaleStatus {
+    Availability,
+    BookRequest
 }

@@ -1,5 +1,6 @@
 package com.kovadom.domain.sale;
 
+import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.databind.annotation.JsonDeserialize;
 import com.kovadom.domain.brand.Brand;
 import com.kovadom.domain.host.Host;
@@ -10,6 +11,8 @@ import javax.persistence.CascadeType;
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.EntityListeners;
+import javax.persistence.EnumType;
+import javax.persistence.Enumerated;
 import javax.persistence.JoinColumn;
 import javax.persistence.ManyToOne;
 import javax.persistence.Table;
@@ -20,10 +23,21 @@ import java.time.LocalDateTime;
 @EntityListeners(AuditingEntityListener.class)
 public class Sale extends AbstractAuditablePersistable<Long> {
 
+    public enum Status {
+        @JsonProperty("Availability")
+        AVAILABILITY,
+        @JsonProperty("BookRequest")
+        BOOK_REQUEST
+    }
+
     @ManyToOne
     @JoinColumn(name="brand_id", nullable=false)
     @JsonDeserialize(using = SaleBrandDeserializer.class)
     private Brand brand;
+
+    @Enumerated(EnumType.STRING)
+    @Column(name = "status")
+    private Status status;
 
     @ManyToOne(cascade= CascadeType.PERSIST)
     @JoinColumn(name="host_id", nullable=false)
@@ -67,5 +81,9 @@ public class Sale extends AbstractAuditablePersistable<Long> {
 
     public LocalDateTime getDate() {
         return date;
+    }
+
+    public Status getStatus() {
+        return status;
     }
 }

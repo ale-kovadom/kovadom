@@ -3,7 +3,7 @@ import {ActivatedRoute, Params} from "@angular/router";
 import {BrandService} from "../../../domain/brand/brand.service";
 import {Brand} from "../../../domain/brand/brand";
 import "rxjs/add/operator/switchMap";
-import {Sale} from "../../../domain/sale/sale";
+import {Sale, SaleStatus} from "../../../domain/sale/sale";
 import {NgForm} from "@angular/forms";
 import {SaleService} from "../../../domain/sale/sale.service";
 import {PageScrollService, PageScrollInstance, PageScrollConfig, EasingLogic} from "ng2-page-scroll";
@@ -90,6 +90,14 @@ export class BrandDetailComponent {
                 [1, 2, 3].forEach(i => this.slides.push(`static/brands/${this.brand.code}/slider/${i}.png`));
                 this.sale = BrandDetailComponent.emptySale(this.brand);
             });
+    }
+
+    public verifyAvailability() {
+        this.sale.status = SaleStatus.Availability;
+    }
+
+    public book() {
+        this.sale.status = SaleStatus.BookRequest;
     }
 
     public onSubmit() {

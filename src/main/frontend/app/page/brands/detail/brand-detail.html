@@ -139,10 +139,10 @@
                                 </div>
                             </div>
                             <div class="form-submit form-group col-lg-8 col-sm-6 col-xs-12">
-                                <button i18n="book a sale form | verify availabilities" type="submit" id="verify" class="btn btn-verify" [disabled]="submitStatus != 'notSubmitted'">Verify availability</button>
+                                <button i18n="book a sale form | verify availabilities" (click)="verifyAvailability()" type="submit" id="verify" class="btn btn-verify" [disabled]="submitStatus != 'notSubmitted'">Verify availability</button>
                             </div>
                             <div class="form-submit form-group col-lg-4 col-sm-6 col-xs-12">
-                                <button i18n="book a sale form | Submit" type="submit" id="book" class="btn btn-submit" [disabled]="submitStatus != 'notSubmitted'">Submit</button>
+                                <button i18n="book a sale form | Submit" type="submit" (click)="book()" id="book" class="btn btn-submit" [disabled]="submitStatus != 'notSubmitted'">Submit</button>
                             </div>
                         </div>
                     </form>

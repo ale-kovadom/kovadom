@@ -72,3 +72,9 @@ create table if not exists sale (
 alter table brand_activity drop FOREIGN KEY fk_brandActivity_activityId_activity_id;
 ALTER TABLE activity MODIFY id INT UNSIGNED AUTO_INCREMENT;
 ALTER table brand_activity add CONSTRAINT `fk_brandActivity_activityId_activity_id` FOREIGN KEY (`activity_id`) REFERENCES `activity` (`id`);
+
+--changeset alescaroux:7
+alter table sale add column status VARCHAR(20) NOT null default 'Availability';
+
+--changeset alescaroux:8
+update sale set status = 'AVAILABILITY'
