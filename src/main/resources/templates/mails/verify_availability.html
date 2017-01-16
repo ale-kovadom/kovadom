@@ -6,6 +6,8 @@
 <p th:text="#{mail.verify-availability.thank-you}">What you asked</p>
 <p th:text="#{mail.verify-availability.answer(${sale.getBrand().getName()})}">We are working on it</p>
 <p th:text="#{mail.verify-availability.feedback}">Keep in touch</p>
-<p th:text="#{mail.verify-availability.signature}">Signature</p>
+<p th:text="#{mail.verify-availability.signature}"></p>
+<a href="www.kovadom.com" th:href="@{http://www.kovadom.com}">kovadom.com</a>
+<img src="logo-kovadom.png" th:src="|cid:${logoId}|" />
 </body>
 </html>
