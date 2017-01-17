@@ -38,8 +38,7 @@
     <div class="content">
         <h4 th:text="#{mail.hello(${sale.getHost().getFirstName()})}">Hello</h4>
         <p th:text="#{mail.thank-you}">What you asked</p>
-        <p th:text="#{mail.verify-availability.answer(${sale.getBrand().getName()})}">We are working on it</p>
-        <p th:text="#{mail.verify-availability.feedback}">Keep in touch</p>
+        <p th:text="#{mail.book-request.answer(${sale.getBrand().getName()})}">We are working on it</p>
         <p th:text="#{mail.signature}"></p>
         <a href="www.kovadom.com" th:href="@{http://www.kovadom.com}">kovadom.com</a>
     </div>
