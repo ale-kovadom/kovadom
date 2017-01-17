@@ -24,6 +24,7 @@
         <java.version>1.8</java.version>
         <mysql-connector-version>5.1.6</mysql-connector-version>
         <liquibase-version>3.4.1</liquibase-version>
+        <tomcat-version>8.5.6</tomcat-version>
     </properties>
 
     <profiles>
@@ -42,12 +43,6 @@
     </profiles>
 
     <dependencies>
-        <dependency>
-            <groupId>org.apache.tomee</groupId>
-            <artifactId>javaee-api</artifactId>
-            <version>7.0</version>
-            <scope>provided</scope>
-        </dependency>
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-web</artifactId>
@@ -135,15 +130,6 @@
                 <version>2.6</version>
                 <configuration>
                     <failOnMissingWebXml>false</failOnMissingWebXml>
-                </configuration>
-            </plugin>
-            <plugin>
-                <groupId>org.apache.tomee.maven</groupId>
-                <artifactId>tomee-embedded-maven-plugin</artifactId>
-                <version>7.0.0-M1</version>
-                <configuration>
-                    <serverXml>${project.build.devDirectory}/server.xml</serverXml>
-                    <context>/</context>
                 </configuration>
             </plugin>
             <plugin>
@@ -242,47 +228,6 @@
                             </resources>
                         </configuration>
                     </execution>
-                    <!--<execution>-->
-                        <!--<id>copy-js-resources</id>-->
-                        <!--<phase>generate-resources</phase>-->
-                        <!--<goals>-->
-                            <!--<goal>copy-resources</goal>-->
-                        <!--</goals>-->
-                        <!--<configuration>-->
-                            <!--<outputDirectory>${project.basedir}/src/main/webapp/js/generated</outputDirectory>-->
-                            <!--<resources>-->
-                                <!--<resource>-->
-                                    <!--<directory>src/main/frontend/node_modules</directory>-->
-                                    <!--<includes>-->
-                                        <!--<include>zone.js/dist/zone.min.js</include>-->
-                                        <!--<include>core-js/client/shim.min.js</include>-->
-                                        <!--<include>swiper/dist/js/swiper.min.js</include>-->
-                                    <!--</includes>-->
-                                <!--</resource>-->
-                            <!--</resources>-->
-                        <!--</configuration>-->
-                    <!--</execution>-->
-                    <!--<execution>-->
-                        <!--<id>copy-css-resources</id>-->
-                        <!--<phase>generate-resources</phase>-->
-                        <!--<goals>-->
-                            <!--<goal>copy-resources</goal>-->
-                        <!--</goals>-->
-                        <!--<configuration>-->
-                            <!--<outputDirectory>${project.basedir}/src/main/webapp/css/generated</outputDirectory>-->
-                            <!--<resources>-->
-                                <!--<resource>-->
-                                    <!--<directory>src/main/frontend/node_modules</directory>-->
-                                    <!--<includes>-->
-                                        <!--<include>swiper/dist/css/swiper.min.css</include>-->
-                                        <!--<include>primeng/resources/themes/omega/**</include>-->
-                                        <!--<include>font-awesome/css/font-awesome.min.css</include>-->
-                                        <!--<include>font-awesome/fonts</include>-->
-                                    <!--</includes>-->
-                                <!--</resource>-->
-                            <!--</resources>-->
-                        <!--</configuration>-->
-                    <!--</execution>-->
                     <execution>
                         <id>copy-app.js</id>
                         <phase>generate-resources</phase>
@@ -322,8 +267,57 @@
                     <encoding>UTF-8</encoding>
                 </configuration>
             </plugin>
+            <plugin>
+                <groupId>org.codehaus.cargo</groupId>
+                <artifactId>cargo-maven2-plugin</artifactId>
+                <configuration>
+                    <container>
+                        <containerId>tomcat8x</containerId>
+                        <artifactInstaller>
+                            <groupId>org.apache.tomcat</groupId>
+                            <artifactId>tomcat</artifactId>
+                            <version>${tomcat.version}</version>
+                        </artifactInstaller>
+                    </container>
+                    <configuration>
+                        <type>standalone</type>
+                        <home>
+                            ${project.build.directory}/apache-tomcat-${tomcat.version}
+                        </home>
+                        <files>
+                            <copy>
+                                <file>${project.build.directory}/dev/server.xml</file>
+                                <todir>conf/</todir>
+                                <tofile>server.xml</tofile>
+                                <configfile>true</configfile>
+                                <overwrite>true</overwrite>
+                            </copy>
+                        </files>
+                        <properties>
+                            <cargo.servlet.port>8080</cargo.servlet.port>
+                            <cargo.start.jvmargs>
+                                -Xdebug
+                                -Xrunjdwp:transport=dt_socket,server=y,suspend=n,address=8000
+                                -Xnoagent
+                                -Djava.compiler=NONE
+                            </cargo.start.jvmargs>
+                        </properties>
+                    </configuration>
+                    <deployables>
+                        <deployable>
+                            <groupId>${project.groupId}</groupId>
+                            <artifactId>${project.artifactId}</artifactId>
+                            <type>war</type>
+                            <properties>
+                                <context>/</context>
+                            </properties>
+                        </deployable>
+                    </deployables>
+                </configuration>
+            </plugin>
         </plugins>
     </build>
+
 
     <repositories>
         <repository>
