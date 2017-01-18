@@ -2,6 +2,7 @@
 <html lang="en" xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org">
 <head>
     <style>
+
         body {
             margin-left: 10%;
             margin-right: 10%;
@@ -9,13 +10,8 @@
 
         .main {
             width: 100%;
-            background-color: #FEFEFE;
             font-family: Helvetica, Helvetica, Arial, sans-serif;
             font-size: 17px;
-        }
-
-        .content {
-            padding: 10px;
         }
 
         .header {
@@ -23,17 +19,35 @@
             padding: 10px;
         }
 
+        .logo-txt {
+            display: inline-block;
+            max-width: 80%;
+            margin: 0;
+            padding: 0;
+        }
+
+        .content {
+            padding: 10px;
+        }
+
         .footer {
             background-color: #1D2B4A;
-            height: 20px;
+            text-align: right;
+            padding: 4px;
         }
+
+        .kovadom-link {
+            color: white;
+            padding: 0 10px;
+        }
+
 
     </style>
 </head>
 <body>
 <div class="main">
     <div class="header">
-        <img src="logo-kovadom-txt.png" th:src="|cid:${logoId}|"/>
+        <img class="logo-txt" src="logo-kovadom-txt.png" th:src="|cid:${logoId}|"/>
     </div>
     <div class="content">
         <h4 th:text="#{mail.hello(${sale.getHost().getFirstName()})}">Hello</h4>
@@ -41,9 +55,9 @@
         <p th:text="#{mail.verify-availability.answer(${sale.getBrand().getName()})}">We are working on it</p>
         <p th:text="#{mail.verify-availability.feedback}">Keep in touch</p>
         <p th:text="#{mail.signature}"></p>
-        <a href="www.kovadom.com" th:href="@{http://www.kovadom.com}">kovadom.com</a>
     </div>
     <div class="footer">
+        <a class="kovadom-link" href="www.kovadom.com" th:href="@{http://www.kovadom.com}">kovadom.com</a>
     </div>
 </div>
 </body>
