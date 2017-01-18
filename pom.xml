@@ -27,21 +27,6 @@
         <tomcat-version>8.5.6</tomcat-version>
     </properties>
 
-    <profiles>
-        <profile>
-            <id>dev</id>
-            <activation>
-                <property>
-                    <name>env</name>
-                    <value>dev</value>
-                </property>
-            </activation>
-            <properties>
-                <orm.show-sql>true</orm.show-sql>
-            </properties>
-        </profile>
-    </profiles>
-
     <dependencies>
         <dependency>
             <groupId>org.springframework.boot</groupId>
@@ -109,9 +94,9 @@
 
     <build>
 
-        <filters>
-            <filter>kovadom.properties</filter>
-        </filters>
+        <!--<filters>-->
+            <!--<filter>kovadom.properties</filter>-->
+        <!--</filters>-->
 
         <plugins>
             <plugin>
@@ -300,6 +285,8 @@
                                 -Xrunjdwp:transport=dt_socket,server=y,suspend=n,address=8000
                                 -Xnoagent
                                 -Djava.compiler=NONE
+                                -Dspring.config.location=file:${project.build.directory}/dev/application-override.properties
+                                -Dlogback-override.path=${project.build.directory}/dev/logback-override.xml
                             </cargo.start.jvmargs>
                         </properties>
                     </configuration>

@@ -12,4 +12,4 @@ src/main/frontend/typings
 src/main/frontend/dist
 src/main/webapp/resources/generated
 static
-kovadom.properties
+dev/application-override.properties

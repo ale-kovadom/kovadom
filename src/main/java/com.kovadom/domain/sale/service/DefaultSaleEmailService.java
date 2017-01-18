@@ -9,7 +9,6 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.context.MessageSource;
 import org.springframework.context.i18n.LocaleContextHolder;
-import org.springframework.core.io.ByteArrayResource;
 import org.springframework.mail.javamail.JavaMailSender;
 import org.springframework.mail.javamail.MimeMessageHelper;
 import org.springframework.mail.javamail.MimeMessagePreparator;
@@ -17,14 +16,10 @@ import org.springframework.stereotype.Service;
 import org.thymeleaf.TemplateEngine;
 import org.thymeleaf.context.Context;
 
-import javax.servlet.ServletContext;
-import java.io.InputStream;
-
 import static com.kovadom.domain.sale.Sale.Status.AVAILABILITY;
 import static com.kovadom.domain.sale.Sale.Status.BOOK_REQUEST;
 import static com.kovadom.framework.resource.ResourceLoader.Resources.KOVADOM_LOGO_TXT;
 import static java.lang.String.format;
-import static org.apache.commons.io.IOUtils.toByteArray;
 
 @Service
 public class DefaultSaleEmailService implements SaleEmailService {

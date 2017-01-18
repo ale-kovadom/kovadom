@@ -11,9 +11,9 @@
 ## Useful commands
 
 ###Node installation + Angular + Java in development mode
-mvn clean compile tomee-embedded:run -Denv=dev
+mvn clean compile tomee-embedded:run -Denv=dev -Ddev.static-dir=<path-to-static-dir>
 ### Angular + Java without node installation in development mode
-mvn clean compile tomee-embedded:run -Dskip.npm -Denv=dev
+mvn clean compile tomee-embedded:run -Dskip.npm -Denv=dev -Ddev.static-dir=<path-to-static-dir>
 ### Only java in development mode
-mvn compile war:war tomee-embedded:run -Dskip.npm -Dfrontend.skip -Denv=dev
+mvn compile war:war tomee-embedded:run -Dskip.npm -Dfrontend.skip -Denv=dev -Ddev.static-dir=<path-to-static-dir>
 

@@ -1,7 +1,0 @@
-####### Development properties #######
-
-# Static resources directory considered as data (images, etc.).
-dev.static-dir = XXX/static
-
-# Log JPA/SQL
-orm.show-sql = false
