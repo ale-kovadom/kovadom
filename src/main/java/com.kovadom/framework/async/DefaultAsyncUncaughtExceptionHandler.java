@@ -1,4 +1,4 @@
-package com.kovadom.configuration.async;
+package com.kovadom.framework.async;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;

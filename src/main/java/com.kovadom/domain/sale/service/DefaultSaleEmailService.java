@@ -2,6 +2,7 @@ package com.kovadom.domain.sale.service;
 
 import com.kovadom.domain.host.Host;
 import com.kovadom.domain.sale.Sale;
+import com.kovadom.framework.resource.ResourceLoader;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -21,6 +22,7 @@ import java.io.InputStream;
 
 import static com.kovadom.domain.sale.Sale.Status.AVAILABILITY;
 import static com.kovadom.domain.sale.Sale.Status.BOOK_REQUEST;
+import static com.kovadom.framework.resource.ResourceLoader.Resources.KOVADOM_LOGO_TXT;
 import static java.lang.String.format;
 import static org.apache.commons.io.IOUtils.toByteArray;
 
@@ -41,7 +43,7 @@ public class DefaultSaleEmailService implements SaleEmailService {
 
     private final TemplateEngine templateEngine;
 
-    private final ServletContext servletContext;
+    private final ResourceLoader resourceLoader;
 
     private final MessageSource messageSource;
 
@@ -50,10 +52,10 @@ public class DefaultSaleEmailService implements SaleEmailService {
 
     @Autowired
     public DefaultSaleEmailService(final JavaMailSender mailSender, final TemplateEngine templateEngine,
-                                   final ServletContext servletContext, final MessageSource messageSource) {
+                                   final ResourceLoader resourceLoader, final MessageSource messageSource) {
         this.mailSender = mailSender;
         this.templateEngine = templateEngine;
-        this.servletContext = servletContext;
+        this.resourceLoader = resourceLoader;
         this.messageSource = messageSource;
     }
 
@@ -78,8 +80,7 @@ public class DefaultSaleEmailService implements SaleEmailService {
             context.setVariable("logoId", logoId);
             message.setText(templateEngine.process(saleStatus == AVAILABILITY ? VERIFY_AVAILABILITY_TEMPLATE : BOOK_REQUEST_TEMPLATE, context), true);
 
-            InputStream logoInputStream = servletContext.getResourceAsStream("img/kovadom/logo-kovadom-txt.png");
-            message.addInline(logoId, new ByteArrayResource(toByteArray(logoInputStream)), "image/png");
+            message.addInline(logoId, resourceLoader.load(KOVADOM_LOGO_TXT), "image/png");
         };
 
         this.mailSender.send(preparator);

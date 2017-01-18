@@ -1,6 +1,6 @@
 package com.kovadom;
 
-import com.kovadom.configuration.async.DefaultAsyncUncaughtExceptionHandler;
+import com.kovadom.framework.async.DefaultAsyncUncaughtExceptionHandler;
 import org.springframework.aop.interceptor.AsyncUncaughtExceptionHandler;
 import org.springframework.boot.Banner;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
