@@ -88,7 +88,7 @@
         <trans-unit id="92fea13ff6ec8191e22f328da33cdae0163fc5ae" datatype="html">
             <source>Requests the brands you would like to test.
                       </source>
-          <target>Faites des demandes pour les marques vous voulez tester.</target>
+          <target>Faites des demandes pour les marques que vous voulez tester.</target>
           <note priority="1" from="description">step2 description - part1</note>
           <note priority="1" from="meaning">home</note>
         </trans-unit>
