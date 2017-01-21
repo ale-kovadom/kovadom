@@ -34,7 +34,7 @@ public class DefaultSaleEmailService implements SaleEmailService {
 
     private static final String MAIL_BOOK_REQUEST_SUBJECT = "mail.book-request.subject";
 
-    private static final String KOVADOM_SUBJ_AVAILABILITY = "New Availability request";
+    private static final String KOVADOM_SUBJ_AVAILABILITY = "New availability request";
 
     private static final String KOVADOM_SUBJ_BOOK = "New booking request";
 
