@@ -46,14 +46,40 @@ nav {
     border-radius: 0 !important;
 }
 
-header div.logo img {
-    display: inline-block;
-    height: 115px;
-    padding: 7px 0 ;
+header div.logos {
+    display: table;
+    height: 105px;
 }
 
-header div.logo {
-    text-align: center;
+header .logo-wrapper {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+header .logo-wrapper img {
+    display: inline-block;
+    height: 75px;
+    margin: 15px 10px;
+}
+
+@media only screen and (max-width: 767px) {
+    header div.logos {
+        text-align: center;
+    }
+}
+
+@media only screen and (max-width: 400px) {
+
+    header div.logos {
+        height: 90px;
+    }
+
+    header .logo-wrapper img {
+        display: inline-block;
+        height: 63px;
+        margin: 10px 7px;
+    }
+
 }
 
 /*** Footer ***/
