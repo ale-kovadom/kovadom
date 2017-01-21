@@ -28,9 +28,15 @@ public class DefaultSaleEmailService implements SaleEmailService {
 
     private static final String BOOK_REQUEST_TEMPLATE = "book_request";
 
+    private static final String KOVADOM_NOTIFICATION_TEMPLATE = "kovadom_notification";
+
     private static final String MAIL_VERIFY_AVAILABILITY_SUBJECT = "mail.verify-availability.subject";
 
     private static final String MAIL_BOOK_REQUEST_SUBJECT = "mail.book-request.subject";
+
+    private static final String KOVADOM_SUBJ_AVAILABILITY = "New Availability request";
+
+    private static final String KOVADOM_SUBJ_BOOK = "New booking request";
 
     private final Logger log = LoggerFactory.getLogger(this.getClass());
 
@@ -45,6 +51,9 @@ public class DefaultSaleEmailService implements SaleEmailService {
     @Value("${kovadom.mail.from}")
     private String from;
 
+    @Value("${kovadom.mail.address}")
+    private String kovadomAddress;
+
     @Autowired
     public DefaultSaleEmailService(final JavaMailSender mailSender, final TemplateEngine templateEngine,
                                    final ResourceLoader resourceLoader, final MessageSource messageSource) {
@@ -55,7 +64,7 @@ public class DefaultSaleEmailService implements SaleEmailService {
     }
 
     @Override
-    public void notifyHost(Sale sale) {
+    public void notifyHost(final Sale sale) {
         MimeMessagePreparator preparator = mimeMessage -> {
             Sale.Status saleStatus = sale.getStatus();
             if (saleStatus != AVAILABILITY && saleStatus != BOOK_REQUEST) {
@@ -63,7 +72,7 @@ public class DefaultSaleEmailService implements SaleEmailService {
             }
 
             Host host = sale.getHost();
-            log.debug(format("Sending email to '%s'", host.getEmail()));
+            log.debug(format("Notify user via email to '%s'", host.getEmail()));
 
             MimeMessageHelper message = new MimeMessageHelper(mimeMessage, true, "UTF-8");
             message.setTo(host.getEmail());
@@ -79,7 +88,31 @@ public class DefaultSaleEmailService implements SaleEmailService {
         };
 
         this.mailSender.send(preparator);
+    }
 
+    @Override
+    public void notifyKovadom(final Sale sale) {
+        MimeMessagePreparator preparator = mimeMessage -> {
+            Sale.Status saleStatus = sale.getStatus();
+            if (saleStatus != AVAILABILITY && saleStatus != BOOK_REQUEST) {
+                throw new IllegalStateException(format("Can not notify Kovadom with sale status '%s'", saleStatus.name()));
+            }
+
+            log.debug(format("Notify Kovadom via email to '%s'", kovadomAddress));
+
+            MimeMessageHelper message = new MimeMessageHelper(mimeMessage, true, "UTF-8");
+            message.setTo(kovadomAddress);
+            message.setFrom(from);
+            String status = saleStatus == AVAILABILITY ? KOVADOM_SUBJ_AVAILABILITY : KOVADOM_SUBJ_BOOK;
+            message.setSubject(status + " (" + sale.getBrand().getName() + ")");
+
+            Context context = new Context();
+            context.setVariable("sale", sale);
+            context.setVariable("saleStatus", status);
+            message.setText(templateEngine.process(KOVADOM_NOTIFICATION_TEMPLATE, context), true);
+        };
+
+        this.mailSender.send(preparator);
     }
 
 }

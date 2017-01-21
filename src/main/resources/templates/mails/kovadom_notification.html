@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <style>
+
+        body {
+            margin-left: 10%;
+            margin-right: 10%;
+        }
+
+        .main {
+            width: 100%;
+            font-family: Helvetica, Helvetica, Arial, sans-serif;
+            font-size: 14px;
+        }
+
+        thead tr {
+            background-color: #EEEEEE;
+        }
+
+        table {
+            border: none;
+            border-spacing: 0;
+            width: 500px;
+        }
+
+        th {
+            font-weight: bold;
+            padding: 5px;
+            width: 250px;
+        }
+
+        td {
+            padding: 3px;
+        }
+
+        h3 {
+            margin-top: 40px;
+        }
+
+    </style>
+</head>
+
+<body>
+<div class="main">
+
+    <h2 th:text="${saleStatus}">status</h2>
+
+    <h3>Sale's information:</h3>
+    <table>
+        <thead>
+        <tr>
+            <th>Field</th>
+            <th>Value</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <td>Brand</td>
+            <td th:text="${sale.getBrand().getName()}">Aubade</td>
+        </tr>
+        <tr>
+            <td>Date</td>
+            <td th:text="${sale.getDate()}">01/01/2020 13:30</td>
+        </tr>
+        <tr>
+            <td>City</td>
+            <td th:text="${sale.getCity()}">Paris</td>
+        </tr>
+        <tr>
+            <td>Stakeholders count</td>
+            <td th:text="${sale.getStakeholderCount()}">10</td>
+        </tr>
+        <tr>
+            <td>Extra information</td>
+            <td th:text="${sale.getExtraInformation()}">bla bla bla bla bla bla
+                bla bla bla
+            </td>
+        </tr>
+        </tbody>
+    </table>
+
+    <h3 class="host-title">Requester's information:</h3>
+    <table>
+        <thead>
+        <tr>
+            <th>Field</th>
+            <th>Value</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <td>First name</td>
+            <td th:text="${sale.getHost().getFirstName()}">Arnold</td>
+        </tr>
+        <tr>
+            <td>Last name</td>
+            <td th:text="${sale.getHost().getLastName()}">Schwarzenegger</td>
+        </tr>
+        <tr>
+            <td>Phone</td>
+            <td th:text="${sale.getHost().getPhone()}">0203040505</td>
+        </tr>
+        <tr>
+            <td>Email</td>
+            <td th:text="${sale.getHost().getEmail()}">swarzi@free.fr</td>
+        </tr>
+        </tbody>
+    </table>
+</div>
+</body>
+</html>

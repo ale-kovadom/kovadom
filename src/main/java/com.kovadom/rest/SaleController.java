@@ -38,6 +38,7 @@ public class SaleController {
         saleRepository.save(sale);
 
         saleEmailService.notifyHost(sale);
+        saleEmailService.notifyKovadom(sale);
 
         HttpHeaders headers = new HttpHeaders();
         return new ResponseEntity<>(headers, HttpStatus.CREATED);
