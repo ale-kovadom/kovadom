@@ -1,27 +1,51 @@
-.contact {
-    background-color: #3B5796;
+div.contact {
+    background-color: white;
     height: auto;
     padding-top: 20px;
     padding-bottom: 20px;
     margin-top: 40px;
 }
 
-.contact p {
+div.contact p {
     color: black;
     font-family: 'Roboto', sans-serif;
     font-size: 18px;
     min-width: 375px;
 }
 
-.contact li {
+div.contact li {
     color: black;
 }
 
-.icone li {
+a.contact
+{
+    vertical-align: top;
+    line-height: 22px;
+    text-decoration: none;
+    color: black;
+}
+
+a.contact:hover {
+    color: rgb(239, 112, 105);
+}
+
+i.contact
+{
+    vertical-align: top;
+    margin-right: 6px;
+    line-height: 22px;
+    font-size: 20px;
+}
+
+.icon-social {
+    padding: 0;
+}
+
+.icon-social li {
     display: inline-block;
 }
 
-.icone img {
+.icon-social img {
     width: 32px;
     height: 32px;
 }
@@ -32,8 +56,15 @@
 }
 
 @media only screen and (max-width: 767px) {
-    #contact-info {
+    #register-info, #social-info, #contact-info {
         text-align: center;
         margin-top: 30px;
     }
+}
+
+@media only screen and (max-width: 425px) {
+    #register-info h4, #social-info h4, #contact-info h4{
+        font-size: 17px; /* Avoid line return */
+    }
+
 }

@@ -4,28 +4,32 @@
 
         <div class="row">
 
-            <div class="col-sm-4 col-sm-offset-1 text-center">
-                <p i18n="contact|Home sales business">You are a home sales company?</p>
+            <div id="register-info" class="col-sm-4 col-sm-offset-1">
+                <h4 i18n="contact|Home sales business">You are a home sales company?</h4>
                 <a i18n="contact|Company registration" class="btn red" href="todo">Register your company</a>
             </div>
 
-            <div id="contact-info" class="col-sm-5 col-sm-offset-2">
+            <div id="contact-info" class="col-sm-3">
+                <h4 i18n="contact|contact-info">Contact</h4>
                 <ul>
-                    <li><strong i18n="contact|contact-info1">Contact</strong></li>
                     <li>
-                        <ng-container i18n="contact|contact-info2 (email)">E-mail:</ng-container>
-                        contact@eventhome.fr
+                        <i class="icomoon-liga icon-email contact"></i>
+                        <a class="contact" href="mailto:contact@kovadom.com">contact@kovadom.com</a>
                     </li>
                     <li>
-                        <ng-container i18n="contact|contact-info3 (phone)">Phone:</ng-container>
-                        01 87 64 56 35
+                        <i class="icomoon-liga icon-phone contact"></i>
+                        <!-- TODO i18n -->
+                        <a class="contact" href="tel:+33187645635">01 87 64 56 35</a>
                     </li>
-                </ul>
+                </ul>           
 
-                <ul class="icone">
-                    <li><img src="img/contact/instagram.svg"></li>
-                    <li><img src="img/contact/instagram.svg"></li>
-                    <li><img src="img/contact/instagram.svg"></li>
+            </div>
+
+            <div id="social-info" class="col-sm-4">
+                <h4 i18n="contact|social-info">Follow us</h4>
+                <ul class="icon-social">
+                    <a href="https://www.facebook.com/kovadom" target="_blank"><img src="img/contact/facebook.png"></a>
+                    <a href="https://www.twitter.com/kovadom" target="_blank"><img src="img/contact/twitter.png"></a>
                 </ul>
             </div>
 

@@ -124,8 +124,8 @@
         <note priority="1" from="description">how it works?</note>
         <note priority="1" from="meaning">home</note>
       </trans-unit>
-      <trans-unit id="b860914a42729cf0cef258dba7965467bdc35c60" datatype="html">
-        <source>&gt;Discover all the activities</source>
+      <trans-unit id="b4301727f3359f10cf34411db1ce5ced202abb83" datatype="html">
+        <source>Discover all the activities</source>
         <target/>
         <note priority="1" from="description">Discover all the activities button</note>
         <note priority="1" from="meaning">home</note>
@@ -163,19 +163,13 @@
       <trans-unit id="adfc7ed34849cc474e47280ed3252578095a3d1c" datatype="html">
         <source>Contact</source>
         <target/>
-        <note priority="1" from="description">contact-info1</note>
+        <note priority="1" from="description">contact-info</note>
         <note priority="1" from="meaning">contact</note>
       </trans-unit>
-      <trans-unit id="b495131a874894369b62f6311382241867a0d8e6" datatype="html">
-        <source>E-mail:</source>
+      <trans-unit id="31893f09a166c636dfa32ab02e29edfe05fdf05b" datatype="html">
+        <source>Follow us</source>
         <target/>
-        <note priority="1" from="description">contact-info2 (email)</note>
-        <note priority="1" from="meaning">contact</note>
-      </trans-unit>
-      <trans-unit id="5b62245b586345080939b3dcdae1d5dbb5ccc967" datatype="html">
-        <source>Phone:</source>
-        <target/>
-        <note priority="1" from="description">contact-info3 (phone)</note>
+        <note priority="1" from="description">social-info</note>
         <note priority="1" from="meaning">contact</note>
       </trans-unit>
       <trans-unit id="664541179fd88bafffd62355da1c1baeb4651424" datatype="html">
