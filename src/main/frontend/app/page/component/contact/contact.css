@@ -25,10 +25,6 @@ a.contact
     color: black;
 }
 
-a.contact:hover {
-    color: rgb(239, 112, 105);
-}
-
 i.contact
 {
     vertical-align: top;

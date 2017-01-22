@@ -17,6 +17,7 @@ import {FrameworkModule} from "./framework/framework.module";
 import {SaleService} from "./domain/sale/sale.service";
 import {Ng2PageScrollModule} from 'ng2-page-scroll';
 import {ActivitiesComponent} from "./page/activities/activities.component";
+import {PageNotFoundComponent} from "./page/page_not_found/page-not-found.component";
 
 @NgModule({
     imports: [
@@ -28,6 +29,7 @@ import {ActivitiesComponent} from "./page/activities/activities.component";
         Ng2PageScrollModule.forRoot()
     ],
     declarations: [
+        PageNotFoundComponent,
         KovadomComponent,
         HomeComponent,
         ActivityComponent,

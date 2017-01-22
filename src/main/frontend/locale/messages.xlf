@@ -2,6 +2,24 @@
 <xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
   <file source-language="en" datatype="plaintext" original="ng2.template">
     <body>
+      <trans-unit id="7934931a315270c585059812b2c05e45ed44f842" datatype="html">
+        <source>Page not found</source>
+        <target/>
+        <note priority="1" from="description"> page not found header</note>
+        <note priority="1" from="meaning">page not found </note>
+      </trans-unit>
+      <trans-unit id="bbab9b898def97a2f93ebbc38db106bd507786b2" datatype="html">
+        <source>Back to previous page</source>
+        <target/>
+        <note priority="1" from="description">Back to previous</note>
+        <note priority="1" from="meaning">page not found </note>
+      </trans-unit>
+      <trans-unit id="730c4b71baa15dc7bf7fe0844474845c6e46739d" datatype="html">
+        <source>Back to home</source>
+        <target/>
+        <note priority="1" from="description">Back to home</note>
+        <note priority="1" from="meaning">page not found </note>
+      </trans-unit>
       <trans-unit id="0e591c79c51be0937d449094b2cacc2b6bc8784e" datatype="html">
         <source>Home sale</source>
         <target/>

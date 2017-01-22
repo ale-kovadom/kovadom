@@ -1,0 +1,21 @@
+.container {
+    text-align: center;
+}
+
+.back-link {
+    display: block;
+}
+
+.logo {
+    -ms-transform: rotate(15deg); /* IE 9 */
+    -webkit-transform: rotate(15deg); /* Chrome, Safari, Opera */
+    transform: rotate(15deg);
+    margin: 30px;
+    width: 400px;
+}
+
+@media only screen and (max-width: 767px) {
+    .logo {
+        width: 300px;
+    }
+}

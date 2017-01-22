@@ -24,6 +24,11 @@ span.kov:after {
     vertical-align: middle;
 }
 
+a.red-hover:hover {
+    color: rgb(239, 112, 105);
+    text-decoration: none;
+}
+
 .btn.red {
     border-radius: 2px;
     border: 0;
