@@ -10,7 +10,6 @@ import {ContactComponent} from "./page/component/contact/contact.component";
 import {BrandsComponent} from "./page/brands/list/brands.component";
 import {FormsModule} from "@angular/forms";
 import {BrandService} from "./domain/brand/brand.service";
-import {AllBrandsButtonComponent} from "./page/component/brands/all_brands_button/all-brands.button.component";
 import {ActivitySearchComponent} from "./page/component/brands/by_activity_search/brand-search-by-activity.component";
 import {BrandDetailComponent} from "./page/brands/detail/brand-detail.component";
 import {FrameworkModule} from "./framework/framework.module";
@@ -33,7 +32,6 @@ import {PageNotFoundComponent} from "./page/page_not_found/page-not-found.compon
         KovadomComponent,
         HomeComponent,
         ActivityComponent,
-        AllBrandsButtonComponent,
         ActivitySearchComponent,
         ContactComponent,
         BrandsComponent,

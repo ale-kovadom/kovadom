@@ -154,12 +154,6 @@
         <note priority="1" from="description">Which activity ?</note>
         <note priority="1" from="meaning">activity title</note>
       </trans-unit>
-      <trans-unit id="1f136607151f0481e3cf061c2a4a519a6da86340" datatype="html">
-        <source>Discover all the sales</source>
-        <target/>
-        <note priority="1" from="description">Discover all the sale button</note>
-        <note priority="1" from="meaning">home</note>
-      </trans-unit>
       <trans-unit id="5746a4ee4284194f4dd25bbd1d6b104a9c8f8bf5" datatype="html">
         <source>Search</source>
         <target/>
