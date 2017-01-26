@@ -25,6 +25,7 @@
         <mysql-connector-version>5.1.6</mysql-connector-version>
         <liquibase-version>3.4.1</liquibase-version>
         <tomcat-version>8.5.6</tomcat-version>
+        <kovadom.ssl.transport-guarantee>CONFIDENTIAL</kovadom.ssl.transport-guarantee>
     </properties>
 
     <dependencies>
@@ -95,7 +96,7 @@
     <build>
 
         <!--<filters>-->
-            <!--<filter>kovadom.properties</filter>-->
+        <!--<filter>kovadom.properties</filter>-->
         <!--</filters>-->
 
         <plugins>
@@ -114,6 +115,7 @@
                 <artifactId>maven-war-plugin</artifactId>
                 <version>2.6</version>
                 <configuration>
+                    <filteringDeploymentDescriptors>true</filteringDeploymentDescriptors>
                     <failOnMissingWebXml>false</failOnMissingWebXml>
                 </configuration>
             </plugin>
@@ -279,7 +281,7 @@
                             </copy>
                         </files>
                         <properties>
-                            <cargo.servlet.port>8080</cargo.servlet.port>
+                            <!--<cargo.servlet.port>8443</cargo.servlet.port>-->
                             <cargo.start.jvmargs>
                                 -Xdebug
                                 -Xrunjdwp:transport=dt_socket,server=y,suspend=n,address=8000
@@ -305,6 +307,15 @@
         </plugins>
     </build>
 
+    <pluginRepositories>
+        <pluginRepository>
+            <id>Central Repository</id>
+            <url>http://central.maven.org/maven2/</url>
+            <snapshots>
+                <enabled>false</enabled>
+            </snapshots>
+        </pluginRepository>
+    </pluginRepositories>
 
     <repositories>
         <repository>

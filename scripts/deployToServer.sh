@@ -8,14 +8,14 @@ cd /opt/tomcat/webapps
 sleep 2
 exit
 sleep 15
-mv ROOT_OLD ROOT_TO_BE_REMOVED
-cp -R ROOT ROOT_OLD
+mv ../ROOT_OLD ../ROOT_TO_BE_REMOVED
+cp -R ROOT ../ROOT_OLD
 rm -rf ROOT
 rm -rf ROOT.war
 cp /tmp/kovadom-*.war ROOT.war
 ../bin/startup.sh
 sleep 2
 exit
-rm -rf ROOT_TO_BE_REMOVED
+rm -rf ../ROOT_TO_BE_REMOVED
 rm -rf /tmp/kovadom-*.war
 EOF
