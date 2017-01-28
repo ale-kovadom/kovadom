@@ -14,9 +14,11 @@ import {ActivitySearchComponent} from "./page/component/brands/by_activity_searc
 import {BrandDetailComponent} from "./page/brands/detail/brand-detail.component";
 import {FrameworkModule} from "./framework/framework.module";
 import {SaleService} from "./domain/sale/sale.service";
-import {Ng2PageScrollModule} from 'ng2-page-scroll';
+import {Ng2PageScrollModule} from "ng2-page-scroll";
 import {ActivitiesComponent} from "./page/activities/activities.component";
 import {PageNotFoundComponent} from "./page/page_not_found/page-not-found.component";
+import {HomeSaleHowToComponent} from "./page/home_sale_how_to/home-sale.how-to.component";
+import {SaleHowtoStepsComponent} from "./page/component/sale_how_to_steps/sale.how-to.steps.component";
 
 @NgModule({
     imports: [
@@ -36,7 +38,9 @@ import {PageNotFoundComponent} from "./page/page_not_found/page-not-found.compon
         ContactComponent,
         BrandsComponent,
         BrandDetailComponent,
-        ActivitiesComponent
+        ActivitiesComponent,
+        SaleHowtoStepsComponent,
+        HomeSaleHowToComponent
     ],
     providers: [ActivityService, BrandService, SaleService],
     bootstrap: [KovadomComponent]

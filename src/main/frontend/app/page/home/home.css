@@ -11,12 +11,6 @@ a:hover {
     font-family: 'Roboto', sans-serif;
 }
 
-img {
-    display: block;
-    margin: 0 auto 0;
-    padding-top: 0;
-}
-
 ul {
     list-style: none inside;
     padding-left: 0;
@@ -135,33 +129,18 @@ ul {
 
 }
 
-/*** Steps 1 2 3 ***/
+/*** Sale steps ***/
 
-.container p {
+.access-sale .row {
+    padding-bottom: 35px;
+}
+
+.access-sale p {
     font-size: 30px;
     font-family: 'Roboto', sans-serif;
     margin-bottom: 0;
     padding-bottom: 0;
     text-align: center;
-}
-
-.container .row {
-    padding-bottom: 35px;
-}
-
-.container .col-sm-4 h3 {
-    color: black;
-    text-align: center;
-}
-
-.container .col-sm-4 p {
-    color: black;
-    font-size: 18px;
-    font-family: 'Roboto', sans-serif;
-}
-
-.container .col-sm-4 .bold {
-    font-weight: bold;
 }
 
 /*** How it works? ***/

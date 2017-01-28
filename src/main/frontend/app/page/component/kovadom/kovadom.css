@@ -2,7 +2,6 @@
 
 header .row a {
     display: inline-block;
-    /*height: 100%;*/
     color: white;
 }
 
@@ -12,7 +11,13 @@ header .row a, header .row a:hover, header .row a:active, header .row a:focus {
 
 header.container-fluid {
     background-color: #1D2B4A;
-    line-height: 80px;
+}
+
+.container-fluid nav p {
+    font-family: 'Roboto', sans-serif;
+    font-size: 15px;
+    text-align: right;
+    margin: 10px;
 }
 
 @media only screen and (max-width: 767px) {
@@ -26,16 +31,9 @@ header.container-fluid {
 @media only screen and (max-width: 400px) {
 
     .container-fluid nav p {
-        font-size: 16px;
+        font-size: 14px;
     }
 
-}
-
-.container-fluid nav p {
-    font-family: 'Roboto', sans-serif;
-    font-size: 18px;
-    text-align: right;
-    margin: 0;
 }
 
 nav {
@@ -44,7 +42,6 @@ nav {
 
 header div.logos {
     display: table;
-    height: 105px;
 }
 
 header .logo-wrapper {
@@ -54,7 +51,7 @@ header .logo-wrapper {
 
 header .logo-wrapper img {
     display: inline-block;
-    height: 75px;
+    height: 67px;
     margin: 15px 10px;
 }
 
@@ -66,13 +63,9 @@ header .logo-wrapper img {
 
 @media only screen and (max-width: 400px) {
 
-    header div.logos {
-        height: 90px;
-    }
-
     header .logo-wrapper img {
         display: inline-block;
-        height: 63px;
+        height: 59px;
         margin: 10px 7px;
     }
 

@@ -1,0 +1,29 @@
+p {
+    font-size: 30px;
+    font-family: 'Roboto', sans-serif;
+    margin-bottom: 0;
+    padding-bottom: 0;
+    text-align: center;
+}
+
+.col-sm-4 h3 {
+    color: black;
+    text-align: center;
+}
+
+.col-sm-4 p {
+    color: black;
+    font-size: 18px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.col-sm-4 .bold {
+    font-weight: bold;
+}
+
+
+img {
+    display: block;
+    margin: 0 auto 0;
+    padding-top: 0;
+}

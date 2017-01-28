@@ -5,6 +5,7 @@ import {BrandsComponent} from "./page/brands/list/brands.component";
 import {BrandDetailComponent} from "./page/brands/detail/brand-detail.component";
 import {ActivitiesComponent} from "./page/activities/activities.component";
 import {PageNotFoundComponent} from "./page/page_not_found/page-not-found.component";
+import {HomeSaleHowToComponent} from "./page/home_sale_how_to/home-sale.how-to.component";
 
 const routes:Routes = [
     {path: '', redirectTo: '/home', pathMatch: 'full'},
@@ -12,6 +13,7 @@ const routes:Routes = [
     {path: 'brands/:brandCode', component: BrandDetailComponent},
     {path: 'brands', component: BrandsComponent},
     {path: 'activities', component: ActivitiesComponent},
+    {path: 'homesalehowto', component: HomeSaleHowToComponent},
     {path: '**', component: PageNotFoundComponent}
 ];
 

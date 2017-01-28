@@ -73,69 +73,6 @@
         <note priority="1" from="description">accessibility</note>
         <note priority="1" from="meaning">home</note>
       </trans-unit>
-      <trans-unit id="8e72a5258c2c25a0e57df98ad8cc3b80d4c604c3" datatype="html">
-        <source>Choose your sale</source>
-        <target/>
-        <note priority="1" from="description">step1 title</note>
-        <note priority="1" from="meaning">home</note>
-      </trans-unit>
-      <trans-unit id="b88320c70c3da2d9958ef902870bbd09cd166543" datatype="html">
-        <source>In a few clicks find the sale and</source>
-        <target/>
-        <note priority="1" from="description">step1 description - part1</note>
-        <note priority="1" from="meaning">home</note>
-      </trans-unit>
-      <trans-unit id="9f614de1966b15afdc3eb0d52f94d0b60819f9be" datatype="html">
-        <source>the ambiance you would like to share</source>
-        <target/>
-        <note priority="1" from="description">step1 emphasized description - part2</note>
-        <note priority="1" from="meaning">home</note>
-      </trans-unit>
-      <trans-unit id="368baab82e09f0eddc357994d7055edf7111efa1" datatype="html">
-        <source>with your friends.</source>
-        <target/>
-        <note priority="1" from="description">step1 description - part3</note>
-        <note priority="1" from="meaning">home</note>
-      </trans-unit>
-      <trans-unit id="b3eb7af65736dc801d13866d6080f48ba7778637" datatype="html">
-        <source>Send your request</source>
-        <target/>
-        <note priority="1" from="description">step2 description</note>
-        <note priority="1" from="meaning">home</note>
-      </trans-unit>
-      <trans-unit id="92fea13ff6ec8191e22f328da33cdae0163fc5ae" datatype="html">
-        <source>Requests the brands you would like to test.
-            </source>
-        <target/>
-        <note priority="1" from="description">step2 description - part1</note>
-        <note priority="1" from="meaning">home</note>
-      </trans-unit>
-      <trans-unit id="4eac721b3b38d62365dfdfedd5e3cdff6077e466" datatype="html">
-        <source>It is free without any commitment!</source>
-        <target/>
-        <note priority="1" from="description">step2 emphasized description - part2</note>
-        <note priority="1" from="meaning">home</note>
-      </trans-unit>
-      <trans-unit id="1c71428d401a4ad455e9a83f1ae8486ebf386328" datatype="html">
-        <source>Follow your requests</source>
-        <target/>
-        <note priority="1" from="description">step3 description</note>
-        <note priority="1" from="meaning">home</note>
-      </trans-unit>
-      <trans-unit id="84ff6245d249e6dcc40f60cf2846040ce6d7f5fe" datatype="html">
-        <source>Follow the progress of your requests, meet your seller
-                and
-            </source>
-        <target/>
-        <note priority="1" from="description">step3 description - part1</note>
-        <note priority="1" from="meaning">home</note>
-      </trans-unit>
-      <trans-unit id="35b8bf28abebe9bb3a9834c38f351a6056f0c509" datatype="html">
-        <source>confirm your reservation in one click.</source>
-        <target/>
-        <note priority="1" from="description">step3 emphasized description - part2</note>
-        <note priority="1" from="meaning">home</note>
-      </trans-unit>
       <trans-unit id="117fecefb733a49244be00f3f9e905940fa010d8" datatype="html">
         <source>How it works?</source>
         <target/>
@@ -274,18 +211,6 @@
         <note priority="1" from="description"> stakeholders count</note>
         <note priority="1" from="meaning">book a sale form </note>
       </trans-unit>
-      <trans-unit id="ecfe99042a2bab635c4b9b88ff2cbee808442e9a" datatype="html">
-        <source>Last name</source>
-        <target/>
-        <note priority="1" from="description"> lastname</note>
-        <note priority="1" from="meaning">book a sale form </note>
-      </trans-unit>
-      <trans-unit id="6a019bc356f240e4722e4ae034b872c010148677" datatype="html">
-        <source>Your last name</source>
-        <target/>
-        <note priority="1" from="description"> last name placeholder</note>
-        <note priority="1" from="meaning">book a sale form </note>
-      </trans-unit>
       <trans-unit id="d79ef1bf3f1829cee04927920d55160e79f05000" datatype="html">
         <source>First name</source>
         <target/>
@@ -296,6 +221,18 @@
         <source>Your first name</source>
         <target/>
         <note priority="1" from="description"> first name placeholder</note>
+        <note priority="1" from="meaning">book a sale form </note>
+      </trans-unit>
+      <trans-unit id="ecfe99042a2bab635c4b9b88ff2cbee808442e9a" datatype="html">
+        <source>Last name</source>
+        <target/>
+        <note priority="1" from="description"> lastname</note>
+        <note priority="1" from="meaning">book a sale form </note>
+      </trans-unit>
+      <trans-unit id="6a019bc356f240e4722e4ae034b872c010148677" datatype="html">
+        <source>Your last name</source>
+        <target/>
+        <note priority="1" from="description"> last name placeholder</note>
         <note priority="1" from="meaning">book a sale form </note>
       </trans-unit>
       <trans-unit id="49a9028076ef41f008fd607fc4fb63c36120570e" datatype="html">
@@ -331,6 +268,69 @@
         <target/>
         <note priority="1" from="description"> Submit</note>
         <note priority="1" from="meaning">book a sale form </note>
+      </trans-unit>
+      <trans-unit id="8e72a5258c2c25a0e57df98ad8cc3b80d4c604c3" datatype="html">
+        <source>Choose your sale</source>
+        <target/>
+        <note priority="1" from="description">step1 title</note>
+        <note priority="1" from="meaning">home</note>
+      </trans-unit>
+      <trans-unit id="b88320c70c3da2d9958ef902870bbd09cd166543" datatype="html">
+        <source>In a few clicks find the sale and</source>
+        <target/>
+        <note priority="1" from="description">step1 description - part1</note>
+        <note priority="1" from="meaning">home</note>
+      </trans-unit>
+      <trans-unit id="9f614de1966b15afdc3eb0d52f94d0b60819f9be" datatype="html">
+        <source>the ambiance you would like to share</source>
+        <target/>
+        <note priority="1" from="description">step1 emphasized description - part2</note>
+        <note priority="1" from="meaning">home</note>
+      </trans-unit>
+      <trans-unit id="368baab82e09f0eddc357994d7055edf7111efa1" datatype="html">
+        <source>with your friends.</source>
+        <target/>
+        <note priority="1" from="description">step1 description - part3</note>
+        <note priority="1" from="meaning">home</note>
+      </trans-unit>
+      <trans-unit id="b3eb7af65736dc801d13866d6080f48ba7778637" datatype="html">
+        <source>Send your request</source>
+        <target/>
+        <note priority="1" from="description">step2 description</note>
+        <note priority="1" from="meaning">home</note>
+      </trans-unit>
+      <trans-unit id="03fb0fe699baf496f5f59d15a7304a61840cef9a" datatype="html">
+        <source>Requests the brands you would like to test.
+        </source>
+        <target/>
+        <note priority="1" from="description">step2 description - part1</note>
+        <note priority="1" from="meaning">home</note>
+      </trans-unit>
+      <trans-unit id="4eac721b3b38d62365dfdfedd5e3cdff6077e466" datatype="html">
+        <source>It is free without any commitment!</source>
+        <target/>
+        <note priority="1" from="description">step2 emphasized description - part2</note>
+        <note priority="1" from="meaning">home</note>
+      </trans-unit>
+      <trans-unit id="1c71428d401a4ad455e9a83f1ae8486ebf386328" datatype="html">
+        <source>Follow your requests</source>
+        <target/>
+        <note priority="1" from="description">step3 description</note>
+        <note priority="1" from="meaning">home</note>
+      </trans-unit>
+      <trans-unit id="48c4dc156e75c056614d303acc02a0fb18eb7652" datatype="html">
+        <source>Follow the progress of your requests, meet your seller
+            and
+        </source>
+        <target/>
+        <note priority="1" from="description">step3 description - part1</note>
+        <note priority="1" from="meaning">home</note>
+      </trans-unit>
+      <trans-unit id="35b8bf28abebe9bb3a9834c38f351a6056f0c509" datatype="html">
+        <source>confirm your reservation in one click.</source>
+        <target/>
+        <note priority="1" from="description">step3 emphasized description - part2</note>
+        <note priority="1" from="meaning">home</note>
       </trans-unit>
     </body>
   </file>
