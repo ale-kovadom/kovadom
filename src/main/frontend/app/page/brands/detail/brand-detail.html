@@ -92,19 +92,19 @@
                             </div>
                             <div [ngClass]="moreFieldClass" id="moreFields">
                                 <div class="form-group col-xs-12 col-sm-6 col-md-12 col-lg-6">
-                                    <label i18n="book a sale form | lastname" for="lastname">Last name</label>
-                                    <input type="text" class="form-control" placeholder="Your last name" i18n-placeholder="book a sale form | last name placeholder" name="lastname" id="lastname"
-                                           required #lastName="ngModel" [(ngModel)]="sale.host.lastName" maxlength="250">
-                                    <ng-container *ngIf="!lastName.valid && showExplicitErrorMessage">
-                                        <div *ngIf="lastName.hasError('required')" class="form-error-msg" i18n>This field is required</div>
-                                    </ng-container>
-                                </div>
-                                <div class="form-group col-xs-12 col-sm-6 col-md-12 col-lg-6">
                                     <label i18n="book a sale form | firstname" for="firstname">First name</label>
                                     <input type="text" class="form-control" placeholder="Your first name" i18n-placeholder="book a sale form | first name placeholder" name="firstname" id="firstname"
                                            required #firstName="ngModel" [(ngModel)]="sale.host.firstName" maxlength="250">
                                     <ng-container *ngIf="!firstName.valid && showExplicitErrorMessage">
                                         <div *ngIf="firstName.hasError('required')" class="form-error-msg" i18n>This field is required</div>
+                                    </ng-container>
+                                </div>
+                                <div class="form-group col-xs-12 col-sm-6 col-md-12 col-lg-6">
+                                    <label i18n="book a sale form | lastname" for="lastname">Last name</label>
+                                    <input type="text" class="form-control" placeholder="Your last name" i18n-placeholder="book a sale form | last name placeholder" name="lastname" id="lastname"
+                                           required #lastName="ngModel" [(ngModel)]="sale.host.lastName" maxlength="250">
+                                    <ng-container *ngIf="!lastName.valid && showExplicitErrorMessage">
+                                        <div *ngIf="lastName.hasError('required')" class="form-error-msg" i18n>This field is required</div>
                                     </ng-container>
                                 </div>
                                 <div class="form-group col-sm-12">
