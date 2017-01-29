@@ -55,7 +55,7 @@ export class BrandDetailComponent {
     public alertClass: string;
 
     @ViewChild("saleForm")
-    public form: NgForm;
+    public ngForm: NgForm;
 
 
     constructor(private route: ActivatedRoute,
@@ -105,7 +105,7 @@ export class BrandDetailComponent {
 
         if (hasBeenExpanded) {
             this.showExplicitErrorMessage = true;
-            if (this.form.form.valid) {
+            if (this.ngForm.form.valid) {
                 this.submitStatus = BrandDetailComponent.STATUS_SENT;
                 this.saleService.create(this.sale).then(this.onSuccess(this)).catch(this.onError(this))
             }
@@ -121,7 +121,7 @@ export class BrandDetailComponent {
                         self.collapseForm();
                         self.resetSubmitStatus();
                         self.showExplicitErrorMessage = false;
-                        self.form.reset();
+                        self.ngForm.reset();
                         self.sale = BrandDetailComponent.emptySale(self.brand);
                     });
                 }
