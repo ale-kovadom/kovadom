@@ -6,7 +6,7 @@ import {ActivityService} from "./domain/activity/activity.service";
 import {AppRoutingModule} from "./app-routing.module";
 import {HomeComponent} from "./page/home/home.component";
 import {ActivityComponent} from "./page/component/activity/activity.component";
-import {ContactComponent} from "./page/component/contact/contact.component";
+import {ContactComponent} from "./page/component/contact/banner/contact.component";
 import {BrandsComponent} from "./page/brands/list/brands.component";
 import {FormsModule} from "@angular/forms";
 import {BrandService} from "./domain/brand/brand.service";
@@ -19,6 +19,8 @@ import {ActivitiesComponent} from "./page/activities/activities.component";
 import {PageNotFoundComponent} from "./page/page_not_found/page-not-found.component";
 import {HomeSaleHowToComponent} from "./page/home_sale_how_to/home-sale.how-to.component";
 import {SaleHowtoStepsComponent} from "./page/component/sale_how_to_steps/sale.how-to.steps.component";
+import {DialogModule} from 'primeng/primeng';
+import {CompanyRegistrationComponent} from "./page/component/contact/company_registration/company-registration";
 
 @NgModule({
     imports: [
@@ -27,6 +29,7 @@ import {SaleHowtoStepsComponent} from "./page/component/sale_how_to_steps/sale.h
         AppRoutingModule,
         FormsModule,
         FrameworkModule,
+        DialogModule,
         Ng2PageScrollModule.forRoot()
     ],
     declarations: [
@@ -40,7 +43,8 @@ import {SaleHowtoStepsComponent} from "./page/component/sale_how_to_steps/sale.h
         BrandDetailComponent,
         ActivitiesComponent,
         SaleHowtoStepsComponent,
-        HomeSaleHowToComponent
+        HomeSaleHowToComponent,
+        CompanyRegistrationComponent
     ],
     providers: [ActivityService, BrandService, SaleService],
     bootstrap: [KovadomComponent]

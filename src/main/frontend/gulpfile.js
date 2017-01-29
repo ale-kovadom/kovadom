@@ -15,10 +15,6 @@ var i18nLocales = {
 };
 var i18nOutputDir = "./locale";
 
-var nodeDependenciesDir = {
-    swiperInstallationDir:  "./node_modules/"
-};
-
 // helper function for running ngc and tree shaking tasks
 const run_proc = (cmd, callBack, options) => {
     // if (!isProd) return;

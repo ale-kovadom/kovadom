@@ -5,9 +5,9 @@ header .row a {
     color: white;
 }
 
-header .row a, header .row a:hover, header .row a:active, header .row a:focus {
-    text-decoration: none;
-}
+/*header .row a, header .row a:hover, header .row a:active, header .row a:focus {*/
+    /*text-decoration: none;*/
+/*}*/
 
 header.container-fluid {
     background-color: #1D2B4A;
@@ -99,11 +99,11 @@ footer a:link {
 
 @media only screen and (max-width: 767px) {
 
-    .ativity-refs {
+    .activity-refs {
         text-align: center;
     }
 
-    .ativity-refs ul {
+    .activity-refs ul {
         padding-left: 0;
     }
 

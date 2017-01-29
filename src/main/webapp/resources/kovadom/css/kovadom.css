@@ -25,8 +25,9 @@ span.kov:after {
 }
 
 a.red-hover:hover {
-    color: rgb(239, 112, 105);
-    text-decoration: none;
+    /* Use !important to avoid conflict with "non hover" selector */
+    color: rgb(239, 112, 105) !important;
+    text-decoration: none !important;
 }
 
 .btn.red {
@@ -130,6 +131,12 @@ html body .form-control:focus {
     /*visibility: hidden;*/
     opacity: 0;
     transition: visibility 0s 2s, opacity 2s linear;
+}
+
+.btn-submit, .btn-submit:hover, .btn-submit:active, .btn-submit:visited .btn-submit:focus {
+    background-color: #ff5449 !important;
+    border-color: #ff5449 !important;
+    color: #ffffff !important;
 }
 
 

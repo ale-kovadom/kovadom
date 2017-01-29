@@ -145,12 +145,6 @@
     color: #ffffff !important;
 }
 
-.btn-submit, .btn-submit:hover, .btn-submit:active, .btn-submit:visited .btn-submit:focus {
-    background-color: #ff5449 !important;
-    border-color: #ff5449 !important;
-    color: #ffffff !important;
-}
-
 #verify, #book {
     width: 100%;
 }

@@ -2,240 +2,240 @@
 <xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
   <file source-language="en" datatype="plaintext" original="ng2.template">
     <body>
-         <trans-unit id="7934931a315270c585059812b2c05e45ed44f842" datatype="html">
-           <source>Page not found</source>
-           <target>Oooops ! Cette page n'existe pas !</target>
-           <note priority="1" from="description"> page not found header</note>
-           <note priority="1" from="meaning">page not found </note>
-          </trans-unit>
-          <trans-unit id="bbab9b898def97a2f93ebbc38db106bd507786b2" datatype="html">
-           <source>Back to previous page</source>
-           <target>Retourner à la page précédente</target>
-           <note priority="1" from="description">Back to previous</note>
-           <note priority="1" from="meaning">page not found </note>
-          </trans-unit>
-          <trans-unit id="730c4b71baa15dc7bf7fe0844474845c6e46739d" datatype="html">
-           <source>Back to home</source>
-          <target>Retourner à la page d'accueil</target>
-          <note priority="1" from="description">Back to home</note>
-          <note priority="1" from="meaning">page not found </note>
-        </trans-unit>
-        <trans-unit id="0e591c79c51be0937d449094b2cacc2b6bc8784e" datatype="html">
-          <source>Home sale</source>
-          <target>Vente à domicile</target>
-          <note priority="1" from="description">home sale explanation link</note>
-        </trans-unit>
-        <trans-unit id="196999199d13ea9bd42ed35126e0eeb4b2794bca" datatype="html">
-          <source>Home sales of Bio products</source>
-          <target>Vente à domicile de produits bio</target>
-          <note priority="1" from="description">bio products</note>
-          <note priority="1" from="meaning">footer</note>
-        </trans-unit>
-        <trans-unit id="0d56197d02226cf1d428aa9d2d22b5452e79451b" datatype="html">
-          <source>Home sales of lingerie</source>
-          <target>Vente à domicile de lingerie</target>
-          <note priority="1" from="description">lingerie</note>
-          <note priority="1" from="meaning">footer</note>
-        </trans-unit>
-        <trans-unit id="f73299a790406c8c51565323acd48148774e7823" datatype="html">
-          <source>Home sales of kids clothes</source>
-          <target>Vente à domicile d'habits pour enfants</target>
-          <note priority="1" from="description">kids clothes</note>
-          <note priority="1" from="meaning">footer</note>
-        </trans-unit>
-        <trans-unit id="8b1aa08a5fcdff4c57120bbb3de670820d2559f1" datatype="html">
-          <source>Home sales of sex toys</source>
-          <target>Vente à domicile de sex toys</target>
-          <note priority="1" from="description">sex toys</note>
-          <note priority="1" from="meaning">footer</note>
-        </trans-unit>
-        <trans-unit id="7b7acbd38baaa3220ebb80d2fa4dce03d32233ca" datatype="html">
-          <source>Home sales of vine tasting </source>
-          <target>Vente et dégustation de vin à domicile</target>
-          <note priority="1" from="description">vine tasting</note>
-          <note priority="1" from="meaning">footer</note>
-        </trans-unit>
-        <trans-unit id="b6fd756e77629a3392e5b01f1e7ecad09f935f88" datatype="html">
-          <source>Organize simply your home sale</source>
-          <target>Organisez simplement votre vente à domicile</target>
-          <note priority="1" from="description">organize your sale</note>
-          <note priority="1" from="meaning">home</note>
-        </trans-unit>
-        <trans-unit id="ec6f21ff3b0a90d6f64ff370fdb2214e28a1e6f3" datatype="html">
-          <source>Conviviality, products of quality, moments of pleasure</source>
-          <target>Un espace de convivialité, des produits de qualité, des moments de plaisir</target>
-          <note priority="1" from="description">focus on quality</note>
-          <note priority="1" from="meaning">home</note>
-        </trans-unit>
-        <trans-unit id="b5993dfa5341eab031c3de79c1c976d679334dbf" datatype="html">
-          <source>Access all sales at home in just a few clicks!</source>
-          <target>Accédez à toutes les ventes à domicile en quelques clics!</target>
-          <note priority="1" from="description">Accessibility</note>
-          <note priority="1" from="meaning">home</note>
-        </trans-unit>
-        <trans-unit id="117fecefb733a49244be00f3f9e905940fa010d8" datatype="html">
-          <source>How it works?</source>
-          <target>Comment ça marche ?</target>
-          <note priority="1" from="description">how it works?</note>
-          <note priority="1" from="meaning">home</note>
-          </trans-unit>
-        <trans-unit id="b4301727f3359f10cf34411db1ce5ced202abb83" datatype="html">
-          <source>Discover all the activities</source>
-          <target>Découvrez toutes les ambiances</target>
-          <note priority="1" from="description">Discover all the activities button</note>
-          <note priority="1" from="meaning">home</note>
-        </trans-unit>
-         <trans-unit id="baa4f5ccf9c98ae8af8e8861eb941f28901c71b7" datatype="html">
-          <source>What atmosphere will you choose?</source>
-          <target>Quelle ambiance allez-vous choisir ?</target>
-          <note priority="1" from="description">Which activity ?</note>
-          <note priority="1" from="meaning">activity title</note>
-         </trans-unit>
-        <trans-unit id="5746a4ee4284194f4dd25bbd1d6b104a9c8f8bf5" datatype="html">
-          <source>Search</source>
-          <target>Rechercher</target>
-          <note priority="1" from="description">Search an ambiance</note>
-          <note priority="1" from="meaning">home</note>
-        </trans-unit>
-        <trans-unit id="04ec277554c87fcd31e29b22dc6b35e313e6ae8f" datatype="html">
-          <source>You are a home sales company?</source>
-          <target>Vous êtes une entreprise de vente à domicile ?</target>
-          <note priority="1" from="description">Home sales business</note>
-          <note priority="1" from="meaning">contact</note>
-       </trans-unit>
-       <trans-unit id="b5b9d1d44bb8300d09c5a997c8d40bd6efc5c8fa" datatype="html">
-          <source>Register your company</source>
-          <target>Référencez votre entreprise</target>
-          <note priority="1" from="description">Company registration</note>
-          <note priority="1" from="meaning">contact</note>
-       </trans-unit>
-       <trans-unit id="adfc7ed34849cc474e47280ed3252578095a3d1c" datatype="html">
-          <source>Contact</source>
-          <target>Contact :</target>
-          <note priority="1" from="description">contact-info</note>
-          <note priority="1" from="meaning">contact</note>
-       </trans-unit>
-       <trans-unit id="31893f09a166c636dfa32ab02e29edfe05fdf05b" datatype="html">
-         <source>Follow us</source>
-         <target>Suivez-nous :</target>
-         <note priority="1" from="description">social-info</note>
-         <note priority="1" from="meaning">contact</note>
-       </trans-unit>
-       <trans-unit id="664541179fd88bafffd62355da1c1baeb4651424" datatype="html">
-          <source>
-               No sales associated with <x id="INTERPOLATION"/>
-          </source>
-          <target>Aucune vente n'est actuellement disponible dans la catégorie <x id="INTERPOLATION"/></target>
-           <note priority="1" from="description"> No brands for a given activity</note>
-           <note priority="1" from="meaning">brand list </note>
-       </trans-unit>
-       <trans-unit id="791e678136bde7d22cdffda92badcd669df7d4fa" datatype="html">
-          <source>
-              Discover all sales of <x id="INTERPOLATION"/>
-          </source>
-          <target>Découvrez toutes les ventes de <x id="INTERPOLATION"/></target>
-          <note priority="1" from="description"> Discover all brands for a given activity</note>
-          <note priority="1" from="meaning">brand list </note>
-        </trans-unit>
-        <trans-unit id="f441b32a6d9214709d0aef1ae5623a266b630b26" datatype="html">
-           <source>Start my sale</source>
-           <target>J'organise ma vente</target>
-           <note priority="1" from="description"> Organise a sale</note>
-           <note priority="1" from="meaning">brand list </note>
-        </trans-unit>
-        <trans-unit id="89f5a1f775bf8943a86b8c9ba9b649bca00c40aa" datatype="html">
-           <source>About <x id="INTERPOLATION"/></source>
-           <target>A propos de <x id="INTERPOLATION"/></target>
-           <note priority="1" from="description"> company description</note>
-           <note priority="1" from="meaning">brand-detail </note>
-        </trans-unit>
-        <trans-unit id="9586fd9bee4f6a74ba3b0d5d2a02da3fe3660a26" datatype="html">
-           <source>The sale process</source>
-           <target>Le déroulement de la vente</target>
-           <note priority="1" from="description"> sale process</note>
-           <note priority="1" from="meaning">brand-detail </note>
-        </trans-unit>
-        <trans-unit id="709bd3e918405536a65a712243389c2823383eba" datatype="html">
-           <source>Book online</source>
-           <target>Réserver en ligne</target>
-           <note priority="1" from="description"> Form with user&apos;s info - header</note>
-           <note priority="1" from="meaning">book a sale form </note>
-        </trans-unit>
-        <trans-unit id="7759aa64414fe5b0141adc7148dc1682e29619c5" datatype="html">
-           <source>Free, no commitment</source>
-           <target>Gratuit et sans engagement</target>
-           <note priority="1" from="description"> Form with user&apos;s info - sub-header</note>
-           <note priority="1" from="meaning">book a sale form </note>
-        </trans-unit>
-        <trans-unit id="2ab8d82ac40b17f91766899087520919cf554f8a" datatype="html">
-           <source>Your request has been registered</source>
-           <target>Votre demande a été prise en compte.</target>
-           <note priority="1" from="description"> book registered</note>
-           <note priority="1" from="meaning">book a sale form </note>
-        </trans-unit>
-        <trans-unit id="72cf57adaf435b3de4bbc963a1e7a061ab0b4923" datatype="html">
-          <source>An error has occurred while processing your request</source>
-          <target>Une erreur est survenue lors de l'envoi du formulaire.</target>
-          <note priority="1" from="description"> failed</note>
-          <note priority="1" from="meaning">generic form saving message </note>
-        </trans-unit>
-        <trans-unit id="99c0cebd7ad25fe825f2a918d4e4a2cf55092f92" datatype="html">
-           <source>Date and time</source>
-           <target>Date et heure</target>
-           <note priority="1" from="description"> Date time for the sale</note>
-           <note priority="1" from="meaning">book a sale form </note>
-        </trans-unit>
-        <trans-unit id="cd8d6b563bc6cc84fea1841fa0e84d244af5a0b8" datatype="html">
-          <source>This field is incorrect</source>
-          <target>Ce champ est incorrect</target>
-        </trans-unit>
-        <trans-unit id="7de557f21d8dcc009b82694a1b85f3573fe54259" datatype="html">
-           <source>City</source>
-           <target>Ville</target>
-           <note priority="1" from="description"> City</note>
-           <note priority="1" from="meaning">book a sale form </note>
-        </trans-unit>
-        <trans-unit id="7be2641756a0fbe89222562d2bca2ac915ca71b5" datatype="html">
-           <source>Meeting place</source>
-           <target>Lieu de la réunion</target>
-           <note priority="1" from="description"> city placeholder</note>
-           <note priority="1" from="meaning">book a sale form </note>
-        </trans-unit>
-           <trans-unit id="5e6548eb9cbb0467c307b4079bc989cd21f44355" datatype="html">
-           <source>This field is required</source>
-           <target>Ce champ est obligatoire</target>
-        </trans-unit>
-        <trans-unit id="f502938ddd4b4e09670e20e4832e69bc7ab750c2" datatype="html">
-           <source>Number of stakeholders</source>
-           <target>Nombre de participants</target>
-           <note priority="1" from="description"> stakeholders count</note>
-           <note priority="1" from="meaning">book a sale form </note>
-        </trans-unit>
-        <trans-unit id="d79ef1bf3f1829cee04927920d55160e79f05000" datatype="html">
-         <source>First name</source>
-         <target>Prénom</target>
-         <note priority="1" from="description"> firstname</note>
-         <note priority="1" from="meaning">book a sale form </note>
-       </trans-unit>
-       <trans-unit id="9dcc0f3560eb81a3f8605fef65f7c0a8c28cae7d" datatype="html">
+      <trans-unit id="7934931a315270c585059812b2c05e45ed44f842" datatype="html">
+        <source>Page not found</source>
+        <target>Oooops ! Cette page n'existe pas !</target>
+        <note priority="1" from="description"> page not found header</note>
+        <note priority="1" from="meaning">page not found </note>
+      </trans-unit>
+      <trans-unit id="bbab9b898def97a2f93ebbc38db106bd507786b2" datatype="html">
+        <source>Back to previous page</source>
+        <target>Retourner à la page précédente</target>
+        <note priority="1" from="description">Back to previous</note>
+        <note priority="1" from="meaning">page not found </note>
+      </trans-unit>
+      <trans-unit id="730c4b71baa15dc7bf7fe0844474845c6e46739d" datatype="html">
+        <source>Back to home</source>
+        <target>Retourner à la page d'accueil</target>
+        <note priority="1" from="description">Back to home</note>
+        <note priority="1" from="meaning">page not found </note>
+      </trans-unit>
+      <trans-unit id="0e591c79c51be0937d449094b2cacc2b6bc8784e" datatype="html">
+        <source>Home sale</source>
+        <target>Vente à domicile</target>
+        <note priority="1" from="description">home sale explanation link</note>
+      </trans-unit>
+      <trans-unit id="196999199d13ea9bd42ed35126e0eeb4b2794bca" datatype="html">
+        <source>Home sales of Bio products</source>
+        <target>Vente à domicile de produits bio</target>
+        <note priority="1" from="description">bio products</note>
+        <note priority="1" from="meaning">footer</note>
+      </trans-unit>
+      <trans-unit id="0d56197d02226cf1d428aa9d2d22b5452e79451b" datatype="html">
+        <source>Home sales of lingerie</source>
+        <target>Vente à domicile de lingerie</target>
+        <note priority="1" from="description">lingerie</note>
+        <note priority="1" from="meaning">footer</note>
+      </trans-unit>
+      <trans-unit id="f73299a790406c8c51565323acd48148774e7823" datatype="html">
+        <source>Home sales of kids clothes</source>
+        <target>Vente à domicile d'habits pour enfants</target>
+        <note priority="1" from="description">kids clothes</note>
+        <note priority="1" from="meaning">footer</note>
+      </trans-unit>
+      <trans-unit id="8b1aa08a5fcdff4c57120bbb3de670820d2559f1" datatype="html">
+        <source>Home sales of sex toys</source>
+        <target>Vente à domicile de sex toys</target>
+        <note priority="1" from="description">sex toys</note>
+        <note priority="1" from="meaning">footer</note>
+      </trans-unit>
+      <trans-unit id="7b7acbd38baaa3220ebb80d2fa4dce03d32233ca" datatype="html">
+        <source>Home sales of vine tasting</source>
+        <target>Vente et dégustation de vin à domicile</target>
+        <note priority="1" from="description">vine tasting</note>
+        <note priority="1" from="meaning">footer</note>
+      </trans-unit>
+      <trans-unit id="b6fd756e77629a3392e5b01f1e7ecad09f935f88" datatype="html">
+        <source>Organize simply your home sale</source>
+        <target>Organisez simplement votre vente à domicile</target>
+        <note priority="1" from="description">organize your sale</note>
+        <note priority="1" from="meaning">home</note>
+      </trans-unit>
+      <trans-unit id="ec6f21ff3b0a90d6f64ff370fdb2214e28a1e6f3" datatype="html">
+        <source>Conviviality, products of quality, moments of pleasure</source>
+        <target>Un espace de convivialité, des produits de qualité, des moments de plaisir</target>
+        <note priority="1" from="description">focus on quality</note>
+        <note priority="1" from="meaning">home</note>
+      </trans-unit>
+      <trans-unit id="b5993dfa5341eab031c3de79c1c976d679334dbf" datatype="html">
+        <source>Access all sales at home in just a few clicks!</source>
+        <target>Accédez à toutes les ventes à domicile en quelques clics!</target>
+        <note priority="1" from="description">accessibility</note>
+        <note priority="1" from="meaning">home</note>
+      </trans-unit>
+      <trans-unit id="117fecefb733a49244be00f3f9e905940fa010d8" datatype="html">
+        <source>How it works?</source>
+        <target>Comment ça marche ?</target>
+        <note priority="1" from="description">how it works?</note>
+        <note priority="1" from="meaning">home</note>
+      </trans-unit>
+      <trans-unit id="b4301727f3359f10cf34411db1ce5ced202abb83" datatype="html">
+        <source>Discover all the activities</source>
+        <target>Découvrez toutes les ambiances</target>
+        <note priority="1" from="description">Discover all the activities button</note>
+        <note priority="1" from="meaning">home</note>
+      </trans-unit>
+      <trans-unit id="baa4f5ccf9c98ae8af8e8861eb941f28901c71b7" datatype="html">
+        <source>What atmosphere will you choose?</source>
+        <target>Quelle ambiance allez-vous choisir ?</target>
+        <note priority="1" from="description">Which activity ?</note>
+        <note priority="1" from="meaning">activity title</note>
+      </trans-unit>
+      <trans-unit id="5746a4ee4284194f4dd25bbd1d6b104a9c8f8bf5" datatype="html">
+        <source>Search</source>
+        <target>Rechercher</target>
+        <note priority="1" from="description">search an ambiance</note>
+        <note priority="1" from="meaning">home</note>
+      </trans-unit>
+      <trans-unit id="04ec277554c87fcd31e29b22dc6b35e313e6ae8f" datatype="html">
+        <source>You are a home sales company?</source>
+        <target>Vous êtes une entreprise de vente à domicile ?</target>
+        <note priority="1" from="description">Home sales business</note>
+        <note priority="1" from="meaning">contact</note>
+      </trans-unit>
+      <trans-unit id="b5b9d1d44bb8300d09c5a997c8d40bd6efc5c8fa" datatype="html">
+        <source>Register your company</source>
+        <target>Référencez votre entreprise</target>
+        <note priority="1" from="description">Company registration</note>
+        <note priority="1" from="meaning">contact</note>
+      </trans-unit>
+      <trans-unit id="adfc7ed34849cc474e47280ed3252578095a3d1c" datatype="html">
+        <source>Contact</source>
+        <target>Contact :</target>
+        <note priority="1" from="description">contact-info</note>
+        <note priority="1" from="meaning">contact</note>
+      </trans-unit>
+      <trans-unit id="31893f09a166c636dfa32ab02e29edfe05fdf05b" datatype="html">
+        <source>Follow us</source>
+        <target>Suivez-nous :</target>
+        <note priority="1" from="description">social-info</note>
+        <note priority="1" from="meaning">contact</note>
+      </trans-unit>
+      <trans-unit id="664541179fd88bafffd62355da1c1baeb4651424" datatype="html">
+        <source>
+        No sales associated with <x id="INTERPOLATION"/>
+    </source>
+       <target>Aucune vente n'est actuellement disponible dans la catégorie <x id="INTERPOLATION"/></target>
+        <note priority="1" from="description"> No brands for a given activity</note>
+        <note priority="1" from="meaning">brand list </note>
+      </trans-unit>
+      <trans-unit id="791e678136bde7d22cdffda92badcd669df7d4fa" datatype="html">
+        <source>
+            Discover all sales of <x id="INTERPOLATION"/>
+        </source>
+        <target>Découvrez toutes les ventes de <x id="INTERPOLATION"/></target>
+        <note priority="1" from="description"> Discover all brands for a given activity</note>
+        <note priority="1" from="meaning">brand list </note>
+      </trans-unit>
+      <trans-unit id="f441b32a6d9214709d0aef1ae5623a266b630b26" datatype="html">
+        <source>Start my sale</source>
+        <target>J'organise ma vente</target>
+        <note priority="1" from="description"> Organise a sale</note>
+        <note priority="1" from="meaning">brand list </note>
+      </trans-unit>
+      <trans-unit id="89f5a1f775bf8943a86b8c9ba9b649bca00c40aa" datatype="html">
+        <source>About <x id="INTERPOLATION"/></source>
+        <target>A propos de <x id="INTERPOLATION"/></target>
+        <note priority="1" from="description"> company description</note>
+        <note priority="1" from="meaning">brand-detail </note>
+      </trans-unit>
+      <trans-unit id="9586fd9bee4f6a74ba3b0d5d2a02da3fe3660a26" datatype="html">
+        <source>The sale process</source>
+        <target>Le déroulement de la vente</target>
+        <note priority="1" from="description"> sale process</note>
+        <note priority="1" from="meaning">brand-detail </note>
+      </trans-unit>
+      <trans-unit id="709bd3e918405536a65a712243389c2823383eba" datatype="html">
+        <source>Book online</source>
+        <target>Réserver en ligne</target>
+        <note priority="1" from="description"> Form with user&apos;s info - header</note>
+        <note priority="1" from="meaning">book a sale form </note>
+      </trans-unit>
+      <trans-unit id="7759aa64414fe5b0141adc7148dc1682e29619c5" datatype="html">
+        <source>Free, no commitment</source>
+        <target>Gratuit et sans engagement</target>
+        <note priority="1" from="description"> Form with user&apos;s info - sub-header</note>
+        <note priority="1" from="meaning">book a sale form </note>
+      </trans-unit>
+      <trans-unit id="2ab8d82ac40b17f91766899087520919cf554f8a" datatype="html">
+        <source>Your request has been registered</source>
+        <target>Votre demande a été prise en compte.</target>
+        <note priority="1" from="description"> common - success</note>
+        <note priority="1" from="meaning">generic form saving message </note>
+      </trans-unit>
+      <trans-unit id="72cf57adaf435b3de4bbc963a1e7a061ab0b4923" datatype="html">
+        <source>An error has occurred while processing your request</source>
+        <target>Une erreur est survenue lors de l'envoi du formulaire.</target>
+        <note priority="1" from="description"> common - failed</note>
+        <note priority="1" from="meaning">generic form saving message </note>
+      </trans-unit>
+      <trans-unit id="99c0cebd7ad25fe825f2a918d4e4a2cf55092f92" datatype="html">
+        <source>Date and time</source>
+        <target>Date et heure</target>
+        <note priority="1" from="description"> Date time for the sale</note>
+        <note priority="1" from="meaning">book a sale form </note>
+      </trans-unit>
+      <trans-unit id="cd8d6b563bc6cc84fea1841fa0e84d244af5a0b8" datatype="html">
+        <source>This field is incorrect</source>
+        <target>Ce champ est incorrect</target>
+      </trans-unit>
+      <trans-unit id="7de557f21d8dcc009b82694a1b85f3573fe54259" datatype="html">
+        <source>City</source>
+        <target>Ville</target>
+        <note priority="1" from="description"> City</note>
+        <note priority="1" from="meaning">book a sale form </note>
+      </trans-unit>
+      <trans-unit id="7be2641756a0fbe89222562d2bca2ac915ca71b5" datatype="html">
+        <source>Meeting place</source>
+        <target>Lieu de la réunion</target>
+        <note priority="1" from="description"> city placeholder</note>
+        <note priority="1" from="meaning">book a sale form </note>
+      </trans-unit>
+      <trans-unit id="5e6548eb9cbb0467c307b4079bc989cd21f44355" datatype="html">
+        <source>This field is required</source>
+        <target>Ce champ est obligatoire</target>
+      </trans-unit>
+      <trans-unit id="f502938ddd4b4e09670e20e4832e69bc7ab750c2" datatype="html">
+        <source>Number of stakeholders</source>
+        <target>Nombre de participants</target>
+        <note priority="1" from="description"> stakeholders count</note>
+        <note priority="1" from="meaning">book a sale form </note>
+      </trans-unit>
+      <trans-unit id="d79ef1bf3f1829cee04927920d55160e79f05000" datatype="html">
+        <source>First name</source>
+        <target>Prénom</target>
+        <note priority="1" from="description"> firstname</note>
+        <note priority="1" from="meaning">book a sale form </note>
+      </trans-unit>
+      <trans-unit id="9dcc0f3560eb81a3f8605fef65f7c0a8c28cae7d" datatype="html">
         <source>Your first name</source>
         <target>Votre prénom</target>
         <note priority="1" from="description"> first name placeholder</note>
         <note priority="1" from="meaning">book a sale form </note>
-       </trans-unit>
-       <trans-unit id="ecfe99042a2bab635c4b9b88ff2cbee808442e9a" datatype="html">
+      </trans-unit>
+      <trans-unit id="ecfe99042a2bab635c4b9b88ff2cbee808442e9a" datatype="html">
         <source>Last name</source>
         <target>Nom</target>
         <note priority="1" from="description"> lastname</note>
         <note priority="1" from="meaning">book a sale form </note>
-       </trans-unit>
-       <trans-unit id="6a019bc356f240e4722e4ae034b872c010148677" datatype="html">
+      </trans-unit>
+      <trans-unit id="6a019bc356f240e4722e4ae034b872c010148677" datatype="html">
         <source>Your last name</source>
         <target>Votre nom</target>
         <note priority="1" from="description"> last name placeholder</note>
         <note priority="1" from="meaning">book a sale form </note>
-       </trans-unit>
-       <trans-unit id="49a9028076ef41f008fd607fc4fb63c36120570e" datatype="html">
+      </trans-unit>
+      <trans-unit id="49a9028076ef41f008fd607fc4fb63c36120570e" datatype="html">
         <source>Your email</source>
         <target>Votre email</target>
         <note priority="1" from="description"> email placeholder</note>
@@ -270,68 +270,122 @@
         <note priority="1" from="meaning">book a sale form </note>
       </trans-unit>
       <trans-unit id="8e72a5258c2c25a0e57df98ad8cc3b80d4c604c3" datatype="html">
-          <source>Choose your sale</source>
-          <target>Choisissez votre vente</target>
-          <note priority="1" from="description">step1 title</note>
-          <note priority="1" from="meaning">home</note>
-        </trans-unit>
-        <trans-unit id="b88320c70c3da2d9958ef902870bbd09cd166543" datatype="html">
-          <source>In a few clicks find the sale and</source>
-          <target>En quelques clics trouvez la vente et </target>
-          <note priority="1" from="description">step1 description - part1</note>
-          <note priority="1" from="meaning">home</note>
-        </trans-unit>
-        <trans-unit id="9f614de1966b15afdc3eb0d52f94d0b60819f9be" datatype="html">
-          <source>the ambiance you would like to share</source>
-          <target>l'ambiance que vous voulez partager</target>
-          <note priority="1" from="description">step1 emphasized description - part2</note>
-          <note priority="1" from="meaning">home</note>
-        </trans-unit>
-        <trans-unit id="368baab82e09f0eddc357994d7055edf7111efa1" datatype="html">
-          <source>with your friends.</source>
-          <target>avec vos ami(e)s.</target>
-          <note priority="1" from="description">step1 description - part3</note>
-          <note priority="1" from="meaning">home</note>
-        </trans-unit>
-        <trans-unit id="b3eb7af65736dc801d13866d6080f48ba7778637" datatype="html">
-          <source>Send your request</source>
-          <target>Envoyez votre demande</target>
-          <note priority="1" from="description">step2 description</note>
-          <note priority="1" from="meaning">home</note>
-        </trans-unit>
-        <trans-unit id="03fb0fe699baf496f5f59d15a7304a61840cef9a" datatype="html">
-          <source>Requests the brands you would like to test.
-          </source>
-          <target>Faites des demandes pour les marques que vous voulez tester.</target>
-          <note priority="1" from="description">step2 description - part1</note>
-          <note priority="1" from="meaning">home</note>
-        </trans-unit>
-        <trans-unit id="4eac721b3b38d62365dfdfedd5e3cdff6077e466" datatype="html">
-          <source>It is free without any commitment!</source>
-          <target>C'est gratuit et sans engagement !</target>
-          <note priority="1" from="description">step2 emphasized description - part2</note>
-          <note priority="1" from="meaning">home</note>
-        </trans-unit>
-        <trans-unit id="1c71428d401a4ad455e9a83f1ae8486ebf386328" datatype="html">
-          <source>Follow your requests</source>
-          <target>Suivez vos demandes</target>
-          <note priority="1" from="description">step3 description</note>
-          <note priority="1" from="meaning">home</note>
-        </trans-unit>
-        <trans-unit id="48c4dc156e75c056614d303acc02a0fb18eb7652" datatype="html">
-          <source>Follow the progress of your requests, meet your seller
-              and
-          </source>
-          <target>Suivez l'avancée de vos demandes, rencontrez votre vendeur(se) à domicile et</target>
-          <note priority="1" from="description">step3 description - part1</note>
-          <note priority="1" from="meaning">home</note>
-        </trans-unit>
-        <trans-unit id="35b8bf28abebe9bb3a9834c38f351a6056f0c509" datatype="html">
-          <source>confirm your reservation in one click.</source>
-          <target>validez votre reservation en 1 clic.</target>
-          <note priority="1" from="description">step3 emphasized description - part2</note>
-          <note priority="1" from="meaning">home</note>
-        </trans-unit>
+        <source>Choose your sale</source>
+        <target>Choisissez votre vente</target>
+        <note priority="1" from="description">step1 title</note>
+        <note priority="1" from="meaning">home</note>
+      </trans-unit>
+      <trans-unit id="b88320c70c3da2d9958ef902870bbd09cd166543" datatype="html">
+        <source>In a few clicks find the sale and</source>
+        <target>En quelques clics trouvez la vente et </target>
+        <note priority="1" from="description">step1 description - part1</note>
+        <note priority="1" from="meaning">home</note>
+      </trans-unit>
+      <trans-unit id="9f614de1966b15afdc3eb0d52f94d0b60819f9be" datatype="html">
+        <source>the ambiance you would like to share</source>
+        <target>l'ambiance que vous voulez partager</target>
+        <note priority="1" from="description">step1 emphasized description - part2</note>
+        <note priority="1" from="meaning">home</note>
+      </trans-unit>
+      <trans-unit id="368baab82e09f0eddc357994d7055edf7111efa1" datatype="html">
+        <source>with your friends.</source>
+        <target>avec vos ami(e)s.</target>
+        <note priority="1" from="description">step1 description - part3</note>
+        <note priority="1" from="meaning">home</note>
+      </trans-unit>
+      <trans-unit id="b3eb7af65736dc801d13866d6080f48ba7778637" datatype="html">
+        <source>Send your request</source>
+        <target>Envoyez votre demande</target>
+        <note priority="1" from="description">step2 description</note>
+        <note priority="1" from="meaning">home</note>
+      </trans-unit>
+      <trans-unit id="03fb0fe699baf496f5f59d15a7304a61840cef9a" datatype="html">
+        <source>Requests the brands you would like to test.
+        </source>
+        <target>Faites des demandes pour les marques que vous voulez tester.</target>
+        <note priority="1" from="description">step2 description - part1</note>
+        <note priority="1" from="meaning">home</note>
+      </trans-unit>
+      <trans-unit id="4eac721b3b38d62365dfdfedd5e3cdff6077e466" datatype="html">
+        <source>It is free without any commitment!</source>
+        <target>C'est gratuit et sans engagement !</target>
+        <note priority="1" from="description">step2 emphasized description - part2</note>
+        <note priority="1" from="meaning">home</note>
+      </trans-unit>
+      <trans-unit id="1c71428d401a4ad455e9a83f1ae8486ebf386328" datatype="html">
+        <source>Follow your requests</source>
+        <target>Suivez vos demandes</target>
+        <note priority="1" from="description">step3 description</note>
+        <note priority="1" from="meaning">home</note>
+      </trans-unit>
+      <trans-unit id="48c4dc156e75c056614d303acc02a0fb18eb7652" datatype="html">
+        <source>Follow the progress of your requests, meet your seller
+            and
+        </source>
+        <target>Suivez l'avancée de vos demandes, rencontrez votre vendeur(se) à domicile et</target>
+        <note priority="1" from="description">step3 description - part1</note>
+        <note priority="1" from="meaning">home</note>
+      </trans-unit>
+      <trans-unit id="35b8bf28abebe9bb3a9834c38f351a6056f0c509" datatype="html">
+        <source>confirm your reservation in one click.</source>
+        <target>validez votre reservation en 1 clic.</target>
+        <note priority="1" from="description">step3 emphasized description - part2</note>
+        <note priority="1" from="meaning">home</note>
+      </trans-unit>
+      <trans-unit id="6ccd447853cb2e1a06ef7905a64cb6c1b48dfd93" datatype="html">
+        <source>Company name</source>
+        <target>Société</target>
+        <note priority="1" from="description"> common - company name</note>
+        <note priority="1" from="meaning">form </note>
+      </trans-unit>
+      <trans-unit id="bb636d4f30784a85934b29a72fe5243a4b010ea9" datatype="html">
+        <source>Your company name</source>
+        <target>Votre société</target>
+        <note priority="1" from="description"> common - company name</note>
+        <note priority="1" from="meaning">form placeholder </note>
+      </trans-unit>
+      <trans-unit id="23f35db949398331967c32a22b73298b519a2d37" datatype="html">
+        <source>First name</source>
+        <target>Prénom</target>
+        <note priority="1" from="description"> common - first name</note>
+        <note priority="1" from="meaning">form </note>
+      </trans-unit>
+      <trans-unit id="dff571a3f31daaac375f52bd63a1d2112f4224d1" datatype="html">
+        <source>Your first name</source>
+        <target>Votre prénom</target>
+        <note priority="1" from="description"> common - first name</note>
+        <note priority="1" from="meaning">form placeholder </note>
+      </trans-unit>
+      <trans-unit id="11c18feee48d2d5118e0996c348ae8af93e95a9a" datatype="html">
+        <source>Last name</source>
+        <target>Nom</target>
+        <note priority="1" from="description"> common - last name</note>
+        <note priority="1" from="meaning">form </note>
+      </trans-unit>
+      <trans-unit id="7d4330dcb9da2e40e392fa0ab259e826d02f19c2" datatype="html">
+        <source>Your last name</source>
+        <target>Votre nom</target>
+        <note priority="1" from="description"> common - last name</note>
+        <note priority="1" from="meaning">form placeholder </note>
+      </trans-unit>
+      <trans-unit id="8d1ac75435e06976d89c90157561d7bb0028ecff" datatype="html">
+        <source>Your email</source>
+        <target>Votre email</target>
+        <note priority="1" from="description"> common - email</note>
+        <note priority="1" from="meaning">form placeholder </note>
+      </trans-unit>
+      <trans-unit id="c77806daf398daf467764952f11d4ce02d4df433" datatype="html">
+        <source>Your phone number</source>
+        <target>Votre téléphone</target>
+        <note priority="1" from="description"> common - phone number</note>
+        <note priority="1" from="meaning">form placeholder </note>
+      </trans-unit>
+      <trans-unit id="8da446326b3ef77812ebd325b50ca64e99c1be90" datatype="html">
+        <source>Submit</source>
+        <target>Soumettre ma demande</target>
+        <note priority="1" from="description"> submit</note>
+        <note priority="1" from="meaning">company contact </note>
+      </trans-unit>
     </body>
   </file>
 </xliff>

@@ -11,7 +11,10 @@ export default {
     plugins: [
         nodeResolve({jsnext: true, module: true}),
         commonjs({
-            include: ['node_modules/rxjs/**', 'node_modules/primeng/**']
+            include: ['node_modules/rxjs/**', 'node_modules/primeng/**'],
+            namedExports: {
+                'node_modules/primeng/primeng.js': ['CalendarModule', 'DialogModule']
+            },
         }),
         uglify()
     ]

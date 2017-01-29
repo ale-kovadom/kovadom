@@ -50,8 +50,8 @@
                         <h5 i18n="book a sale form | Form with user's info - sub-header">Free, no commitment</h5>
                     </div>
                     <div id="alert-form" [hidden]="submitStatus != 'confirmed' && submitStatus != 'failed'" [ngClass]="alertClass" role="alert">
-                        <ng-container *ngIf="submitStatus == 'confirmed'" i18n="generic form saving message | success">Your request has been registered</ng-container>
-                        <ng-container *ngIf="submitStatus == 'failed'" i18n="generic form saving message | failed">An error has occurred while processing your request</ng-container>
+                        <ng-container *ngIf="submitStatus == 'confirmed'" i18n="generic form saving message | common - success">Your request has been registered</ng-container>
+                        <ng-container *ngIf="submitStatus == 'failed'" i18n="generic form saving message | common - failed">An error has occurred while processing your request</ng-container>
                     </div>
                     <form (ngSubmit)="onSubmit()" #saleForm="ngForm" id="book-sale-form" novalidate>
                         <div class="row">
@@ -92,16 +92,16 @@
                             </div>
                             <div [ngClass]="moreFieldClass" id="moreFields">
                                 <div class="form-group col-xs-12 col-sm-6 col-md-12 col-lg-6">
-                                    <label i18n="book a sale form | firstname" for="firstname">First name</label>
-                                    <input type="text" class="form-control" placeholder="Your first name" i18n-placeholder="book a sale form | first name placeholder" name="firstname" id="firstname"
+                                    <label i18n="form | common - first name" for="firstname">First name</label>
+                                    <input type="text" class="form-control" placeholder="Your first name" i18n-placeholder="form placeholder | common - first name" name="firstname" id="firstname"
                                            required #firstName="ngModel" [(ngModel)]="sale.host.firstName" maxlength="250">
                                     <ng-container *ngIf="!firstName.valid && showExplicitErrorMessage">
                                         <div *ngIf="firstName.hasError('required')" class="form-error-msg" i18n>This field is required</div>
                                     </ng-container>
                                 </div>
                                 <div class="form-group col-xs-12 col-sm-6 col-md-12 col-lg-6">
-                                    <label i18n="book a sale form | lastname" for="lastname">Last name</label>
-                                    <input type="text" class="form-control" placeholder="Your last name" i18n-placeholder="book a sale form | last name placeholder" name="lastname" id="lastname"
+                                    <label i18n="form | common - last name" for="lastname">Last name</label>
+                                    <input type="text" class="form-control" placeholder="Your last name" i18n-placeholder="form placeholder | common - last name" name="lastname" id="lastname"
                                            required #lastName="ngModel" [(ngModel)]="sale.host.lastName" maxlength="250">
                                     <ng-container *ngIf="!lastName.valid && showExplicitErrorMessage">
                                         <div *ngIf="lastName.hasError('required')" class="form-error-msg" i18n>This field is required</div>
@@ -111,7 +111,7 @@
                                     <div class="input-group">
                                         <div class="input-group-addon"><i class="icomoon-liga icon-email"></i></div>
                                         <input type="text" class="form-control" pattern="^[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,10}$" placeholder="Your email"
-                                               i18n-placeholder="book a sale form | email placeholder" name="email"
+                                               i18n-placeholder="form placeholder | common - email" name="email"
                                                required #email="ngModel" [(ngModel)]="sale.host.email" maxlength="450">
                                     </div>
                                     <ng-container *ngIf="!email.valid && showExplicitErrorMessage">
@@ -125,7 +125,7 @@
 
                                         <!-- @TODO i18n -->
                                         <input type="text" class="form-control" [(ngModel)]="sale.host.phone" pattern="^(?:0|\(?\+33\)?\s?|0033\s?)[1-79](?:[\.\-\s]?\d\d){4}$"
-                                               placeholder="Your phone number" i18n-placeholder="book a sale form | phone number"
+                                               placeholder="Your phone number" i18n-placeholder="form placeholder | common - phone number"
                                                name="phone" #phone="ngModel" maxlength="100" required>
                                     </div>
                                     <ng-container *ngIf="!phone.valid && showExplicitErrorMessage">

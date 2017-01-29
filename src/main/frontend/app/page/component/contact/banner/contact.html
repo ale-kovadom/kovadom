@@ -2,11 +2,15 @@
 
     <section class="container-fluid">
 
+        <p-dialog [(visible)]="displayCompanyRegistration" [draggable]="false" [resizable]="false" [dismissableMask]="true" responsive="true" modal="true">
+            <company-registration></company-registration>
+        </p-dialog>
+
         <div class="row">
 
             <div id="register-info" class="col-sm-4 col-sm-offset-1">
                 <h4 i18n="contact|Home sales business">You are a home sales company?</h4>
-                <a i18n="contact|Company registration" class="btn red" href="todo">Register your company</a>
+                <a i18n="contact|Company registration" class="btn red" (click)="showCompanyregistrationDialog()">Register your company</a>
             </div>
 
             <div id="contact-info" class="col-sm-3">

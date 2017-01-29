@@ -1,0 +1,34 @@
+@media (max-width: 767px) {
+    .container-small {
+        width: 300px;
+    }
+}
+
+@media (min-width: 768px) {
+    .container-small {
+        width: 450px;
+    }
+}
+
+@media (min-width: 992px) {
+    .container-small {
+        width: 600px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .container-small {
+        width: 700px;
+    }
+}
+
+.container-small {
+    max-width: 100%;
+}
+
+.submit-registration {
+    text-align: center;
+    margin-top: 20px;
+}
+
+
