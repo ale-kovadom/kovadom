@@ -115,14 +115,7 @@
                                     </ng-container>
                                 </div>
                                 <div class="form-group col-sm-12">
-                                    <div class="input-group">
-                                        <div class="input-group-addon"><i class="icomoon-liga icon-phone"></i></div>
-
-                                        <!-- @TODO i18n -->
-                                        <input type="text" class="form-control" [(ngModel)]="sale.host.phone" pattern="^(?:0|\(?\+33\)?\s?|0033\s?)[1-79](?:[\.\-\s]?\d\d){4}$"
-                                               placeholder="Your phone number" i18n-placeholder="form placeholder | common - phone number"
-                                               name="phone" #phone="ngModel" maxlength="100" required>
-                                    </div>
+                                    <phone-form required name="phone" #phone="ngModel" [(ngModel)]="sale.host.phone"></phone-form>
                                     <ng-container *ngIf="!phone.valid && showExplicitErrorMessage">
                                         <div *ngIf="phone.hasError('required')" class="form-error-msg" i18n>This field is required</div>
                                         <div *ngIf="phone.hasError('pattern')" class="form-error-msg" i18n>This field is malformed</div>

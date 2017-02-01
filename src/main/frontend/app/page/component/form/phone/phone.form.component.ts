@@ -1,29 +1,29 @@
-import {Component, forwardRef, Input, ViewChild} from "@angular/core";
+import {Component, forwardRef, Input} from "@angular/core";
 import {NG_VALUE_ACCESSOR, ControlValueAccessor, NG_VALIDATORS, FormControl} from "@angular/forms";
 
 @Component({
-    selector: 'email-form',
-    templateUrl: 'email.form.html',
+    selector: 'phone-form',
+    templateUrl: 'phone.form.html',
     providers: [
         {
             provide: NG_VALUE_ACCESSOR,
-            useExisting: forwardRef(() => EmailFormComponent),
+            useExisting: forwardRef(() => PhoneFormComponent),
             multi: true
         },
         {
             provide: NG_VALIDATORS,
-            useExisting: forwardRef(() => EmailFormComponent),
+            useExisting: forwardRef(() => PhoneFormComponent),
             multi: true
         }
     ]
 })
-export class EmailFormComponent implements ControlValueAccessor {
+export class PhoneFormComponent implements ControlValueAccessor {
 
     // TODO i18n
-    public readonly regexp = /^[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,10}$/i;
+    public readonly regexp = /^(?:0|\(?\+33\)?\s?|0033\s?)[1-79](?:[\.\-\s]?\d\d){4}$/i;
 
     @Input()
-    public _email: string = "";
+    public _phone: string = "";
 
     public propagateChange = (_: any) => {
     };
@@ -36,15 +36,15 @@ export class EmailFormComponent implements ControlValueAccessor {
     }
 
     public writeValue(value: any) {
-        this._email = value;
+        this._phone = value;
     }
 
-    public get email() {
-        return this._email;
+    public get phone() {
+        return this._phone;
     }
 
-    public set email(val) {
-        this._email = val;
+    public set phone(val) {
+        this._phone = val;
         this.propagateChange(val);
     }
 

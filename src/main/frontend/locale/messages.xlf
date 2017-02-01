@@ -235,21 +235,9 @@
         <note priority="1" from="description"> common - last name</note>
         <note priority="1" from="meaning">form placeholder </note>
       </trans-unit>
-      <trans-unit id="8d1ac75435e06976d89c90157561d7bb0028ecff" datatype="html">
-        <source>Your email</source>
-        <target/>
-        <note priority="1" from="description"> common - email</note>
-        <note priority="1" from="meaning">form placeholder </note>
-      </trans-unit>
       <trans-unit id="da82914908a0bb31e159f70f79890705758a886e" datatype="html">
         <source>This field is malformed</source>
         <target/>
-      </trans-unit>
-      <trans-unit id="c77806daf398daf467764952f11d4ce02d4df433" datatype="html">
-        <source>Your phone number</source>
-        <target/>
-        <note priority="1" from="description"> common - phone number</note>
-        <note priority="1" from="meaning">form placeholder </note>
       </trans-unit>
       <trans-unit id="8c3959e214acbbcbbfc43118172d7992b08b7dbf" datatype="html">
         <source>Question ?</source>
@@ -349,6 +337,18 @@
         <target/>
         <note priority="1" from="description"> submit</note>
         <note priority="1" from="meaning">company contact </note>
+      </trans-unit>
+      <trans-unit id="8d1ac75435e06976d89c90157561d7bb0028ecff" datatype="html">
+        <source>Your email</source>
+        <target/>
+        <note priority="1" from="description"> common - email</note>
+        <note priority="1" from="meaning">form placeholder </note>
+      </trans-unit>
+      <trans-unit id="c77806daf398daf467764952f11d4ce02d4df433" datatype="html">
+        <source>Your phone number</source>
+        <target/>
+        <note priority="1" from="description"> common - phone number</note>
+        <note priority="1" from="meaning">form placeholder </note>
       </trans-unit>
     </body>
   </file>

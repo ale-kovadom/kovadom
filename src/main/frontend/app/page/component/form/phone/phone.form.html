@@ -1,0 +1,11 @@
+<div class="input-group">
+    <div class="input-group-addon"><i class="icomoon-liga icon-phone"></i></div>
+
+    <input type="text"
+           class="form-control"
+           [(ngModel)]="phone"
+           [pattern]="regexp"
+           placeholder="Your phone number"
+           i18n-placeholder="form placeholder | common - phone number"
+           maxlength="100">
+</div>
