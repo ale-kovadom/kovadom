@@ -1,6 +1,6 @@
 declare let Swiper: any;
 
-import {Injectable, Inject, Component, ElementRef, Input} from "@angular/core";
+import {Injectable, Inject, Component, ElementRef, Input, OnInit} from "@angular/core";
 
 @Injectable()
 @Component({
@@ -8,7 +8,7 @@ import {Injectable, Inject, Component, ElementRef, Input} from "@angular/core";
     templateUrl: 'ui.swiper.html',
     styleUrls: ['ui.swiper.css']
 })
-export class SwiperContainer {
+export class SwiperContainer implements OnInit {
 
     @Input()
     public options: any;

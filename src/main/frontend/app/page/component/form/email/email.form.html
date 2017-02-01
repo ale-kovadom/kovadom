@@ -1,0 +1,12 @@
+<div class="input-group">
+
+    <div class="input-group-addon"><i class="icomoon-liga icon-email"></i></div>
+    <input type="email"
+           class="form-control"
+           [pattern]="regexp"
+           placeholder="Your email"
+           i18n-placeholder="form placeholder | common - email"
+           [(ngModel)]="email"
+           maxlength="450">
+
+</div>

@@ -19,9 +19,10 @@ import {ActivitiesComponent} from "./page/activities/activities.component";
 import {PageNotFoundComponent} from "./page/page_not_found/page-not-found.component";
 import {HomeSaleHowToComponent} from "./page/home_sale_how_to/home-sale.how-to.component";
 import {SaleHowtoStepsComponent} from "./page/component/sale_how_to_steps/sale.how-to.steps.component";
-import {DialogModule} from 'primeng/primeng';
+import {DialogModule} from "primeng/primeng";
 import {CompanyRegistrationComponent} from "./page/component/registration/company/company-registration";
 import {RegistrationService} from "./domain/contact/registrationService";
+import {EmailFormComponent} from "./page/component/form/email/email.form.component";
 
 @NgModule({
     imports: [
@@ -45,7 +46,8 @@ import {RegistrationService} from "./domain/contact/registrationService";
         ActivitiesComponent,
         SaleHowtoStepsComponent,
         HomeSaleHowToComponent,
-        CompanyRegistrationComponent
+        CompanyRegistrationComponent,
+        EmailFormComponent
     ],
     providers: [ActivityService, BrandService, SaleService, RegistrationService],
     bootstrap: [KovadomComponent]

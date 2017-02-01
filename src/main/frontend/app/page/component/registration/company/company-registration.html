@@ -32,17 +32,13 @@
                         </ng-container>
                     </div>
                     <div class="form-group col-sm-12">
-                        <div class="input-group">
-                            <div class="input-group-addon"><i class="icomoon-liga icon-email"></i></div>
-                            <input type="text" class="form-control" pattern="^[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,10}$" placeholder="Your email"
-                                   i18n-placeholder="form placeholder | common - email" name="email"
-                                   required #email="ngModel" [(ngModel)]="contact.email" maxlength="450">
-                        </div>
+                        <email-form required name="email" #email="ngModel" [(ngModel)]="contact.email"></email-form>
                         <ng-container *ngIf="!email.valid && showExplicitErrorMessage">
                             <div *ngIf="email.hasError('required')" class="form-error-msg" i18n>This field is required</div>
                             <div *ngIf="email.hasError('pattern')" class="form-error-msg" i18n>This field is malformed</div>
                         </ng-container>
                     </div>
+
                     <div class="form-group col-sm-12">
                         <div class="input-group">
                             <div class="input-group-addon"><i class="icomoon-liga icon-phone"></i></div>
