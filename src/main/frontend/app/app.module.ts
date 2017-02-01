@@ -23,6 +23,7 @@ import {DialogModule} from "primeng/primeng";
 import {CompanyRegistrationComponent} from "./page/component/registration/company/company-registration";
 import {RegistrationService} from "./domain/contact/registrationService";
 import {EmailFormComponent} from "./page/component/form/email/email.form.component";
+import {PhoneFormComponent} from "./page/component/form/phone/phone.form.component";
 
 @NgModule({
     imports: [
@@ -47,7 +48,8 @@ import {EmailFormComponent} from "./page/component/form/email/email.form.compone
         SaleHowtoStepsComponent,
         HomeSaleHowToComponent,
         CompanyRegistrationComponent,
-        EmailFormComponent
+        EmailFormComponent,
+        PhoneFormComponent
     ],
     providers: [ActivityService, BrandService, SaleService, RegistrationService],
     bootstrap: [KovadomComponent]
