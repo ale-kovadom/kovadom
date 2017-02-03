@@ -127,12 +127,6 @@ html body .form-control:focus {
     border-radius: 4px;
 }
 
-.fade-out {
-    /*visibility: hidden;*/
-    opacity: 0;
-    transition: visibility 0s 2s, opacity 2s linear;
-}
-
 .btn-submit, .btn-submit:hover, .btn-submit:active, .btn-submit:visited .btn-submit:focus {
     background-color: #ff5449 !important;
     border-color: #ff5449 !important;

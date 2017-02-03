@@ -25,6 +25,8 @@ import {RegistrationService} from "./domain/contact/registrationService";
 import {EmailFormComponent} from "./page/component/form/email/email.form.component";
 import {PhoneFormComponent} from "./page/component/form/phone/phone.form.component";
 import {ValidationFormComponent} from "./page/component/form/validation/validation.form.component";
+import {FormStatus} from "./framework/form/forms";
+import {ConfirmationMessageEmailComponent} from "./page/component/form/message/confirmation-message.form.component";
 
 @NgModule({
     imports: [
@@ -34,7 +36,7 @@ import {ValidationFormComponent} from "./page/component/form/validation/validati
         FormsModule,
         FrameworkModule,
         DialogModule,
-        Ng2PageScrollModule.forRoot()
+        Ng2PageScrollModule.forRoot(),
     ],
     declarations: [
         PageNotFoundComponent,
@@ -51,7 +53,8 @@ import {ValidationFormComponent} from "./page/component/form/validation/validati
         CompanyRegistrationComponent,
         EmailFormComponent,
         PhoneFormComponent,
-        ValidationFormComponent
+        ValidationFormComponent,
+        ConfirmationMessageEmailComponent
     ],
     providers: [ActivityService, BrandService, SaleService, RegistrationService],
     bootstrap: [KovadomComponent]

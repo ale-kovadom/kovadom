@@ -6,8 +6,9 @@ import "rxjs/add/operator/switchMap";
 import {Sale, SaleStatus} from "../../../domain/sale/sale";
 import {NgForm} from "@angular/forms";
 import {SaleService} from "../../../domain/sale/sale.service";
-import {PageScrollService, PageScrollInstance, PageScrollConfig, EasingLogic} from "ng2-page-scroll";
+import {PageScrollService, PageScrollInstance, PageScrollConfig} from "ng2-page-scroll";
 import {DOCUMENT} from "@angular/platform-browser";
+import {FormStatus} from "../../../framework/form/forms";
 
 @Component({
     selector: 'brand-detail',
@@ -15,18 +16,6 @@ import {DOCUMENT} from "@angular/platform-browser";
     styleUrls: ['brand-detail.css']
 })
 export class BrandDetailComponent {
-
-    private static STATUS_NOT_SUBMITTED = "notSubmitted";
-
-    private static STATUS_SENT = "sent";
-
-    private static STATUS_CONFIRMED = "confirmed";
-
-    private static STATUS_FAILED = "failed";
-
-    private static SUCCESS_ALERT_CLASS: string = "alert alert-success";
-
-    private static ERROR_ALERT_CLASS: string = "alert alert-danger";
 
     private static FORM_COLLAPSE_CLASS: string = "";
 
@@ -50,9 +39,9 @@ export class BrandDetailComponent {
 
     public showExplicitErrorMessage: boolean = false;
 
-    public submitStatus: string;
+    public formStatus = FormStatus;
 
-    public alertClass: string;
+    public submitStatus: FormStatus;
 
     @ViewChild("saleForm")
     public ngForm: NgForm;
@@ -106,7 +95,7 @@ export class BrandDetailComponent {
         if (hasBeenExpanded) {
             this.showExplicitErrorMessage = true;
             if (this.ngForm.form.valid) {
-                this.submitStatus = BrandDetailComponent.STATUS_SENT;
+                this.submitStatus = FormStatus.Sent;
                 this.saleService.create(this.sale).then(this.onSuccess(this)).catch(this.onError(this))
             }
         } else {
@@ -114,64 +103,33 @@ export class BrandDetailComponent {
         }
     }
 
+    public onAlertDismissal() {
+        if (this.submitStatus = FormStatus.Confirmed) {
+            this.collapseForm();
+            this.showExplicitErrorMessage = false;
+            this.ngForm.reset();
+            this.sale = BrandDetailComponent.emptySale(this.brand);
+        }
+        this.resetSubmitStatus();
+    }
+
     private onSuccess(self: BrandDetailComponent) {
         return () => {
-            self.displaySuccessAlert(self).then(() => {
-                    self.fadeOutAlert(self).then(() => {
-                        self.collapseForm();
-                        self.resetSubmitStatus();
-                        self.showExplicitErrorMessage = false;
-                        self.ngForm.reset();
-                        self.sale = BrandDetailComponent.emptySale(self.brand);
-                    });
-                }
-            );
+            self.submitStatus = FormStatus.Confirmed;
+            this.goToAlert();
         }
     }
 
     private onError(self: BrandDetailComponent) {
         return (error: any) => {
             console.error(error);
-
-            self.displayErrorAlert(self).then(() => {
-                self.fadeOutAlert(self).then(() => {
-                    self.resetSubmitStatus();
-                });
-            });
+            self.submitStatus = FormStatus.Failed;
         }
-    }
-
-    private displaySuccessAlert(self: BrandDetailComponent) {
-        return self.displayAlert(self, BrandDetailComponent.SUCCESS_ALERT_CLASS, BrandDetailComponent.STATUS_CONFIRMED);
-    }
-
-    private displayErrorAlert(self: BrandDetailComponent) {
-        return self.displayAlert(self, BrandDetailComponent.ERROR_ALERT_CLASS, BrandDetailComponent.STATUS_FAILED);
-    }
-
-    private displayAlert(self: BrandDetailComponent, alertClass: string, newStatus: string) {
-        return new Promise((resolve, reject) => {
-            self.alertClass = alertClass;
-            self.submitStatus = newStatus;
-            this.goToAlert();
-            setTimeout(() => {
-                resolve();
-            }, 3000);
-        });
-    }
-
-    private fadeOutAlert(self: BrandDetailComponent) {
-        return new Promise((resolve, reject) => {
-            self.alertClass += " fade-out";
-            setTimeout(() => {
-                resolve();
-            }, 2000);
-        });
     }
 
 
     private resetSubmitStatus() {
-        this.submitStatus = BrandDetailComponent.STATUS_NOT_SUBMITTED;
+        this.submitStatus = FormStatus.NotSubmitted;
     }
 
     private expandForm() {

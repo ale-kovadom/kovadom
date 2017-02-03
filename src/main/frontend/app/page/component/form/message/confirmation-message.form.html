@@ -1,0 +1,4 @@
+<div id="alert-form" [hidden]="status != formStatus.Confirmed && status != formStatus.Failed" [ngClass]="alertClass" role="alert">
+    <ng-container *ngIf="status == formStatus.Confirmed" i18n="generic form saving message | common - success">Your request has been registered</ng-container>
+    <ng-container *ngIf="status == formStatus.Failed" i18n="generic form saving message | common - failed">An error has occurred while processing your request</ng-container>
+</div>

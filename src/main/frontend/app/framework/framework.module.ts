@@ -4,6 +4,7 @@ import {FormsModule} from "@angular/forms";
 import {CalendarModule} from "primeng/components/calendar/calendar";
 import {SwiperContainer} from "./ui/swiper/ui.swiper.component";
 import {CalendarDirective} from "./ui/calendar/ui.calendar.directive";
+import {FormStatus} from "./form/forms";
 
 @NgModule({
     imports: [
@@ -18,7 +19,7 @@ import {CalendarDirective} from "./ui/calendar/ui.calendar.directive";
     exports: [
         CalendarModule,
         CalendarDirective,
-        SwiperContainer
+        SwiperContainer,
     ]
 })
 export class FrameworkModule {}

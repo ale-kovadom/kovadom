@@ -49,10 +49,8 @@
                         <h2 i18n="book a sale form | Form with user's info - header">Book online</h2>
                         <h5 i18n="book a sale form | Form with user's info - sub-header">Free, no commitment</h5>
                     </div>
-                    <div id="alert-form" [hidden]="submitStatus != 'confirmed' && submitStatus != 'failed'" [ngClass]="alertClass" role="alert">
-                        <ng-container *ngIf="submitStatus == 'confirmed'" i18n="generic form saving message | common - success">Your request has been registered</ng-container>
-                        <ng-container *ngIf="submitStatus == 'failed'" i18n="generic form saving message | common - failed">An error has occurred while processing your request</ng-container>
-                    </div>
+
+                    <confirmation-message-form [status]="submitStatus" (onDismiss)="onAlertDismissal()"></confirmation-message-form>
                     <form (ngSubmit)="onSubmit()" #saleForm="ngForm" id="book-sale-form" novalidate>
                         <div class="row">
                             <div class="form-group col-sm-12">
@@ -114,11 +112,11 @@
                             </div>
                             <div class="form-submit form-group col-lg-8 col-sm-6 col-xs-12">
                                 <button i18n="book a sale form | verify availabilities" (click)="verifyAvailability()" type="submit" id="verify" class="btn btn-verify"
-                                        [disabled]="submitStatus != 'notSubmitted'">Verify availability
+                                        [disabled]="submitStatus != formStatus.NotSubmitted">Verify availability
                                 </button>
                             </div>
                             <div class="form-submit form-group col-lg-4 col-sm-6 col-xs-12">
-                                <button i18n="book a sale form | Submit" type="submit" (click)="book()" id="book" class="btn btn-submit" [disabled]="submitStatus != 'notSubmitted'">Submit</button>
+                                <button i18n="book a sale form | Submit" type="submit" (click)="book()" id="book" class="btn btn-submit" [disabled]="submitStatus != formStatus.NotSubmitted">Submit</button>
                             </div>
                         </div>
                     </form>
