@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <style>
+
+        body {
+            margin-left: 10%;
+            margin-right: 10%;
+        }
+
+        .main {
+            width: 100%;
+            font-family: Helvetica, Helvetica, Arial, sans-serif;
+            font-size: 14px;
+        }
+
+        thead tr {
+            background-color: #EEEEEE;
+        }
+
+        table {
+            border: none;
+            border-spacing: 0;
+            width: 500px;
+        }
+
+        th {
+            font-weight: bold;
+            padding: 5px;
+            width: 250px;
+        }
+
+        td {
+            padding: 3px;
+        }
+
+        h3 {
+            margin-top: 40px;
+        }
+
+    </style>
+</head>
+
+<body>
+<div class="main">
+
+    <h2 th:text="${contactType}">Registration type</h2>
+
+    <h3>Contact's information:</h3>
+    <table>
+        <thead>
+        <tr>
+            <th>Field</th>
+            <th>Value</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <td>Company</td>
+            <td th:text="${contact.getCompany().get()}">Aubade</td>
+        </tr>
+        <tr>
+            <td>First name</td>
+            <td th:text="${contact.getFirstName()}">First name</td>
+        </tr>
+        <tr>
+            <td>Last Name</td>
+            <td th:text="${contact.getLastName()}">Last name</td>
+        </tr>
+        <tr>
+            <td>Phone number</td>
+            <td th:text="${contact.getPhone()}">0121328866</td>
+        </tr>
+        <tr>
+            <td>Email</td>
+            <td th:text="${contact.getEmail()}">email</td>
+        </tr>
+        </tbody>
+    </table>
+
+</div>
+</body>
+</html>

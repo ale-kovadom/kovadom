@@ -15,16 +15,23 @@ public class ResourceLoader {
 
     public enum Resources {
 
-        KOVADOM_LOGO_TXT("img/kovadom/logo-kovadom-txt.png");
+        KOVADOM_LOGO_TXT("img/kovadom/logo-kovadom-txt.png", "image/png");
 
         private final String path;
 
-        Resources(final String path) {
+        private final String mimeType;
+
+        Resources(final String path, final String mimeType) {
             this.path = path;
+            this.mimeType = mimeType;
         }
 
         private String getPath() {
             return path;
+        }
+
+        public String getMimeType() {
+            return mimeType;
         }
     }
 

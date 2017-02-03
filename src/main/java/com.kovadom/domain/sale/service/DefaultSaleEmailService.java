@@ -24,11 +24,11 @@ import static java.lang.String.format;
 @Service
 public class DefaultSaleEmailService implements SaleEmailService {
 
-    private static final String VERIFY_AVAILABILITY_TEMPLATE = "verify_availability";
+    private static final String VERIFY_AVAILABILITY_TEMPLATE = "booking/verify_availability";
 
-    private static final String BOOK_REQUEST_TEMPLATE = "book_request";
+    private static final String BOOK_REQUEST_TEMPLATE = "booking/book_request";
 
-    private static final String KOVADOM_NOTIFICATION_TEMPLATE = "kovadom_notification";
+    private static final String KOVADOM_NOTIFICATION_TEMPLATE = "booking/kovadom_notification";
 
     private static final String MAIL_VERIFY_AVAILABILITY_SUBJECT = "mail.verify-availability.subject";
 
@@ -72,7 +72,8 @@ public class DefaultSaleEmailService implements SaleEmailService {
             }
 
             Host host = sale.getHost();
-            log.debug(format("Notify user via email to '%s'", host.getEmail()));
+
+            log.debug(format("Notifying user of a book/availability request via email to '%s'...", host.getEmail()));
 
             MimeMessageHelper message = new MimeMessageHelper(mimeMessage, true, "UTF-8");
             message.setTo(host.getEmail());
@@ -84,7 +85,9 @@ public class DefaultSaleEmailService implements SaleEmailService {
             context.setVariable("logoId", logoId);
             message.setText(templateEngine.process(saleStatus == AVAILABILITY ? VERIFY_AVAILABILITY_TEMPLATE : BOOK_REQUEST_TEMPLATE, context), true);
 
-            message.addInline(logoId, resourceLoader.load(KOVADOM_LOGO_TXT), "image/png");
+            message.addInline(logoId, resourceLoader.load(KOVADOM_LOGO_TXT), KOVADOM_LOGO_TXT.getMimeType());
+
+            log.debug(format("Notify user of a book/availability via email to '%s': done", host.getEmail()));
         };
 
         this.mailSender.send(preparator);
@@ -98,7 +101,7 @@ public class DefaultSaleEmailService implements SaleEmailService {
                 throw new IllegalStateException(format("Can not notify Kovadom with sale status '%s'", saleStatus.name()));
             }
 
-            log.debug(format("Notify Kovadom via email to '%s'", kovadomAddress));
+            log.debug(format("Notifying Kovadom of a book/availability via email to '%s'...", kovadomAddress));
 
             MimeMessageHelper message = new MimeMessageHelper(mimeMessage, true, "UTF-8");
             message.setTo(kovadomAddress);
@@ -110,6 +113,8 @@ public class DefaultSaleEmailService implements SaleEmailService {
             context.setVariable("sale", sale);
             context.setVariable("saleStatus", status);
             message.setText(templateEngine.process(KOVADOM_NOTIFICATION_TEMPLATE, context), true);
+
+            log.debug(format("Notify Kovadom of a book/availability via email to '%s': done", kovadomAddress));
         };
 
         this.mailSender.send(preparator);

@@ -12,7 +12,7 @@ public class Contact {
 
     private String company;
 
-    private String phoneNumber;
+    private String phone;
 
     private String email;
 
@@ -29,12 +29,11 @@ public class Contact {
         return ofNullable(company);
     }
 
-    public String getPhoneNumber() {
-        return phoneNumber;
+    public String getPhone() {
+        return phone;
     }
 
     public String getEmail() {
         return email;
     }
-
 }
