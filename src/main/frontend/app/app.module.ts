@@ -24,6 +24,7 @@ import {CompanyRegistrationComponent} from "./page/component/registration/compan
 import {RegistrationService} from "./domain/contact/registrationService";
 import {EmailFormComponent} from "./page/component/form/email/email.form.component";
 import {PhoneFormComponent} from "./page/component/form/phone/phone.form.component";
+import {ValidationFormComponent} from "./page/component/form/validation/validation.form.component";
 
 @NgModule({
     imports: [
@@ -49,7 +50,8 @@ import {PhoneFormComponent} from "./page/component/form/phone/phone.form.compone
         HomeSaleHowToComponent,
         CompanyRegistrationComponent,
         EmailFormComponent,
-        PhoneFormComponent
+        PhoneFormComponent,
+        ValidationFormComponent
     ],
     providers: [ActivityService, BrandService, SaleService, RegistrationService],
     bootstrap: [KovadomComponent]

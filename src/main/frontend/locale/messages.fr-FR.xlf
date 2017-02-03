@@ -185,10 +185,6 @@
         <note priority="1" from="description"> Date time for the sale</note>
         <note priority="1" from="meaning">book a sale form </note>
       </trans-unit>
-      <trans-unit id="cd8d6b563bc6cc84fea1841fa0e84d244af5a0b8" datatype="html">
-        <source>This field is incorrect</source>
-        <target>Ce champ est incorrect</target>
-      </trans-unit>
       <trans-unit id="7de557f21d8dcc009b82694a1b85f3573fe54259" datatype="html">
         <source>City</source>
         <target>Ville</target>
@@ -201,55 +197,35 @@
         <note priority="1" from="description"> city placeholder</note>
         <note priority="1" from="meaning">book a sale form </note>
       </trans-unit>
-      <trans-unit id="5e6548eb9cbb0467c307b4079bc989cd21f44355" datatype="html">
-        <source>This field is required</source>
-        <target>Ce champ est obligatoire</target>
-      </trans-unit>
       <trans-unit id="f502938ddd4b4e09670e20e4832e69bc7ab750c2" datatype="html">
         <source>Number of stakeholders</source>
         <target>Nombre de participants</target>
         <note priority="1" from="description"> stakeholders count</note>
         <note priority="1" from="meaning">book a sale form </note>
       </trans-unit>
-      <trans-unit id="d79ef1bf3f1829cee04927920d55160e79f05000" datatype="html">
+      <trans-unit id="23f35db949398331967c32a22b73298b519a2d37" datatype="html">
         <source>First name</source>
         <target>Prénom</target>
-        <note priority="1" from="description"> firstname</note>
-        <note priority="1" from="meaning">book a sale form </note>
+        <note priority="1" from="description"> common - first name</note>
+        <note priority="1" from="meaning">form </note>
       </trans-unit>
-      <trans-unit id="9dcc0f3560eb81a3f8605fef65f7c0a8c28cae7d" datatype="html">
+      <trans-unit id="dff571a3f31daaac375f52bd63a1d2112f4224d1" datatype="html">
         <source>Your first name</source>
         <target>Votre prénom</target>
-        <note priority="1" from="description"> first name placeholder</note>
-        <note priority="1" from="meaning">book a sale form </note>
+        <note priority="1" from="description"> common - first name</note>
+        <note priority="1" from="meaning">form placeholder </note>
       </trans-unit>
-      <trans-unit id="ecfe99042a2bab635c4b9b88ff2cbee808442e9a" datatype="html">
+      <trans-unit id="11c18feee48d2d5118e0996c348ae8af93e95a9a" datatype="html">
         <source>Last name</source>
         <target>Nom</target>
-        <note priority="1" from="description"> lastname</note>
-        <note priority="1" from="meaning">book a sale form </note>
+        <note priority="1" from="description"> common - last name</note>
+        <note priority="1" from="meaning">form </note>
       </trans-unit>
-      <trans-unit id="6a019bc356f240e4722e4ae034b872c010148677" datatype="html">
+      <trans-unit id="7d4330dcb9da2e40e392fa0ab259e826d02f19c2" datatype="html">
         <source>Your last name</source>
         <target>Votre nom</target>
-        <note priority="1" from="description"> last name placeholder</note>
-        <note priority="1" from="meaning">book a sale form </note>
-      </trans-unit>
-      <trans-unit id="49a9028076ef41f008fd607fc4fb63c36120570e" datatype="html">
-        <source>Your email</source>
-        <target>Votre email</target>
-        <note priority="1" from="description"> email placeholder</note>
-        <note priority="1" from="meaning">book a sale form </note>
-      </trans-unit>
-      <trans-unit id="da82914908a0bb31e159f70f79890705758a886e" datatype="html">
-        <source>This field is malformed</source>
-        <target>Le format de ce champ est incorrect</target>
-      </trans-unit>
-      <trans-unit id="b75a849245ddb1357d8d40763b6395b9b16fc80f" datatype="html">
-        <source>Your phone number</source>
-        <target>Votre téléphone</target>
-        <note priority="1" from="description"> phone number</note>
-        <note priority="1" from="meaning">book a sale form </note>
+        <note priority="1" from="description"> common - last name</note>
+        <note priority="1" from="meaning">form placeholder </note>
       </trans-unit>
       <trans-unit id="8c3959e214acbbcbbfc43118172d7992b08b7dbf" datatype="html">
         <source>Question ?</source>
@@ -257,8 +233,9 @@
         <note priority="1" from="description"> Extra information </note>
         <note priority="1" from="meaning">book a sale form </note>
       </trans-unit>
-      <trans-unit id="b9336d4322389cee95d04b7938a87b999a0f2566" datatype="html">
-        <source>Verify availability</source>
+      <trans-unit id="9a8aeb28b8bd314228179c9c270e5f0335b8b64e" datatype="html">
+        <source>Verify availability
+                                </source>
         <target>Vérifier disponibilité</target>
         <note priority="1" from="description"> verify availabilities</note>
         <note priority="1" from="meaning">book a sale form </note>
@@ -344,29 +321,11 @@
         <note priority="1" from="description"> common - company name</note>
         <note priority="1" from="meaning">form placeholder </note>
       </trans-unit>
-      <trans-unit id="23f35db949398331967c32a22b73298b519a2d37" datatype="html">
-        <source>First name</source>
-        <target>Prénom</target>
-        <note priority="1" from="description"> common - first name</note>
-        <note priority="1" from="meaning">form </note>
-      </trans-unit>
-      <trans-unit id="dff571a3f31daaac375f52bd63a1d2112f4224d1" datatype="html">
-        <source>Your first name</source>
-        <target>Votre prénom</target>
-        <note priority="1" from="description"> common - first name</note>
-        <note priority="1" from="meaning">form placeholder </note>
-      </trans-unit>
-      <trans-unit id="11c18feee48d2d5118e0996c348ae8af93e95a9a" datatype="html">
-        <source>Last name</source>
-        <target>Nom</target>
-        <note priority="1" from="description"> common - last name</note>
-        <note priority="1" from="meaning">form </note>
-      </trans-unit>
-      <trans-unit id="7d4330dcb9da2e40e392fa0ab259e826d02f19c2" datatype="html">
-        <source>Your last name</source>
-        <target>Votre nom</target>
-        <note priority="1" from="description"> common - last name</note>
-        <note priority="1" from="meaning">form placeholder </note>
+      <trans-unit id="8da446326b3ef77812ebd325b50ca64e99c1be90" datatype="html">
+        <source>Submit</source>
+        <target>Soumettre ma demande</target>
+        <note priority="1" from="description"> submit</note>
+        <note priority="1" from="meaning">company contact </note>
       </trans-unit>
       <trans-unit id="8d1ac75435e06976d89c90157561d7bb0028ecff" datatype="html">
         <source>Your email</source>
@@ -380,12 +339,14 @@
         <note priority="1" from="description"> common - phone number</note>
         <note priority="1" from="meaning">form placeholder </note>
       </trans-unit>
-      <trans-unit id="8da446326b3ef77812ebd325b50ca64e99c1be90" datatype="html">
-        <source>Submit</source>
-        <target>Soumettre ma demande</target>
-        <note priority="1" from="description"> submit</note>
-        <note priority="1" from="meaning">company contact </note>
+      <trans-unit id="5e6548eb9cbb0467c307b4079bc989cd21f44355" datatype="html">
+        <source>This field is required</source>
+        <target>Ce champ est obligatoire</target>
       </trans-unit>
+      <trans-unit id="da82914908a0bb31e159f70f79890705758a886e" datatype="html">
+        <source>This field is malformed</source>
+        <target>Ce champ est incorrect</target>
+       </trans-unit>
     </body>
   </file>
 </xliff>

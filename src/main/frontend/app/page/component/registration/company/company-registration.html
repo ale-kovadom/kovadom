@@ -1,59 +1,47 @@
 <div class="container container-small">
     <div class="row">
         <div class="col-sm-12">
+
             <div id="alert-form" [hidden]="submitStatus != 'confirmed' && submitStatus != 'failed'" [ngClass]="alertClass" role="alert">
                 <ng-container *ngIf="submitStatus == 'confirmed'" i18n="generic form saving message | common - success">Your request has been registered</ng-container>
                 <ng-container *ngIf="submitStatus == 'failed'" i18n="generic form saving message | common - failed">An error has occurred while processing your request</ng-container>
             </div>
+
             <form (ngSubmit)="onSubmit()" #registrationForm="ngForm" novalidate>
+
                 <div class="row">
+
                     <div class="form-group col-xs-12">
                         <label i18n="form | common - company name" for="company">Company name</label>
                         <input type="text" class="form-control" placeholder="Your company name" i18n-placeholder="form placeholder | common - company name" name="company" id="company"
                                required #company="ngModel" [(ngModel)]="contact.company" maxlength="250">
-                        <ng-container *ngIf="!company.valid && showExplicitErrorMessage">
-                            <div *ngIf="company.hasError('required')" class="form-error-msg" i18n>This field is required</div>
-                        </ng-container>
+                        <form-validation required="true" [ref]="company" [onlyIf]="showExplicitErrorMessage"></form-validation>
                     </div>
+
                     <div class="form-group col-xs-12 col-sm-6 col-md-12 col-lg-6">
                         <label i18n="form | common - first name" for="firstname">First name</label>
                         <input type="text" class="form-control" placeholder="Your first name" i18n-placeholder="form placeholder | common - first name" name="firstname" id="firstname"
                                required #firstName="ngModel" [(ngModel)]="contact.firstName" maxlength="250">
-                        <ng-container *ngIf="!firstName.valid && showExplicitErrorMessage">
-                            <div *ngIf="firstName.hasError('required')" class="form-error-msg" i18n>This field is required</div>
-                        </ng-container>
+                        <form-validation required="true" [ref]="firstName" [onlyIf]="showExplicitErrorMessage"></form-validation>
                     </div>
+
                     <div class="form-group col-xs-12 col-sm-6 col-md-12 col-lg-6">
                         <label i18n="form | common - last name" for="lastname">Last name</label>
                         <input type="text" class="form-control" placeholder="Your last name" i18n-placeholder="form placeholder | common - last name" name="lastname" id="lastname"
                                required #lastName="ngModel" [(ngModel)]="contact.lastName" maxlength="250">
-                        <ng-container *ngIf="!lastName.valid && showExplicitErrorMessage">
-                            <div *ngIf="lastName.hasError('required')" class="form-error-msg" i18n>This field is required</div>
-                        </ng-container>
+                        <form-validation required="true" [ref]="lastName" [onlyIf]="showExplicitErrorMessage"></form-validation>
                     </div>
+
                     <div class="form-group col-sm-12">
                         <email-form required name="email" #email="ngModel" [(ngModel)]="contact.email"></email-form>
-                        <ng-container *ngIf="!email.valid && showExplicitErrorMessage">
-                            <div *ngIf="email.hasError('required')" class="form-error-msg" i18n>This field is required</div>
-                            <div *ngIf="email.hasError('pattern')" class="form-error-msg" i18n>This field is malformed</div>
-                        </ng-container>
+                        <form-validation required="true" pattern="true" [ref]="email" [onlyIf]="showExplicitErrorMessage"></form-validation>
                     </div>
 
                     <div class="form-group col-sm-12">
                         <phone-form required name="phone" #phone="ngModel" [(ngModel)]="contact.phone"></phone-form>
-                        <!--<div class="input-group">-->
-                            <!--<div class="input-group-addon"><i class="icomoon-liga icon-phone"></i></div>-->
-
-                            <!--&lt;!&ndash; @TODO i18n &ndash;&gt;-->
-                            <!--<input type="text" class="form-control" [(ngModel)]="contact.phone" pattern="^(?:0|\(?\+33\)?\s?|0033\s?)[1-79](?:[\.\-\s]?\d\d){4}$"-->
-                                   <!--placeholder="Your phone number" i18n-placeholder="form placeholder | common - phone number"-->
-                                   <!--name="phone" #phone="ngModel" maxlength="100" required>-->
-                        <!--</div>-->
-                        <ng-container *ngIf="!phone.valid && showExplicitErrorMessage">
-                            <div *ngIf="phone.hasError('required')" class="form-error-msg" i18n>This field is required</div>
-                            <div *ngIf="phone.hasError('pattern')" class="form-error-msg" i18n>This field is malformed</div>
-                        </ng-container>
+                        <form-validation required="true" pattern="true" [ref]="phone" [onlyIf]="showExplicitErrorMessage"></form-validation>
                     </div>
+
                 </div>
                 <div class="submit-registration form-submit col-sm-12">
                     <button i18n="company contact | submit" type="submit" class="btn btn-submit" [disabled]="submitStatus != 'notSubmitted'">Submit</button>
@@ -61,5 +49,6 @@
             </form>
 
         </div>
+        
     </div>
 </div>

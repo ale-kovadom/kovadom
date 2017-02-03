@@ -1,0 +1,5 @@
+<ng-container *ngIf="!ref.valid && onlyIf">
+    <div *ngIf="required && ref.hasError('required')" class="form-error-msg" i18n>This field is required</div>
+    <div *ngIf="pattern && ref.hasError('pattern')" class="form-error-msg" i18n>This field is malformed</div>
+</ng-container>
+<ng-content *ngIf="!ref.valid && onlyIf"></ng-content>

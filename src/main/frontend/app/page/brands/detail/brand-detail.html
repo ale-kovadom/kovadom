@@ -72,54 +72,40 @@
                                     </p-calendar>
                                 </div>
                                 <!-- Only required error is supported, not "pattern" -->
-                                <div *ngIf="!saleDate.valid && showExplicitErrorMessage" class="form-error-msg" i18n>This field is incorrect</div>
+                                <form-validation required="true" [ref]="saleDate" [onlyIf]="showExplicitErrorMessage"></form-validation>
                             </div>
                             <div class="form-group col-sm-12">
                                 <label for="city" i18n="book a sale form | City">City</label>
                                 <input type="text" placeholder="Meeting place" i18n-placeholder="book a sale form | city placeholder" class="form-control" id="city" [(ngModel)]="sale.city" name="city"
                                        required #city="ngModel" maxlength="250">
-                                <ng-container *ngIf="!city.valid && showExplicitErrorMessage">
-                                    <div *ngIf="city.hasError('required')" class="form-error-msg" i18n>This field is required</div>
-                                </ng-container>
+                                <form-validation required="true" [ref]="city" [onlyIf]="showExplicitErrorMessage"></form-validation>
                             </div>
                             <div class="form-group col-sm-12">
                                 <label for="stakeholders" i18n="book a sale form | stakeholders count">Number of stakeholders</label>
-                                <input type="number" min="3" max="100"class="form-control" placeholder="10"
+                                <input type="number" min="3" max="100" class="form-control" placeholder="10"
                                        id="stakeholders" name="stakeholders" [(ngModel)]="sale.stakeholderCount" required #stakeholders="ngModel">
-                                <ng-container *ngIf="!stakeholders.valid && showExplicitErrorMessage">
-                                    <div *ngIf="stakeholders.hasError('required')" class="form-error-msg" i18n>This field is required</div>
-                                </ng-container>
+                                <form-validation required="true" [ref]="stakeholders" [onlyIf]="showExplicitErrorMessage"></form-validation>
                             </div>
                             <div [ngClass]="moreFieldClass" id="moreFields">
                                 <div class="form-group col-xs-12 col-sm-6 col-md-12 col-lg-6">
                                     <label i18n="form | common - first name" for="firstname">First name</label>
                                     <input type="text" class="form-control" placeholder="Your first name" i18n-placeholder="form placeholder | common - first name" name="firstname" id="firstname"
                                            required #firstName="ngModel" [(ngModel)]="sale.host.firstName" maxlength="250">
-                                    <ng-container *ngIf="!firstName.valid && showExplicitErrorMessage">
-                                        <div *ngIf="firstName.hasError('required')" class="form-error-msg" i18n>This field is required</div>
-                                    </ng-container>
+                                    <form-validation required="true" [ref]="firstName" [onlyIf]="showExplicitErrorMessage"></form-validation>
                                 </div>
                                 <div class="form-group col-xs-12 col-sm-6 col-md-12 col-lg-6">
                                     <label i18n="form | common - last name" for="lastname">Last name</label>
                                     <input type="text" class="form-control" placeholder="Your last name" i18n-placeholder="form placeholder | common - last name" name="lastname" id="lastname"
                                            required #lastName="ngModel" [(ngModel)]="sale.host.lastName" maxlength="250">
-                                    <ng-container *ngIf="!lastName.valid && showExplicitErrorMessage">
-                                        <div *ngIf="lastName.hasError('required')" class="form-error-msg" i18n>This field is required</div>
-                                    </ng-container>
+                                    <form-validation required="true" [ref]="lastName" [onlyIf]="showExplicitErrorMessage"></form-validation>
                                 </div>
                                 <div class="form-group col-sm-12">
                                     <email-form required name="email" #email="ngModel" [(ngModel)]="sale.host.email"></email-form>
-                                    <ng-container *ngIf="!email.valid && showExplicitErrorMessage">
-                                        <div *ngIf="email.hasError('required')" class="form-error-msg" i18n>This field is required</div>
-                                        <div *ngIf="email.hasError('pattern')" class="form-error-msg" i18n>This field is malformed</div>
-                                    </ng-container>
+                                    <form-validation required="true" pattern="true" [ref]="email" [onlyIf]="showExplicitErrorMessage"></form-validation>
                                 </div>
                                 <div class="form-group col-sm-12">
                                     <phone-form required name="phone" #phone="ngModel" [(ngModel)]="sale.host.phone"></phone-form>
-                                    <ng-container *ngIf="!phone.valid && showExplicitErrorMessage">
-                                        <div *ngIf="phone.hasError('required')" class="form-error-msg" i18n>This field is required</div>
-                                        <div *ngIf="phone.hasError('pattern')" class="form-error-msg" i18n>This field is malformed</div>
-                                    </ng-container>
+                                    <form-validation required="true" pattern="true" [ref]="phone" [onlyIf]="showExplicitErrorMessage"></form-validation>
                                 </div>
                                 <div class="form-group col-sm-12">
                                     <textarea placeholder="Question ?" i18n-placeholder="book a sale form | Extra information " class="form-control" id="extra-information" name="extra-information"
@@ -127,7 +113,9 @@
                                 </div>
                             </div>
                             <div class="form-submit form-group col-lg-8 col-sm-6 col-xs-12">
-                                <button i18n="book a sale form | verify availabilities" (click)="verifyAvailability()" type="submit" id="verify" class="btn btn-verify" [disabled]="submitStatus != 'notSubmitted'">Verify availability</button>
+                                <button i18n="book a sale form | verify availabilities" (click)="verifyAvailability()" type="submit" id="verify" class="btn btn-verify"
+                                        [disabled]="submitStatus != 'notSubmitted'">Verify availability
+                                </button>
                             </div>
                             <div class="form-submit form-group col-lg-4 col-sm-6 col-xs-12">
                                 <button i18n="book a sale form | Submit" type="submit" (click)="book()" id="book" class="btn btn-submit" [disabled]="submitStatus != 'notSubmitted'">Submit</button>
