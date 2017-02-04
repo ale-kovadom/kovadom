@@ -42,6 +42,7 @@
             padding: 0 10px;
         }
 
+
     </style>
 </head>
 <body>
@@ -51,8 +52,8 @@
     </div>
     <div class="content">
         <h4 th:text="#{mail.hello(${contact.getFirstName()})}">Hello</h4>
-        <p th:text="#{mail.registration.company.recap(${contact.getCompany().get()})}">What you asked</p>
-        <p th:text="#{mail.registration.company.feedback}">We are working on it</p>
+        <p th:text="#{mail.registration.sale.recap}">What you asked</p>
+        <p th:text="#{mail.registration.sale.feedback}">We are working on it</p>
         <p th:text="#{mail.signature}"></p>
     </div>
     <div class="footer">

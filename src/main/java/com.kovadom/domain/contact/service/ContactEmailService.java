@@ -11,4 +11,10 @@ public interface ContactEmailService {
     @Async
     void notifyKovadomForCompanyregistration(final Contact sale);
 
+    @Async
+    void notifyKovadomForSaleRegistration(final Contact contact);
+
+    @Async
+    void notifyRequesterForSaleRegistration(final Contact contact);
+
 }

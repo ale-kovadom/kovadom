@@ -3,17 +3,21 @@
     <section class="container-fluid">
 
         <p-dialog [(visible)]="displayCompanyRegistration" [draggable]="false" [resizable]="false" [dismissableMask]="true" responsive="true" modal="true">
-            <company-registration></company-registration>
+            <contact-registration mode="company_mode"></contact-registration>
+        </p-dialog>
+
+        <p-dialog [(visible)]="displaySaleRegistration" [draggable]="false" [resizable]="false" [dismissableMask]="true" responsive="true" modal="true">
+            <contact-registration mode="sale_mode"></contact-registration>
         </p-dialog>
 
         <div class="row">
 
-            <div id="register-info" class="col-sm-4 col-sm-offset-1">
+            <div class="col-sm-4 col-sm-offset-1 register-info">
                 <h4 i18n="contact|Home sales business">You are a home sales company?</h4>
-                <a i18n="contact|Company registration" class="btn red" (click)="showCompanyregistrationDialog()">Register your company</a>
+                <a i18n="contact|Company registration" class="btn red" (click)="showCompanyRegistrationDialog()">Register your company</a>
             </div>
 
-            <div id="contact-info" class="col-sm-3">
+            <div id="contact-info" class="col-sm-2">
                 <h4 i18n="contact|contact-info">Contact</h4>
                 <ul>
                     <li>
@@ -29,12 +33,17 @@
 
             </div>
 
-            <div id="social-info" class="col-sm-4">
+            <div id="social-info" class="col-sm-2">
                 <h4 i18n="contact|social-info">Follow us</h4>
                 <ul class="icon-social">
                     <a href="https://www.facebook.com/kovadom" target="_blank"><img src="img/contact/facebook.png"></a>
                     <a href="https://www.twitter.com/kovadom" target="_blank"><img src="img/contact/twitter.png"></a>
                 </ul>
+            </div>
+
+            <div class="col-sm-3 register-info">
+                <h4 i18n="contact|Home sale business">You are a home sale?</h4>
+                <a i18n="contact|sale registration" class="btn red" (click)="showSaleRegistrationDialog()">Register as a home sale</a>
             </div>
 
         </div>

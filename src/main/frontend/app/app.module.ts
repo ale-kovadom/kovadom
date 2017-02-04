@@ -20,13 +20,12 @@ import {PageNotFoundComponent} from "./page/page_not_found/page-not-found.compon
 import {HomeSaleHowToComponent} from "./page/home_sale_how_to/home-sale.how-to.component";
 import {SaleHowtoStepsComponent} from "./page/component/sale_how_to_steps/sale.how-to.steps.component";
 import {DialogModule} from "primeng/primeng";
-import {CompanyRegistrationComponent} from "./page/component/registration/company/company-registration";
 import {RegistrationService} from "./domain/contact/registrationService";
 import {EmailFormComponent} from "./page/component/form/email/email.form.component";
 import {PhoneFormComponent} from "./page/component/form/phone/phone.form.component";
 import {ValidationFormComponent} from "./page/component/form/validation/validation.form.component";
-import {FormStatus} from "./framework/form/forms";
 import {ConfirmationMessageEmailComponent} from "./page/component/form/message/confirmation-message.form.component";
+import {ContactRegistrationComponent} from "./page/component/registration/contact-registration";
 
 @NgModule({
     imports: [
@@ -50,7 +49,7 @@ import {ConfirmationMessageEmailComponent} from "./page/component/form/message/c
         ActivitiesComponent,
         SaleHowtoStepsComponent,
         HomeSaleHowToComponent,
-        CompanyRegistrationComponent,
+        ContactRegistrationComponent,
         EmailFormComponent,
         PhoneFormComponent,
         ValidationFormComponent,

@@ -9,8 +9,14 @@ export class ContactComponent {
 
     public displayCompanyRegistration: boolean = false;
 
-    public showCompanyregistrationDialog() {
+    public displaySaleRegistration: boolean = false;
+
+    public showCompanyRegistrationDialog() {
         this.displayCompanyRegistration = true;
+    }
+
+    public showSaleRegistrationDialog() {
+        this.displaySaleRegistration = true;
     }
 
 }

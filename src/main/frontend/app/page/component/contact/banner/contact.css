@@ -52,14 +52,14 @@ i.contact
 }
 
 @media only screen and (max-width: 767px) {
-    #register-info, #social-info, #contact-info {
+    .register-info, #social-info, #contact-info {
         text-align: center;
         margin-top: 30px;
     }
 }
 
 @media only screen and (max-width: 425px) {
-    #register-info h4, #social-info h4, #contact-info h4{
+    .register-info h4, #social-info h4, #contact-info h4{
         font-size: 17px; /* Avoid line return */
     }
 

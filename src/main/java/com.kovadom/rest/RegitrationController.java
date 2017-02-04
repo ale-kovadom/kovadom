@@ -34,4 +34,14 @@ public class RegitrationController {
         return new ResponseEntity<>(headers, HttpStatus.CREATED);
     }
 
+    @RequestMapping(path = "sale", method = POST, consumes = MediaType.APPLICATION_JSON_VALUE)
+    public ResponseEntity<Void> registerSale(@RequestBody final Contact contact) {
+
+        contactEmailService.notifyRequesterForSaleRegistration(contact);
+        contactEmailService.notifyKovadomForSaleRegistration(contact);
+
+        HttpHeaders headers = new HttpHeaders();
+        return new ResponseEntity<>(headers, HttpStatus.CREATED);
+    }
+
 }

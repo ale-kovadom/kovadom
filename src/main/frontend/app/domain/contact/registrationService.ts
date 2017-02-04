@@ -11,6 +11,8 @@ export class RegistrationService {
 
     private static COMPANY_URL = RegistrationService.URL + 'company';
 
+    private static SALE_URL = RegistrationService.URL + 'sale';
+
     private headers = new Headers({'Content-Type': 'application/json'});
 
     constructor(private http: Http) {
@@ -19,6 +21,12 @@ export class RegistrationService {
     public registerCompany(contact: Contact): Promise<void> {
         return this.http
             .post(RegistrationService.COMPANY_URL, JSON.stringify(contact), {headers: this.headers})
+            .toPromise();
+    }
+
+    public registerSale(contact: Contact): Promise<void> {
+        return this.http
+            .post(RegistrationService.SALE_URL, JSON.stringify(contact), {headers: this.headers})
             .toPromise();
     }
 

@@ -121,6 +121,18 @@
         <note priority="1" from="description">social-info</note>
         <note priority="1" from="meaning">contact</note>
       </trans-unit>
+      <trans-unit id="04c8a06ded90df93fe0c44135d4bcd9157d48123" datatype="html">
+        <source>You are a home sale?</source>
+        <target>Vous êtes vendeur à domicile ?</target>
+        <note priority="1" from="description">Home sale business</note>
+        <note priority="1" from="meaning">contact</note>
+      </trans-unit>
+      <trans-unit id="95adfbc96e249bd53bd746e19b2929604f5388d0" datatype="html">
+        <source>Register as a home sale</source>
+        <target>Devenez conseiller</target>
+        <note priority="1" from="description">sale registration</note>
+        <note priority="1" from="meaning">contact</note>
+      </trans-unit>
       <trans-unit id="664541179fd88bafffd62355da1c1baeb4651424" datatype="html">
         <source>
         No sales associated with <x id="INTERPOLATION"/>
@@ -166,18 +178,6 @@
         <target>Gratuit et sans engagement</target>
         <note priority="1" from="description"> Form with user&apos;s info - sub-header</note>
         <note priority="1" from="meaning">book a sale form </note>
-      </trans-unit>
-      <trans-unit id="2ab8d82ac40b17f91766899087520919cf554f8a" datatype="html">
-        <source>Your request has been registered</source>
-        <target>Votre demande a été prise en compte.</target>
-        <note priority="1" from="description"> common - success</note>
-        <note priority="1" from="meaning">generic form saving message </note>
-      </trans-unit>
-      <trans-unit id="72cf57adaf435b3de4bbc963a1e7a061ab0b4923" datatype="html">
-        <source>An error has occurred while processing your request</source>
-        <target>Une erreur est survenue lors de l'envoi du formulaire.</target>
-        <note priority="1" from="description"> common - failed</note>
-        <note priority="1" from="meaning">generic form saving message </note>
       </trans-unit>
       <trans-unit id="99c0cebd7ad25fe825f2a918d4e4a2cf55092f92" datatype="html">
         <source>Date and time</source>
@@ -309,6 +309,12 @@
         <note priority="1" from="description">step3 emphasized description - part2</note>
         <note priority="1" from="meaning">home</note>
       </trans-unit>
+      <trans-unit id="50b5e3de9813b3b0bf4e09b1502e8cdb09d65e71" datatype="html">
+        <source>Register your company</source>
+        <target>Référencez votre entreprise</target>
+        <note priority="1" from="description">Register your company</note>
+        <note priority="1" from="meaning">company registration title</note>
+      </trans-unit>
       <trans-unit id="6ccd447853cb2e1a06ef7905a64cb6c1b48dfd93" datatype="html">
         <source>Company name</source>
         <target>Société</target>
@@ -346,7 +352,19 @@
       <trans-unit id="da82914908a0bb31e159f70f79890705758a886e" datatype="html">
         <source>This field is malformed</source>
         <target>Ce champ est incorrect</target>
-       </trans-unit>
+      </trans-unit>
+      <trans-unit id="2ab8d82ac40b17f91766899087520919cf554f8a" datatype="html">
+        <source>Your request has been registered</source>
+        <target>Votre demande a été prise en compte.</target>
+        <note priority="1" from="description"> common - success</note>
+        <note priority="1" from="meaning">generic form saving message </note>
+      </trans-unit>
+      <trans-unit id="72cf57adaf435b3de4bbc963a1e7a061ab0b4923" datatype="html">
+        <source>An error has occurred while processing your request</source>
+        <target>Une erreur est survenue lors de l'envoi du formulaire.</target>
+        <note priority="1" from="description"> common - failed</note>
+        <note priority="1" from="meaning">generic form saving message </note>
+      </trans-unit>
     </body>
   </file>
 </xliff>

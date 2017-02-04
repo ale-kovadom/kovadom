@@ -7,7 +7,7 @@
 
                 <div class="row">
 
-                    <div class="form-group col-xs-12">
+                    <div *ngIf="mode == 'company_mode'" class="form-group col-xs-12">
                         <label i18n="form | common - company name" for="company">Company name</label>
                         <input type="text" class="form-control" placeholder="Your company name" i18n-placeholder="form placeholder | common - company name" name="company" id="company"
                                required #company="ngModel" [(ngModel)]="contact.company" maxlength="250">
@@ -39,9 +39,11 @@
                     </div>
 
                 </div>
+
                 <div class="submit-registration form-submit col-sm-12">
                     <button i18n="company contact | submit" type="submit" class="btn btn-submit" [disabled]="submitStatus != formStatus.NotSubmitted">Submit</button>
                 </div>
+
             </form>
 
         </div>

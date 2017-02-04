@@ -121,6 +121,18 @@
         <note priority="1" from="description">social-info</note>
         <note priority="1" from="meaning">contact</note>
       </trans-unit>
+      <trans-unit id="04c8a06ded90df93fe0c44135d4bcd9157d48123" datatype="html">
+        <source>You are a home sale?</source>
+        <target/>
+        <note priority="1" from="description">Home sale business</note>
+        <note priority="1" from="meaning">contact</note>
+      </trans-unit>
+      <trans-unit id="95adfbc96e249bd53bd746e19b2929604f5388d0" datatype="html">
+        <source>Register as a home sale</source>
+        <target/>
+        <note priority="1" from="description">sale registration</note>
+        <note priority="1" from="meaning">contact</note>
+      </trans-unit>
       <trans-unit id="664541179fd88bafffd62355da1c1baeb4651424" datatype="html">
         <source>
         No sales associated with <x id="INTERPOLATION"/>

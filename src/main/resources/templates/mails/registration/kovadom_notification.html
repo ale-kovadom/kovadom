@@ -57,7 +57,7 @@
         <tbody>
         <tr>
             <td>Company</td>
-            <td th:text="${contact.getCompany().get()}">Aubade</td>
+            <td th:text='${contact.getCompany().orElse("-")}'>Aubade</td>
         </tr>
         <tr>
             <td>First name</td>
