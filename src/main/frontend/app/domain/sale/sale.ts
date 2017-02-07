@@ -1,4 +1,5 @@
 import {Host} from "../host/host";
+import moment from 'moment'
 export class Sale {
 
 
@@ -23,7 +24,7 @@ export class Sale {
             host: this.host,
             stakeholderCount: this.stakeholderCount,
             extraInformation: this.extraInformation,
-            date: this.date
+            date: moment(this.date).format()
         }
     }
 

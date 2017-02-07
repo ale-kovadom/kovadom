@@ -24,6 +24,7 @@ public class ActivityController {
 
     @RequestMapping(method = GET)
     public Iterable<Activity> getActivities() {
+
         return activityRepository.findAll();
     }
 

@@ -16,7 +16,7 @@ import javax.persistence.Enumerated;
 import javax.persistence.JoinColumn;
 import javax.persistence.ManyToOne;
 import javax.persistence.Table;
-import java.time.LocalDateTime;
+import java.time.ZonedDateTime;
 
 @Entity
 @Table(name = "sale")
@@ -53,7 +53,7 @@ public class Sale extends AbstractAuditablePersistable<Long> {
     private String extraInformation;
 
     @Column(name = "date")
-    private LocalDateTime date;
+    private ZonedDateTime date;
 
     // JPA
     public Sale() {
@@ -79,7 +79,7 @@ public class Sale extends AbstractAuditablePersistable<Long> {
         return extraInformation;
     }
 
-    public LocalDateTime getDate() {
+    public ZonedDateTime getDate() {
         return date;
     }
 

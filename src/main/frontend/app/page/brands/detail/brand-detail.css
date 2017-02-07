@@ -113,6 +113,10 @@
     color: #ffffff;
 }
 
+.sale-date {
+    margin-bottom: 10px;
+}
+
 /* Fix the position of the primeng calendar to the left of the input */
 /* @formatter:off */
 :host >>> .ui-calendar {

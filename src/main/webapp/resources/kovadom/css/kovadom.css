@@ -59,9 +59,10 @@ a.red-hover:hover {
 
 @font-face {
     font-family: 'icomoon';
-    src: url('/resources/fonts/icomoon.ttf?2kshd0') format('truetype'),
-    url('/resources/fonts/icomoon.woff?2kshd0') format('woff'),
-    url('/resources/fonts/icomoon.svg?2kshd0#icomoon') format('svg');
+    src:  url('/resources/fonts/icomoon.eot?9n80lp');
+    src: url('/resources/fonts/icomoon.ttf?9n80lp') format('truetype'),
+    url('/resources/fonts/icomoon.woff?9n80lp') format('woff'),
+    url('/resources/fonts/icomoon.svg?9n80lp#icomoon') format('svg');
     font-weight: normal;
     font-style: normal;
 }
@@ -92,15 +93,19 @@ a.red-hover:hover {
 }
 
 .icon-email:before {
-    content: "\e901";
+    content: "\e900";
 }
 
 .icon-phone:before {
-    content: "\e942";
+    content: "\e903";
 }
 
 .icon-calendar:before {
-    content: "\e900";
+    content: "\e902";
+}
+
+.icon-clock:before {
+    content: "\e901";
 }
 
 /*** Form ***/
@@ -114,7 +119,7 @@ html body .form-control:focus {
 }
 
 /* Form validation */
-.ng-dirty.ng-invalid:not(form) {
+.ng-dirty.ng-invalid:not(form), .ng-dirty.ng-invalid:not(form) input {
     border-bottom-color: #f44336 !important; /* Should override Bootstrap "blue border cancellation" */
 }
 

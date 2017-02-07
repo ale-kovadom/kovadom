@@ -21,12 +21,6 @@ export class BrandDetailComponent {
 
     private static FORM_EXPAND_CLASS: string = "expanded";
 
-    private static emptySale(brand: Brand) {
-        let sale = Sale.empty();
-        sale.brandCode = brand.code;
-        return sale;
-    }
-
     public brand: Brand;
 
     public slides: Array<String> = [];
@@ -42,6 +36,10 @@ export class BrandDetailComponent {
     public formStatus = FormStatus;
 
     public submitStatus: FormStatus;
+
+    public time: Date;
+
+    public date: Date;
 
     @ViewChild("saleForm")
     public ngForm: NgForm;
@@ -77,7 +75,7 @@ export class BrandDetailComponent {
             .subscribe(brand => {
                 this.brand = brand;
                 [1, 2, 3].forEach(i => this.slides.push(`static/brands/${this.brand.code}/slider/${i}.png`));
-                this.sale = BrandDetailComponent.emptySale(this.brand);
+                this.sale = this.emptySale();
             });
     }
 
@@ -95,6 +93,7 @@ export class BrandDetailComponent {
         if (hasBeenExpanded) {
             this.showExplicitErrorMessage = true;
             if (this.ngForm.form.valid) {
+                this.sale.date = new Date(this.date.getFullYear(), this.date.getMonth(), this.date.getDate(), this.time.getHours(), this.time.getMinutes(), 0, 0);
                 this.submitStatus = FormStatus.Sent;
                 this.saleService.create(this.sale).then(this.onSuccess(this)).catch(this.onError(this))
             }
@@ -108,7 +107,7 @@ export class BrandDetailComponent {
             this.collapseForm();
             this.showExplicitErrorMessage = false;
             this.ngForm.reset();
-            this.sale = BrandDetailComponent.emptySale(this.brand);
+            this.sale = this.emptySale();
         }
         this.resetSubmitStatus();
     }
@@ -142,6 +141,16 @@ export class BrandDetailComponent {
 
     private goToAlert() {
         this.pageScrollService.start(PageScrollInstance.simpleInstance(this.document, '#alert-form'));
+    }
+
+    private emptySale() {
+        let sale = Sale.empty();
+        sale.brandCode = this.brand.code;
+
+        this.date = undefined;
+        this.time = undefined;
+
+        return sale;
     }
 
 }
