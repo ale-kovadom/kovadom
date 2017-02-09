@@ -19,7 +19,7 @@ ul {
 /*** jumbotron ***/
 
 .jumbotron {
-    background-size: cover;
+    background-size: cover !important;
     background: url('img/home/home-sales.jpeg') no-repeat center;
     height: 500px;
 }
