@@ -46,7 +46,7 @@ public class Application extends SpringBootServletInitializer implements AsyncCo
     @Bean
     public ErrorViewResolver supportPathBasedLocationStrategyWithoutHashes() {
         return (request, status, model) -> status == HttpStatus.NOT_FOUND
-                ? new ModelAndView("index.html", Collections.emptyMap(), HttpStatus.OK)
+                ? new ModelAndView("index.jsp", Collections.emptyMap(), HttpStatus.OK)
                 : null;
     }
 
