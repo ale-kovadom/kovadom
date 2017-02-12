@@ -1,65 +1,20 @@
 <!DOCTYPE html>
-<html lang="en" xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org">
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org" xmlns:layout="http://www.w3.org/1999/xhtml"
+      layout:decorator="layout/default_client_layout">
 <head>
-    <style>
-
-        body {
-            margin-left: 10%;
-            margin-right: 10%;
-        }
-
-        .main {
-            width: 100%;
-            font-family: Helvetica, Helvetica, Arial, sans-serif;
-            font-size: 15px;
-        }
-
-        .header {
-            background-color: #1D2B4A;
-            padding: 10px;
-        }
-
-        .logo-txt {
-            display: inline-block;
-            max-width: 80%;
-            margin: 0;
-            padding: 0;
-            height: 60px;
-        }
-
-        .content {
-            padding: 10px;
-        }
-
-        .footer {
-            background-color: #1D2B4A;
-            text-align: right;
-            padding: 4px;
-        }
-
-        .kovadom-link {
-            color: white;
-            padding: 0 10px;
-        }
-
-
-    </style>
+    <style layout:fragment="content-css"></style>
 </head>
 <body>
-<div class="main">
-    <div class="header">
-        <img class="logo-txt" src="logo-kovadom-txt.png" th:src="|cid:${logoId}|"/>
-    </div>
-    <div class="content">
-        <h4 th:text="#{mail.hello(${sale.getHost().getFirstName()})}">Hello</h4>
-        <p th:text="#{mail.thank-you}">What you asked</p>
-        <p th:text="#{mail.verify-availability.answer(${sale.getBrand().getName()})}">We are working on it</p>
-        <p th:text="#{mail.verify-availability.feedback}">Keep in touch</p>
-        <p th:text="#{mail.signature}"></p>
-    </div>
-    <div class="footer">
-        <a class="kovadom-link" href="www.kovadom.com" th:href="@{http://www.kovadom.com}">kovadom.com</a>
-    </div>
-</div>
+
+<span layout:fragment="content">
+
+    <h3 th:text="#{mail.hello(${sale.getHost().getFirstName()})}">Hello</h3>
+    <p th:text="#{mail.thank-you}">What you asked</p>
+    <p th:text="#{mail.verify-availability.answer(${sale.getBrand().getName()})}">We are working on it</p>
+    <p th:text="#{mail.verify-availability.feedback}">Keep in touch</p>
+    <p th:text="#{mail.see-you-soon}">Regards,</p>
+    <p th:text="#{mail.signature}">Elsa from Kovadom</p>
+
+</span>
 </body>
 </html>

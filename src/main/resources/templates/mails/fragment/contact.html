@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org">
+<head>
+
+    <style th:fragment="contact-css">
+
+        .contact {
+            margin-top: 40px;
+        }
+
+        .contact ul {
+            padding: 0;
+            margin: 0;
+        }
+
+        .contact-title {
+            margin-bottom: 5px;
+        }
+
+        .contact li {
+            list-style-type: none;
+        }
+
+    </style>
+
+</head>
+<body>
+<div class="contact" th:fragment="contact">
+    <h4 class="contact-title" th:text="#{mail.contact}">Contact</h4>
+    <ul>
+        <li th:text="#{mail.signature}">Elsa from Kovadom</li>
+        <li><a href="tel:+33187645635">01 87 64 56 35</a></li>
+        <li><a href="mailto:contact@kovadom.com" th:href="@{mailto:contact@kovadom.com}">contact@kovadom.com</a></li>
+    </ul>
+</div>
+</body>
+</html>

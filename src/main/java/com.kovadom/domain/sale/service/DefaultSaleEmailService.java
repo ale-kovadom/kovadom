@@ -16,10 +16,17 @@ import org.springframework.stereotype.Service;
 import org.thymeleaf.TemplateEngine;
 import org.thymeleaf.context.Context;
 
+import java.text.SimpleDateFormat;
+import java.time.ZonedDateTime;
+import java.time.format.DateTimeFormatter;
+import java.time.format.FormatStyle;
+
 import static com.kovadom.domain.sale.Sale.Status.AVAILABILITY;
 import static com.kovadom.domain.sale.Sale.Status.BOOK_REQUEST;
 import static com.kovadom.framework.resource.ResourceLoader.Resources.KOVADOM_LOGO_TXT;
 import static java.lang.String.format;
+import static java.time.format.FormatStyle.LONG;
+import static java.time.format.FormatStyle.SHORT;
 
 @Service
 public class DefaultSaleEmailService implements SaleEmailService {
@@ -78,8 +85,9 @@ public class DefaultSaleEmailService implements SaleEmailService {
             MimeMessageHelper message = new MimeMessageHelper(mimeMessage, true, "UTF-8");
             message.setTo(host.getEmail());
             message.setFrom(from);
-            message.setSubject(messageSource.getMessage(saleStatus == AVAILABILITY ? MAIL_VERIFY_AVAILABILITY_SUBJECT : MAIL_BOOK_REQUEST_SUBJECT, null, LocaleContextHolder.getLocale()));
+            message.setSubject(messageSource.getMessage(saleStatus == AVAILABILITY ? MAIL_VERIFY_AVAILABILITY_SUBJECT : MAIL_BOOK_REQUEST_SUBJECT, new Object[]{sale.getBrand().getName()}, LocaleContextHolder.getLocale()));
             Context context = new Context();
+            context.setVariable("saleDateTime", DateTimeFormatter.ofLocalizedDateTime(LONG, SHORT).withLocale(LocaleContextHolder.getLocale()).format(sale.getDate()));
             context.setVariable("sale", sale);
             String logoId = "logo-kovadom-txt";
             context.setVariable("logoId", logoId);
