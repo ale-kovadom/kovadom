@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org" xmlns:layout="http://www.w3.org/1999/xhtml">
+<head>
+    <style>
+
+        body {
+            margin-left: 10%;
+            margin-right: 10%;
+        }
+
+        .main {
+            width: 100%;
+            font-family: Helvetica, Helvetica, Arial, sans-serif;
+            font-size: 15px;
+        }
+
+        .content {
+            padding: 10px;
+        }
+
+    </style>
+
+    <th:block layout:fragment="content-css"></th:block>
+
+</head>
+<body>
+<div class="main">
+    <div class="content">
+
+        <span layout:fragment="content">The content</span>
+
+    </div>
+</div>
+</body>
+</html>
