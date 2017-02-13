@@ -10,6 +10,11 @@
     </h4>
 
     <ng-container *ngIf="brands?.length > 0">
+
+        <p class="activity-description">
+            {{activity.description}}
+        </p>
+
         <h4 i18n="brand list | Discover all brands for a given activity">
             Discover all sales of {{activity?.label | lowercase}}
         </h4>
@@ -35,6 +40,7 @@
             </div>
 
         </div>
+
     </ng-container>
 
 </section>

@@ -78,3 +78,6 @@ alter table sale add column status VARCHAR(20) NOT null default 'Availability';
 
 --changeset alescaroux:8
 update sale set status = 'AVAILABILITY'
+
+--changeset alescaroux:9
+alter table activity add COLUMN description VARCHAR(1300) NOT NULL DEFAULT '';

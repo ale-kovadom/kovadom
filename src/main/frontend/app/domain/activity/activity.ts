@@ -11,7 +11,9 @@ export class Activity {
     };
 
 
-    constructor(public code:String, public label:String) {
+    constructor(public code:String,
+                public label:String,
+                public description: String) {
     }
 
 }

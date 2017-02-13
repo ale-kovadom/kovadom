@@ -17,6 +17,20 @@
     margin-bottom: 30px;
 }
 
+.activity-description {
+    font-size: 20px;
+    margin: 25px 0;
+}
+
+@media only screen and (max-width: 400px) {
+
+    .activity-description {
+        font-size: 16px;
+        margin: 20px 0;
+    }
+
+}
+
 .figure {
     margin-top: 10px;
     margin-bottom: 10px;
