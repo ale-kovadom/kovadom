@@ -57,9 +57,59 @@
 
 /* @formatter:off */
 :host >>> .swiper-container {
-    height: 460px;
+    height: 460px;      /* Ratio = 3/2 */
     margin-top: 40px;
 }
+
+@media only screen and (max-width: 1199px) {
+
+  :host >>> .swiper-container {
+    height: 350px;
+  }
+
+}
+
+@media only screen and (max-width: 991px) {
+
+  :host >>> .swiper-container {
+    height: 480px;
+  }
+
+}
+
+@media only screen and (max-width: 768px) {
+
+  :host >>> .swiper-container {
+    height: 450px; /* based on width = 700px => container = 570px */
+  }
+
+}
+
+@media only screen and (max-width: 630px) {
+
+  :host >>> .swiper-container {
+    height: 380px;  /* based on width = 600px => container = 570px */
+  }
+
+}
+
+@media only screen and (max-width: 530px) {
+
+  :host >>> .swiper-container {
+    height: 313px;  /* based on width = 500px => container = 570px */
+  }
+
+}
+
+@media only screen and (max-width: 425px) {
+
+  :host >>> .swiper-container {
+    height: 256px;
+  }
+    
+}
+
+
 /* @formatter:on */
 
 /*** Company infos ***/
