@@ -16,10 +16,7 @@ import org.springframework.stereotype.Service;
 import org.thymeleaf.TemplateEngine;
 import org.thymeleaf.context.Context;
 
-import java.text.SimpleDateFormat;
-import java.time.ZonedDateTime;
 import java.time.format.DateTimeFormatter;
-import java.time.format.FormatStyle;
 
 import static com.kovadom.domain.sale.Sale.Status.AVAILABILITY;
 import static com.kovadom.domain.sale.Sale.Status.BOOK_REQUEST;

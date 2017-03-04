@@ -2,7 +2,23 @@
 <html lang="en" xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org" xmlns:layout="http://www.w3.org/1999/xhtml"
       layout:decorator="layout/default_client_layout">
 <head>
-    <style layout:fragment="content-css"></style>
+    <style layout:fragment="content-css">
+
+        .sumup {
+            margin-top: 40px;
+        }
+
+        .sumup ul {
+            padding: 0;
+        }
+
+        .sumup li {
+            margin-bottom: 5px;
+            list-style-type: none;
+        }
+
+    </style>
+
 </head>
 <body>
 
@@ -10,10 +26,19 @@
 
     <h3 th:text="#{mail.hello(${sale.getHost().getFirstName()})}">Hello</h3>
     <p th:text="#{mail.thank-you}">What you asked</p>
-    <p th:text="#{mail.verify-availability.answer(${sale.getBrand().getName()})}">We are working on it</p>
-    <p th:text="#{mail.verify-availability.feedback}">Keep in touch</p>
+    <p th:text="#{mail.book-request.answer(${sale.getBrand().getName()})}">We are working on it</p>
     <p th:text="#{mail.see-you-soon}">Regards,</p>
     <p th:text="#{mail.signature}">Elsa from Kovadom</p>
+
+    <div class="sumup">
+        <h4 th:text="#{mail.book-request.sumup}">Your booking request</h4>
+        <ul>
+            <li th:text="#{mail.book-request.host(${sale.getHost().getFirstName()})}">Host:xxx</li>
+            <li th:text="#{mail.book-request.date(${saleDateTime})}">Date:xxx</li>
+            <li th:text="#{mail.book-request.stakeholders-count(${sale.getStakeholderCount()})}">Stakeholders count:xxx</li>
+            <li th:text="#{mail.book-request.city(${sale.getCity()})}">City:xxx</li>
+        </ul>
+    </div>
 
 </span>
 </body>
