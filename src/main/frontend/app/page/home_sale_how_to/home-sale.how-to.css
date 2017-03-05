@@ -1,0 +1,19 @@
+.explanation h1 {
+    padding-bottom: 15px;
+    font-size: 30px;
+}
+
+.explanation p {
+    font-size: 16px;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+}
+
+.explanation, .sale-how-to-steps, .activity {
+    padding-top: 30px;
+}
+
+.all-activities-container {
+    margin-top: 20px;
+    padding-bottom: 50px;
+}

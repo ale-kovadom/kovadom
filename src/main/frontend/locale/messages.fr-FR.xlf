@@ -79,11 +79,11 @@
         <note priority="1" from="description">how it works?</note>
         <note priority="1" from="meaning">home</note>
       </trans-unit>
-      <trans-unit id="b4301727f3359f10cf34411db1ce5ced202abb83" datatype="html">
+      <trans-unit id="5ab56340f13adf36d904be356276e74279631d8f" datatype="html">
         <source>Discover all the activities</source>
         <target>Découvrez toutes les ambiances</target>
         <note priority="1" from="description">Discover all the activities button</note>
-        <note priority="1" from="meaning">home</note>
+        <note priority="1" from="meaning">common</note>
       </trans-unit>
       <trans-unit id="baa4f5ccf9c98ae8af8e8861eb941f28901c71b7" datatype="html">
         <source>What atmosphere will you choose?</source>
@@ -309,11 +309,37 @@
         <note priority="1" from="description">step3 emphasized description - part2</note>
         <note priority="1" from="meaning">home</note>
       </trans-unit>
-      <trans-unit id="50b5e3de9813b3b0bf4e09b1502e8cdb09d65e71" datatype="html">
-        <source>Register your company</source>
-        <target>Référencez votre entreprise</target>
-        <note priority="1" from="description">Register your company</note>
-        <note priority="1" from="meaning">company registration title</note>
+      <trans-unit id="1abbf74e15bf7b334f82e222212cb6ec0cd62ed8" datatype="html">
+        <source>How it works?</source>
+        <target>Comment ça marche ?</target>
+        <note priority="1" from="description">How it works ?</note>
+        <note priority="1" from="meaning">howitworks</note>
+      </trans-unit>
+      <trans-unit id="d7cdd178f68a8e8c8b5e78394f5c6d2d86faab50" datatype="html">
+        <source>
+        Kovadom is a home sale booking platform. On Kovadom you can simply choose the atmosphere and the brand to organize a moment of friendliness.
+    </source>
+        <target>Kovadom est une plateforme de réservation de vente a domicile. Sur Kovadom vous pouvez simplement choisir une ambiance pour organiser un moment de convivialité entre ami(e)s.
+        Invitez vos amis pour partagez un bon moment autour de la marque que vous aurez choisi ! Kovadom se charge de trouver le conseiller le plus proche de chez vous qui vous accompagnera lors de votre événement.
+        Tout au long du processus, vous pourrez suivre l'avancée de la préparation de votre vente. De plus, en tant qu'organisateur, vous bénéficiez d'avantages uniques autour de l'univers de la marque !</target>
+        <note priority="1" from="description">kovadom presentation</note>
+        <note priority="1" from="meaning">howitworks</note>
+      </trans-unit>
+      <trans-unit id="1886b4f61c9a9e92494d72b48fa21c29a234b771" datatype="html">
+        <source>
+        Our team is attentive to your questions or needs throughout the booking process
+    </source>
+        <target>Notre équipe est à l'écoute de vos questions ou besoins tout au long du parcours de réservation.</target>
+        <note priority="1" from="description">kovadom team</note>
+        <note priority="1" from="meaning">howitworks</note>
+      </trans-unit>
+      <trans-unit id="c6fb6f0ed51580c16099133f7554aebd7dd15d3d" datatype="html">
+        <source>
+        With Kovadom, organize your sale in just a few clicks!
+    </source>
+        <target>Avec Kovadom, organisez votre vente en quelques clics !</target>
+        <note priority="1" from="description">easy to organise</note>
+        <note priority="1" from="meaning">howitworks</note>
       </trans-unit>
       <trans-unit id="6ccd447853cb2e1a06ef7905a64cb6c1b48dfd93" datatype="html">
         <source>Company name</source>

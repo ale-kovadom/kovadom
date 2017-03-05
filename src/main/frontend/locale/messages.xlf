@@ -79,11 +79,11 @@
         <note priority="1" from="description">how it works?</note>
         <note priority="1" from="meaning">home</note>
       </trans-unit>
-      <trans-unit id="b4301727f3359f10cf34411db1ce5ced202abb83" datatype="html">
+      <trans-unit id="5ab56340f13adf36d904be356276e74279631d8f" datatype="html">
         <source>Discover all the activities</source>
         <target/>
         <note priority="1" from="description">Discover all the activities button</note>
-        <note priority="1" from="meaning">home</note>
+        <note priority="1" from="meaning">common</note>
       </trans-unit>
       <trans-unit id="baa4f5ccf9c98ae8af8e8861eb941f28901c71b7" datatype="html">
         <source>What atmosphere will you choose?</source>
@@ -308,6 +308,36 @@
         <target/>
         <note priority="1" from="description">step3 emphasized description - part2</note>
         <note priority="1" from="meaning">home</note>
+      </trans-unit>
+      <trans-unit id="1abbf74e15bf7b334f82e222212cb6ec0cd62ed8" datatype="html">
+        <source>How it works?</source>
+        <target/>
+        <note priority="1" from="description">How it works ?</note>
+        <note priority="1" from="meaning">howitworks</note>
+      </trans-unit>
+      <trans-unit id="d7cdd178f68a8e8c8b5e78394f5c6d2d86faab50" datatype="html">
+        <source>
+        Kovadom is a home sale booking platform. On Kovadom you can simply choose the atmosphere and the brand to organize a moment of friendliness.
+    </source>
+        <target/>
+        <note priority="1" from="description">kovadom presentation</note>
+        <note priority="1" from="meaning">howitworks</note>
+      </trans-unit>
+      <trans-unit id="1886b4f61c9a9e92494d72b48fa21c29a234b771" datatype="html">
+        <source>
+        Our team is attentive to your questions or needs throughout the booking process
+    </source>
+        <target/>
+        <note priority="1" from="description">kovadom team</note>
+        <note priority="1" from="meaning">howitworks</note>
+      </trans-unit>
+      <trans-unit id="c6fb6f0ed51580c16099133f7554aebd7dd15d3d" datatype="html">
+        <source>
+        With Kovadom, organize your sale in just a few clicks!
+    </source>
+        <target/>
+        <note priority="1" from="description">easy to organise</note>
+        <note priority="1" from="meaning">howitworks</note>
       </trans-unit>
       <trans-unit id="6ccd447853cb2e1a06ef7905a64cb6c1b48dfd93" datatype="html">
         <source>Company name</source>
