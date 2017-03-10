@@ -1,7 +1,9 @@
 <div class="swiper-container">
     <div class="swiper-wrapper">
-        <div *ngFor="let slide of slides" class="swiper-slide">
-            <img src="{{slide}}">
+        <div *ngFor="let slide of slides" class="swiper-slide"  [ngStyle]="{'background-image': 'url(' + slide.url + ')'}">
+            <div *ngIf="slide.description" class="text">
+                <p>{{slide.description}}</p>
+            </div>
         </div>
     </div>
     <div class="swiper-pagination"></div>

@@ -9,6 +9,8 @@ import {SaleService} from "../../../domain/sale/sale.service";
 import {PageScrollService, PageScrollInstance, PageScrollConfig} from "ng2-page-scroll";
 import {DOCUMENT} from "@angular/platform-browser";
 import {FormStatus} from "../../../framework/form/forms";
+import {BrandShowcaseImage} from "../../../domain/brand/brand.showcaseImage";
+import {SwiperSlide} from "../../../framework/ui/swiper/swiper.slides";
 
 @Component({
     selector: 'brand-detail',
@@ -23,7 +25,7 @@ export class BrandDetailComponent {
 
     public brand: Brand;
 
-    public slides: Array<String> = [];
+    public slides: Array<SwiperSlide> = [];
 
     public swiperOptions: any;
 
@@ -59,7 +61,8 @@ export class BrandDetailComponent {
             spaceBetween: 30,
             effect: 'fade',
             loop: true,
-            autoHeight: false
+            autoHeight: false,
+            parallax: true
         };
 
         this.collapseForm();
@@ -74,7 +77,9 @@ export class BrandDetailComponent {
             .switchMap((params: Params) => this.brandService.getBrand(params['brandCode']))
             .subscribe(brand => {
                 this.brand = brand;
-                [1, 2, 3].forEach(i => this.slides.push(`static/brands/${this.brand.code}/slider/${i}.png`));
+                this.brandService.getBrandShowcaseImages(this.brand.code).then((images: BrandShowcaseImage[]) =>
+                    images.map(img => new SwiperSlide('static/brands/' + this.brand.code + '/slider/' + img.name + '.png', img.description))
+                        .forEach(slide => this.slides.push(slide)));
                 this.sale = this.emptySale();
             });
     }

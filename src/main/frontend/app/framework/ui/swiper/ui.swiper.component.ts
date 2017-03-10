@@ -1,3 +1,4 @@
+import {SwiperSlide} from "./swiper.slides";
 declare let Swiper: any;
 
 import {Injectable, Inject, Component, ElementRef, Input, OnInit} from "@angular/core";
@@ -14,7 +15,7 @@ export class SwiperContainer implements OnInit {
     public options: any;
 
     @Input()
-    public slides: String[];
+    public slides: SwiperSlide[];
 
     public swiper: any;
 
