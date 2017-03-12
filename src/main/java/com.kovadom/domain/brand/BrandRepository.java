@@ -11,6 +11,6 @@ public interface BrandRepository extends JpaRepository<Brand, Long> {
 
     Brand findByCode(String code);
 
-    @Query("select image from BrandShowcaseImage image where image.brand.code = ?1")
-    List<BrandShowcaseImage> findShowcaseImages(String brandCode);
+    @Query("select brand from Brand brand INNER JOIN FETCH brand.brandShowcaseImages where brand.code = ?1")
+    Brand findWithFetchStrategy(String brandCode);
 }

@@ -9,7 +9,6 @@ import {SaleService} from "../../../domain/sale/sale.service";
 import {PageScrollService, PageScrollInstance, PageScrollConfig} from "ng2-page-scroll";
 import {DOCUMENT} from "@angular/platform-browser";
 import {FormStatus} from "../../../framework/form/forms";
-import {BrandShowcaseImage} from "../../../domain/brand/brand.showcaseImage";
 import {SwiperSlide} from "../../../framework/ui/swiper/swiper.slides";
 
 @Component({
@@ -77,9 +76,7 @@ export class BrandDetailComponent {
             .switchMap((params: Params) => this.brandService.getBrand(params['brandCode']))
             .subscribe(brand => {
                 this.brand = brand;
-                this.brandService.getBrandShowcaseImages(this.brand.code).then((images: BrandShowcaseImage[]) =>
-                    images.map(img => new SwiperSlide('static/brands/' + this.brand.code + '/slider/' + img.name + '.png', img.description))
-                        .forEach(slide => this.slides.push(slide)));
+                this.slides = this.brand.brandShowcaseImages.map(img => new SwiperSlide('static/brands/' + this.brand.code + '/slider/' + img.name + '.png', img.description));
                 this.sale = this.emptySale();
             });
     }

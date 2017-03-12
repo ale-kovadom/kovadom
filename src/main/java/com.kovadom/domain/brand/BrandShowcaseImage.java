@@ -1,13 +1,13 @@
 package com.kovadom.domain.brand;
 
+import com.fasterxml.jackson.annotation.JsonView;
+import com.kovadom.framework.serialization.jackson.Views;
 import com.kovadom.orm.AbstractAuditablePersistable;
 import org.springframework.data.jpa.domain.support.AuditingEntityListener;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.EntityListeners;
-import javax.persistence.JoinColumn;
-import javax.persistence.ManyToOne;
 import javax.persistence.Table;
 
 @Entity
@@ -15,17 +15,16 @@ import javax.persistence.Table;
 @EntityListeners(AuditingEntityListener.class)
 public class BrandShowcaseImage extends AbstractAuditablePersistable<Long> {
 
-    @Column(name="name")
+    @JsonView(Views.Public.class)
+    @Column(name = "name")
     private int name;
 
-    @Column(name="description")
+    @JsonView(Views.Public.class)
+    @Column(name = "description")
     private String description;
 
-    @ManyToOne(optional = false)
-    @JoinColumn(name="brand_id", nullable=false, updatable=false)
-    private Brand brand;
-
-    public BrandShowcaseImage() {}
+    public BrandShowcaseImage() {
+    }
 
     public int getName() {
         return name;

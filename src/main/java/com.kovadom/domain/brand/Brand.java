@@ -1,7 +1,9 @@
 package com.kovadom.domain.brand;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
+import com.fasterxml.jackson.annotation.JsonView;
 import com.kovadom.domain.activity.Activity;
+import com.kovadom.framework.serialization.jackson.Views;
 import com.kovadom.orm.AbstractAuditablePersistable;
 import org.springframework.data.jpa.domain.support.AuditingEntityListener;
 
@@ -12,6 +14,7 @@ import javax.persistence.EntityListeners;
 import javax.persistence.JoinColumn;
 import javax.persistence.JoinTable;
 import javax.persistence.ManyToMany;
+import javax.persistence.OneToMany;
 import javax.persistence.Table;
 import java.util.List;
 
@@ -21,18 +24,23 @@ import java.util.List;
 public class Brand extends AbstractAuditablePersistable<Long> {
 
     @Column(name = "code")
+    @JsonView(Views.Public.class)
     private String code;
 
     @Column(name = "name")
+    @JsonView(Views.Public.class)
     private String name;
 
     @Column(name = "catch_words")
+    @JsonView(Views.Public.class)
     private String catchWords;
 
     @Column(name = "description")
+    @JsonView(Views.Public.class)
     private String description;
 
     @Column(name = "sale_process")
+    @JsonView(Views.Public.class)
     private String saleProcess;
 
     @JsonIgnore
@@ -41,6 +49,11 @@ public class Brand extends AbstractAuditablePersistable<Long> {
             joinColumns = @JoinColumn(name = "brand_id", referencedColumnName = "id"),
             inverseJoinColumns = @JoinColumn(name = "activity_id", referencedColumnName = "id"))
     private List<Activity> activities;
+
+    @JsonView(Views.Protected.class)
+    @OneToMany(cascade = CascadeType.ALL, orphanRemoval = true)
+    @JoinColumn(name = "brand_id")
+    private List<BrandShowcaseImage> brandShowcaseImages;
 
     // JPA
     public Brand() {
@@ -69,4 +82,9 @@ public class Brand extends AbstractAuditablePersistable<Long> {
     public String getSaleProcess() {
         return saleProcess;
     }
+
+    public List<BrandShowcaseImage> getBrandShowcaseImages() {
+        return brandShowcaseImages;
+    }
+
 }

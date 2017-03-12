@@ -1,7 +1,9 @@
 package com.kovadom.rest;
 
+import com.fasterxml.jackson.annotation.JsonView;
 import com.kovadom.domain.activity.Activity;
 import com.kovadom.domain.activity.ActivityRepository;
+import com.kovadom.framework.serialization.jackson.Views;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
@@ -23,12 +25,14 @@ public class ActivityController {
     }
 
     @RequestMapping(method = GET)
+    @JsonView(Views.Public.class)
     public Iterable<Activity> getActivities() {
 
         return activityRepository.findAll();
     }
 
     @RequestMapping(method = GET, params = "activityCode")
+    @JsonView(Views.Public.class)
     public Activity getActivityByCode(@RequestParam(value = "activityCode") String code) {
         return activityRepository.findByCode(code);
     }

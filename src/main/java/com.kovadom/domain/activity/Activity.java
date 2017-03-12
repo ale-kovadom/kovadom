@@ -1,7 +1,9 @@
 package com.kovadom.domain.activity;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
+import com.fasterxml.jackson.annotation.JsonView;
 import com.kovadom.domain.brand.Brand;
+import com.kovadom.framework.serialization.jackson.Views;
 import com.kovadom.orm.AbstractAuditablePersistable;
 import org.springframework.data.jpa.domain.support.AuditingEntityListener;
 
@@ -17,12 +19,15 @@ import java.util.List;
 @EntityListeners(AuditingEntityListener.class)
 public class Activity extends AbstractAuditablePersistable<Long> {
 
+    @JsonView(Views.Public.class)
     @Column(name = "code")
     private String code;
 
+    @JsonView(Views.Public.class)
     @Column(name = "description")
     private String description;
 
+    @JsonView(Views.Public.class)
     @Column(name = "label")
     private String label;
 

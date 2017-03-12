@@ -1,13 +1,17 @@
 package com.kovadom;
 
+import com.fasterxml.jackson.databind.MapperFeature;
+import com.fasterxml.jackson.databind.ObjectMapper;
 import com.kovadom.framework.async.DefaultAsyncUncaughtExceptionHandler;
 import org.springframework.aop.interceptor.AsyncUncaughtExceptionHandler;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.Banner;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.boot.autoconfigure.web.ErrorViewResolver;
 import org.springframework.boot.builder.SpringApplicationBuilder;
 import org.springframework.boot.web.support.SpringBootServletInitializer;
 import org.springframework.context.annotation.Bean;
+import org.springframework.context.annotation.Configuration;
 import org.springframework.data.jpa.repository.config.EnableJpaAuditing;
 import org.springframework.http.HttpStatus;
 import org.springframework.scheduling.annotation.AsyncConfigurer;
@@ -16,6 +20,7 @@ import org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor;
 import org.springframework.web.servlet.DispatcherServlet;
 import org.springframework.web.servlet.ModelAndView;
 
+import javax.annotation.PostConstruct;
 import java.util.Collections;
 import java.util.concurrent.Executor;
 
@@ -64,6 +69,20 @@ public class Application extends SpringBootServletInitializer implements AsyncCo
     @Override
     public AsyncUncaughtExceptionHandler getAsyncUncaughtExceptionHandler() {
         return new DefaultAsyncUncaughtExceptionHandler();
+    }
+
+    @Configuration
+    public class JacksonConfig {
+
+        @Autowired
+        private ObjectMapper objectMapper;
+
+        @PostConstruct
+        public void configureObjectMapper() {
+            // Do not serialize/deserialize attributes not annotated by JsonView
+            objectMapper.configure(MapperFeature.DEFAULT_VIEW_INCLUSION, false);
+        }
+
     }
 
 }
