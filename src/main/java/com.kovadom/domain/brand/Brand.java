@@ -50,7 +50,7 @@ public class Brand extends AbstractAuditablePersistable<Long> {
             inverseJoinColumns = @JoinColumn(name = "activity_id", referencedColumnName = "id"))
     private List<Activity> activities;
 
-    @JsonView(Views.Protected.class)
+    @JsonView(Views.Metadata.class)
     @OneToMany(cascade = CascadeType.ALL, orphanRemoval = true)
     @JoinColumn(name = "brand_id")
     private List<BrandShowcaseImage> brandShowcaseImages;

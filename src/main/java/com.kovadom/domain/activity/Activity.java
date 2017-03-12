@@ -1,6 +1,5 @@
 package com.kovadom.domain.activity;
 
-import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonView;
 import com.kovadom.domain.brand.Brand;
 import com.kovadom.framework.serialization.jackson.Views;
@@ -31,7 +30,7 @@ public class Activity extends AbstractAuditablePersistable<Long> {
     @Column(name = "label")
     private String label;
 
-    @JsonIgnore
+    @JsonView(Views.Dependency.class)
     @ManyToMany(mappedBy="activities")
     private List<Brand> brands;
 

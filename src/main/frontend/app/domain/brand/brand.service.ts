@@ -12,13 +12,6 @@ export class BrandService {
     constructor(private http:Http) {
     }
 
-    public getBrandsByActivityCode(activityCode: String):Promise<Brand[]> {
-        return this.http.get(BrandService.BRANDS_URL + `?activityCode=${activityCode}`)
-            .toPromise()
-            .then(response => response.json() as Brand[])
-            .catch(this.handleError);
-    }
-
     public getBrand(brandCode:String) {
         return this.http.get(BrandService.BRANDS_URL + `?brandCode=${brandCode}`)
             .toPromise()

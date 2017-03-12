@@ -24,14 +24,8 @@ public class BrandController {
         this.brandRepository = brandRepository;
     }
 
-    @RequestMapping(method = GET)
-    @JsonView(Views.Public.class)
-    public Iterable<Brand> getBrands(@RequestParam(value = "activityCode") String activityCode) {
-        return brandRepository.findByActivitiesCode(activityCode);
-    }
-
     @RequestMapping(method = GET, params = "brandCode")
-    @JsonView(Views.Protected.class)
+    @JsonView(Views.Metadata.class)
     public Brand getBrandByCode(@RequestParam(value = "brandCode") String brandCode) {
         return brandRepository.findWithFetchStrategy(brandCode);
     }

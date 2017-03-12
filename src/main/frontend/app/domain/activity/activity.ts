@@ -1,6 +1,7 @@
+import {Brand} from "../brand/brand";
 export class Activity {
 
-    public static byLabelComparator(a1:Activity, a2:Activity) {
+    public static byLabelComparator(a1: Activity, a2: Activity) {
         if (a1.label > a2.label) {
             return 1;
         }
@@ -11,9 +12,10 @@ export class Activity {
     };
 
 
-    constructor(public code:String,
-                public label:String,
-                public description: String) {
+    constructor(public code: String,
+                public label: String,
+                public description: String,
+                public brands?: Brand[]) {
     }
 
 }

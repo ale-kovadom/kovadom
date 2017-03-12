@@ -6,11 +6,15 @@ public class Views {
 
     }
 
-    public static class Protected extends Public {
+    public static class Dependency extends Public {
 
     }
 
-    public static class Private extends Protected {
+    public static class Metadata extends Dependency {
+
+    }
+
+    public static class Internal extends Metadata {
 
     }
 

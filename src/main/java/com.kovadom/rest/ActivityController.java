@@ -27,12 +27,11 @@ public class ActivityController {
     @RequestMapping(method = GET)
     @JsonView(Views.Public.class)
     public Iterable<Activity> getActivities() {
-
         return activityRepository.findAll();
     }
 
     @RequestMapping(method = GET, params = "activityCode")
-    @JsonView(Views.Public.class)
+    @JsonView(Views.Dependency.class)
     public Activity getActivityByCode(@RequestParam(value = "activityCode") String code) {
         return activityRepository.findByCode(code);
     }

@@ -7,8 +7,6 @@ import java.util.List;
 
 public interface BrandRepository extends JpaRepository<Brand, Long> {
 
-    List<Brand> findByActivitiesCode(String activityCode);
-
     Brand findByCode(String code);
 
     @Query("select brand from Brand brand INNER JOIN FETCH brand.brandShowcaseImages where brand.code = ?1")
