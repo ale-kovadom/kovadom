@@ -81,3 +81,15 @@ update sale set status = 'AVAILABILITY';
 
 --changeset alescaroux:9
 alter table activity add COLUMN description VARCHAR(1300) NOT NULL DEFAULT '';
+
+--changeset alescaroux:10
+create table if not exists brand_showcase_image (
+  id INT UNSIGNED PRIMARY KEY AUTO_INCREMENT,
+  name VARCHAR(20) NOT NULL,
+  description VARCHAR(500),
+  brand_id INT UNSIGNED NOT NULL,
+  created_date TIMESTAMP NOT NULL DEFAULT NOW(),
+  modified_date TIMESTAMP NOT NULL DEFAULT NOW(),
+  CONSTRAINT `fk_brandShowCase_brandId_brand_id` FOREIGN KEY (`brand_id`) REFERENCES `brand` (`id`),
+  CONSTRAINT `uni_name_brandid` UNIQUE (name, brand_id)
+) DEFAULT CHARSET=utf8;
