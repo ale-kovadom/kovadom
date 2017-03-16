@@ -11,4 +11,7 @@
             <transport-guarantee>@kovadom.ssl.transport-guarantee@</transport-guarantee>
         </user-data-constraint>
     </security-constraint>
+    <welcome-file-list>
+        <welcome-file>comingsoon.html</welcome-file>
+    </welcome-file-list>
 </web-app>

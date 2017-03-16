@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+    <base href="/">
+
+    <title>Kovadom</title>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, user-scalable=no">
+
+    <!-- favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" href="img/favicon/favicon-32x32.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="img/favicon/favicon-16x16.png" sizes="16x16">
+    <link rel="manifest" href="img/favicon/manifest.json">
+    <link rel="mask-icon" href="img/favicon/safari-pinned-tab.svg" color="#5bbad5">
+    <link rel="shortcut icon" href="img/favicon/favicon.ico">
+    <meta name="msapplication-config" content="img/browserconfig.xml">
+    <meta name="theme-color" content="#197e9e">
+
+    <link rel="stylesheet" href="resources/bootstrap/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="resources/kovadom/css/kovadom.css"/>
+    <link rel="stylesheet" type="text/css" href="resources/generated/font-awesome/css/font-awesome.min.css"/>
+
+    <style>
+
+        /*** Header ***/
+
+        header .row a {
+            display: inline-block;
+            color: white;
+        }
+
+        header.container-fluid {
+            background-color: #1D2B4A;
+        }
+
+        .container-fluid nav p {
+            font-family: 'Roboto', sans-serif;
+            font-size: 15px;
+            text-align: right;
+            margin: 10px;
+        }
+
+        @media only screen and (max-width: 767px) {
+
+            .container-fluid nav p {
+                text-align: center !important;
+            }
+
+        }
+
+        @media only screen and (max-width: 400px) {
+
+            .container-fluid nav p {
+                font-size: 14px;
+            }
+
+        }
+
+        nav {
+            border-radius: 0 !important;
+        }
+
+        header div.logos {
+            display: table;
+        }
+
+        header .logo-wrapper {
+            display: table-cell;
+            vertical-align: middle;
+        }
+
+        header .logo-wrapper img {
+            display: inline-block;
+            height: 67px;
+            margin: 15px 10px;
+        }
+
+        @media only screen and (max-width: 767px) {
+            header div.logos {
+                text-align: center;
+            }
+        }
+
+        @media only screen and (max-width: 400px) {
+
+            header .logo-wrapper img {
+                display: inline-block;
+                height: 59px;
+                margin: 10px 7px;
+            }
+
+        }
+
+        /*** Footer ***/
+
+        footer {
+            padding-top: 30px;
+            background-color: black;
+        }
+
+        footer {
+            background-color: #1D2B4A;
+            padding-top: 30px;
+        }
+
+        footer ul {
+            list-style-type: none;
+            text-decoration: none;
+        }
+
+        footer a {
+            color: #FFF;
+            font-family: 'Roboto', sans-serif;
+        }
+
+        footer a:link {
+            text-decoration: none;
+        }
+
+        @media only screen and (max-width: 767px) {
+
+            .activity-refs ul {
+                padding-left: 0;
+            }
+
+        }
+
+
+        /*** Global ***/
+
+        a {
+            text-decoration: none !important;
+            color: #000000;
+            font-family: 'Roboto', sans-serif;
+        }
+
+        a:hover {
+            color: rgb(239, 112, 105);
+            font-family: 'Roboto', sans-serif;
+        }
+
+        ul {
+            list-style: none inside;
+            padding-left: 0;
+        }
+
+        /*** jumbotron ***/
+
+        .soon {
+            margin-top: 30px;
+        }
+
+        .jumbotron {
+            background-size: cover !important;
+            background: url('img/home/home-sales.jpeg') no-repeat center;
+            height: 500px;
+        }
+
+        .jumbotron h1 {
+            font-size: 100px;
+            color: #EFF7FF;
+        }
+
+        .jumbotron h2 {
+            font-size: 40px;
+            color: #EFF7FF;
+        }
+
+        .jumbotron h3 {
+            font-size: 22px;
+            color: #EFF7FF;
+        }
+
+        @media only screen and (min-width: 851px) and (max-width: 995px) {
+
+            .jumbotron h1 {
+                font-size: 80px;
+            }
+
+            .jumbotron h2 {
+                font-size: 37px;
+            }
+
+            .jumbotron h3 {
+                font-size: 20px;
+            }
+        }
+
+        @media only screen and (min-width: 708px) and (max-width: 850px) {
+
+            .jumbotron h1 {
+                font-size: 70px;
+            }
+
+            .jumbotron h2 {
+                font-size: 32px;
+            }
+
+            .jumbotron h3 {
+                font-size: 19px;
+            }
+
+        }
+
+        @media only screen and (min-width: 526px) and (max-width: 707px) {
+
+            .jumbotron h1 {
+                font-size: 60px;
+            }
+
+            .jumbotron h2, .jumbotron h3 {
+                display: inline-block;
+            }
+
+            .jumbotron h2 {
+                font-size: 30px;
+                max-width: 470px;
+            }
+
+            .jumbotron h3 {
+                font-size: 18px;
+                max-width: 330px;
+            }
+
+        }
+
+        @media only screen and (min-width: 426px) and (max-width: 525px) {
+
+            .jumbotron h1 {
+                font-size: 500px;
+            }
+
+            .jumbotron h2, .jumbotron h3 {
+                display: inline-block;
+            }
+
+            .jumbotron h2 {
+                font-size: 30px;
+                max-width: 400px;
+            }
+
+            .jumbotron h3 {
+                font-size: 18px;
+                max-width: 320px;
+            }
+
+        }
+
+        @media only screen and (max-width: 425px) {
+
+            .jumbotron h1 {
+                font-size: 31px;
+            }
+
+            .jumbotron h2, .jumbotron h3 {
+                display: inline-block;
+            }
+
+            .jumbotron h2 {
+                font-size: 29px;
+                max-width: 290px;
+            }
+
+            .jumbotron h3 {
+                font-size: 16px;
+                max-width: 300px;
+            }
+
+        }
+
+        /*** Sale steps ***/
+
+        .access-sale .row {
+            padding-bottom: 35px;
+        }
+
+        .access-sale p {
+            font-size: 30px;
+            font-family: 'Roboto', sans-serif;
+            margin-bottom: 0;
+            padding-bottom: 0;
+            text-align: center;
+        }
+
+        .steps p {
+            font-size: 30px;
+            font-family: 'Roboto', sans-serif;
+            margin-bottom: 0;
+            padding-bottom: 0;
+            text-align: center;
+        }
+
+        .steps .col-sm-4 h3 {
+            color: black;
+            text-align: center;
+        }
+
+        .steps .col-sm-4 p {
+            color: black;
+            font-size: 18px;
+            font-family: 'Roboto', sans-serif;
+        }
+
+        .steps .col-sm-4 .bold {
+            font-weight: bold;
+        }
+
+
+        .steps img {
+            display: block;
+            margin: 0 auto 0;
+            padding-top: 0;
+        }
+
+    </style>
+</head>
+
+<body>
+
+<header class="container-fluid">
+
+    <div class="row">
+        <div class="col-xs-12 col-sm-8 logos">
+            <span class="logo-wrapper">
+                    <img class="img-responsive" src="img/kovadom/logo-kovadom.png"><!--
+                    --><img class="img-responsive" src="img/kovadom/logo-kovadom-txt.png">
+            </span>
+        </div>
+    </div>
+
+</header>
+
+
+<section class="jumbotron">
+
+    <div class="row text-center">
+        <h2 i18n="home|organize your sale">Organisez simplement votre vente à domicile</h2>
+        <h3 i18n="home|focus on quality">Un espace de convivialité, des produits de qualité, des moments de plaisir.</h3>
+    </div>
+
+    <div class="soon row text-center">
+        <h1>Bientôt...</h1>
+    </div>
+
+</section>
+
+<section class="access-sale container hidden-xs">
+    <div class="row text-center">
+        <p i18n="home|accessibility">Accédez à toutes les ventes à domicile en quelques clics!</p>
+    </div>
+</section>
+
+<section class="steps container hidden-xs">
+    <figure class="col-sm-4">
+        <img src="img/sale_how_to/step1-where.png">
+        <h3 i18n="home|step1 title">Choisissez votre vente</h3>
+        <p>En quelques clics trouvez la vente et l'ambiance que vous voulez partager avec vos amis.</p>
+    </figure>
+
+    <figure class="col-sm-4">
+        <img src="img/sale_how_to/step2-send-request.png">
+        <h3 i18n="home|step2 description">Envoyez votre demande</h3>
+        <p>Faites des demandes pour les marques que vous voulez tester.
+            <span i18n="home|step2 emphasized description - part2" class="bold">C'est sans engagement !</span>
+        </p>
+    </figure>
+
+    <figure class="col-sm-4">
+        <img src="img/sale_how_to/step3-follow-request.png">
+        <h3 i18n="home|step3 description">Suivez vos demandes</h3>
+        <p>
+            Suivez l'avancée de vos demandes, rencontrez votre vendeur(se) à domicile et validez votre reservation en 1 clic.
+        </p>
+    </figure>
+</section>
+
+
+</body>
+
+
+</html>
