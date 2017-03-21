@@ -40,14 +40,7 @@ gulp.task('post-asset-css', cb => {
         .pipe(postcss([assets({
             basePath: '../webapp/',
             loadPaths: ['resources/img/', 'resources/fonts/'],
-            cachebuster: function (filePath, urlPathname) {
-                return {
-                    pathname: path.dirname(urlPathname)
-                    + '/' + path.basename(urlPathname, path.extname(urlPathname))
-                    + '-' + hasha.fromFileSync(filePath, {algorithm: 'md5'}) + path.extname(urlPathname),
-                    query: false
-                }
-            }
+            cachebuster: cacheBustingStrategy
         })]))
         .pipe(gulp.dest('dist'));
 });
@@ -57,20 +50,22 @@ gulp.task('post-asset-css-ng2', cb => {
         .pipe(postcss([assets({
             basePath: '../webapp/',
             loadPaths: ['resources/img/'],
-            cachebuster: function (filePath, urlPathname) {
-                return {
-                    pathname: path.dirname(urlPathname)
-                    + '/' + path.basename(urlPathname, path.extname(urlPathname))
-                    + '-' + hasha.fromFileSync(filePath, {algorithm: 'md5'}) + path.extname(urlPathname),
-                    query: false
-                }
-            }
+            cachebuster: cacheBustingStrategy
         })]))
         .pipe(gulp.dest('aot'));
 });
 
+const cacheBustingStrategy = (filePath, urlPathname) => {
+    return {
+        pathname: path.dirname(urlPathname)
+        + '/' + path.basename(urlPathname, path.extname(urlPathname))
+        + '-' + hasha.fromFileSync(filePath, {algorithm: 'md5'}) + path.extname(urlPathname),
+        query: false
+    }
+};
+
 gulp.task('i18n', cb => {
-    var cmd = './node_modules/.bin/ng-xi18n --i18nFormat=' + i18nFormat + ' -p tsconfig-aot.json';
+    let cmd = './node_modules/.bin/ng-xi18n --i18nFormat=' + i18nFormat + ' -p tsconfig-aot.json';
     if (isWin) {
         cmd = '"./node_modules/.bin/ng-xi18n" --i18nFormat=' + i18nFormat + ' -p tsconfig-aot.json';
     }
