@@ -41,7 +41,7 @@
     <meta name="theme-color" content="#197e9e">
 
     <link rel="stylesheet" href="${urls.getForLookupPath('/resources/bootstrap/css/bootstrap.min.css')}"/>
-    <link rel="stylesheet" href="${urls.getForLookupPath('/resources/kovadom/css/kovadom.css')}"/>
+    <link rel="stylesheet" href="${urls.getForLookupPath('/resources/generated/kovadom/kovadom.css')}"/>
     <link rel="stylesheet" href="${urls.getForLookupPath('/resources/generated/swiper/dist/css/swiper.min.css')}"/>
     <link rel="stylesheet" type="text/css" href="${urls.getForLookupPath('/resources/generated/primeng/resources/themes/omega/theme.css')}"/>
     <link rel="stylesheet" type="text/css" href="${urls.getForLookupPath('/resources/generated/primeng/resources/primeng.min.css')}"/>

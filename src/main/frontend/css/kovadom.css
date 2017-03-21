@@ -59,10 +59,10 @@ a.red-hover:hover {
 
 @font-face {
     font-family: 'icomoon';
-    src:  url('/resources/fonts/icomoon.eot?9n80lp');
-    src: url('/resources/fonts/icomoon.ttf?9n80lp') format('truetype'),
-    url('/resources/fonts/icomoon.woff?9n80lp') format('woff'),
-    url('/resources/fonts/icomoon.svg?9n80lp#icomoon') format('svg');
+    src: resolve('icomoon.eot?9n80lp');
+    src: resolve('icomoon.ttf?9n80lp') format('truetype'),
+    resolve('icomoon.woff?9n80lp') format('woff'),
+    resolve('icomoon.svg?9n80lp#icomoon') format('svg');
     font-weight: normal;
     font-style: normal;
 }
@@ -112,7 +112,7 @@ a.red-hover:hover {
 
 /* Remove Bootstrap input border on focus */
 html body .form-control:focus {
-    border-color:#ccc;
+    border-color: #ccc;
     outline: 0;
     -webkit-box-shadow: none;
     box-shadow: none;
@@ -122,7 +122,6 @@ html body .form-control:focus {
 .ng-dirty.ng-invalid:not(form), .ng-dirty.ng-invalid:not(form) input {
     border-bottom-color: #f44336 !important; /* Should override Bootstrap "blue border cancellation" */
 }
-
 
 .form-error-msg {
     color: #a94442;

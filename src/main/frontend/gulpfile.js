@@ -36,6 +36,23 @@ gulp.task('copy-app-to-aot', cb => {
 });
 
 gulp.task('post-asset-css', cb => {
+    return gulp.src('css/**')
+        .pipe(postcss([assets({
+            basePath: '../webapp/',
+            loadPaths: ['resources/img/', 'resources/fonts/'],
+            cachebuster: function (filePath, urlPathname) {
+                return {
+                    pathname: path.dirname(urlPathname)
+                    + '/' + path.basename(urlPathname, path.extname(urlPathname))
+                    + '-' + hasha.fromFileSync(filePath, {algorithm: 'md5'}) + path.extname(urlPathname),
+                    query: false
+                }
+            }
+        })]))
+        .pipe(gulp.dest('dist'));
+});
+
+gulp.task('post-asset-css-ng2', cb => {
     return gulp.src('aot/**/*.css')
         .pipe(postcss([assets({
             basePath: '../webapp/',
@@ -83,4 +100,4 @@ gulp.task('rollup', cb => {
 });
 
 
-gulp.task('default', gulp.series(['copy-app-to-aot', 'post-asset-css', 'i18n', 'i18n-move-to-locale-dir', 'ngc', 'rollup']));
+gulp.task('default', gulp.series(['copy-app-to-aot', 'post-asset-css', 'post-asset-css-ng2', 'i18n', 'i18n-move-to-locale-dir', 'ngc', 'rollup']));

@@ -234,6 +234,7 @@
                                     <directory>src/main/frontend/dist</directory>
                                     <includes>
                                         <include>build.js</include>
+                                        <include>*.css</include>
                                     </includes>
                                 </resource>
                             </resources>
