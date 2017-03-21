@@ -15,7 +15,10 @@
     -webkit-transform: rotate(15deg); /* Chrome, Safari, Opera */
     transform: rotate(15deg);
     margin: 30px;
+    display: inline-block;
     width: 400px;
+    height: height('kovadom/logo-kovadom.png');
+    background-image: resolve('kovadom/logo-kovadom.png');
 }
 
 @media only screen and (max-width: 767px) {

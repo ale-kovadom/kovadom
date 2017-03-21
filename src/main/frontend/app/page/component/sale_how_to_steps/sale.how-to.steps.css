@@ -22,8 +22,26 @@ p {
 }
 
 
-img {
+#step1-img, #step2-img, #step3-img {
     display: block;
     margin: 0 auto 0;
     padding-top: 0;
+}
+
+#step1-img {
+    background-image: resolve('sale_how_to/step1-where.png');
+    width: width('sale_how_to/step1-where.png');
+    height: height('sale_how_to/step1-where.png');
+}
+
+#step2-img {
+    background-image: resolve('sale_how_to/step2-send-request.png');
+    width: width('sale_how_to/step2-send-request.png');
+    height: height('sale_how_to/step2-send-request.png');
+}
+
+#step3-img {
+    background-image: resolve('sale_how_to/step3-follow-request.png');
+    width: width('sale_how_to/step3-follow-request.png');
+    height: height('sale_how_to/step3-follow-request.png');
 }

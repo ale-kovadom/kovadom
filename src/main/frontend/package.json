@@ -32,10 +32,13 @@
     "gulp-copy": "1.0.0",
     "gulp-inline-ng2-template": "0.0.10",
     "gulp-load-plugins": "1.1.0",
+    "gulp-postcss": "6.3.0",
     "gulp-rename": "1.2.2",
     "gulp-sourcemaps": "1.9.1",
     "gulp-typescript": "2.13.0",
     "gulp-uglify": "1.5.1",
+    "hasha": "2.2.0",
+    "postcss-assets": "^4.1.0",
     "rollup": "^0.36.4",
     "rollup-plugin-commonjs": "^5.0.5",
     "rollup-plugin-node-resolve": "^2.0.0",
@@ -45,6 +48,6 @@
     "typings": "2.0.0"
   },
   "scripts": {
-    "preinstall": "npm i typings -g; typings install dt~es6-shim --global --save; npm install rollup rollup-plugin-node-resolve rollup-plugin-commonjs rollup-plugin-uglify --save-dev;"
+    "preinstall": "npm i typings -g; typings install dt~es6-shim --global --save; npm install rollup rollup-plugin-node-resolve rollup-plugin-commonjs rollup-plugin-uglify --save-dev; npm install postcss-assets --save-dev"
   }
 }

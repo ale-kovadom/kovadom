@@ -1,19 +1,20 @@
-var gulp = require('gulp');
-var plugins = require('gulp-load-plugins')();
-var gulpCopy = require('gulp-copy');
+const gulp = require('gulp');
+const plugins = require('gulp-load-plugins')();
+const gulpCopy = require('gulp-copy');
+const postcss = require('gulp-postcss');
+const assets = require('postcss-assets');
 const del = require('del');
-
-var isWin = /^win/.test(process.platform);
-
-var exec = require('child_process').exec;
-
-var i18nFormat = "xlf";
-var i18nOutputPrefix = "messages";
-var i18nOutputFile = i18nOutputPrefix + '.' + i18nFormat;
-var i18nLocales = {
+const hasha = require('hasha');
+const path = require('path');
+const isWin = /^win/.test(process.platform);
+const exec = require('child_process').exec;
+const i18nFormat = "xlf";
+const i18nOutputPrefix = "messages";
+const i18nOutputFile = i18nOutputPrefix + '.' + i18nFormat;
+const i18nLocales = {
     "frFr": "fr-FR"
 };
-var i18nOutputDir = "./locale";
+const i18nOutputDir = "./locale";
 
 // helper function for running ngc and tree shaking tasks
 const run_proc = (cmd, callBack, options) => {
@@ -32,6 +33,23 @@ gulp.task('copy-app-to-aot', cb => {
     return gulp
         .src("app/**")
         .pipe(gulpCopy("aot", {}));
+});
+
+gulp.task('post-asset-css', cb => {
+    return gulp.src('aot/**/*.css')
+        .pipe(postcss([assets({
+            basePath: '../webapp/',
+            loadPaths: ['resources/img/'],
+            cachebuster: function (filePath, urlPathname) {
+                return {
+                    pathname: path.dirname(urlPathname)
+                    + '/' + path.basename(urlPathname, path.extname(urlPathname))
+                    + '-' + hasha.fromFileSync(filePath, {algorithm: 'md5'}) + path.extname(urlPathname),
+                    query: false
+                }
+            }
+        })]))
+        .pipe(gulp.dest('aot'));
 });
 
 gulp.task('i18n', cb => {
@@ -65,4 +83,4 @@ gulp.task('rollup', cb => {
 });
 
 
-gulp.task('default', gulp.series(['copy-app-to-aot', 'i18n', 'i18n-move-to-locale-dir', 'ngc', 'rollup']));
+gulp.task('default', gulp.series(['copy-app-to-aot', 'post-asset-css', 'i18n', 'i18n-move-to-locale-dir', 'ngc', 'rollup']));

@@ -39,9 +39,18 @@ i.contact {
     display: inline-block;
 }
 
-.icon-social img {
+#facebook, #twitter {
     width: 32px;
     height: 32px;
+    display: inline-block;
+}
+
+#facebook {
+    background-image: resolve("contact/facebook.png");
+}
+
+#twitter {
+    background-image: resolve("contact/twitter.png");
 }
 
 #contact-info ul {

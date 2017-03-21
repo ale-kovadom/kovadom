@@ -31,28 +31,28 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, user-scalable=no">
 
     <!-- favicon -->
-    <link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-touch-icon.png">
-    <link rel="icon" type="image/png" href="img/favicon/favicon-32x32.png" sizes="32x32">
-    <link rel="icon" type="image/png" href="img/favicon/favicon-16x16.png" sizes="16x16">
-    <link rel="manifest" href="img/favicon/manifest.json">
-    <link rel="mask-icon" href="img/favicon/safari-pinned-tab.svg" color="#5bbad5">
-    <link rel="shortcut icon" href="img/favicon/favicon.ico">
-    <meta name="msapplication-config" content="img/browserconfig.xml">
+    <link rel="apple-touch-icon" sizes="180x180" href="${urls.getForLookupPath('/resources/img/favicon/apple-touch-icon.png')}">
+    <link rel="icon" type="image/png" href="${urls.getForLookupPath('/resources/img/favicon/favicon-32x32.png')}" sizes="32x32">
+    <link rel="icon" type="image/png" href="${urls.getForLookupPath('/resources/img/favicon/favicon-16x16.png')}" sizes="16x16">
+    <link rel="manifest" href="${urls.getForLookupPath('/resources/img/favicon/manifest.json')}">
+    <link rel="mask-icon" href="${urls.getForLookupPath('/resources/img/favicon/safari-pinned-tab.svg')}" color="#5bbad5">
+    <link rel="shortcut icon" href="${urls.getForLookupPath('/resources/img/favicon/favicon.ico')}">
+    <meta name="msapplication-config" content="${urls.getForLookupPath('/resources/img/browserconfig.xml')}">
     <meta name="theme-color" content="#197e9e">
 
-    <link rel="stylesheet" href="resources/bootstrap/css/bootstrap.min.css"/>
-    <link rel="stylesheet" href="resources/kovadom/css/kovadom.css"/>
-    <link rel="stylesheet" href="resources/generated/swiper/dist/css/swiper.min.css"/>
-    <link rel="stylesheet" type="text/css" href="resources/generated/primeng/resources/themes/omega/theme.css"/>
-    <link rel="stylesheet" type="text/css" href="resources/generated/primeng/resources/primeng.min.css"/>
-    <link rel="stylesheet" type="text/css" href="resources/generated/font-awesome/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="${urls.getForLookupPath('/resources/bootstrap/css/bootstrap.min.css')}"/>
+    <link rel="stylesheet" href="${urls.getForLookupPath('/resources/kovadom/css/kovadom.css')}"/>
+    <link rel="stylesheet" href="${urls.getForLookupPath('/resources/generated/swiper/dist/css/swiper.min.css')}"/>
+    <link rel="stylesheet" type="text/css" href="${urls.getForLookupPath('/resources/generated/primeng/resources/themes/omega/theme.css')}"/>
+    <link rel="stylesheet" type="text/css" href="${urls.getForLookupPath('/resources/generated/primeng/resources/primeng.min.css')}"/>
+    <link rel="stylesheet" type="text/css" href="${urls.getForLookupPath('/resources/generated/font-awesome/css/font-awesome.min.css')}"/>
 
 
     <!-- Polyfill(s) for older browsers -->
-    <script src="resources/generated/core-js/client/shim.min.js"></script>
+    <script src="${urls.getForLookupPath('/resources/generated/core-js/client/shim.min.js')}"></script>
 
-    <script src="resources/generated/zone.js/dist/zone.min.js"></script>
-    <script src="resources/generated/swiper/dist/js/swiper.min.js"></script>
+    <script src="${urls.getForLookupPath('/resources/generated/zone.js/dist/zone.min.js')}"></script>
+    <script src="${urls.getForLookupPath('/resources/generated/swiper/dist/js/swiper.min.js')}"></script>
 
     <script>window.module = {};</script>
 
@@ -71,6 +71,6 @@
 
 </body>
 
-<script src="resources/generated/kovadom/build.js"></script>
+<script src="${urls.getForLookupPath('/resources/generated/kovadom/build.js')}"></script>
 
 </html>
