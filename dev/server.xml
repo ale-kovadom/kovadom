@@ -148,7 +148,7 @@
                 <!--
                 <Valve className="org.apache.catalina.authenticator.SingleSignOn" />
                 -->
-                <Context docBase="@dev.static-dir@" path="/static"/>
+                <!--<Context docBase="@dev.static-dir@" path="/static"/>-->
                 <!-- Access log processes all example.
                      Documentation at: /docs/config/valve.html
                      Note: The pattern used is equivalent to using pattern="common" -->

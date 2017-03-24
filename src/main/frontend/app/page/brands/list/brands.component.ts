@@ -26,9 +26,5 @@ export class BrandsComponent {
         this.route.queryParams
             .switchMap((params:Params) => this.activityService.getActivityByCode(params['activity']))
             .subscribe(activity => {this.activity = activity; this.brands = activity.brands});
-        
-        // this.route.queryParams
-        //     .switchMap((params:Params) => this.brandService.getBrandsByActivityCode(params['activity']))
-        //     .subscribe(brands => this.brands = brands);
     }
 }

@@ -47,7 +47,6 @@
     <link rel="stylesheet" type="text/css" href="${urls.getForLookupPath('/resources/generated/primeng/resources/primeng.min.css')}"/>
     <link rel="stylesheet" type="text/css" href="${urls.getForLookupPath('/resources/generated/font-awesome/css/font-awesome.min.css')}"/>
 
-
     <!-- Polyfill(s) for older browsers -->
     <script src="${urls.getForLookupPath('/resources/generated/core-js/client/shim.min.js')}"></script>
 
@@ -55,7 +54,6 @@
     <script src="${urls.getForLookupPath('/resources/generated/swiper/dist/js/swiper.min.js')}"></script>
 
     <script>window.module = {};</script>
-
 </head>
 
 <body>
