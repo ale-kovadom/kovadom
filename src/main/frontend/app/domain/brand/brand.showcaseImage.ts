@@ -1,6 +1,6 @@
 export class BrandShowcaseImage {
 
-    constructor(public name: String,
+    constructor(public imageUrl: String,
                 public description?: String) {
     }
 

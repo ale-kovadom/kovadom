@@ -1,6 +1,5 @@
 package com.kovadom.domain.brand;
 
-import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonView;
 import com.kovadom.domain.activity.Activity;
 import com.kovadom.framework.serialization.jackson.Views;
@@ -16,6 +15,7 @@ import javax.persistence.JoinTable;
 import javax.persistence.ManyToMany;
 import javax.persistence.OneToMany;
 import javax.persistence.Table;
+import javax.persistence.Transient;
 import java.util.List;
 
 @Entity
@@ -43,20 +43,23 @@ public class Brand extends AbstractAuditablePersistable<Long> {
     @JsonView(Views.Public.class)
     private String saleProcess;
 
-    @JsonIgnore
     @ManyToMany(cascade = CascadeType.ALL)
     @JoinTable(name = "brand_activity",
             joinColumns = @JoinColumn(name = "brand_id", referencedColumnName = "id"),
             inverseJoinColumns = @JoinColumn(name = "activity_id", referencedColumnName = "id"))
     private List<Activity> activities;
 
-    @JsonView(Views.Metadata.class)
-    @OneToMany(cascade = CascadeType.ALL, orphanRemoval = true)
-    @JoinColumn(name = "brand_id")
+    @Transient
+    @JsonView(Views.Public.class)
+    private final BrandMetadata metadata;
+
+    @JsonView(Views.Extra.class)
+    @OneToMany(cascade = CascadeType.ALL, orphanRemoval = true, mappedBy="brand")
     private List<BrandShowcaseImage> brandShowcaseImages;
 
     // JPA
     public Brand() {
+        metadata = new BrandMetadata(this);
     }
 
     public String getCode() {

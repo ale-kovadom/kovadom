@@ -10,7 +10,7 @@
         <div class="col-xs-12 col-sm-7 col-md-7 brand-logo-wrapper">
             <ng-container *ngIf="brand">
                 <span class="kov logo">
-                    <img class="brand-logo" [src]="'/dynamic/brands/' + brand.code + '/LOGO-' + brand.code + '.png'">
+                    <img class="brand-logo" [src]="brand.metadata.brandLogoUrl">
                 </span>
             </ng-container>
         </div>

@@ -1,4 +1,5 @@
 import {Brand} from "../brand/brand";
+import {ActivityMetadata} from "./activity.metadata";
 export class Activity {
 
     public static byLabelComparator(a1: Activity, a2: Activity) {
@@ -15,6 +16,7 @@ export class Activity {
     constructor(public code: String,
                 public label: String,
                 public description: String,
+                public metadata: ActivityMetadata,
                 public brands?: Brand[]) {
     }
 

@@ -76,7 +76,7 @@ export class BrandDetailComponent {
             .switchMap((params: Params) => this.brandService.getBrand(params['brandCode']))
             .subscribe(brand => {
                 this.brand = brand;
-                this.slides = this.brand.brandShowcaseImages.map(img => new SwiperSlide('/dynamic/brands/' + this.brand.code + '/slider/' + img.name + '.png', img.description));
+                this.slides = this.brand.brandShowcaseImages.map(img => new SwiperSlide(img.imageUrl, img.description));
                 this.sale = this.emptySale();
             });
     }

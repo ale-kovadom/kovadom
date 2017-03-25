@@ -7,17 +7,19 @@ import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.servlet.config.annotation.ResourceHandlerRegistry;
 import org.springframework.web.servlet.config.annotation.WebMvcConfigurerAdapter;
 import org.springframework.web.servlet.resource.ContentVersionStrategy;
-import org.springframework.web.servlet.resource.PathResourceResolver;
 import org.springframework.web.servlet.resource.ResourceUrlProvider;
 import org.springframework.web.servlet.resource.VersionResourceResolver;
 
 import javax.inject.Inject;
 
+import static com.kovadom.framework.resource.ResourceLoader.DYNAMIC_DIRECTORY_URL_PREFIX;
+import static com.kovadom.framework.resource.ResourceLoader.RESOURCE_DIRECTORY_URL_PREFIX;
+
 @Configuration
 public class ResourceConfiguration extends WebMvcConfigurerAdapter {
 
     private static final int ONE_YEAR = 60 * 60 * 24 * 365;
-    
+
     private static final int ONE_DAY = 60 * 60 * 24;
 
     @Value("${kovadom.resources.dynamic.data}")
@@ -28,17 +30,17 @@ public class ResourceConfiguration extends WebMvcConfigurerAdapter {
         VersionResourceResolver versionResourceResolver = new VersionResourceResolver()
                 .addVersionStrategy(new ContentVersionStrategy(), "/**");
 
-        registry.addResourceHandler("/resources/**")
+        registry.addResourceHandler("/" + RESOURCE_DIRECTORY_URL_PREFIX + "/**")
                 .addResourceLocations("/resources/")
                 .setCachePeriod(ONE_YEAR)
                 .resourceChain(true)
                 .addResolver(versionResourceResolver);
 
-        registry.addResourceHandler("/dynamic/**")
+        registry.addResourceHandler("/" + DYNAMIC_DIRECTORY_URL_PREFIX + "/**")
                 .addResourceLocations("file:" + dynamicDataDirectory)
                 .setCachePeriod(ONE_DAY)
                 .resourceChain(true)
-                .addResolver(new PathResourceResolver());
+                .addResolver(versionResourceResolver);
     }
 
     @ControllerAdvice

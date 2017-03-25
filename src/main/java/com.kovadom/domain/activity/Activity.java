@@ -11,6 +11,7 @@ import javax.persistence.Entity;
 import javax.persistence.EntityListeners;
 import javax.persistence.ManyToMany;
 import javax.persistence.Table;
+import javax.persistence.Transient;
 import java.util.List;
 
 @Entity
@@ -34,8 +35,13 @@ public class Activity extends AbstractAuditablePersistable<Long> {
     @ManyToMany(mappedBy="activities")
     private List<Brand> brands;
 
+    @Transient
+    @JsonView(Views.Public.class)
+    private final ActivityMetadata metadata;
+
     // JPA
     public Activity() {
+        metadata = new ActivityMetadata(this);
     }
 
     public String getCode() {
@@ -53,4 +59,9 @@ public class Activity extends AbstractAuditablePersistable<Long> {
     public String getDescription() {
         return description;
     }
+
+    public ActivityMetadata getMetadata() {
+        return metadata;
+    }
+
 }

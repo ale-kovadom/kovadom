@@ -4,10 +4,11 @@ import com.fasterxml.jackson.annotation.JsonView;
 import com.kovadom.domain.activity.Activity;
 import com.kovadom.domain.activity.ActivityRepository;
 import com.kovadom.framework.serialization.jackson.Views;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
+
+import javax.inject.Inject;
 
 import static java.util.Objects.requireNonNull;
 import static org.springframework.web.bind.annotation.RequestMethod.GET;
@@ -18,7 +19,7 @@ public class ActivityController {
 
     private final ActivityRepository activityRepository;
 
-    @Autowired
+    @Inject
     public ActivityController(final ActivityRepository activityRepository) {
         requireNonNull(activityRepository);
         this.activityRepository = activityRepository;

@@ -10,11 +10,11 @@ public class Views {
 
     }
 
-    public static class Metadata extends Dependency {
+    public static class Extra extends Dependency {
 
     }
 
-    public static class Internal extends Metadata {
+    public static class Internal extends Extra {
 
     }
 

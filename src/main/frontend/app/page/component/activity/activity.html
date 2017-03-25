@@ -8,7 +8,7 @@
             <div class="wrapper">
                 <a [routerLink]="['/brands']" [queryParams]="{activity: activity.code | lowercase}">
                     <h2>{{activity.label}}</h2>
-                    <div class="image" [ngStyle]="{'background-image': 'url(/dynamic/activities/' + activity.code + '.png)'}"></div>
+                    <div class="image" [ngStyle]="{'background-image': 'url(' + activity.metadata.activityImageUrl + ')'}"></div>
                 </a>
             </div>
         </div>

@@ -25,7 +25,7 @@ public class BrandController {
     }
 
     @RequestMapping(method = GET, params = "brandCode")
-    @JsonView(Views.Metadata.class)
+    @JsonView(Views.Extra.class)
     public Brand getBrandByCode(@RequestParam(value = "brandCode") String brandCode) {
         return brandRepository.findWithFetchStrategy(brandCode);
     }
