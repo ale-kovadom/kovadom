@@ -3,7 +3,6 @@ package com.kovadom.domain.activity;
 import com.fasterxml.jackson.annotation.JsonView;
 import com.kovadom.framework.resource.ResourceLoader;
 import com.kovadom.framework.serialization.jackson.Views;
-import com.kovadom.framework.spring.ApplicationContextProvider;
 
 import javax.inject.Inject;
 
