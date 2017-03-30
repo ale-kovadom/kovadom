@@ -25,6 +25,7 @@ public class BrandShowcaseImage extends AbstractAuditablePersistable<Long> {
     @Column(name = "name")
     private String name;
 
+    @JsonView(Views.Public.class)
     @Column(name = "description")
     private String description;
 
