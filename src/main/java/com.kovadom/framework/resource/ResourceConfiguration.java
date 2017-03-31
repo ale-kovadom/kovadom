@@ -20,8 +20,6 @@ public class ResourceConfiguration extends WebMvcConfigurerAdapter {
 
     private static final int ONE_YEAR = 60 * 60 * 24 * 365;
 
-    private static final int ONE_DAY = 60 * 60 * 24;
-
     @Value("${kovadom.resources.dynamic.data}")
     private String dynamicDataDirectory;
 
@@ -38,7 +36,7 @@ public class ResourceConfiguration extends WebMvcConfigurerAdapter {
 
         registry.addResourceHandler("/" + DYNAMIC_DIRECTORY_URL_PREFIX + "/**")
                 .addResourceLocations("file:" + dynamicDataDirectory)
-                .setCachePeriod(ONE_DAY)
+                .setCachePeriod(ONE_YEAR)
                 .resourceChain(true)
                 .addResolver(versionResourceResolver);
     }
