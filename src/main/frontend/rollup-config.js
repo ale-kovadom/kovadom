@@ -13,7 +13,7 @@ export default {
         commonjs({
             include: ['node_modules/rxjs/**', 'node_modules/primeng/**', 'node_modules/moment/**'],
             namedExports: {
-                'node_modules/primeng/primeng.js': ['CalendarModule', 'DialogModule']
+                'node_modules/primeng/primeng.js': ['CalendarModule', 'DialogModule', 'GMapModule']
             },
         }),
         uglify()

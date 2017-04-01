@@ -20,6 +20,7 @@ import {PageNotFoundComponent} from "./page/page_not_found/page-not-found.compon
 import {HomeSaleHowToComponent} from "./page/home_sale_how_to/home-sale.how-to.component";
 import {SaleHowtoStepsComponent} from "./page/component/sale_how_to_steps/sale.how-to.steps.component";
 import {DialogModule} from "primeng/primeng";
+import {GMapModule} from 'primeng/primeng';
 import {RegistrationService} from "./domain/contact/registrationService";
 import {EmailFormComponent} from "./page/component/form/email/email.form.component";
 import {PhoneFormComponent} from "./page/component/form/phone/phone.form.component";
@@ -28,6 +29,7 @@ import {ConfirmationMessageEmailComponent} from "./page/component/form/message/c
 import {ContactRegistrationComponent} from "./page/component/registration/contact-registration";
 import {newShoppingXpComponent} from "./page/component/new_shopping_xp/new-shopping-xp.component";
 import {KovadomAdvantagesComponent} from "./page/component/kovadom_advantages/kovadom.advantages.component";
+import {TestGmapComponent} from "./page/test/test.component";
 
 @NgModule({
     imports: [
@@ -37,6 +39,7 @@ import {KovadomAdvantagesComponent} from "./page/component/kovadom_advantages/ko
         FormsModule,
         FrameworkModule,
         DialogModule,
+        GMapModule,
         Ng2PageScrollModule.forRoot(),
     ],
     declarations: [
@@ -57,7 +60,8 @@ import {KovadomAdvantagesComponent} from "./page/component/kovadom_advantages/ko
         EmailFormComponent,
         PhoneFormComponent,
         ValidationFormComponent,
-        ConfirmationMessageEmailComponent
+        ConfirmationMessageEmailComponent,
+        TestGmapComponent
     ],
     providers: [ActivityService, BrandService, SaleService, RegistrationService],
     bootstrap: [KovadomComponent]
