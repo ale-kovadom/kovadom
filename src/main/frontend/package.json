@@ -29,6 +29,7 @@
   "devDependencies": {
     "del": "2.2.2",
     "gulp": "gulpjs/gulp#4.0",
+    "gulp-clean-css": "~3",
     "gulp-copy": "1.0.0",
     "gulp-inline-ng2-template": "0.0.10",
     "gulp-load-plugins": "1.1.0",
@@ -41,7 +42,7 @@
     "postcss-assets": "^4.1.0",
     "rollup": "^0.36.4",
     "rollup-plugin-commonjs": "^5.0.5",
-    "rollup-plugin-node-resolve": "^2.0.0",
+    "rollup-plugin-node-resolve": "^2.1.1",
     "rollup-plugin-uglify": "^1.0.1",
     "systemjs-builder": "0.15.0",
     "typescript": "^2.0.10",

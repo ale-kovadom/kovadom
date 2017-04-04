@@ -138,7 +138,7 @@
                             <directory>src/main/frontend/dist</directory>
                         </fileset>
                         <fileset>
-                            <directory>src/main/webapp/js</directory>
+                            <directory>src/main/webapp/resources</directory>
                             <includes>
                                 <include>generated/**</include>
                             </includes>

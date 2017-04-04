@@ -40,18 +40,18 @@
     <meta name="msapplication-config" content="${urls.getForLookupPath('/resources/img/browserconfig.xml')}">
     <meta name="theme-color" content="#197e9e">
 
-    <link rel="stylesheet" href="${urls.getForLookupPath('/resources/bootstrap/css/bootstrap.min.css')}"/>
-    <link rel="stylesheet" href="${urls.getForLookupPath('/resources/generated/kovadom/kovadom.css')}"/>
-    <link rel="stylesheet" href="${urls.getForLookupPath('/resources/generated/swiper/dist/css/swiper.min.css')}"/>
-    <link rel="stylesheet" type="text/css" href="${urls.getForLookupPath('/resources/generated/primeng/resources/themes/omega/theme.css')}"/>
-    <link rel="stylesheet" type="text/css" href="${urls.getForLookupPath('/resources/generated/primeng/resources/primeng.min.css')}"/>
-    <link rel="stylesheet" type="text/css" href="${urls.getForLookupPath('/resources/generated/font-awesome/css/font-awesome.min.css')}"/>
+    <%--<link rel="stylesheet" href="${urls.getForLookupPath('/resources/bootstrap/css/bootstrap.min.css')}"/>--%>
+    <%--<link rel="stylesheet" href="${urls.getForLookupPath('/resources/generated/kovadom/kovadom.css')}"/>--%>
+    <%--<link rel="stylesheet" href="${urls.getForLookupPath('/resources/generated/swiper/dist/css/swiper.min.css')}"/>--%>
+    <%--<link rel="stylesheet" type="text/css" href="${urls.getForLookupPath('/resources/generated/primeng/resources/themes/omega/theme.css')}"/>--%>
+    <%--<link rel="stylesheet" type="text/css" href="${urls.getForLookupPath('/resources/generated/primeng/resources/primeng.min.css')}"/>--%>
+    <%--<link rel="stylesheet" type="text/css" href="${urls.getForLookupPath('/resources/generated/font-awesome/css/font-awesome.min.css')}"/>--%>
 
     <!-- Polyfill(s) for older browsers -->
-    <script src="${urls.getForLookupPath('/resources/generated/core-js/client/shim.min.js')}"></script>
+    <script src="${urls.getForLookupPath('/resources/generated/core-js/client/shim.min.js')}" defer></script>
 
-    <script src="${urls.getForLookupPath('/resources/generated/zone.js/dist/zone.min.js')}"></script>
-    <script src="${urls.getForLookupPath('/resources/generated/swiper/dist/js/swiper.min.js')}"></script>
+    <script src="${urls.getForLookupPath('/resources/generated/zone.js/dist/zone.min.js')}" defer></script>
+    <script src="${urls.getForLookupPath('/resources/generated/swiper/dist/js/swiper.min.js')}" defer></script>
 
     <script>window.module = {};</script>
 </head>
@@ -69,6 +69,28 @@
 
 </body>
 
-<script src="${urls.getForLookupPath('/resources/generated/kovadom/build.js')}"></script>
+<!-- Page speed optimization -->
+<script type="text/javascript">
+    var deferCss = function (path) {
+        var cb = function() {
+            var l = document.createElement('link'); l.rel = 'stylesheet';
+            l.href = path;
+            var h = document.getElementsByTagName('head')[0]; h.parentNode.insertBefore(l, h);
+        };
+        var raf = requestAnimationFrame || mozRequestAnimationFrame ||
+            webkitRequestAnimationFrame || msRequestAnimationFrame;
+        if (raf) raf(cb);
+        else window.addEventListener('load', cb);
+    };
+    deferCss("${urls.getForLookupPath('/resources/bootstrap/css/bootstrap.min.css')}");
+    deferCss("${urls.getForLookupPath('/resources/generated/kovadom/kovadom.css')}");
+    deferCss("${urls.getForLookupPath('/resources/generated/swiper/dist/css/swiper.min.css')}");
+    deferCss("${urls.getForLookupPath('/resources/generated/primeng/resources/themes/omega/theme.css')}");
+    deferCss("${urls.getForLookupPath('/resources/generated/primeng/resources/primeng.min.css')}");
+    deferCss("${urls.getForLookupPath('/resources/generated/font-awesome/css/font-awesome.min.css')}");
+
+</script>
+
+<script src="${urls.getForLookupPath('/resources/generated/kovadom/build.js')}" defer></script>
 
 </html>

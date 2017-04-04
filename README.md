@@ -5,7 +5,7 @@
 * Install java 8 SDK
 * Install maven 3+
 * Install Mysql 5+
-* mvn clean compile tomee-embedded:run
+* mvn -Pdev clean compile cargo:run
 * Connect to http://localhost:8080  or https://localhost:8443
 * In m2/settings.xml
 
@@ -58,6 +58,25 @@ openssl pkcs12 -export -in <cert.pem> -inkey <privkey.pem> -out keystore.p12 -na
 keytool -importkeystore -deststorepass <password> -destkeypass <password> -destkeystore kovadom-keystore.jks -srckeystore keystore.p12 -srcstoretype PKCS12 -srcstorepass <p12 previous.password> -alias <kovadom>
 ```
 
+### Server.xml config
+Important infos:
+- port http
+- port https
+- keystoreFile
+- keystorePass 
+- compression (gzip)
+
+```
+<Connector SSLEnabled="false" URIEncoding="ISO-8859-1" connectionTimeout="20000" port="8080" protocol="HTTP/1.1" redirectPort="8443" scheme="http" secure="false"/>
+
+<Connector SSLEnabled="true" acceptCount="100" clientAuth="false"
+    disableUploadTimeout="true" enableLookups="false" maxThreads="25"
+    port="8443" keystoreFile="XXX" keystorePass="XXX"
+    protocol="org.apache.coyote.http11.Http11NioProtocol" scheme="https"
+    secure="true" sslProtocol="TLS" compression="on"
+    compressableMimeType="text/html,text/xml,text/plain,text/css,text/javascript,application/javascript,application/json"
+    />
+```
 
 
 

@@ -3,6 +3,7 @@ const plugins = require('gulp-load-plugins')();
 const gulpCopy = require('gulp-copy');
 const postcss = require('gulp-postcss');
 const assets = require('postcss-assets');
+const cleanCSS = require('gulp-clean-css');
 const del = require('del');
 const hasha = require('hasha');
 const path = require('path');
@@ -42,6 +43,7 @@ gulp.task('post-asset-css', cb => {
             loadPaths: ['resources/img/', 'resources/fonts/'],
             cachebuster: cacheBustingStrategy
         })]))
+        .pipe(cleanCSS({}))
         .pipe(gulp.dest('dist'));
 });
 
