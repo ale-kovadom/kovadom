@@ -24,6 +24,10 @@ span.kov:after {
     vertical-align: middle;
 }
 
+a.red-hover {
+    text-decoration: none;
+}
+
 a.red-hover:hover {
     /* Use !important to avoid conflict with "non hover" selector */
     color: rgb(239, 112, 105) !important;

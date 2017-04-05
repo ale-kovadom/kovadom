@@ -36,26 +36,29 @@ nav {
     border-radius: 0 !important;
 }
 
-header div.logos {
+.htable {
     display: table;
 }
 
-header .logo-wrapper {
+.hsubtable {
     display: table-cell;
     vertical-align: middle;
 }
 
-header .logo-wrapper div {
+.logos, .howto {
+    height: 82px;
+}
+
+.hsubtable div {
     display: inline-block;
-    height: 67px;
-    margin: 15px 10px;
+    height: 55px;
     background-size: contain;
     background-repeat: no-repeat;
 }
 
 .logo-img {
     background-image: resolve('kovadom/logo-kovadom.png');
-    width: 100px;
+    width: 85px;
 }
 
 .logo-txt {
@@ -64,16 +67,21 @@ header .logo-wrapper div {
 }
 
 @media only screen and (max-width: 767px) {
-    header div.logos {
+
+    header div.htable {
         text-align: center;
     }
+
+    .logo-txt {
+        width: 250px;
+    }
+    
 }
 
 @media only screen and (max-width: 400px) {
 
-    header .logo-wrapper div {
-        height: 59px;
-        margin: 10px 7px;
+    .logo-txt {
+        width: 250px;
     }
 
 }

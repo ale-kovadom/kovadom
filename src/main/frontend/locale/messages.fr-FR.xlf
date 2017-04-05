@@ -20,9 +20,9 @@
         <note priority="1" from="description">Back to home</note>
         <note priority="1" from="meaning">page not found </note>
       </trans-unit>
-      <trans-unit id="0e591c79c51be0937d449094b2cacc2b6bc8784e" datatype="html">
-        <source>Home sale</source>
-        <target>Vente à domicile</target>
+      <trans-unit id="1941b7ce4dbaf9c2803ae81300514ef37110c1fd" datatype="html">
+        <source>How it work ?</source>
+        <target>Comment ça marche ?</target>
         <note priority="1" from="description">home sale explanation link</note>
       </trans-unit>
       <trans-unit id="196999199d13ea9bd42ed35126e0eeb4b2794bca" datatype="html">

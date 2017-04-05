@@ -24,11 +24,13 @@
             <div *ngFor="let brand of brands" class="figure col-sm-6 col-md-4">
                 <div class="subway">
 
-                    <div class="subway-photo"
-                         [ngStyle]="{'background-image': 'url(' + brand.metadata.brandImageUrl + ')'}">
-                        <div class="brand-name">{{brand.name}}</div>
-                        <div class="brand-catchword">{{brand.catchWords}}</div>
-                    </div>
+                    <a [routerLink]="['/brands', brand.code | lowercase]">
+                        <div class="subway-photo"
+                             [ngStyle]="{'background-image': 'url(' + brand.metadata.brandImageUrl + ')'}">
+                            <div class="brand-name">{{brand.name}}</div>
+                            <div class="brand-catchword">{{brand.catchWords}}</div>
+                        </div>
+                    </a>
 
                     <div class="subway-footer">
                         <a class="btn red" [routerLink]="['/brands', brand.code | lowercase]">
