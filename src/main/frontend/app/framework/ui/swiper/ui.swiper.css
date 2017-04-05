@@ -30,7 +30,7 @@
     top: 94%; /* Down until the bubble page links */
     transform: translate(0, -100%); /* Move the text up just above the bubble page links */
     max-height: 100px;
-    background-color: rgba(80, 80, 80, 0.4);
+    text-align: center;
 }
 
 @media only screen and (max-width: 1199px) {
