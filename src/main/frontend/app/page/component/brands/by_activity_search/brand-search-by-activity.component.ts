@@ -1,4 +1,4 @@
-import {Component} from "@angular/core";
+import {Component, Output, EventEmitter} from "@angular/core";
 import {ActivityService} from "../../../../domain/activity/activity.service";
 import {Activity} from "../../../../domain/activity/activity";
 import {Router} from "@angular/router";
@@ -10,6 +10,8 @@ import {ActivatedRoute, Params} from "@angular/router";
     styleUrls: ['brand-search-by-activity.css']
 })
 export class ActivitySearchComponent {
+
+    public emptyActivity = new Activity("empty", "", null, null);
 
     public activities: Activity[] = [];
 
@@ -41,8 +43,13 @@ export class ActivitySearchComponent {
 
     }
 
-    public displayBrands() {
-        if (this.selectedActivity == undefined) {
+    public onChange(newActivity: Activity) {
+        this.selectedActivity = newActivity;
+        this.displayBrands(this.selectedActivity);
+    }
+
+    private displayBrands(selectedActivity: Activity) {
+        if (selectedActivity == undefined || selectedActivity == this.emptyActivity) {
             return;
         }
 
@@ -53,7 +60,7 @@ export class ActivitySearchComponent {
     }
 
     private selectActivity(sortedActivities: Activity[], activityCode: String) {
-        let selectedActivity = sortedActivities[0];
+        let selectedActivity = this.emptyActivity;
         if (activityCode) {
             let selectedActivities = sortedActivities.filter(a => {
                 return a.code === activityCode

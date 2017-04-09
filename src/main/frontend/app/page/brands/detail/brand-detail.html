@@ -53,7 +53,7 @@
                     <confirmation-message-form [status]="submitStatus" (onDismiss)="onAlertDismissal()"></confirmation-message-form>
                     <form (ngSubmit)="onSubmit()" #saleForm="ngForm" id="book-sale-form" novalidate>
                         <div class="row">
-                            <div class="form-group col-sm-12">
+                            <div class="form-group col-xs-12">
                                 <label for="sale-date" i18n="book a sale form | Date time for the sale">Date and time</label>
                                 <!-- @TODO i18n -->
                                 <div class="sale-date input-group">
@@ -86,13 +86,13 @@
                                 </div>
                                 <form-validation required="true" [ref]="saleTime" [onlyIf]="showExplicitErrorMessage"></form-validation>
                             </div>
-                            <div class="form-group col-sm-12">
+                            <div class="form-group col-xs-12">
                                 <label for="city" i18n="book a sale form | City">City</label>
                                 <input type="text" placeholder="Meeting place" i18n-placeholder="book a sale form | city placeholder" class="form-control" id="city" [(ngModel)]="sale.city" name="city"
                                        required #city="ngModel" maxlength="250">
                                 <form-validation required="true" [ref]="city" [onlyIf]="showExplicitErrorMessage"></form-validation>
                             </div>
-                            <div class="form-group col-sm-12">
+                            <div class="form-group col-xs-12">
                                 <label for="stakeholders" i18n="book a sale form | stakeholders count">Number of stakeholders</label>
                                 <input type="number" min="3" max="100" class="form-control" placeholder="10"
                                        id="stakeholders" name="stakeholders" [(ngModel)]="sale.stakeholderCount" required #stakeholders="ngModel">
@@ -111,15 +111,15 @@
                                            required #lastName="ngModel" [(ngModel)]="sale.host.lastName" maxlength="250">
                                     <form-validation required="true" [ref]="lastName" [onlyIf]="showExplicitErrorMessage"></form-validation>
                                 </div>
-                                <div class="form-group col-sm-12">
+                                <div class="form-group col-xs-12">
                                     <email-form required name="email" #email="ngModel" [(ngModel)]="sale.host.email"></email-form>
                                     <form-validation required="true" pattern="true" [ref]="email" [onlyIf]="showExplicitErrorMessage"></form-validation>
                                 </div>
-                                <div class="form-group col-sm-12">
+                                <div class="form-group col-xs-12">
                                     <phone-form required name="phone" #phone="ngModel" [(ngModel)]="sale.host.phone"></phone-form>
                                     <form-validation required="true" pattern="true" [ref]="phone" [onlyIf]="showExplicitErrorMessage"></form-validation>
                                 </div>
-                                <div class="form-group col-sm-12">
+                                <div class="form-group col-xs-12">
                                     <textarea placeholder="Question ?" i18n-placeholder="book a sale form | Extra information " class="form-control" id="extra-information" name="extra-information"
                                               rows="3" [(ngModel)]="sale.extraInformation" maxlength="1450"></textarea>
                                 </div>

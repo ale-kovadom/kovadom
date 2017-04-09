@@ -91,11 +91,11 @@
         <note priority="1" from="description">Which activity ?</note>
         <note priority="1" from="meaning">activity title</note>
       </trans-unit>
-      <trans-unit id="5746a4ee4284194f4dd25bbd1d6b104a9c8f8bf5" datatype="html">
-        <source>Search</source>
-        <target>Rechercher</target>
-        <note priority="1" from="description">search an ambiance</note>
-        <note priority="1" from="meaning">home</note>
+      <trans-unit id="2760cc379d3ecbe269d4a873e6c19c2ec898e486" datatype="html">
+        <source>select an activity</source>
+        <target>Choisissez votre ambiance</target>
+        <note priority="1" from="description">select an activity</note>
+        <note priority="1" from="meaning">brand-search-by-activity</note>
       </trans-unit>
       <trans-unit id="04ec277554c87fcd31e29b22dc6b35e313e6ae8f" datatype="html">
         <source>You are a home sales company?</source>
