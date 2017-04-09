@@ -33,6 +33,9 @@
                     </a>
 
                     <div class="subway-footer">
+                        <a [routerLink]="['/brands', brand.code | lowercase]" fragment="saleProcess">
+                          <div class="gift"></div>
+                        </a>
                         <a class="btn red" [routerLink]="['/brands', brand.code | lowercase]">
                             <ng-container i18n="brand list | Organise a sale">Start my sale</ng-container>
                         </a>

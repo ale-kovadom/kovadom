@@ -57,7 +57,6 @@
     left: 0;
     right: 0;
     height: 75px;
-    text-align: center;
     background-color: white;
 }
 
@@ -71,6 +70,22 @@
     -o-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
     padding: 10px 25px;
+}
+
+.gift {
+    position: absolute;
+    top: 50%;
+    left: 10%;
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    padding: 10px 10px;
+    width: 40px;
+    height: 40px;
+    background-size: contain;
+    background-image: resolve('kovadom/gift.png');
 }
 
 .brand-name, .brand-catchword {

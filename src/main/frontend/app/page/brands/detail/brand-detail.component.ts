@@ -22,6 +22,12 @@ export class BrandDetailComponent {
 
     private static FORM_EXPAND_CLASS: string = "expanded";
 
+    private static SCROLL_OFFSET_ALERT_FORM: number = 400;
+
+    private static SCROLL_OFFSET_SALE_DESCRIPTION: number = 0;
+
+    private static SCROLL_DURATION: number = 400;
+
     public brand: Brand;
 
     public slides: Array<SwiperSlide> = [];
@@ -70,15 +76,21 @@ export class BrandDetailComponent {
     }
 
     public ngOnInit(): void {
-        PageScrollConfig.defaultScrollOffset = 300;
-        PageScrollConfig.defaultDuration = 400;
         this.route.params
             .switchMap((params: Params) => this.brandService.getBrand(params['brandCode']))
             .subscribe(brand => {
                 this.brand = brand;
                 this.slides = this.brand.brandShowcaseImages.map(img => new SwiperSlide(img.imageUrl, img.description));
                 this.sale = this.emptySale();
+
+                // Once data is loaded
+                this.route.fragment.subscribe(anchor => {
+                    this.pageScrollService.start(
+                        PageScrollInstance.advancedInstance(this.document, "#" + anchor, null, null, BrandDetailComponent.SCROLL_OFFSET_SALE_DESCRIPTION, false, null, BrandDetailComponent.SCROLL_DURATION, null));
+                });
             });
+
+
     }
 
     public verifyAvailability() {
@@ -142,7 +154,8 @@ export class BrandDetailComponent {
     }
 
     private goToAlert() {
-        this.pageScrollService.start(PageScrollInstance.simpleInstance(this.document, '#alert-form'));
+        this.pageScrollService.start(
+            PageScrollInstance.advancedInstance(this.document, '#alert-form', null, null, BrandDetailComponent.SCROLL_OFFSET_ALERT_FORM, false, null, BrandDetailComponent.SCROLL_DURATION, null));
     }
 
     private emptySale() {
