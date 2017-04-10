@@ -24,8 +24,6 @@ export class BrandDetailComponent {
 
     private static SCROLL_OFFSET_ALERT_FORM: number = 400;
 
-    private static SCROLL_OFFSET_SALE_DESCRIPTION: number = 0;
-
     private static SCROLL_DURATION: number = 400;
 
     public brand: Brand;
@@ -85,8 +83,12 @@ export class BrandDetailComponent {
 
                 // Once data is loaded
                 this.route.fragment.subscribe(anchor => {
-                    this.pageScrollService.start(
-                        PageScrollInstance.advancedInstance(this.document, "#" + anchor, null, null, BrandDetailComponent.SCROLL_OFFSET_SALE_DESCRIPTION, false, null, BrandDetailComponent.SCROLL_DURATION, null));
+                    setTimeout(() => { // Wait for data to be displayed
+                        const element = this.document.querySelector("#" + anchor);
+                        if (element) {
+                            element.scrollIntoView(false);
+                        }
+                    });
                 });
             });
 

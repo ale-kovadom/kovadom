@@ -30,7 +30,7 @@
                     </div>
                 </ng-container>
 
-                <div class="company-info">
+                <div class="company-info" id="saleProcess">
                     <div class="brand-about">
                         <h3 i18n="brand-detail | company description">About {{brand?.name}}</h3>
                         <p [innerHTML]="brand?.description"></p>
@@ -38,7 +38,6 @@
                     <div class="sale-process">
                         <h3 i18n="brand-detail | sale process">The sale process</h3>
                         <p [innerHTML]="brand?.saleProcess"></p>
-                        <span id="saleProcess"></span>
                     </div>
                 </div>
 
