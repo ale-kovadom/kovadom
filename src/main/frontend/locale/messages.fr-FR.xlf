@@ -67,6 +67,18 @@
         <note priority="1" from="description">focus on quality</note>
         <note priority="1" from="meaning">home</note>
       </trans-unit>
+      <trans-unit id="d7af19b91bd9285fe9ea1ea9f1ddcbcd0f4c8b84" datatype="html">
+        <source>Discover a new shopping experience!</source>
+        <target>Découvrez une nouvelle expérience de shopping !</target>
+        <note priority="1" from="description">new shooping xp</note>
+        <note priority="1" from="meaning">home</note>
+      </trans-unit>
+      <trans-unit id="0b84b7694e161b8ea8f8f0be97d69e182c52fb24" datatype="html">
+        <source>I create my home sale</source>
+        <target>J'organise ma vente</target>
+        <note priority="1" from="description">I create my home sale</note>
+        <note priority="1" from="meaning">home</note>
+      </trans-unit>
       <trans-unit id="b5993dfa5341eab031c3de79c1c976d679334dbf" datatype="html">
         <source>Access all sales at home in just a few clicks!</source>
         <target>Accédez à toutes les ventes à domicile en quelques clics!</target>
@@ -276,10 +288,9 @@
         <note priority="1" from="description">step2 description</note>
         <note priority="1" from="meaning">home</note>
       </trans-unit>
-      <trans-unit id="03fb0fe699baf496f5f59d15a7304a61840cef9a" datatype="html">
-        <source>Requests the brands you would like to test.
-        </source>
-        <target>Faites des demandes pour les marques que vous voulez tester.</target>
+      <trans-unit id="3a0852e4c7f7bf11fbc45cc359343db183dcb2ee" datatype="html">
+        <source>Requests the brands you would like to test.</source>
+        <target>Faites des demandes pour les marques que vous voulez tester. </target>
         <note priority="1" from="description">step2 description - part1</note>
         <note priority="1" from="meaning">home</note>
       </trans-unit>
@@ -295,10 +306,8 @@
         <note priority="1" from="description">step3 description</note>
         <note priority="1" from="meaning">home</note>
       </trans-unit>
-      <trans-unit id="48c4dc156e75c056614d303acc02a0fb18eb7652" datatype="html">
-        <source>Follow the progress of your requests, meet your seller
-            and
-        </source>
+      <trans-unit id="1c677c8d0866ea54a93b2ebf45ed838c4b8b91e3" datatype="html">
+        <source>Follow the progress of your requests, meet your seller and</source>
         <target>Suivez l'avancée de vos demandes, rencontrez votre vendeur(se) à domicile et</target>
         <note priority="1" from="description">step3 description - part1</note>
         <note priority="1" from="meaning">home</note>
@@ -308,6 +317,96 @@
         <target>validez votre reservation en 1 clic.</target>
         <note priority="1" from="description">step3 emphasized description - part2</note>
         <note priority="1" from="meaning">home</note>
+      </trans-unit>
+      <trans-unit id="9062ed60506e41cdd46ea2bc661bc914352ce4e7" datatype="html">
+        <source>A moment of friendliness</source>
+        <target>Un moment de convivialité</target>
+        <note priority="1" from="description">friendliness moment</note>
+        <note priority="1" from="meaning">fun xp</note>
+      </trans-unit>
+      <trans-unit id="289650659c79cdf7d39e62ed893d1e716978d0a8" datatype="html">
+        <source>Home sale is over all a moment of</source>
+        <target>Une vente à domicile c'est avant tout un moment de </target>
+        <note priority="1" from="description">friendliness moment - part1</note>
+        <note priority="1" from="meaning">fun xp</note>
+      </trans-unit>
+      <trans-unit id="22272ba7c1658ec0cd7aee030adebe0f801c3342" datatype="html">
+        <source>friendliness with friends.</source>
+        <target>convivialité entre ami(e)s.</target>
+        <note priority="1" from="description">friendliness moment - part2</note>
+        <note priority="1" from="meaning">fun xp</note>
+      </trans-unit>
+      <trans-unit id="738d602b78c956cd0045bb1090eeadef47e53f80" datatype="html">
+        <source>Quality and advice</source>
+        <target>Qualité et conseil</target>
+        <note priority="1" from="description">quality and advices</note>
+        <note priority="1" from="meaning">fun xp</note>
+      </trans-unit>
+      <trans-unit id="b20c9dc2befaf0b7e7544a087d4faf8556b14e40" datatype="html">
+        <source>Home sale means</source>
+        <target>La vente à domicile ce sont des produits de </target>
+        <note priority="1" from="description">quality and advices - part1</note>
+        <note priority="1" from="meaning">fun xp</note>
+      </trans-unit>
+      <trans-unit id="b232acdbe05c6288ccd30b81280bd38aa615fb6e" datatype="html">
+        <source>proximity products of quality. </source>
+        <target>proximité et de qualité. </target>
+        <note priority="1" from="description">quality and advices - part2</note>
+        <note priority="1" from="meaning">fun xp</note>
+      </trans-unit>
+      <trans-unit id="c68058aff60e5965d5963f24e8019f574bc6c44a" datatype="html">
+        <source>Your sales consultant, passionate and available will guide you in your choice.</source>
+        <target>Votre conseiller, passionné et disponible est là pour vous guider dans votre choix.</target>
+        <note priority="1" from="description">quality and advices - part3</note>
+        <note priority="1" from="meaning">fun xp</note>
+      </trans-unit>
+      <trans-unit id="e7cff964eb2533f0d8b74d2fcc1f6723ff556b1a" datatype="html">
+        <source>Specific advantages</source>
+        <target>Des avantages spécifiques</target>
+        <note priority="1" from="description">advantages</note>
+        <note priority="1" from="meaning">fun xp</note>
+      </trans-unit>
+      <trans-unit id="9227b0c826b2b36237cd326d8d0e11f20e636d8c" datatype="html">
+        <source>As a host, you can win</source>
+        <target>En tant qu'hotesse ou hôte vous pouvez bénéficiez de </target>
+        <note priority="1" from="description">advantages - part1</note>
+        <note priority="1" from="meaning">fun xp</note>
+      </trans-unit>
+      <trans-unit id="9b68167946520b849bdaf1628c7ea03c4f6e18c0" datatype="html">
+        <source>gift</source>
+        <target>cadeaux</target>
+        <note priority="1" from="description">advantages - part2</note>
+        <note priority="1" from="meaning">fun xp</note>
+      </trans-unit>
+      <trans-unit id="fc574b6569e453ec7069626ce6fa0da39f30d6dc" datatype="html">
+        <source>,</source>
+        <target>, de </target>
+        <note priority="1" from="description">advantages - part3</note>
+        <note priority="1" from="meaning">fun xp</note>
+      </trans-unit>
+      <trans-unit id="d194f00437d97a99835ba2879e4ddd3f9414dbd2" datatype="html">
+        <source>discounts</source>
+        <target>fortes réductions </target>
+        <note priority="1" from="description">advantages - part4</note>
+        <note priority="1" from="meaning">fun xp</note>
+      </trans-unit>
+      <trans-unit id="c2ca7a3fee776b3dc7b294be650b56d5e5949183" datatype="html">
+        <source>or even a </source>
+        <target>ou même d'une </target>
+        <note priority="1" from="description">advantages - part5</note>
+        <note priority="1" from="meaning">fun xp</note>
+      </trans-unit>
+      <trans-unit id="5a0aaff73a7a259066c12726836e0b653bee0e00" datatype="html">
+        <source>percentage </source>
+        <target> commission </target>
+        <note priority="1" from="description">advantages - part6</note>
+        <note priority="1" from="meaning">fun xp</note>
+      </trans-unit>
+      <trans-unit id="f693c560f2213c3cf451fcb3ae32475ded5025e2" datatype="html">
+        <source>on the sales.</source>
+        <target>sur les ventes réalisées.</target>
+        <note priority="1" from="description">advantages - part7</note>
+        <note priority="1" from="meaning">fun xp</note>
       </trans-unit>
       <trans-unit id="1abbf74e15bf7b334f82e222212cb6ec0cd62ed8" datatype="html">
         <source>How it works?</source>

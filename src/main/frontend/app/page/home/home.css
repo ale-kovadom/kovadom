@@ -22,6 +22,7 @@ ul {
     background-size: cover !important;
     background: resolve('home/home-sales.jpeg') no-repeat center;
     height: 500px;
+    margin-bottom: 0;
 }
 
 .jumbotron h2 {
@@ -129,13 +130,22 @@ ul {
 
 }
 
-/*** Sale steps ***/
+/*** New shopping xp and Sale steps ***/
 
-.access-sale .row {
+#new-shooping-xp-wrapper {
+    background-color: #f1f1f1;
+}
+
+.new-shopping-xp, .access-sale {
+    padding-top: 20px;
     padding-bottom: 35px;
 }
 
-.access-sale p {
+.access-sale .row, .new-shopping-xp .row {
+    padding-bottom: 35px;
+}
+
+.access-sale p, .new-shopping-xp p {
     font-size: 30px;
     font-family: 'Roboto', sans-serif;
     margin-bottom: 0;
@@ -147,7 +157,7 @@ ul {
 
 .container4 {
     margin-top: 30px;
-    margin-bottom: 40px;
+    padding-bottom: 40px;
 }
 
 /*** Activity ***/

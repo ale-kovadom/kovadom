@@ -1,0 +1,45 @@
+p {
+    font-size: 30px;
+    margin-bottom: 0;
+    padding-bottom: 0;
+    text-align: center;
+}
+
+.col-sm-4 h3 {
+    color: black;
+    text-align: center;
+}
+
+.col-sm-4 p {
+    color: black;
+    font-size: 18px;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+
+#fun-img, #vip-img, #gift-img {
+    display: block;
+    margin: 0 auto 0;
+    padding-top: 0;
+}
+
+#fun-img {
+    background-image: resolve('new_shopping_xp/fun.png');
+    width: width('new_shopping_xp/fun.png');
+    height: height('new_shopping_xp/fun.png');
+}
+
+#vip-img {
+    background-image: resolve('new_shopping_xp/vip.png');
+    width: width('new_shopping_xp/vip.png');
+    height: height('new_shopping_xp/vip.png');
+}
+
+#gift-img {
+    background-image: resolve('new_shopping_xp/gift.png');
+    width: width('new_shopping_xp/gift.png');
+    height: height('new_shopping_xp/gift.png');
+}

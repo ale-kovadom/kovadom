@@ -26,6 +26,7 @@ import {PhoneFormComponent} from "./page/component/form/phone/phone.form.compone
 import {ValidationFormComponent} from "./page/component/form/validation/validation.form.component";
 import {ConfirmationMessageEmailComponent} from "./page/component/form/message/confirmation-message.form.component";
 import {ContactRegistrationComponent} from "./page/component/registration/contact-registration";
+import {newShoppingXpComponent} from "./page/component/new_shopping_xp/new-shopping-xp.component";
 
 @NgModule({
     imports: [
@@ -48,6 +49,7 @@ import {ContactRegistrationComponent} from "./page/component/registration/contac
         BrandDetailComponent,
         ActivitiesComponent,
         SaleHowtoStepsComponent,
+        newShoppingXpComponent,
         HomeSaleHowToComponent,
         ContactRegistrationComponent,
         EmailFormComponent,

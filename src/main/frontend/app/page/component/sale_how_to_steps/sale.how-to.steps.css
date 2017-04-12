@@ -1,6 +1,5 @@
 p {
     font-size: 30px;
-    font-family: 'Roboto', sans-serif;
     margin-bottom: 0;
     padding-bottom: 0;
     text-align: center;
@@ -14,10 +13,9 @@ p {
 .col-sm-4 p {
     color: black;
     font-size: 18px;
-    font-family: 'Roboto', sans-serif;
 }
 
-.col-sm-4 .bold {
+.bold {
     font-weight: bold;
 }
 
