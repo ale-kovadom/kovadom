@@ -132,8 +132,8 @@ ul {
 
 /*** New shopping xp and Sale steps ***/
 
-#new-shooping-xp-wrapper {
-    background-color: #f1f1f1;
+#access-sale-wrapper {
+    background-color: white;
 }
 
 .new-shopping-xp, .access-sale {
@@ -163,7 +163,6 @@ ul {
 /*** Activity ***/
 
 .activity {
-    background-color: #F5F2F3;
     padding-top: 30px;
 }
 
