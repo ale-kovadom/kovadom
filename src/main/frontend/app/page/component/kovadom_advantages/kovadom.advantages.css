@@ -1,0 +1,41 @@
+p {
+    margin-bottom: 20px;
+    padding-bottom: 0;
+    text-align: center;
+    color: black;
+    font-size: 18px;
+}
+
+h3 {
+    color: black;
+    text-align: center;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+
+#save-time-img, #advantages-img, #team-img {
+    display: block;
+    margin: 0 auto 0;
+    padding-top: 0;
+}
+
+#save-time-img {
+    background-image: resolve('kovadom_advantages/time-saving.png');
+    width: width('kovadom_advantages/time-saving.png');
+    height: height('kovadom_advantages/time-saving.png');
+}
+
+#advantages-img {
+    background-image: resolve('kovadom_advantages/gift.png');
+    width: width('kovadom_advantages/gift.png');
+    height: height('kovadom_advantages/gift.png');
+}
+
+#team-img {
+    background-image: resolve('kovadom_advantages/team.png');
+    width: width('kovadom_advantages/team.png');
+    height: height('kovadom_advantages/team.png');
+}

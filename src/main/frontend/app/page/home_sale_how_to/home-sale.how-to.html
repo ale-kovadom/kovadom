@@ -1,6 +1,6 @@
-<section class="container explanation">
+<h1 class="text-center title" i18n="howitworks|How it works ?">How it works?</h1>
 
-    <h1 class="text-center" i18n="howitworks|How it works ?">How it works?</h1>
+<section class="container explanation">
 
     <p i18n="howitworks|kovadom presentation">
         Kovadom is a home sale booking platform. On Kovadom you can simply choose the atmosphere and the brand to organize a moment of friendliness.
@@ -8,27 +8,26 @@
     <p i18n="howitworks|kovadom team">
         Our team is attentive to your questions or needs throughout the booking process
     </p>
-    <p i18n="howitworks|easy to organise">
-        With Kovadom, organize your sale in just a few clicks!
-    </p>
 
 </section>
 
 
 <section class="container sale-how-to-steps">
 
+    <p i18n="howitworks|easy to organise" class="sale-how-to-steps-title">
+        With Kovadom, organize your sale in just a few clicks!
+    </p>
+
     <sale-how-to-steps></sale-how-to-steps>
 
 </section>
 
-<section class="activity">
+<section class="container advantages">
 
-    <activity max="6"></activity>
+    <p i18n="howitworks|kovadom advantages title" class="advantages-title">
+        Advantages of Kovadom
+    </p>
 
-    <div class="container all-activities-container">
-        <div class="row text-center">
-            <a i18n="common|Discover all the activities button" class="btn btn-discreet" [routerLink]="['/activities']">Discover all the activities</a>
-        </div>
-    </div>
+    <kovadom-advantages></kovadom-advantages>
 
 </section>

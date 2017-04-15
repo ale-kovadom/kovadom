@@ -308,7 +308,7 @@
       </trans-unit>
       <trans-unit id="1c677c8d0866ea54a93b2ebf45ed838c4b8b91e3" datatype="html">
         <source>Follow the progress of your requests, meet your seller and</source>
-        <target>Suivez l'avancée de vos demandes, rencontrez votre vendeur(se) à domicile et</target>
+        <target>Suivez l'avancée de vos demandes, rencontrez votre vendeur(se) à domicile et </target>
         <note priority="1" from="description">step3 description - part1</note>
         <note priority="1" from="meaning">home</note>
       </trans-unit>
@@ -420,7 +420,7 @@
     </source>
         <target>Kovadom est une plateforme de réservation de vente a domicile. Sur Kovadom vous pouvez simplement choisir une ambiance pour organiser un moment de convivialité entre ami(e)s.
         Invitez vos amis pour partagez un bon moment autour de la marque que vous aurez choisi ! Kovadom se charge de trouver le conseiller le plus proche de chez vous qui vous accompagnera lors de votre événement.
-        Tout au long du processus, vous pourrez suivre l'avancée de la préparation de votre vente. De plus, en tant qu'organisateur, vous bénéficiez d'avantages uniques autour de l'univers de la marque !</target>
+        </target>
         <note priority="1" from="description">kovadom presentation</note>
         <note priority="1" from="meaning">howitworks</note>
       </trans-unit>
@@ -439,6 +439,56 @@
         <target>Avec Kovadom, organisez votre vente en quelques clics !</target>
         <note priority="1" from="description">easy to organise</note>
         <note priority="1" from="meaning">howitworks</note>
+      </trans-unit>
+      <trans-unit id="2e1291fd733d87681c70d156b154a1b5594ecd50" datatype="html">
+        <source>
+        Advantages of Kovadom
+    </source>
+        <target>Les avantages de Kovadom</target>
+        <note priority="1" from="description">kovadom advantages title</note>
+        <note priority="1" from="meaning">howitworks</note>
+      </trans-unit>
+      <trans-unit id="dc51369dfe19c9099eddcface78dac70887d6374" datatype="html">
+        <source>Time saving</source>
+        <target>Gain de temps</target>
+        <note priority="1" from="description">time image title</note>
+        <note priority="1" from="meaning">kovadom advantages time saving</note>
+      </trans-unit>
+      <trans-unit id="5888be80633571f57307de288b88a1f4b84cc9b8" datatype="html">
+        <source>
+        Access to all your brands through one single platform
+    </source>
+        <target>Accédez à toutes vos toutes vos marques depuis une seule plateforme</target>
+        <note priority="1" from="description">description</note>
+        <note priority="1" from="meaning">kovadom advantages time saving</note>
+      </trans-unit>
+      <trans-unit id="4c3d1ee112c8c296c5ffc8ec196d8694921901ca" datatype="html">
+        <source>Specific advantages</source>
+        <target>Des avantages spécifiques</target>
+        <note priority="1" from="description">host gift image title</note>
+        <note priority="1" from="meaning">kovadom advantages host gift</note>
+      </trans-unit>
+      <trans-unit id="071bd6e021e9f075d3189e0813bb295935fc0cbd" datatype="html">
+        <source>
+        As a host, you can benefit from advantages provided by Kovadom: gifts, discounts or even a percentage on the sales.
+    </source>
+        <target>En tant qu'hotesse ou hôte vous bénéficiez d'avantages négociés par Kovadom : cadeaux, réductions ou commissions sur les ventes réalisées.</target>
+        <note priority="1" from="description">description</note>
+        <note priority="1" from="meaning">kovadom advantages time saving</note>
+      </trans-unit>
+      <trans-unit id="650fdd5bd54a1cc0af018556baa6881fb856ee5b" datatype="html">
+        <source>A team at your service</source>
+        <target>Une équipe à votre service</target>
+        <note priority="1" from="description">team image title</note>
+        <note priority="1" from="meaning">kovadom advantages team</note>
+      </trans-unit>
+      <trans-unit id="25010b2e05f948dbf638ea58d7d2279c434de236" datatype="html">
+        <source>
+        We follow up until the organization of the sale
+    </source>
+        <target>Nous assurons un suivi jusqu'à l'organisation de la vente.</target>
+        <note priority="1" from="description">description</note>
+        <note priority="1" from="meaning">kovadom advantages team</note>
       </trans-unit>
       <trans-unit id="6ccd447853cb2e1a06ef7905a64cb6c1b48dfd93" datatype="html">
         <source>Company name</source>

@@ -27,6 +27,7 @@ import {ValidationFormComponent} from "./page/component/form/validation/validati
 import {ConfirmationMessageEmailComponent} from "./page/component/form/message/confirmation-message.form.component";
 import {ContactRegistrationComponent} from "./page/component/registration/contact-registration";
 import {newShoppingXpComponent} from "./page/component/new_shopping_xp/new-shopping-xp.component";
+import {KovadomAdvantagesComponent} from "./page/component/kovadom_advantages/kovadom.advantages.component";
 
 @NgModule({
     imports: [
@@ -51,6 +52,7 @@ import {newShoppingXpComponent} from "./page/component/new_shopping_xp/new-shopp
         SaleHowtoStepsComponent,
         newShoppingXpComponent,
         HomeSaleHowToComponent,
+        KovadomAdvantagesComponent,
         ContactRegistrationComponent,
         EmailFormComponent,
         PhoneFormComponent,

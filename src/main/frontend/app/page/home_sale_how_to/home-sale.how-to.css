@@ -1,19 +1,24 @@
-.explanation h1 {
-    padding-bottom: 15px;
+.title {
+    margin-top: 30px;
+    margin-bottom: 30px;
     font-size: 30px;
 }
 
 .explanation p {
     font-size: 16px;
-    text-align: center;
     font-family: 'Roboto', sans-serif;
 }
 
-.explanation, .sale-how-to-steps, .activity {
-    padding-top: 30px;
+.sale-how-to-steps-title, .advantages-title {
+    font-size: 26px;
+    font-family: 'Roboto', sans-serif;
+    padding-bottom: 0;
+    text-align: center;
+    margin-bottom: 30px;
 }
 
-.all-activities-container {
-    margin-top: 20px;
-    padding-bottom: 50px;
+.explanation, .sale-how-to-steps, .advantages {
+    margin-top: 30px;
+    padding-bottom: 30px;
 }
+
