@@ -1,6 +1,7 @@
 body {
     min-width: 305px;
     background-color: #f1f1f1;
+    color: #333;
 }
 
 span.kov {
@@ -22,6 +23,11 @@ span.kov:after {
     right: 0.3em;
     top: 25%;
     vertical-align: middle;
+}
+
+a.basic {
+    text-decoration: none;
+    color: #333; /* Same color as defined in body */
 }
 
 a.red-hover {

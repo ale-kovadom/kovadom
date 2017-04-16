@@ -430,10 +430,10 @@
         <note priority="1" from="description">kovadom team</note>
         <note priority="1" from="meaning">howitworks</note>
       </trans-unit>
-      <trans-unit id="c6fb6f0ed51580c16099133f7554aebd7dd15d3d" datatype="html">
+      <trans-unit id="ff3e1818f1d0a069b38398ccd13d6a203219183c" datatype="html">
         <source>
-        With Kovadom, organize your sale in just a few clicks!
-    </source>
+            With Kovadom, organize your sale in just a few clicks!
+        </source>
         <target/>
         <note priority="1" from="description">easy to organise</note>
         <note priority="1" from="meaning">howitworks</note>

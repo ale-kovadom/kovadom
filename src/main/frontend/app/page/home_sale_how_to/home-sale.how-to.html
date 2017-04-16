@@ -11,11 +11,12 @@
 
 </section>
 
-
 <section class="container sale-how-to-steps">
 
-    <p i18n="howitworks|easy to organise" class="sale-how-to-steps-title">
-        With Kovadom, organize your sale in just a few clicks!
+    <p class="sale-how-to-steps-title">
+        <a class="basic" [routerLink]="['/activities']" i18n="howitworks|easy to organise">
+            With Kovadom, organize your sale in just a few clicks!
+        </a>
     </p>
 
     <sale-how-to-steps></sale-how-to-steps>
@@ -31,3 +32,9 @@
     <kovadom-advantages></kovadom-advantages>
 
 </section>
+
+<div class="container all-activities-container">
+    <div class="row text-center">
+        <a i18n="common|Discover all the activities button" class="btn btn-discreet" [routerLink]="['/activities']">Discover all the activities</a>
+    </div>
+</div>
