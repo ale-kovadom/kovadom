@@ -94,7 +94,7 @@
                             </div>
                             <div class="form-group col-xs-12">
                                 <label for="stakeholders" i18n="book a sale form | stakeholders count">Number of stakeholders</label>
-                                <input type="number" min="3" max="100" class="form-control" placeholder="10"
+                                <input type="number" min="1" max="100" class="form-control" placeholder="10"
                                        id="stakeholders" name="stakeholders" [(ngModel)]="sale.stakeholderCount" required #stakeholders="ngModel">
                                 <form-validation required="true" [ref]="stakeholders" [onlyIf]="showExplicitErrorMessage"></form-validation>
                             </div>
