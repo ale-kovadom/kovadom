@@ -60,8 +60,7 @@ import {TestGmapComponent} from "./page/test/test.component";
         EmailFormComponent,
         PhoneFormComponent,
         ValidationFormComponent,
-        ConfirmationMessageEmailComponent,
-        TestGmapComponent
+        ConfirmationMessageEmailComponent
     ],
     providers: [ActivityService, BrandService, SaleService, RegistrationService],
     bootstrap: [KovadomComponent]

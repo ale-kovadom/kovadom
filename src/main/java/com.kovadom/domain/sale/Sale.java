@@ -15,6 +15,7 @@ import javax.persistence.EnumType;
 import javax.persistence.Enumerated;
 import javax.persistence.JoinColumn;
 import javax.persistence.ManyToOne;
+import javax.persistence.OneToOne;
 import javax.persistence.Table;
 import java.time.ZonedDateTime;
 
@@ -31,7 +32,7 @@ public class Sale extends AbstractAuditablePersistable<Long> {
     }
 
     @ManyToOne
-    @JoinColumn(name="brand_id", nullable=false)
+    @JoinColumn(name = "brand_id", nullable = false)
     @JsonDeserialize(using = SaleBrandDeserializer.class)
     private Brand brand;
 
@@ -39,12 +40,13 @@ public class Sale extends AbstractAuditablePersistable<Long> {
     @Column(name = "status")
     private Status status;
 
-    @ManyToOne(cascade= CascadeType.PERSIST)
-    @JoinColumn(name="host_id", nullable=false)
+    @OneToOne(cascade = CascadeType.ALL)
+    @JoinColumn(name = "host_id", nullable = false)
     private Host host;
 
-    @Column(name = "city")
-    private String city;
+    @OneToOne(cascade = CascadeType.ALL)
+    @JoinColumn(name = "place_id", nullable = false)
+    private Place place;
 
     @Column(name = "stakeholder_count")
     private Integer stakeholderCount;
@@ -67,8 +69,8 @@ public class Sale extends AbstractAuditablePersistable<Long> {
         return host;
     }
 
-    public String getCity() {
-        return city;
+    public Place getPlace() {
+        return place;
     }
 
     public Integer getStakeholderCount() {

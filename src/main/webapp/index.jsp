@@ -40,19 +40,12 @@
     <meta name="msapplication-config" content="${urls.getForLookupPath('/resources/img/browserconfig.xml')}">
     <meta name="theme-color" content="#197e9e">
 
-    <%--<link rel="stylesheet" href="${urls.getForLookupPath('/resources/bootstrap/css/bootstrap.min.css')}"/>--%>
-    <%--<link rel="stylesheet" href="${urls.getForLookupPath('/resources/generated/kovadom/kovadom.css')}"/>--%>
-    <%--<link rel="stylesheet" href="${urls.getForLookupPath('/resources/generated/swiper/dist/css/swiper.min.css')}"/>--%>
-    <%--<link rel="stylesheet" type="text/css" href="${urls.getForLookupPath('/resources/generated/primeng/resources/themes/omega/theme.css')}"/>--%>
-    <%--<link rel="stylesheet" type="text/css" href="${urls.getForLookupPath('/resources/generated/primeng/resources/primeng.min.css')}"/>--%>
-    <%--<link rel="stylesheet" type="text/css" href="${urls.getForLookupPath('/resources/generated/font-awesome/css/font-awesome.min.css')}"/>--%>
-
     <!-- Polyfill(s) for older browsers -->
     <script src="${urls.getForLookupPath('/resources/generated/core-js/client/shim.min.js')}" defer></script>
 
     <script src="${urls.getForLookupPath('/resources/generated/zone.js/dist/zone.min.js')}" defer></script>
     <script src="${urls.getForLookupPath('/resources/generated/swiper/dist/js/swiper.min.js')}" defer></script>
-    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBPCDRe45TzMKbcf3rwhOv5cvqE5iuQ9VQ&libraries=places"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBPCDRe45TzMKbcf3rwhOv5cvqE5iuQ9VQ&libraries=places" defer></script>
 
     <script>window.module = {};</script>
 </head>

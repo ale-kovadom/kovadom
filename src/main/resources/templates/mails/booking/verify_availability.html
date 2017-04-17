@@ -36,7 +36,7 @@
             <li th:text="#{mail.book-request.host(${sale.getHost().getFirstName()})}">Host:xxx</li>
             <li th:text="#{mail.book-request.date(${saleDateTime})}">Date:xxx</li>
             <li th:text="#{mail.book-request.stakeholders-count(${sale.getStakeholderCount()})}">Stakeholders count:xxx</li>
-            <li th:text="#{mail.book-request.city(${sale.getCity()})}">City:xxx</li>
+            <li th:text="#{mail.book-request.city(${sale.getPlace().getAddress()})}">City:xxx</li>
         </ul>
     </div>
 

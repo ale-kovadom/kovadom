@@ -93,3 +93,21 @@ create table if not exists brand_showcase_image (
   CONSTRAINT `fk_brandShowCase_brandId_brand_id` FOREIGN KEY (`brand_id`) REFERENCES `brand` (`id`),
   CONSTRAINT `uni_name_brandid` UNIQUE (name, brand_id)
 ) DEFAULT CHARSET=utf8;
+
+
+--changeset alescaroux:11
+alter table sale drop column city;
+
+create table if not exists place (
+  id INT UNSIGNED PRIMARY KEY AUTO_INCREMENT,
+  address VARCHAR(100) NOT NULL,
+  latitude FLOAT(10,6) NOT NULL,
+  longitude FLOAT(10,6) NOT NULL,
+  created_date TIMESTAMP NOT NULL DEFAULT NOW(),
+  modified_date TIMESTAMP NOT NULL DEFAULT NOW()
+);
+
+delete from sale;
+delete from host;
+alter table sale add column place_id INT UNSIGNED NOT NULL;
+alter table sale add CONSTRAINT `fk_sale_placeId_place_id` FOREIGN KEY (`place_id`) REFERENCES `place` (`id`);

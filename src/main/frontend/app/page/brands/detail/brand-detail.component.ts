@@ -1,4 +1,4 @@
-import {Component, ViewChild, Inject} from "@angular/core";
+import {Component, ViewChild, Inject, Renderer} from "@angular/core";
 import {ActivatedRoute, Params} from "@angular/router";
 import {BrandService} from "../../../domain/brand/brand.service";
 import {Brand} from "../../../domain/brand/brand";
@@ -10,6 +10,8 @@ import {PageScrollService, PageScrollInstance, PageScrollConfig} from "ng2-page-
 import {DOCUMENT} from "@angular/platform-browser";
 import {FormStatus} from "../../../framework/form/forms";
 import {SwiperSlide} from "../../../framework/ui/swiper/swiper.slides";
+
+declare let google: any;
 
 @Component({
     selector: 'brand-detail',
@@ -46,9 +48,15 @@ export class BrandDetailComponent {
 
     public date: Date;
 
+    @ViewChild('place')
+    public addressInput: any;
+
+    private addressAutocomplete: any;
+
+    private selectedLocation?: any;
+
     @ViewChild("saleForm")
     public ngForm: NgForm;
-
 
     constructor(private route: ActivatedRoute,
                 private brandService: BrandService,
@@ -95,6 +103,25 @@ export class BrandDetailComponent {
 
     }
 
+    public ngAfterViewInit(): void {
+        let addressInputOptions: any = {
+            types: ['address'],
+            componentRestrictions: {country: 'fr'}  //TODO i18n
+        };
+        this.addressAutocomplete = new google.maps.places.Autocomplete(this.addressInput.nativeElement, addressInputOptions);
+        this.addressAutocomplete.addListener('place_changed', this.onAutoCompleteChange(this));
+    }
+
+    onAutoCompleteChange(self: any) {
+        return (evt: any) => {
+            let place = self.addressAutocomplete.getPlace();
+            this.sale.place.address = place.formatted_address;
+            this.sale.place.latitude = place.geometry.location.lat();
+            this.sale.place.longitude = place.geometry.location.lng();
+            this.selectedLocation = place;
+        }
+    }
+
     public verifyAvailability() {
         this.sale.status = SaleStatus.Availability;
     }
@@ -108,7 +135,20 @@ export class BrandDetailComponent {
 
         if (hasBeenExpanded) {
             this.showExplicitErrorMessage = true;
+
+            if(!this.selectedLocation) {
+                /* If an address is not recognized by the autocomplete field then an error on the mandatory address field is raised */
+                this.sale.place.address = undefined;
+                /*
+                 * Note: we return her because the form may be valid if address field is not empty
+                 * (because validation has already been done when submit has been triggered).
+                 * After "return": it will be set to invalid.
+                 */
+                return;
+            }
+
             if (this.ngForm.form.valid) {
+
                 this.sale.date = new Date(this.date.getFullYear(), this.date.getMonth(), this.date.getDate(), this.time.getHours(), this.time.getMinutes(), 0, 0);
                 this.submitStatus = FormStatus.Sent;
                 this.saleService.create(this.sale).then(this.onSuccess(this)).catch(this.onError(this))
@@ -124,6 +164,7 @@ export class BrandDetailComponent {
             this.showExplicitErrorMessage = false;
             this.ngForm.reset();
             this.sale = this.emptySale();
+            this.selectedLocation = undefined;
         }
         this.resetSubmitStatus();
     }
