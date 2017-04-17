@@ -29,7 +29,6 @@ import {ConfirmationMessageEmailComponent} from "./page/component/form/message/c
 import {ContactRegistrationComponent} from "./page/component/registration/contact-registration";
 import {newShoppingXpComponent} from "./page/component/new_shopping_xp/new-shopping-xp.component";
 import {KovadomAdvantagesComponent} from "./page/component/kovadom_advantages/kovadom.advantages.component";
-import {TestGmapComponent} from "./page/test/test.component";
 
 @NgModule({
     imports: [
