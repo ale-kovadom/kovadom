@@ -111,3 +111,7 @@ delete from sale;
 delete from host;
 alter table sale add column place_id INT UNSIGNED NOT NULL;
 alter table sale add CONSTRAINT `fk_sale_placeId_place_id` FOREIGN KEY (`place_id`) REFERENCES `place` (`id`);
+
+--changeset alescaroux:12
+ALTER TABLE brand MODIFY description VARCHAR(3000);
+ALTER TABLE brand MODIFY sale_process VARCHAR(3000);
