@@ -37,7 +37,7 @@ public class ResourceConfiguration extends WebMvcConfigurerAdapter {
         registry.addResourceHandler("/" + DYNAMIC_DIRECTORY_URL_PREFIX + "/**")
                 .addResourceLocations("file:" + dynamicDataDirectory)
                 .setCachePeriod(ONE_YEAR)
-                .resourceChain(true)
+                .resourceChain(false)
                 .addResolver(versionResourceResolver);
     }
 
