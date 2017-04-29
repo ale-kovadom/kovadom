@@ -88,7 +88,8 @@
                             </div>
                             <div class="form-group col-xs-12">
                                 <label for="place" i18n="book a sale form | Address">Address</label>
-                                <place-autocomplete-form required #place="ngModel" name="place" elmId="place" [(ngModel)]="sale.place" i18n-placeholder="book a sale form | address placeholder" placeholder="Meeting place"></place-autocomplete-form>
+                                <place-autocomplete-form required #place="ngModel" name="place" elmId="place" [(ngModel)]="sale.place" i18n-placeholder="book a sale form | address placeholder"
+                                                         placeholder="Meeting place" geolocation="true"></place-autocomplete-form>
                                 <form-validation required="true" [ref]="place" [onlyIf]="showExplicitErrorMessage"></form-validation>
                             </div>
                             <div class="form-group col-xs-12">

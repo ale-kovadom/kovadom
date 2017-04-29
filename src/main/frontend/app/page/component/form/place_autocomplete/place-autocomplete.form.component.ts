@@ -28,6 +28,9 @@ export class PlaceAutocompleteComponent implements ControlValueAccessor {
     @Input()
     public placeholder: string = "";
 
+    @Input()
+    public geolocation: boolean = false;
+
     public _address: string = "";
 
     @ViewChild('place')
@@ -46,17 +49,37 @@ export class PlaceAutocompleteComponent implements ControlValueAccessor {
         };
         this.addressAutocomplete = new google.maps.places.Autocomplete(this.addressInput.nativeElement, addressInputOptions);
         this.addressAutocomplete.addListener('place_changed', this.onAutoCompleteChange(this));
+        if(this.geolocation) {
+            this.geolocate(this.addressAutocomplete);
+        }
     }
 
     onAutoCompleteChange(self: any) {
         return (evt: any) => {
-            console.info("onAutoCompleteChange " + this.selectedLocation);
             let place = self.addressAutocomplete.getPlace();
             this.selectedLocation.address = place.formatted_address;
             this.selectedLocation.latitude = place.geometry.location.lat();
             this.selectedLocation.longitude = place.geometry.location.lng();
 
             this.propagateChange(this.selectedLocation);
+        }
+    }
+
+    public geolocate(autocomplete: any) {
+        if (navigator.geolocation) {
+            navigator.geolocation.getCurrentPosition(function (position) {
+                let geolocation = {
+                    lat: position.coords.latitude,
+                    lng: position.coords.longitude
+                };
+                let circle = new google.maps.Circle({
+                    center: geolocation,
+                    radius: position.coords.accuracy
+                });
+                autocomplete.setBounds(circle.getBounds());
+            });
+        } else {
+            console.info("Geolocation disabled by user or not available")
         }
     }
 
