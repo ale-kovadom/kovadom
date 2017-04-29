@@ -4,6 +4,7 @@ import {Contact} from "../../../domain/contact/contact";
 import {NgForm} from "@angular/forms";
 import {RegistrationService} from "../../../domain/contact/registrationService";
 import {FormStatus} from "../../../framework/form/forms";
+import {Response} from "@angular/http/src";
 
 @Component({
     selector: 'contact-registration',
@@ -40,7 +41,7 @@ export class ContactRegistrationComponent {
         if (this.ngForm.form.valid) {
             this.submitStatus = FormStatus.Sent;
 
-            let register: Promise<void>;
+            let register: Promise<Response>;
             if (this.mode == ContactRegistrationComponent.COMPANY_MODE) {
                 register = this.registrationService.registerCompany(this.contact);
             } else if (this.mode == ContactRegistrationComponent.SALE_MODE) {

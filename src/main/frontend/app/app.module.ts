@@ -19,8 +19,7 @@ import {ActivitiesComponent} from "./page/activities/activities.component";
 import {PageNotFoundComponent} from "./page/page_not_found/page-not-found.component";
 import {HomeSaleHowToComponent} from "./page/home_sale_how_to/home-sale.how-to.component";
 import {SaleHowtoStepsComponent} from "./page/component/sale_how_to_steps/sale.how-to.steps.component";
-import {DialogModule} from "primeng/primeng";
-import {GMapModule} from 'primeng/primeng';
+import {DialogModule, GMapModule} from "primeng/primeng";
 import {RegistrationService} from "./domain/contact/registrationService";
 import {EmailFormComponent} from "./page/component/form/email/email.form.component";
 import {PhoneFormComponent} from "./page/component/form/phone/phone.form.component";
@@ -30,11 +29,13 @@ import {ContactRegistrationComponent} from "./page/component/registration/contac
 import {newShoppingXpComponent} from "./page/component/new_shopping_xp/new-shopping-xp.component";
 import {KovadomAdvantagesComponent} from "./page/component/kovadom_advantages/kovadom.advantages.component";
 import {PlaceAutocompleteComponent} from "./page/component/form/place_autocomplete/place-autocomplete.form.component";
+import {NoopAnimationsModule} from "@angular/platform-browser/animations";
 
 @NgModule({
     imports: [
         BrowserModule,
         HttpModule,
+        NoopAnimationsModule,
         AppRoutingModule,
         FormsModule,
         FrameworkModule,

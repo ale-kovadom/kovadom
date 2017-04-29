@@ -2,154 +2,168 @@
 <xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
   <file source-language="en" datatype="plaintext" original="ng2.template">
     <body>
-      <trans-unit id="7934931a315270c585059812b2c05e45ed44f842" datatype="html">
-        <source>Page not found</source>
-        <target/>
-        <note priority="1" from="description"> page not found header</note>
-        <note priority="1" from="meaning">page not found </note>
-      </trans-unit>
-      <trans-unit id="bbab9b898def97a2f93ebbc38db106bd507786b2" datatype="html">
-        <source>Back to previous page</source>
-        <target/>
-        <note priority="1" from="description">Back to previous</note>
-        <note priority="1" from="meaning">page not found </note>
-      </trans-unit>
-      <trans-unit id="730c4b71baa15dc7bf7fe0844474845c6e46739d" datatype="html">
-        <source>Back to home</source>
-        <target/>
-        <note priority="1" from="description">Back to home</note>
-        <note priority="1" from="meaning">page not found </note>
-      </trans-unit>
       <trans-unit id="1941b7ce4dbaf9c2803ae81300514ef37110c1fd" datatype="html">
         <source>How it work ?</source>
         <target/>
+        <context-group purpose="location">
+          <context context-type="sourcefile">aot/app/page/component/kovadom/kovadom.component.ts</context>
+          <context context-type="linenumber">14</context>
+        </context-group>
         <note priority="1" from="description">home sale explanation link</note>
       </trans-unit>
       <trans-unit id="196999199d13ea9bd42ed35126e0eeb4b2794bca" datatype="html">
         <source>Home sales of Bio products</source>
         <target/>
+        <context-group purpose="location">
+          <context context-type="sourcefile">aot/app/page/component/kovadom/kovadom.component.ts</context>
+          <context context-type="linenumber">29</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">aot/app/page/component/kovadom/kovadom.component.ts</context>
+          <context context-type="linenumber">39</context>
+        </context-group>
         <note priority="1" from="description">bio products</note>
         <note priority="1" from="meaning">footer</note>
       </trans-unit>
       <trans-unit id="0d56197d02226cf1d428aa9d2d22b5452e79451b" datatype="html">
         <source>Home sales of lingerie</source>
         <target/>
+        <context-group purpose="location">
+          <context context-type="sourcefile">aot/app/page/component/kovadom/kovadom.component.ts</context>
+          <context context-type="linenumber">30</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">aot/app/page/component/kovadom/kovadom.component.ts</context>
+          <context context-type="linenumber">40</context>
+        </context-group>
         <note priority="1" from="description">lingerie</note>
         <note priority="1" from="meaning">footer</note>
       </trans-unit>
       <trans-unit id="f73299a790406c8c51565323acd48148774e7823" datatype="html">
         <source>Home sales of kids clothes</source>
         <target/>
+        <context-group purpose="location">
+          <context context-type="sourcefile">aot/app/page/component/kovadom/kovadom.component.ts</context>
+          <context context-type="linenumber">31</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">aot/app/page/component/kovadom/kovadom.component.ts</context>
+          <context context-type="linenumber">41</context>
+        </context-group>
         <note priority="1" from="description">kids clothes</note>
         <note priority="1" from="meaning">footer</note>
       </trans-unit>
       <trans-unit id="8b1aa08a5fcdff4c57120bbb3de670820d2559f1" datatype="html">
         <source>Home sales of sex toys</source>
         <target/>
+        <context-group purpose="location">
+          <context context-type="sourcefile">aot/app/page/component/kovadom/kovadom.component.ts</context>
+          <context context-type="linenumber">32</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">aot/app/page/component/kovadom/kovadom.component.ts</context>
+          <context context-type="linenumber">42</context>
+        </context-group>
         <note priority="1" from="description">sex toys</note>
         <note priority="1" from="meaning">footer</note>
       </trans-unit>
       <trans-unit id="7b7acbd38baaa3220ebb80d2fa4dce03d32233ca" datatype="html">
         <source>Home sales of vine tasting</source>
         <target/>
+        <context-group purpose="location">
+          <context context-type="sourcefile">aot/app/page/component/kovadom/kovadom.component.ts</context>
+          <context context-type="linenumber">33</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">aot/app/page/component/kovadom/kovadom.component.ts</context>
+          <context context-type="linenumber">43</context>
+        </context-group>
         <note priority="1" from="description">vine tasting</note>
         <note priority="1" from="meaning">footer</note>
       </trans-unit>
       <trans-unit id="b6fd756e77629a3392e5b01f1e7ecad09f935f88" datatype="html">
         <source>Organize simply your home sale</source>
         <target/>
+        <context-group purpose="location">
+          <context context-type="sourcefile">aot/app/page/home/home.component.ts</context>
+          <context context-type="linenumber">4</context>
+        </context-group>
         <note priority="1" from="description">organize your sale</note>
         <note priority="1" from="meaning">home</note>
       </trans-unit>
       <trans-unit id="ec6f21ff3b0a90d6f64ff370fdb2214e28a1e6f3" datatype="html">
         <source>Conviviality, products of quality, moments of pleasure</source>
         <target/>
+        <context-group purpose="location">
+          <context context-type="sourcefile">aot/app/page/home/home.component.ts</context>
+          <context context-type="linenumber">5</context>
+        </context-group>
         <note priority="1" from="description">focus on quality</note>
         <note priority="1" from="meaning">home</note>
       </trans-unit>
       <trans-unit id="d7af19b91bd9285fe9ea1ea9f1ddcbcd0f4c8b84" datatype="html">
         <source>Discover a new shopping experience!</source>
         <target/>
+        <context-group purpose="location">
+          <context context-type="sourcefile">aot/app/page/home/home.component.ts</context>
+          <context context-type="linenumber">16</context>
+        </context-group>
         <note priority="1" from="description">new shooping xp</note>
         <note priority="1" from="meaning">home</note>
       </trans-unit>
       <trans-unit id="0b84b7694e161b8ea8f8f0be97d69e182c52fb24" datatype="html">
         <source>I create my home sale</source>
         <target/>
+        <context-group purpose="location">
+          <context context-type="sourcefile">aot/app/page/home/home.component.ts</context>
+          <context context-type="linenumber">24</context>
+        </context-group>
         <note priority="1" from="description">I create my home sale</note>
         <note priority="1" from="meaning">home</note>
       </trans-unit>
       <trans-unit id="b5993dfa5341eab031c3de79c1c976d679334dbf" datatype="html">
         <source>Access all sales at home in just a few clicks!</source>
         <target/>
+        <context-group purpose="location">
+          <context context-type="sourcefile">aot/app/page/home/home.component.ts</context>
+          <context context-type="linenumber">31</context>
+        </context-group>
         <note priority="1" from="description">accessibility</note>
         <note priority="1" from="meaning">home</note>
       </trans-unit>
       <trans-unit id="117fecefb733a49244be00f3f9e905940fa010d8" datatype="html">
         <source>How it works?</source>
         <target/>
+        <context-group purpose="location">
+          <context context-type="sourcefile">aot/app/page/home/home.component.ts</context>
+          <context context-type="linenumber">38</context>
+        </context-group>
         <note priority="1" from="description">how it works?</note>
         <note priority="1" from="meaning">home</note>
       </trans-unit>
       <trans-unit id="5ab56340f13adf36d904be356276e74279631d8f" datatype="html">
         <source>Discover all the activities</source>
         <target/>
+        <context-group purpose="location">
+          <context context-type="sourcefile">aot/app/page/home/home.component.ts</context>
+          <context context-type="linenumber">50</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">aot/app/page/home_sale_how_to/home-sale.how-to.component.ts</context>
+          <context context-type="linenumber">38</context>
+        </context-group>
         <note priority="1" from="description">Discover all the activities button</note>
         <note priority="1" from="meaning">common</note>
-      </trans-unit>
-      <trans-unit id="baa4f5ccf9c98ae8af8e8861eb941f28901c71b7" datatype="html">
-        <source>What atmosphere will you choose?</source>
-        <target/>
-        <note priority="1" from="description">Which activity ?</note>
-        <note priority="1" from="meaning">activity title</note>
-      </trans-unit>
-      <trans-unit id="2760cc379d3ecbe269d4a873e6c19c2ec898e486" datatype="html">
-        <source>select an activity</source>
-        <target/>
-        <note priority="1" from="description">select an activity</note>
-        <note priority="1" from="meaning">brand-search-by-activity</note>
-      </trans-unit>
-      <trans-unit id="04ec277554c87fcd31e29b22dc6b35e313e6ae8f" datatype="html">
-        <source>You are a home sales company?</source>
-        <target/>
-        <note priority="1" from="description">Home sales business</note>
-        <note priority="1" from="meaning">contact</note>
-      </trans-unit>
-      <trans-unit id="b5b9d1d44bb8300d09c5a997c8d40bd6efc5c8fa" datatype="html">
-        <source>Register your company</source>
-        <target/>
-        <note priority="1" from="description">Company registration</note>
-        <note priority="1" from="meaning">contact</note>
-      </trans-unit>
-      <trans-unit id="adfc7ed34849cc474e47280ed3252578095a3d1c" datatype="html">
-        <source>Contact</source>
-        <target/>
-        <note priority="1" from="description">contact-info</note>
-        <note priority="1" from="meaning">contact</note>
-      </trans-unit>
-      <trans-unit id="31893f09a166c636dfa32ab02e29edfe05fdf05b" datatype="html">
-        <source>Follow us</source>
-        <target/>
-        <note priority="1" from="description">social-info</note>
-        <note priority="1" from="meaning">contact</note>
-      </trans-unit>
-      <trans-unit id="04c8a06ded90df93fe0c44135d4bcd9157d48123" datatype="html">
-        <source>You are a home sale?</source>
-        <target/>
-        <note priority="1" from="description">Home sale business</note>
-        <note priority="1" from="meaning">contact</note>
-      </trans-unit>
-      <trans-unit id="95adfbc96e249bd53bd746e19b2929604f5388d0" datatype="html">
-        <source>Register as a home sale</source>
-        <target/>
-        <note priority="1" from="description">sale registration</note>
-        <note priority="1" from="meaning">contact</note>
       </trans-unit>
       <trans-unit id="664541179fd88bafffd62355da1c1baeb4651424" datatype="html">
         <source>
         No sales associated with <x id="INTERPOLATION"/>
     </source>
         <target/>
+        <context-group purpose="location">
+          <context context-type="sourcefile">aot/app/page/brands/list/brands.component.ts</context>
+          <context context-type="linenumber">12</context>
+        </context-group>
         <note priority="1" from="description"> No brands for a given activity</note>
         <note priority="1" from="meaning">brand list </note>
       </trans-unit>
@@ -158,90 +172,166 @@
             Discover all sales of <x id="INTERPOLATION"/>
         </source>
         <target/>
+        <context-group purpose="location">
+          <context context-type="sourcefile">aot/app/page/brands/list/brands.component.ts</context>
+          <context context-type="linenumber">18</context>
+        </context-group>
         <note priority="1" from="description"> Discover all brands for a given activity</note>
         <note priority="1" from="meaning">brand list </note>
       </trans-unit>
       <trans-unit id="f441b32a6d9214709d0aef1ae5623a266b630b26" datatype="html">
         <source>Start my sale</source>
         <target/>
+        <context-group purpose="location">
+          <context context-type="sourcefile">aot/app/page/brands/list/brands.component.ts</context>
+          <context context-type="linenumber">40</context>
+        </context-group>
         <note priority="1" from="description"> Organise a sale</note>
         <note priority="1" from="meaning">brand list </note>
       </trans-unit>
       <trans-unit id="89f5a1f775bf8943a86b8c9ba9b649bca00c40aa" datatype="html">
         <source>About <x id="INTERPOLATION"/></source>
         <target/>
+        <context-group purpose="location">
+          <context context-type="sourcefile">aot/app/page/brands/detail/brand-detail.component.ts</context>
+          <context context-type="linenumber">35</context>
+        </context-group>
         <note priority="1" from="description"> company description</note>
         <note priority="1" from="meaning">brand-detail </note>
       </trans-unit>
       <trans-unit id="9586fd9bee4f6a74ba3b0d5d2a02da3fe3660a26" datatype="html">
         <source>The sale process</source>
         <target/>
+        <context-group purpose="location">
+          <context context-type="sourcefile">aot/app/page/brands/detail/brand-detail.component.ts</context>
+          <context context-type="linenumber">39</context>
+        </context-group>
         <note priority="1" from="description"> sale process</note>
         <note priority="1" from="meaning">brand-detail </note>
       </trans-unit>
       <trans-unit id="709bd3e918405536a65a712243389c2823383eba" datatype="html">
         <source>Book online</source>
         <target/>
+        <context-group purpose="location">
+          <context context-type="sourcefile">aot/app/page/brands/detail/brand-detail.component.ts</context>
+          <context context-type="linenumber">49</context>
+        </context-group>
         <note priority="1" from="description"> Form with user&apos;s info - header</note>
         <note priority="1" from="meaning">book a sale form </note>
       </trans-unit>
       <trans-unit id="7759aa64414fe5b0141adc7148dc1682e29619c5" datatype="html">
         <source>Free, no commitment</source>
         <target/>
+        <context-group purpose="location">
+          <context context-type="sourcefile">aot/app/page/brands/detail/brand-detail.component.ts</context>
+          <context context-type="linenumber">50</context>
+        </context-group>
         <note priority="1" from="description"> Form with user&apos;s info - sub-header</note>
         <note priority="1" from="meaning">book a sale form </note>
       </trans-unit>
       <trans-unit id="99c0cebd7ad25fe825f2a918d4e4a2cf55092f92" datatype="html">
         <source>Date and time</source>
         <target/>
+        <context-group purpose="location">
+          <context context-type="sourcefile">aot/app/page/brands/detail/brand-detail.component.ts</context>
+          <context context-type="linenumber">57</context>
+        </context-group>
         <note priority="1" from="description"> Date time for the sale</note>
         <note priority="1" from="meaning">book a sale form </note>
       </trans-unit>
       <trans-unit id="cbbdf21de19802f0df1f6f28aedee5680fd8a930" datatype="html">
         <source>Address</source>
         <target/>
+        <context-group purpose="location">
+          <context context-type="sourcefile">aot/app/page/brands/detail/brand-detail.component.ts</context>
+          <context context-type="linenumber">90</context>
+        </context-group>
         <note priority="1" from="description"> Address</note>
         <note priority="1" from="meaning">book a sale form </note>
       </trans-unit>
       <trans-unit id="7be2641756a0fbe89222562d2bca2ac915ca71b5" datatype="html">
         <source>Meeting place</source>
         <target/>
+        <context-group purpose="location">
+          <context context-type="sourcefile">aot/app/page/brands/detail/brand-detail.component.ts</context>
+          <context context-type="linenumber">91</context>
+        </context-group>
         <note priority="1" from="description"> address placeholder</note>
         <note priority="1" from="meaning">book a sale form </note>
       </trans-unit>
       <trans-unit id="f502938ddd4b4e09670e20e4832e69bc7ab750c2" datatype="html">
         <source>Number of stakeholders</source>
         <target/>
+        <context-group purpose="location">
+          <context context-type="sourcefile">aot/app/page/brands/detail/brand-detail.component.ts</context>
+          <context context-type="linenumber">95</context>
+        </context-group>
         <note priority="1" from="description"> stakeholders count</note>
         <note priority="1" from="meaning">book a sale form </note>
       </trans-unit>
       <trans-unit id="23f35db949398331967c32a22b73298b519a2d37" datatype="html">
         <source>First name</source>
         <target/>
+        <context-group purpose="location">
+          <context context-type="sourcefile">aot/app/page/brands/detail/brand-detail.component.ts</context>
+          <context context-type="linenumber">102</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">aot/app/page/component/registration/contact-registration.ts</context>
+          <context context-type="linenumber">18</context>
+        </context-group>
         <note priority="1" from="description"> common - first name</note>
         <note priority="1" from="meaning">form </note>
       </trans-unit>
       <trans-unit id="dff571a3f31daaac375f52bd63a1d2112f4224d1" datatype="html">
         <source>Your first name</source>
         <target/>
+        <context-group purpose="location">
+          <context context-type="sourcefile">aot/app/page/brands/detail/brand-detail.component.ts</context>
+          <context context-type="linenumber">103</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">aot/app/page/component/registration/contact-registration.ts</context>
+          <context context-type="linenumber">19</context>
+        </context-group>
         <note priority="1" from="description"> common - first name</note>
         <note priority="1" from="meaning">form placeholder </note>
       </trans-unit>
       <trans-unit id="11c18feee48d2d5118e0996c348ae8af93e95a9a" datatype="html">
         <source>Last name</source>
         <target/>
+        <context-group purpose="location">
+          <context context-type="sourcefile">aot/app/page/brands/detail/brand-detail.component.ts</context>
+          <context context-type="linenumber">108</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">aot/app/page/component/registration/contact-registration.ts</context>
+          <context context-type="linenumber">25</context>
+        </context-group>
         <note priority="1" from="description"> common - last name</note>
         <note priority="1" from="meaning">form </note>
       </trans-unit>
       <trans-unit id="7d4330dcb9da2e40e392fa0ab259e826d02f19c2" datatype="html">
         <source>Your last name</source>
         <target/>
+        <context-group purpose="location">
+          <context context-type="sourcefile">aot/app/page/brands/detail/brand-detail.component.ts</context>
+          <context context-type="linenumber">109</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">aot/app/page/component/registration/contact-registration.ts</context>
+          <context context-type="linenumber">26</context>
+        </context-group>
         <note priority="1" from="description"> common - last name</note>
         <note priority="1" from="meaning">form placeholder </note>
       </trans-unit>
       <trans-unit id="8c3959e214acbbcbbfc43118172d7992b08b7dbf" datatype="html">
         <source>Question ?</source>
         <target/>
+        <context-group purpose="location">
+          <context context-type="sourcefile">aot/app/page/brands/detail/brand-detail.component.ts</context>
+          <context context-type="linenumber">122</context>
+        </context-group>
         <note priority="1" from="description"> Extra information </note>
         <note priority="1" from="meaning">book a sale form </note>
       </trans-unit>
@@ -249,168 +339,60 @@
         <source>Verify availability
                                 </source>
         <target/>
+        <context-group purpose="location">
+          <context context-type="sourcefile">aot/app/page/brands/detail/brand-detail.component.ts</context>
+          <context context-type="linenumber">128</context>
+        </context-group>
         <note priority="1" from="description"> verify availabilities</note>
         <note priority="1" from="meaning">book a sale form </note>
       </trans-unit>
       <trans-unit id="60055364cb999d0762e65a038b6f879ca65d1725" datatype="html">
         <source>Submit</source>
         <target/>
+        <context-group purpose="location">
+          <context context-type="sourcefile">aot/app/page/brands/detail/brand-detail.component.ts</context>
+          <context context-type="linenumber">132</context>
+        </context-group>
         <note priority="1" from="description"> Submit</note>
         <note priority="1" from="meaning">book a sale form </note>
       </trans-unit>
-      <trans-unit id="8e72a5258c2c25a0e57df98ad8cc3b80d4c604c3" datatype="html">
-        <source>Choose your sale</source>
+      <trans-unit id="7934931a315270c585059812b2c05e45ed44f842" datatype="html">
+        <source>Page not found</source>
         <target/>
-        <note priority="1" from="description">step1 title</note>
-        <note priority="1" from="meaning">home</note>
+        <context-group purpose="location">
+          <context context-type="sourcefile">aot/app/page/page_not_found/page-not-found.component.ts</context>
+          <context context-type="linenumber">4</context>
+        </context-group>
+        <note priority="1" from="description"> page not found header</note>
+        <note priority="1" from="meaning">page not found </note>
       </trans-unit>
-      <trans-unit id="b88320c70c3da2d9958ef902870bbd09cd166543" datatype="html">
-        <source>In a few clicks find the sale and</source>
+      <trans-unit id="bbab9b898def97a2f93ebbc38db106bd507786b2" datatype="html">
+        <source>Back to previous page</source>
         <target/>
-        <note priority="1" from="description">step1 description - part1</note>
-        <note priority="1" from="meaning">home</note>
+        <context-group purpose="location">
+          <context context-type="sourcefile">aot/app/page/page_not_found/page-not-found.component.ts</context>
+          <context context-type="linenumber">6</context>
+        </context-group>
+        <note priority="1" from="description">Back to previous</note>
+        <note priority="1" from="meaning">page not found </note>
       </trans-unit>
-      <trans-unit id="9f614de1966b15afdc3eb0d52f94d0b60819f9be" datatype="html">
-        <source>the ambiance you would like to share</source>
+      <trans-unit id="730c4b71baa15dc7bf7fe0844474845c6e46739d" datatype="html">
+        <source>Back to home</source>
         <target/>
-        <note priority="1" from="description">step1 emphasized description - part2</note>
-        <note priority="1" from="meaning">home</note>
-      </trans-unit>
-      <trans-unit id="368baab82e09f0eddc357994d7055edf7111efa1" datatype="html">
-        <source>with your friends.</source>
-        <target/>
-        <note priority="1" from="description">step1 description - part3</note>
-        <note priority="1" from="meaning">home</note>
-      </trans-unit>
-      <trans-unit id="b3eb7af65736dc801d13866d6080f48ba7778637" datatype="html">
-        <source>Send your request</source>
-        <target/>
-        <note priority="1" from="description">step2 description</note>
-        <note priority="1" from="meaning">home</note>
-      </trans-unit>
-      <trans-unit id="3a0852e4c7f7bf11fbc45cc359343db183dcb2ee" datatype="html">
-        <source>Requests the brands you would like to test.</source>
-        <target/>
-        <note priority="1" from="description">step2 description - part1</note>
-        <note priority="1" from="meaning">home</note>
-      </trans-unit>
-      <trans-unit id="4eac721b3b38d62365dfdfedd5e3cdff6077e466" datatype="html">
-        <source>It is free without any commitment!</source>
-        <target/>
-        <note priority="1" from="description">step2 emphasized description - part2</note>
-        <note priority="1" from="meaning">home</note>
-      </trans-unit>
-      <trans-unit id="1c71428d401a4ad455e9a83f1ae8486ebf386328" datatype="html">
-        <source>Follow your requests</source>
-        <target/>
-        <note priority="1" from="description">step3 description</note>
-        <note priority="1" from="meaning">home</note>
-      </trans-unit>
-      <trans-unit id="1c677c8d0866ea54a93b2ebf45ed838c4b8b91e3" datatype="html">
-        <source>Follow the progress of your requests, meet your seller and</source>
-        <target/>
-        <note priority="1" from="description">step3 description - part1</note>
-        <note priority="1" from="meaning">home</note>
-      </trans-unit>
-      <trans-unit id="35b8bf28abebe9bb3a9834c38f351a6056f0c509" datatype="html">
-        <source>confirm your reservation in one click.</source>
-        <target/>
-        <note priority="1" from="description">step3 emphasized description - part2</note>
-        <note priority="1" from="meaning">home</note>
-      </trans-unit>
-      <trans-unit id="9062ed60506e41cdd46ea2bc661bc914352ce4e7" datatype="html">
-        <source>A moment of friendliness</source>
-        <target/>
-        <note priority="1" from="description">friendliness moment</note>
-        <note priority="1" from="meaning">fun xp</note>
-      </trans-unit>
-      <trans-unit id="289650659c79cdf7d39e62ed893d1e716978d0a8" datatype="html">
-        <source>Home sale is over all a moment of</source>
-        <target/>
-        <note priority="1" from="description">friendliness moment - part1</note>
-        <note priority="1" from="meaning">fun xp</note>
-      </trans-unit>
-      <trans-unit id="22272ba7c1658ec0cd7aee030adebe0f801c3342" datatype="html">
-        <source>friendliness with friends.</source>
-        <target/>
-        <note priority="1" from="description">friendliness moment - part2</note>
-        <note priority="1" from="meaning">fun xp</note>
-      </trans-unit>
-      <trans-unit id="738d602b78c956cd0045bb1090eeadef47e53f80" datatype="html">
-        <source>Quality and advice</source>
-        <target/>
-        <note priority="1" from="description">quality and advices</note>
-        <note priority="1" from="meaning">fun xp</note>
-      </trans-unit>
-      <trans-unit id="b20c9dc2befaf0b7e7544a087d4faf8556b14e40" datatype="html">
-        <source>Home sale means</source>
-        <target/>
-        <note priority="1" from="description">quality and advices - part1</note>
-        <note priority="1" from="meaning">fun xp</note>
-      </trans-unit>
-      <trans-unit id="b232acdbe05c6288ccd30b81280bd38aa615fb6e" datatype="html">
-        <source>proximity products of quality. </source>
-        <target/>
-        <note priority="1" from="description">quality and advices - part2</note>
-        <note priority="1" from="meaning">fun xp</note>
-      </trans-unit>
-      <trans-unit id="c68058aff60e5965d5963f24e8019f574bc6c44a" datatype="html">
-        <source>Your sales consultant, passionate and available will guide you in your choice.</source>
-        <target/>
-        <note priority="1" from="description">quality and advices - part3</note>
-        <note priority="1" from="meaning">fun xp</note>
-      </trans-unit>
-      <trans-unit id="e7cff964eb2533f0d8b74d2fcc1f6723ff556b1a" datatype="html">
-        <source>Specific advantages</source>
-        <target/>
-        <note priority="1" from="description">advantages</note>
-        <note priority="1" from="meaning">fun xp</note>
-      </trans-unit>
-      <trans-unit id="9227b0c826b2b36237cd326d8d0e11f20e636d8c" datatype="html">
-        <source>As a host, you can win</source>
-        <target/>
-        <note priority="1" from="description">advantages - part1</note>
-        <note priority="1" from="meaning">fun xp</note>
-      </trans-unit>
-      <trans-unit id="9b68167946520b849bdaf1628c7ea03c4f6e18c0" datatype="html">
-        <source>gift</source>
-        <target/>
-        <note priority="1" from="description">advantages - part2</note>
-        <note priority="1" from="meaning">fun xp</note>
-      </trans-unit>
-      <trans-unit id="fc574b6569e453ec7069626ce6fa0da39f30d6dc" datatype="html">
-        <source>,</source>
-        <target/>
-        <note priority="1" from="description">advantages - part3</note>
-        <note priority="1" from="meaning">fun xp</note>
-      </trans-unit>
-      <trans-unit id="d194f00437d97a99835ba2879e4ddd3f9414dbd2" datatype="html">
-        <source>discounts</source>
-        <target/>
-        <note priority="1" from="description">advantages - part4</note>
-        <note priority="1" from="meaning">fun xp</note>
-      </trans-unit>
-      <trans-unit id="c2ca7a3fee776b3dc7b294be650b56d5e5949183" datatype="html">
-        <source>or even </source>
-        <target/>
-        <note priority="1" from="description">advantages - part5</note>
-        <note priority="1" from="meaning">fun xp</note>
-      </trans-unit>
-      <trans-unit id="5a0aaff73a7a259066c12726836e0b653bee0e00" datatype="html">
-        <source>a percentage </source>
-        <target/>
-        <note priority="1" from="description">advantages - part6</note>
-        <note priority="1" from="meaning">fun xp</note>
-      </trans-unit>
-      <trans-unit id="f693c560f2213c3cf451fcb3ae32475ded5025e2" datatype="html">
-        <source>on the sales.</source>
-        <target/>
-        <note priority="1" from="description">advantages - part7</note>
-        <note priority="1" from="meaning">fun xp</note>
+        <context-group purpose="location">
+          <context context-type="sourcefile">aot/app/page/page_not_found/page-not-found.component.ts</context>
+          <context context-type="linenumber">7</context>
+        </context-group>
+        <note priority="1" from="description">Back to home</note>
+        <note priority="1" from="meaning">page not found </note>
       </trans-unit>
       <trans-unit id="1abbf74e15bf7b334f82e222212cb6ec0cd62ed8" datatype="html">
         <source>How it works?</source>
         <target/>
+        <context-group purpose="location">
+          <context context-type="sourcefile">aot/app/page/home_sale_how_to/home-sale.how-to.component.ts</context>
+          <context context-type="linenumber">1</context>
+        </context-group>
         <note priority="1" from="description">How it works ?</note>
         <note priority="1" from="meaning">howitworks</note>
       </trans-unit>
@@ -419,6 +401,10 @@
         Kovadom is a home sale booking platform. On Kovadom you can simply choose the atmosphere and the brand to organize a moment of friendliness.
     </source>
         <target/>
+        <context-group purpose="location">
+          <context context-type="sourcefile">aot/app/page/home_sale_how_to/home-sale.how-to.component.ts</context>
+          <context context-type="linenumber">5</context>
+        </context-group>
         <note priority="1" from="description">kovadom presentation</note>
         <note priority="1" from="meaning">howitworks</note>
       </trans-unit>
@@ -427,6 +413,10 @@
         Our team is attentive to your questions or needs throughout the booking process
     </source>
         <target/>
+        <context-group purpose="location">
+          <context context-type="sourcefile">aot/app/page/home_sale_how_to/home-sale.how-to.component.ts</context>
+          <context context-type="linenumber">8</context>
+        </context-group>
         <note priority="1" from="description">kovadom team</note>
         <note priority="1" from="meaning">howitworks</note>
       </trans-unit>
@@ -435,6 +425,10 @@
             With Kovadom, organize your sale in just a few clicks!
         </source>
         <target/>
+        <context-group purpose="location">
+          <context context-type="sourcefile">aot/app/page/home_sale_how_to/home-sale.how-to.component.ts</context>
+          <context context-type="linenumber">17</context>
+        </context-group>
         <note priority="1" from="description">easy to organise</note>
         <note priority="1" from="meaning">howitworks</note>
       </trans-unit>
@@ -443,12 +437,436 @@
         Advantages of Kovadom
     </source>
         <target/>
+        <context-group purpose="location">
+          <context context-type="sourcefile">aot/app/page/home_sale_how_to/home-sale.how-to.component.ts</context>
+          <context context-type="linenumber">28</context>
+        </context-group>
         <note priority="1" from="description">kovadom advantages title</note>
         <note priority="1" from="meaning">howitworks</note>
+      </trans-unit>
+      <trans-unit id="baa4f5ccf9c98ae8af8e8861eb941f28901c71b7" datatype="html">
+        <source>What atmosphere will you choose?</source>
+        <target/>
+        <context-group purpose="location">
+          <context context-type="sourcefile">aot/app/page/component/activity/activity.component.ts</context>
+          <context context-type="linenumber">3</context>
+        </context-group>
+        <note priority="1" from="description">Which activity ?</note>
+        <note priority="1" from="meaning">activity title</note>
+      </trans-unit>
+      <trans-unit id="04ec277554c87fcd31e29b22dc6b35e313e6ae8f" datatype="html">
+        <source>You are a home sales company?</source>
+        <target/>
+        <context-group purpose="location">
+          <context context-type="sourcefile">aot/app/page/component/contact/banner/contact.component.ts</context>
+          <context context-type="linenumber">16</context>
+        </context-group>
+        <note priority="1" from="description">Home sales business</note>
+        <note priority="1" from="meaning">contact</note>
+      </trans-unit>
+      <trans-unit id="b5b9d1d44bb8300d09c5a997c8d40bd6efc5c8fa" datatype="html">
+        <source>Register your company</source>
+        <target/>
+        <context-group purpose="location">
+          <context context-type="sourcefile">aot/app/page/component/contact/banner/contact.component.ts</context>
+          <context context-type="linenumber">17</context>
+        </context-group>
+        <note priority="1" from="description">Company registration</note>
+        <note priority="1" from="meaning">contact</note>
+      </trans-unit>
+      <trans-unit id="adfc7ed34849cc474e47280ed3252578095a3d1c" datatype="html">
+        <source>Contact</source>
+        <target/>
+        <context-group purpose="location">
+          <context context-type="sourcefile">aot/app/page/component/contact/banner/contact.component.ts</context>
+          <context context-type="linenumber">21</context>
+        </context-group>
+        <note priority="1" from="description">contact-info</note>
+        <note priority="1" from="meaning">contact</note>
+      </trans-unit>
+      <trans-unit id="31893f09a166c636dfa32ab02e29edfe05fdf05b" datatype="html">
+        <source>Follow us</source>
+        <target/>
+        <context-group purpose="location">
+          <context context-type="sourcefile">aot/app/page/component/contact/banner/contact.component.ts</context>
+          <context context-type="linenumber">37</context>
+        </context-group>
+        <note priority="1" from="description">social-info</note>
+        <note priority="1" from="meaning">contact</note>
+      </trans-unit>
+      <trans-unit id="04c8a06ded90df93fe0c44135d4bcd9157d48123" datatype="html">
+        <source>You are a home sale?</source>
+        <target/>
+        <context-group purpose="location">
+          <context context-type="sourcefile">aot/app/page/component/contact/banner/contact.component.ts</context>
+          <context context-type="linenumber">45</context>
+        </context-group>
+        <note priority="1" from="description">Home sale business</note>
+        <note priority="1" from="meaning">contact</note>
+      </trans-unit>
+      <trans-unit id="95adfbc96e249bd53bd746e19b2929604f5388d0" datatype="html">
+        <source>Register as a home sale</source>
+        <target/>
+        <context-group purpose="location">
+          <context context-type="sourcefile">aot/app/page/component/contact/banner/contact.component.ts</context>
+          <context context-type="linenumber">46</context>
+        </context-group>
+        <note priority="1" from="description">sale registration</note>
+        <note priority="1" from="meaning">contact</note>
+      </trans-unit>
+      <trans-unit id="2760cc379d3ecbe269d4a873e6c19c2ec898e486" datatype="html">
+        <source>select an activity</source>
+        <target/>
+        <context-group purpose="location">
+          <context context-type="sourcefile">aot/app/page/component/brands/by_activity_search/brand-search-by-activity.component.ts</context>
+          <context context-type="linenumber">6</context>
+        </context-group>
+        <note priority="1" from="description">select an activity</note>
+        <note priority="1" from="meaning">brand-search-by-activity</note>
+      </trans-unit>
+      <trans-unit id="8e72a5258c2c25a0e57df98ad8cc3b80d4c604c3" datatype="html">
+        <source>Choose your sale</source>
+        <target/>
+        <context-group purpose="location">
+          <context context-type="sourcefile">aot/app/page/component/sale_how_to_steps/sale.how-to.steps.component.ts</context>
+          <context context-type="linenumber">3</context>
+        </context-group>
+        <note priority="1" from="description">step1 title</note>
+        <note priority="1" from="meaning">home</note>
+      </trans-unit>
+      <trans-unit id="b88320c70c3da2d9958ef902870bbd09cd166543" datatype="html">
+        <source>In a few clicks find the sale and</source>
+        <target/>
+        <context-group purpose="location">
+          <context context-type="sourcefile">aot/app/page/component/sale_how_to_steps/sale.how-to.steps.component.ts</context>
+          <context context-type="linenumber">5</context>
+        </context-group>
+        <note priority="1" from="description">step1 description - part1</note>
+        <note priority="1" from="meaning">home</note>
+      </trans-unit>
+      <trans-unit id="9f614de1966b15afdc3eb0d52f94d0b60819f9be" datatype="html">
+        <source>the ambiance you would like to share</source>
+        <target/>
+        <context-group purpose="location">
+          <context context-type="sourcefile">aot/app/page/component/sale_how_to_steps/sale.how-to.steps.component.ts</context>
+          <context context-type="linenumber">6</context>
+        </context-group>
+        <note priority="1" from="description">step1 emphasized description - part2</note>
+        <note priority="1" from="meaning">home</note>
+      </trans-unit>
+      <trans-unit id="368baab82e09f0eddc357994d7055edf7111efa1" datatype="html">
+        <source>with your friends.</source>
+        <target/>
+        <context-group purpose="location">
+          <context context-type="sourcefile">aot/app/page/component/sale_how_to_steps/sale.how-to.steps.component.ts</context>
+          <context context-type="linenumber">8</context>
+        </context-group>
+        <note priority="1" from="description">step1 description - part3</note>
+        <note priority="1" from="meaning">home</note>
+      </trans-unit>
+      <trans-unit id="b3eb7af65736dc801d13866d6080f48ba7778637" datatype="html">
+        <source>Send your request</source>
+        <target/>
+        <context-group purpose="location">
+          <context context-type="sourcefile">aot/app/page/component/sale_how_to_steps/sale.how-to.steps.component.ts</context>
+          <context context-type="linenumber">14</context>
+        </context-group>
+        <note priority="1" from="description">step2 description</note>
+        <note priority="1" from="meaning">home</note>
+      </trans-unit>
+      <trans-unit id="3a0852e4c7f7bf11fbc45cc359343db183dcb2ee" datatype="html">
+        <source>Requests the brands you would like to test.</source>
+        <target/>
+        <context-group purpose="location">
+          <context context-type="sourcefile">aot/app/page/component/sale_how_to_steps/sale.how-to.steps.component.ts</context>
+          <context context-type="linenumber">16</context>
+        </context-group>
+        <note priority="1" from="description">step2 description - part1</note>
+        <note priority="1" from="meaning">home</note>
+      </trans-unit>
+      <trans-unit id="4eac721b3b38d62365dfdfedd5e3cdff6077e466" datatype="html">
+        <source>It is free without any commitment!</source>
+        <target/>
+        <context-group purpose="location">
+          <context context-type="sourcefile">aot/app/page/component/sale_how_to_steps/sale.how-to.steps.component.ts</context>
+          <context context-type="linenumber">17</context>
+        </context-group>
+        <note priority="1" from="description">step2 emphasized description - part2</note>
+        <note priority="1" from="meaning">home</note>
+      </trans-unit>
+      <trans-unit id="1c71428d401a4ad455e9a83f1ae8486ebf386328" datatype="html">
+        <source>Follow your requests</source>
+        <target/>
+        <context-group purpose="location">
+          <context context-type="sourcefile">aot/app/page/component/sale_how_to_steps/sale.how-to.steps.component.ts</context>
+          <context context-type="linenumber">23</context>
+        </context-group>
+        <note priority="1" from="description">step3 description</note>
+        <note priority="1" from="meaning">home</note>
+      </trans-unit>
+      <trans-unit id="1c677c8d0866ea54a93b2ebf45ed838c4b8b91e3" datatype="html">
+        <source>Follow the progress of your requests, meet your seller and</source>
+        <target/>
+        <context-group purpose="location">
+          <context context-type="sourcefile">aot/app/page/component/sale_how_to_steps/sale.how-to.steps.component.ts</context>
+          <context context-type="linenumber">25</context>
+        </context-group>
+        <note priority="1" from="description">step3 description - part1</note>
+        <note priority="1" from="meaning">home</note>
+      </trans-unit>
+      <trans-unit id="35b8bf28abebe9bb3a9834c38f351a6056f0c509" datatype="html">
+        <source>confirm your reservation in one click.</source>
+        <target/>
+        <context-group purpose="location">
+          <context context-type="sourcefile">aot/app/page/component/sale_how_to_steps/sale.how-to.steps.component.ts</context>
+          <context context-type="linenumber">26</context>
+        </context-group>
+        <note priority="1" from="description">step3 emphasized description - part2</note>
+        <note priority="1" from="meaning">home</note>
+      </trans-unit>
+      <trans-unit id="8d1ac75435e06976d89c90157561d7bb0028ecff" datatype="html">
+        <source>Your email</source>
+        <target/>
+        <context-group purpose="location">
+          <context context-type="sourcefile">aot/app/page/component/form/email/email.form.component.ts</context>
+          <context context-type="linenumber">7</context>
+        </context-group>
+        <note priority="1" from="description"> common - email</note>
+        <note priority="1" from="meaning">form placeholder </note>
+      </trans-unit>
+      <trans-unit id="c77806daf398daf467764952f11d4ce02d4df433" datatype="html">
+        <source>Your phone number</source>
+        <target/>
+        <context-group purpose="location">
+          <context context-type="sourcefile">aot/app/page/component/form/phone/phone.form.component.ts</context>
+          <context context-type="linenumber">8</context>
+        </context-group>
+        <note priority="1" from="description"> common - phone number</note>
+        <note priority="1" from="meaning">form placeholder </note>
+      </trans-unit>
+      <trans-unit id="5e6548eb9cbb0467c307b4079bc989cd21f44355" datatype="html">
+        <source>This field is required</source>
+        <target/>
+        <context-group purpose="location">
+          <context context-type="sourcefile">aot/app/page/component/form/validation/validation.form.component.ts</context>
+          <context context-type="linenumber">2</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="da82914908a0bb31e159f70f79890705758a886e" datatype="html">
+        <source>This field is malformed</source>
+        <target/>
+        <context-group purpose="location">
+          <context context-type="sourcefile">aot/app/page/component/form/validation/validation.form.component.ts</context>
+          <context context-type="linenumber">3</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="2ab8d82ac40b17f91766899087520919cf554f8a" datatype="html">
+        <source>Your request has been registered</source>
+        <target/>
+        <context-group purpose="location">
+          <context context-type="sourcefile">aot/app/page/component/form/message/confirmation-message.form.component.ts</context>
+          <context context-type="linenumber">2</context>
+        </context-group>
+        <note priority="1" from="description"> common - success</note>
+        <note priority="1" from="meaning">generic form saving message </note>
+      </trans-unit>
+      <trans-unit id="72cf57adaf435b3de4bbc963a1e7a061ab0b4923" datatype="html">
+        <source>An error has occurred while processing your request</source>
+        <target/>
+        <context-group purpose="location">
+          <context context-type="sourcefile">aot/app/page/component/form/message/confirmation-message.form.component.ts</context>
+          <context context-type="linenumber">3</context>
+        </context-group>
+        <note priority="1" from="description"> common - failed</note>
+        <note priority="1" from="meaning">generic form saving message </note>
+      </trans-unit>
+      <trans-unit id="6ccd447853cb2e1a06ef7905a64cb6c1b48dfd93" datatype="html">
+        <source>Company name</source>
+        <target/>
+        <context-group purpose="location">
+          <context context-type="sourcefile">aot/app/page/component/registration/contact-registration.ts</context>
+          <context context-type="linenumber">11</context>
+        </context-group>
+        <note priority="1" from="description"> common - company name</note>
+        <note priority="1" from="meaning">form </note>
+      </trans-unit>
+      <trans-unit id="bb636d4f30784a85934b29a72fe5243a4b010ea9" datatype="html">
+        <source>Your company name</source>
+        <target/>
+        <context-group purpose="location">
+          <context context-type="sourcefile">aot/app/page/component/registration/contact-registration.ts</context>
+          <context context-type="linenumber">12</context>
+        </context-group>
+        <note priority="1" from="description"> common - company name</note>
+        <note priority="1" from="meaning">form placeholder </note>
+      </trans-unit>
+      <trans-unit id="8da446326b3ef77812ebd325b50ca64e99c1be90" datatype="html">
+        <source>Submit</source>
+        <target/>
+        <context-group purpose="location">
+          <context context-type="sourcefile">aot/app/page/component/registration/contact-registration.ts</context>
+          <context context-type="linenumber">44</context>
+        </context-group>
+        <note priority="1" from="description"> submit</note>
+        <note priority="1" from="meaning">company contact </note>
+      </trans-unit>
+      <trans-unit id="9062ed60506e41cdd46ea2bc661bc914352ce4e7" datatype="html">
+        <source>A moment of friendliness</source>
+        <target/>
+        <context-group purpose="location">
+          <context context-type="sourcefile">aot/app/page/component/new_shopping_xp/new-shopping-xp.component.ts</context>
+          <context context-type="linenumber">3</context>
+        </context-group>
+        <note priority="1" from="description">friendliness moment</note>
+        <note priority="1" from="meaning">fun xp</note>
+      </trans-unit>
+      <trans-unit id="289650659c79cdf7d39e62ed893d1e716978d0a8" datatype="html">
+        <source>Home sale is over all a moment of</source>
+        <target/>
+        <context-group purpose="location">
+          <context context-type="sourcefile">aot/app/page/component/new_shopping_xp/new-shopping-xp.component.ts</context>
+          <context context-type="linenumber">5</context>
+        </context-group>
+        <note priority="1" from="description">friendliness moment - part1</note>
+        <note priority="1" from="meaning">fun xp</note>
+      </trans-unit>
+      <trans-unit id="22272ba7c1658ec0cd7aee030adebe0f801c3342" datatype="html">
+        <source>friendliness with friends.</source>
+        <target/>
+        <context-group purpose="location">
+          <context context-type="sourcefile">aot/app/page/component/new_shopping_xp/new-shopping-xp.component.ts</context>
+          <context context-type="linenumber">6</context>
+        </context-group>
+        <note priority="1" from="description">friendliness moment - part2</note>
+        <note priority="1" from="meaning">fun xp</note>
+      </trans-unit>
+      <trans-unit id="738d602b78c956cd0045bb1090eeadef47e53f80" datatype="html">
+        <source>Quality and advice</source>
+        <target/>
+        <context-group purpose="location">
+          <context context-type="sourcefile">aot/app/page/component/new_shopping_xp/new-shopping-xp.component.ts</context>
+          <context context-type="linenumber">12</context>
+        </context-group>
+        <note priority="1" from="description">quality and advices</note>
+        <note priority="1" from="meaning">fun xp</note>
+      </trans-unit>
+      <trans-unit id="b20c9dc2befaf0b7e7544a087d4faf8556b14e40" datatype="html">
+        <source>Home sale means</source>
+        <target/>
+        <context-group purpose="location">
+          <context context-type="sourcefile">aot/app/page/component/new_shopping_xp/new-shopping-xp.component.ts</context>
+          <context context-type="linenumber">14</context>
+        </context-group>
+        <note priority="1" from="description">quality and advices - part1</note>
+        <note priority="1" from="meaning">fun xp</note>
+      </trans-unit>
+      <trans-unit id="b232acdbe05c6288ccd30b81280bd38aa615fb6e" datatype="html">
+        <source>proximity products of quality. </source>
+        <target/>
+        <context-group purpose="location">
+          <context context-type="sourcefile">aot/app/page/component/new_shopping_xp/new-shopping-xp.component.ts</context>
+          <context context-type="linenumber">15</context>
+        </context-group>
+        <note priority="1" from="description">quality and advices - part2</note>
+        <note priority="1" from="meaning">fun xp</note>
+      </trans-unit>
+      <trans-unit id="c68058aff60e5965d5963f24e8019f574bc6c44a" datatype="html">
+        <source>Your sales consultant, passionate and available will guide you in your choice.</source>
+        <target/>
+        <context-group purpose="location">
+          <context context-type="sourcefile">aot/app/page/component/new_shopping_xp/new-shopping-xp.component.ts</context>
+          <context context-type="linenumber">16</context>
+        </context-group>
+        <note priority="1" from="description">quality and advices - part3</note>
+        <note priority="1" from="meaning">fun xp</note>
+      </trans-unit>
+      <trans-unit id="e7cff964eb2533f0d8b74d2fcc1f6723ff556b1a" datatype="html">
+        <source>Specific advantages</source>
+        <target/>
+        <context-group purpose="location">
+          <context context-type="sourcefile">aot/app/page/component/new_shopping_xp/new-shopping-xp.component.ts</context>
+          <context context-type="linenumber">22</context>
+        </context-group>
+        <note priority="1" from="description">advantages</note>
+        <note priority="1" from="meaning">fun xp</note>
+      </trans-unit>
+      <trans-unit id="9227b0c826b2b36237cd326d8d0e11f20e636d8c" datatype="html">
+        <source>As a host, you can win</source>
+        <target/>
+        <context-group purpose="location">
+          <context context-type="sourcefile">aot/app/page/component/new_shopping_xp/new-shopping-xp.component.ts</context>
+          <context context-type="linenumber">24</context>
+        </context-group>
+        <note priority="1" from="description">advantages - part1</note>
+        <note priority="1" from="meaning">fun xp</note>
+      </trans-unit>
+      <trans-unit id="9b68167946520b849bdaf1628c7ea03c4f6e18c0" datatype="html">
+        <source>gift</source>
+        <target/>
+        <context-group purpose="location">
+          <context context-type="sourcefile">aot/app/page/component/new_shopping_xp/new-shopping-xp.component.ts</context>
+          <context context-type="linenumber">25</context>
+        </context-group>
+        <note priority="1" from="description">advantages - part2</note>
+        <note priority="1" from="meaning">fun xp</note>
+      </trans-unit>
+      <trans-unit id="fc574b6569e453ec7069626ce6fa0da39f30d6dc" datatype="html">
+        <source>,</source>
+        <target/>
+        <context-group purpose="location">
+          <context context-type="sourcefile">aot/app/page/component/new_shopping_xp/new-shopping-xp.component.ts</context>
+          <context context-type="linenumber">26</context>
+        </context-group>
+        <note priority="1" from="description">advantages - part3</note>
+        <note priority="1" from="meaning">fun xp</note>
+      </trans-unit>
+      <trans-unit id="d194f00437d97a99835ba2879e4ddd3f9414dbd2" datatype="html">
+        <source>discounts</source>
+        <target/>
+        <context-group purpose="location">
+          <context context-type="sourcefile">aot/app/page/component/new_shopping_xp/new-shopping-xp.component.ts</context>
+          <context context-type="linenumber">27</context>
+        </context-group>
+        <note priority="1" from="description">advantages - part4</note>
+        <note priority="1" from="meaning">fun xp</note>
+      </trans-unit>
+      <trans-unit id="c2ca7a3fee776b3dc7b294be650b56d5e5949183" datatype="html">
+        <source>or even </source>
+        <target/>
+        <context-group purpose="location">
+          <context context-type="sourcefile">aot/app/page/component/new_shopping_xp/new-shopping-xp.component.ts</context>
+          <context context-type="linenumber">28</context>
+        </context-group>
+        <note priority="1" from="description">advantages - part5</note>
+        <note priority="1" from="meaning">fun xp</note>
+      </trans-unit>
+      <trans-unit id="5a0aaff73a7a259066c12726836e0b653bee0e00" datatype="html">
+        <source>a percentage </source>
+        <target/>
+        <context-group purpose="location">
+          <context context-type="sourcefile">aot/app/page/component/new_shopping_xp/new-shopping-xp.component.ts</context>
+          <context context-type="linenumber">29</context>
+        </context-group>
+        <note priority="1" from="description">advantages - part6</note>
+        <note priority="1" from="meaning">fun xp</note>
+      </trans-unit>
+      <trans-unit id="f693c560f2213c3cf451fcb3ae32475ded5025e2" datatype="html">
+        <source>on the sales.</source>
+        <target/>
+        <context-group purpose="location">
+          <context context-type="sourcefile">aot/app/page/component/new_shopping_xp/new-shopping-xp.component.ts</context>
+          <context context-type="linenumber">30</context>
+        </context-group>
+        <note priority="1" from="description">advantages - part7</note>
+        <note priority="1" from="meaning">fun xp</note>
       </trans-unit>
       <trans-unit id="dc51369dfe19c9099eddcface78dac70887d6374" datatype="html">
         <source>Time saving</source>
         <target/>
+        <context-group purpose="location">
+          <context context-type="sourcefile">aot/app/page/component/kovadom_advantages/kovadom.advantages.component.ts</context>
+          <context context-type="linenumber">3</context>
+        </context-group>
         <note priority="1" from="description">time image title</note>
         <note priority="1" from="meaning">kovadom advantages time saving</note>
       </trans-unit>
@@ -457,12 +875,20 @@
         Access to all your brands through one single platform
     </source>
         <target/>
+        <context-group purpose="location">
+          <context context-type="sourcefile">aot/app/page/component/kovadom_advantages/kovadom.advantages.component.ts</context>
+          <context context-type="linenumber">4</context>
+        </context-group>
         <note priority="1" from="description">description</note>
         <note priority="1" from="meaning">kovadom advantages time saving</note>
       </trans-unit>
       <trans-unit id="4c3d1ee112c8c296c5ffc8ec196d8694921901ca" datatype="html">
         <source>Specific advantages</source>
         <target/>
+        <context-group purpose="location">
+          <context context-type="sourcefile">aot/app/page/component/kovadom_advantages/kovadom.advantages.component.ts</context>
+          <context context-type="linenumber">11</context>
+        </context-group>
         <note priority="1" from="description">host gift image title</note>
         <note priority="1" from="meaning">kovadom advantages host gift</note>
       </trans-unit>
@@ -471,12 +897,20 @@
         As a host, you can benefit from advantages provided by Kovadom: gifts, discounts or even a percentage on the sales.
     </source>
         <target/>
+        <context-group purpose="location">
+          <context context-type="sourcefile">aot/app/page/component/kovadom_advantages/kovadom.advantages.component.ts</context>
+          <context context-type="linenumber">12</context>
+        </context-group>
         <note priority="1" from="description">description</note>
         <note priority="1" from="meaning">kovadom advantages time saving</note>
       </trans-unit>
       <trans-unit id="650fdd5bd54a1cc0af018556baa6881fb856ee5b" datatype="html">
         <source>A team at your service</source>
         <target/>
+        <context-group purpose="location">
+          <context context-type="sourcefile">aot/app/page/component/kovadom_advantages/kovadom.advantages.component.ts</context>
+          <context context-type="linenumber">19</context>
+        </context-group>
         <note priority="1" from="description">team image title</note>
         <note priority="1" from="meaning">kovadom advantages team</note>
       </trans-unit>
@@ -485,58 +919,12 @@
         We follow up until the organization of the sale
     </source>
         <target/>
+        <context-group purpose="location">
+          <context context-type="sourcefile">aot/app/page/component/kovadom_advantages/kovadom.advantages.component.ts</context>
+          <context context-type="linenumber">20</context>
+        </context-group>
         <note priority="1" from="description">description</note>
         <note priority="1" from="meaning">kovadom advantages team</note>
-      </trans-unit>
-      <trans-unit id="6ccd447853cb2e1a06ef7905a64cb6c1b48dfd93" datatype="html">
-        <source>Company name</source>
-        <target/>
-        <note priority="1" from="description"> common - company name</note>
-        <note priority="1" from="meaning">form </note>
-      </trans-unit>
-      <trans-unit id="bb636d4f30784a85934b29a72fe5243a4b010ea9" datatype="html">
-        <source>Your company name</source>
-        <target/>
-        <note priority="1" from="description"> common - company name</note>
-        <note priority="1" from="meaning">form placeholder </note>
-      </trans-unit>
-      <trans-unit id="8da446326b3ef77812ebd325b50ca64e99c1be90" datatype="html">
-        <source>Submit</source>
-        <target/>
-        <note priority="1" from="description"> submit</note>
-        <note priority="1" from="meaning">company contact </note>
-      </trans-unit>
-      <trans-unit id="8d1ac75435e06976d89c90157561d7bb0028ecff" datatype="html">
-        <source>Your email</source>
-        <target/>
-        <note priority="1" from="description"> common - email</note>
-        <note priority="1" from="meaning">form placeholder </note>
-      </trans-unit>
-      <trans-unit id="c77806daf398daf467764952f11d4ce02d4df433" datatype="html">
-        <source>Your phone number</source>
-        <target/>
-        <note priority="1" from="description"> common - phone number</note>
-        <note priority="1" from="meaning">form placeholder </note>
-      </trans-unit>
-      <trans-unit id="5e6548eb9cbb0467c307b4079bc989cd21f44355" datatype="html">
-        <source>This field is required</source>
-        <target/>
-      </trans-unit>
-      <trans-unit id="da82914908a0bb31e159f70f79890705758a886e" datatype="html">
-        <source>This field is malformed</source>
-        <target/>
-      </trans-unit>
-      <trans-unit id="2ab8d82ac40b17f91766899087520919cf554f8a" datatype="html">
-        <source>Your request has been registered</source>
-        <target/>
-        <note priority="1" from="description"> common - success</note>
-        <note priority="1" from="meaning">generic form saving message </note>
-      </trans-unit>
-      <trans-unit id="72cf57adaf435b3de4bbc963a1e7a061ab0b4923" datatype="html">
-        <source>An error has occurred while processing your request</source>
-        <target/>
-        <note priority="1" from="description"> common - failed</note>
-        <note priority="1" from="meaning">generic form saving message </note>
       </trans-unit>
     </body>
   </file>
