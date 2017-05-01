@@ -38,7 +38,7 @@ import {NoopAnimationsModule} from "@angular/platform-browser/animations";
         NoopAnimationsModule,
         AppRoutingModule,
         FormsModule,
-        FrameworkModule,
+        FrameworkModule.forBrowser(),
         DialogModule,
         GMapModule,
         Ng2PageScrollModule.forRoot(),

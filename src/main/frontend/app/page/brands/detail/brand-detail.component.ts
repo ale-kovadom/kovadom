@@ -11,6 +11,7 @@ import {DOCUMENT} from "@angular/platform-browser";
 import {FormStatus} from "../../../framework/form/forms";
 import {SwiperSlide} from "../../../framework/ui/swiper/swiper.slides";
 import {Place} from "../../../domain/place/place";
+import {GlobalContext} from "../../../framework/context/NativeGlobalContext";
 
 declare let google: any;
 
@@ -49,12 +50,15 @@ export class BrandDetailComponent {
 
     public date: Date;
 
+    public calendarLanguage: string;
+
     @ViewChild("saleForm")
     public ngForm: NgForm;
 
     constructor(private route: ActivatedRoute,
                 private brandService: BrandService,
                 private saleService: SaleService,
+                private globalContext: GlobalContext,
                 private pageScrollService: PageScrollService,
                 @Inject(DOCUMENT) private document: any) {
 
@@ -70,6 +74,7 @@ export class BrandDetailComponent {
             parallax: true
         };
 
+        this.calendarLanguage = globalContext.native.fullLanguage;
         this.collapseForm();
         this.resetSubmitStatus();
 

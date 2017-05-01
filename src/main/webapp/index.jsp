@@ -7,7 +7,7 @@
     <base href="/">
 
     <spring:eval var="gtmEnvironment" expression="@environment.getProperty('kovadom.googletagmanager.environment')"/>
-
+    <c:set var="googleApiKey" value="AIzaSyBPCDRe45TzMKbcf3rwhOv5cvqE5iuQ9VQ" />
 
     <!-- Google Tag Manager -->
     <script>(function (w, d, s, l, i) {
@@ -45,9 +45,17 @@
 
     <script src="${urls.getForLookupPath('/resources/generated/zone.js/dist/zone.min.js')}" defer></script>
     <script src="${urls.getForLookupPath('/resources/generated/swiper/dist/js/swiper.min.js')}" defer></script>
-    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBPCDRe45TzMKbcf3rwhOv5cvqE5iuQ9VQ&libraries=places" defer></script>
+    <script src='https://maps.googleapis.com/maps/api/js?key=<c:out value="${googleApiKey}"/>&libraries=places' defer></script>
     <script src="${urls.getForLookupPath('/resources/generated/geolocator/dist/geolocator.min.js')}"></script>
-    <script>window.module = {};</script>
+    <script>
+        // TODO i18n
+        window.kovadom = {
+            googleKey: '<c:out value="${googleApiKey}"/>',
+            language: 'fr',
+            fullLanguage: 'fr-fr',
+        };
+        window.module = {};
+    </script>
 </head>
 
 <body>
@@ -66,10 +74,12 @@
 <!-- Page speed optimization -->
 <script type="text/javascript">
     var deferCss = function (path) {
-        var cb = function() {
-            var l = document.createElement('link'); l.rel = 'stylesheet';
+        var cb = function () {
+            var l = document.createElement('link');
+            l.rel = 'stylesheet';
             l.href = path;
-            var h = document.getElementsByTagName('head')[0]; h.parentNode.insertBefore(l, h);
+            var h = document.getElementsByTagName('head')[0];
+            h.parentNode.insertBefore(l, h);
         };
         var raf = requestAnimationFrame || mozRequestAnimationFrame ||
             webkitRequestAnimationFrame || msRequestAnimationFrame;

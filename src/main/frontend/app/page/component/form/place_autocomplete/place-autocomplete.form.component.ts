@@ -2,6 +2,7 @@ import {Component, forwardRef, Input, ViewChild} from "@angular/core";
 import {NG_VALUE_ACCESSOR, ControlValueAccessor, NG_VALIDATORS, FormControl} from "@angular/forms";
 import {Place} from "../../../../domain/place/place";
 import {GeolocatorService, GeoPosition} from "../../../../framework/geolocator/geolocator.service";
+import {GlobalContext} from "../../../../framework/context/NativeGlobalContext";
 
 declare let google: any;
 
@@ -41,7 +42,7 @@ export class PlaceAutocompleteComponent implements ControlValueAccessor {
 
     private selectedLocation?: Place;
 
-    constructor(private geolocatorService: GeolocatorService) {
+    constructor(private geolocatorService: GeolocatorService, private globalContext: GlobalContext) {
     }
 
 
@@ -49,7 +50,7 @@ export class PlaceAutocompleteComponent implements ControlValueAccessor {
 
         let addressInputOptions: any = {
             types: ['address'],
-            componentRestrictions: {country: 'fr'}  //TODO i18n
+            componentRestrictions: {country: this.globalContext.native.language}
         };
         this.addressAutocomplete = new google.maps.places.Autocomplete(this.addressInput.nativeElement, addressInputOptions);
         this.addressAutocomplete.addListener('place_changed', this.onAutoCompleteChange(this));
@@ -69,7 +70,7 @@ export class PlaceAutocompleteComponent implements ControlValueAccessor {
 
     private updateAutocompleteBounds(autocomplete: any) {
         return (position: GeoPosition) => {
-            autocomplete.setBounds(position.toGmapCircle(100).getBounds());
+            autocomplete.setBounds(position.toGmapCircle().getBounds());
         }
     }
 

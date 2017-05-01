@@ -65,7 +65,8 @@
                                             inputStyleClass="form-control"
                                             name="sale-date"
                                             id="sale-date"
-                                            calendarOptions lang="fr-fr">
+                                            calendarOptions
+                                            [lang]="calendarLanguage">
                                     </p-calendar>
                                 </div>
                                 <!-- Only required error is supported, not "pattern" -->
@@ -81,7 +82,8 @@
                                             inputStyleClass="form-control"
                                             name="sale-time"
                                             id="sale-time"
-                                            calendarOptions lang="fr-fr">
+                                            calendarOptions
+                                            [lang]="calendarLanguage">
                                     </p-calendar>
                                 </div>
                                 <form-validation required="true" [ref]="saleTime" [onlyIf]="showExplicitErrorMessage"></form-validation>

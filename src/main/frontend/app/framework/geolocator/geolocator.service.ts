@@ -1,19 +1,21 @@
 import {Injectable} from "@angular/core";
+import {BrowserGlobalContext, GlobalContext} from "../context/NativeGlobalContext";
 
 declare let geolocator: any;
 
 declare let google: any;
 
+declare let window: any;
+
 @Injectable()
 export class GeolocatorService {
 
-    private static init() {
+    private static init(globalContext: GlobalContext) {
         if (geolocator.config().google.key === "") {
             geolocator.config({
-                language: "fr",     //TODO i18n
+                language: globalContext.native.language,
                 google: {
-                    version: "3",
-                    key: "AIzaSyBPCDRe45TzMKbcf3rwhOv5cvqE5iuQ9VQ"
+                    key: globalContext.native.googleKey
                 }
             });
         }
@@ -21,8 +23,8 @@ export class GeolocatorService {
 
     private options: any;
 
-    public constructor() {
-        GeolocatorService.init();
+    public constructor(private globalContext: GlobalContext) {
+        GeolocatorService.init(globalContext);
         this.options = {
             enableHighAccuracy: true,
             timeout: 5000,
