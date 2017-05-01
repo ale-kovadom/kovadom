@@ -4,7 +4,7 @@ import {FormsModule} from "@angular/forms";
 import {CalendarModule} from "primeng/components/calendar/calendar";
 import {SwiperContainer} from "./ui/swiper/ui.swiper.component";
 import {CalendarDirective} from "./ui/calendar/ui.calendar.directive";
-import {FormStatus} from "./form/forms";
+import {GeolocatorService} from "./geolocator/geolocator.service";
 
 @NgModule({
     imports: [
@@ -20,6 +20,10 @@ import {FormStatus} from "./form/forms";
         CalendarModule,
         CalendarDirective,
         SwiperContainer,
+    ],
+    providers: [
+        GeolocatorService
     ]
 })
-export class FrameworkModule {}
+export class FrameworkModule {
+}

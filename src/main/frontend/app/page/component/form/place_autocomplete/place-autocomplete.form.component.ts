@@ -1,6 +1,7 @@
 import {Component, forwardRef, Input, ViewChild} from "@angular/core";
 import {NG_VALUE_ACCESSOR, ControlValueAccessor, NG_VALIDATORS, FormControl} from "@angular/forms";
 import {Place} from "../../../../domain/place/place";
+import {GeolocatorService, GeoPosition} from "../../../../framework/geolocator/geolocator.service";
 
 declare let google: any;
 
@@ -40,6 +41,9 @@ export class PlaceAutocompleteComponent implements ControlValueAccessor {
 
     private selectedLocation?: Place;
 
+    constructor(private geolocatorService: GeolocatorService) {
+    }
+
 
     public ngAfterViewInit(): void {
 
@@ -49,9 +53,7 @@ export class PlaceAutocompleteComponent implements ControlValueAccessor {
         };
         this.addressAutocomplete = new google.maps.places.Autocomplete(this.addressInput.nativeElement, addressInputOptions);
         this.addressAutocomplete.addListener('place_changed', this.onAutoCompleteChange(this));
-        if(this.geolocation) {
-            this.geolocate(this.addressAutocomplete);
-        }
+        this.geolocatorService.geolocate().then(this.updateAutocompleteBounds(this.addressAutocomplete)).catch(err => console.warn(err));
     }
 
     onAutoCompleteChange(self: any) {
@@ -65,24 +67,11 @@ export class PlaceAutocompleteComponent implements ControlValueAccessor {
         }
     }
 
-    public geolocate(autocomplete: any) {
-        if (navigator.geolocation) {
-            navigator.geolocation.getCurrentPosition(function (position) {
-                let geolocation = {
-                    lat: position.coords.latitude,
-                    lng: position.coords.longitude
-                };
-                let circle = new google.maps.Circle({
-                    center: geolocation,
-                    radius: position.coords.accuracy
-                });
-                autocomplete.setBounds(circle.getBounds());
-            });
-        } else {
-            console.info("Geolocation disabled by user or not available")
+    private updateAutocompleteBounds(autocomplete: any) {
+        return (position: GeoPosition) => {
+            autocomplete.setBounds(position.toGmapCircle(100).getBounds());
         }
     }
-
 
     public propagateChange = (_: any) => {
     };

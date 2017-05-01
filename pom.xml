@@ -208,6 +208,7 @@
                                 <resource>
                                     <directory>src/main/frontend/node_modules</directory>
                                     <includes>
+                                        <include>geolocator/dist/geolocator.min.js</include>
                                         <include>zone.js/dist/zone.min.js</include>
                                         <include>core-js/client/shim.min.js</include>
                                         <include>swiper/dist/js/swiper.min.js</include>
