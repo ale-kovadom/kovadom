@@ -24,6 +24,7 @@
             <appender-ref ref="FILE"/>
         </root>
 
+        <!--<logger name="org.springframework" level="DEBUG" />-->
         <logger name="com.kovadom" level="${kovadom.level:-WARN}" />
         <logger name="org.hibernate.SQL" level="${hibernate.level:-WARN}" />
         <logger name="org.hibernate.type.descriptor.sql.BasicBinder" level="${hibernate.level:-WARN}" />
