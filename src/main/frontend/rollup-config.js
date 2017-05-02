@@ -1,7 +1,6 @@
-import rollup      from 'rollup'
-import nodeResolve from 'rollup-plugin-node-resolve'
-import commonjs    from 'rollup-plugin-commonjs';
-import uglify      from 'rollup-plugin-uglify'
+import nodeResolve from "rollup-plugin-node-resolve";
+import commonjs from "rollup-plugin-commonjs";
+import uglify from "rollup-plugin-uglify";
 
 export default {
     entry: 'aot/app/shop/main.js',

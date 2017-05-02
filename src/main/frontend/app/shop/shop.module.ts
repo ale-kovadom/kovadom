@@ -3,7 +3,7 @@ import {BrowserModule} from "@angular/platform-browser";
 import {HttpModule} from "@angular/http";
 import {KovadomComponent} from "./page/component/kovadom/kovadom.component";
 import {ActivityService} from "./domain/activity/activity.service";
-import {AppRoutingModule} from "./app-routing.module";
+import {ShopRoutingModule} from "./shop-routing.module";
 import {HomeComponent} from "./page/home/home.component";
 import {ActivityComponent} from "./page/component/activity/activity.component";
 import {ContactComponent} from "./page/component/contact/banner/contact.component";
@@ -36,7 +36,7 @@ import {NoopAnimationsModule} from "@angular/platform-browser/animations";
         BrowserModule,
         HttpModule,
         NoopAnimationsModule,
-        AppRoutingModule,
+        ShopRoutingModule,
         FormsModule,
         FrameworkModule.forBrowser(),
         DialogModule,
@@ -67,5 +67,5 @@ import {NoopAnimationsModule} from "@angular/platform-browser/animations";
     providers: [ActivityService, BrandService, SaleService, RegistrationService],
     bootstrap: [KovadomComponent]
 })
-export class AppModule {
+export class ShopModule {
 }

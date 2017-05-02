@@ -15,7 +15,7 @@
     "nodes-modules"
   ],
   "files": [
-    "aot/app/shop/app.module.ts",
+    "aot/app/shop/shop.module.ts",
     "aot/app/shop/main.ts"
   ],
 
