@@ -1,5 +1,5 @@
 import {Component, Input} from "@angular/core";
-import {ControlValueAccessor, FormControl} from "@angular/forms";
+import {FormControl} from "@angular/forms";
 
 @Component({
     selector: 'form-validation',

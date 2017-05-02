@@ -3,7 +3,7 @@ import "rxjs/add/operator/switchMap";
 import {Contact} from "../../../domain/contact/contact";
 import {NgForm} from "@angular/forms";
 import {RegistrationService} from "../../../domain/contact/registrationService";
-import {FormStatus} from "../../../framework/form/forms";
+import {FormStatus} from "../../../../framework/form/forms";
 import {Response} from "@angular/http/src";
 
 @Component({

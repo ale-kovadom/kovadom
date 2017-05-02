@@ -1,6 +1,5 @@
-import {Component, forwardRef, Input, ViewChild, SimpleChange, Output, EventEmitter} from "@angular/core";
-import {NG_VALUE_ACCESSOR, ControlValueAccessor, NG_VALIDATORS, FormControl} from "@angular/forms";
-import {FormStatus, Forms} from "../../../../framework/form/forms";
+import {Component, Input, SimpleChange, Output, EventEmitter} from "@angular/core";
+import {FormStatus, Forms} from "../../../../../framework/form/forms";
 
 @Component({
     selector: 'confirmation-message-form',

@@ -1,4 +1,4 @@
-import {Component, ViewChild, Inject, Renderer} from "@angular/core";
+import {Component, ViewChild, Inject} from "@angular/core";
 import {ActivatedRoute, Params} from "@angular/router";
 import {BrandService} from "../../../domain/brand/brand.service";
 import {Brand} from "../../../domain/brand/brand";
@@ -6,12 +6,11 @@ import "rxjs/add/operator/switchMap";
 import {Sale, SaleStatus} from "../../../domain/sale/sale";
 import {NgForm} from "@angular/forms";
 import {SaleService} from "../../../domain/sale/sale.service";
-import {PageScrollService, PageScrollInstance, PageScrollConfig} from "ng2-page-scroll";
+import {PageScrollService, PageScrollInstance} from "ng2-page-scroll";
 import {DOCUMENT} from "@angular/platform-browser";
-import {FormStatus} from "../../../framework/form/forms";
-import {SwiperSlide} from "../../../framework/ui/swiper/swiper.slides";
-import {Place} from "../../../domain/place/place";
-import {GlobalContext} from "../../../framework/context/NativeGlobalContext";
+import {FormStatus} from "../../../../framework/form/forms";
+import {SwiperSlide} from "../../../../framework/ui/swiper/swiper.slides";
+import {GlobalContext} from "../../../../framework/context/NativeGlobalContext";
 
 declare let google: any;
 

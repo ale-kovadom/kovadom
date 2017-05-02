@@ -15,8 +15,8 @@
     "nodes-modules"
   ],
   "files": [
-    "aot/app/app.module.ts",
-    "aot/app/main.ts"
+    "aot/app/shop/app.module.ts",
+    "aot/app/shop/main.ts"
   ],
 
   "angularCompilerOptions": {

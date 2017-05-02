@@ -6,7 +6,7 @@
         <source>How it work ?</source>
         <target/>
         <context-group purpose="location">
-          <context context-type="sourcefile">aot/app/page/component/kovadom/kovadom.component.ts</context>
+          <context context-type="sourcefile">aot/app/shop/page/component/kovadom/kovadom.component.ts</context>
           <context context-type="linenumber">14</context>
         </context-group>
         <note priority="1" from="description">home sale explanation link</note>
@@ -15,11 +15,11 @@
         <source>Home sales of Bio products</source>
         <target/>
         <context-group purpose="location">
-          <context context-type="sourcefile">aot/app/page/component/kovadom/kovadom.component.ts</context>
+          <context context-type="sourcefile">aot/app/shop/page/component/kovadom/kovadom.component.ts</context>
           <context context-type="linenumber">29</context>
         </context-group>
         <context-group purpose="location">
-          <context context-type="sourcefile">aot/app/page/component/kovadom/kovadom.component.ts</context>
+          <context context-type="sourcefile">aot/app/shop/page/component/kovadom/kovadom.component.ts</context>
           <context context-type="linenumber">39</context>
         </context-group>
         <note priority="1" from="description">bio products</note>
@@ -29,11 +29,11 @@
         <source>Home sales of lingerie</source>
         <target/>
         <context-group purpose="location">
-          <context context-type="sourcefile">aot/app/page/component/kovadom/kovadom.component.ts</context>
+          <context context-type="sourcefile">aot/app/shop/page/component/kovadom/kovadom.component.ts</context>
           <context context-type="linenumber">30</context>
         </context-group>
         <context-group purpose="location">
-          <context context-type="sourcefile">aot/app/page/component/kovadom/kovadom.component.ts</context>
+          <context context-type="sourcefile">aot/app/shop/page/component/kovadom/kovadom.component.ts</context>
           <context context-type="linenumber">40</context>
         </context-group>
         <note priority="1" from="description">lingerie</note>
@@ -43,11 +43,11 @@
         <source>Home sales of kids clothes</source>
         <target/>
         <context-group purpose="location">
-          <context context-type="sourcefile">aot/app/page/component/kovadom/kovadom.component.ts</context>
+          <context context-type="sourcefile">aot/app/shop/page/component/kovadom/kovadom.component.ts</context>
           <context context-type="linenumber">31</context>
         </context-group>
         <context-group purpose="location">
-          <context context-type="sourcefile">aot/app/page/component/kovadom/kovadom.component.ts</context>
+          <context context-type="sourcefile">aot/app/shop/page/component/kovadom/kovadom.component.ts</context>
           <context context-type="linenumber">41</context>
         </context-group>
         <note priority="1" from="description">kids clothes</note>
@@ -57,11 +57,11 @@
         <source>Home sales of sex toys</source>
         <target/>
         <context-group purpose="location">
-          <context context-type="sourcefile">aot/app/page/component/kovadom/kovadom.component.ts</context>
+          <context context-type="sourcefile">aot/app/shop/page/component/kovadom/kovadom.component.ts</context>
           <context context-type="linenumber">32</context>
         </context-group>
         <context-group purpose="location">
-          <context context-type="sourcefile">aot/app/page/component/kovadom/kovadom.component.ts</context>
+          <context context-type="sourcefile">aot/app/shop/page/component/kovadom/kovadom.component.ts</context>
           <context context-type="linenumber">42</context>
         </context-group>
         <note priority="1" from="description">sex toys</note>
@@ -71,11 +71,11 @@
         <source>Home sales of vine tasting</source>
         <target/>
         <context-group purpose="location">
-          <context context-type="sourcefile">aot/app/page/component/kovadom/kovadom.component.ts</context>
+          <context context-type="sourcefile">aot/app/shop/page/component/kovadom/kovadom.component.ts</context>
           <context context-type="linenumber">33</context>
         </context-group>
         <context-group purpose="location">
-          <context context-type="sourcefile">aot/app/page/component/kovadom/kovadom.component.ts</context>
+          <context context-type="sourcefile">aot/app/shop/page/component/kovadom/kovadom.component.ts</context>
           <context context-type="linenumber">43</context>
         </context-group>
         <note priority="1" from="description">vine tasting</note>
@@ -85,7 +85,7 @@
         <source>Organize simply your home sale</source>
         <target/>
         <context-group purpose="location">
-          <context context-type="sourcefile">aot/app/page/home/home.component.ts</context>
+          <context context-type="sourcefile">aot/app/shop/page/home/home.component.ts</context>
           <context context-type="linenumber">4</context>
         </context-group>
         <note priority="1" from="description">organize your sale</note>
@@ -95,7 +95,7 @@
         <source>Conviviality, products of quality, moments of pleasure</source>
         <target/>
         <context-group purpose="location">
-          <context context-type="sourcefile">aot/app/page/home/home.component.ts</context>
+          <context context-type="sourcefile">aot/app/shop/page/home/home.component.ts</context>
           <context context-type="linenumber">5</context>
         </context-group>
         <note priority="1" from="description">focus on quality</note>
@@ -105,7 +105,7 @@
         <source>Discover a new shopping experience!</source>
         <target/>
         <context-group purpose="location">
-          <context context-type="sourcefile">aot/app/page/home/home.component.ts</context>
+          <context context-type="sourcefile">aot/app/shop/page/home/home.component.ts</context>
           <context context-type="linenumber">16</context>
         </context-group>
         <note priority="1" from="description">new shooping xp</note>
@@ -115,7 +115,7 @@
         <source>I create my home sale</source>
         <target/>
         <context-group purpose="location">
-          <context context-type="sourcefile">aot/app/page/home/home.component.ts</context>
+          <context context-type="sourcefile">aot/app/shop/page/home/home.component.ts</context>
           <context context-type="linenumber">24</context>
         </context-group>
         <note priority="1" from="description">I create my home sale</note>
@@ -125,7 +125,7 @@
         <source>Access all sales at home in just a few clicks!</source>
         <target/>
         <context-group purpose="location">
-          <context context-type="sourcefile">aot/app/page/home/home.component.ts</context>
+          <context context-type="sourcefile">aot/app/shop/page/home/home.component.ts</context>
           <context context-type="linenumber">31</context>
         </context-group>
         <note priority="1" from="description">accessibility</note>
@@ -135,7 +135,7 @@
         <source>How it works?</source>
         <target/>
         <context-group purpose="location">
-          <context context-type="sourcefile">aot/app/page/home/home.component.ts</context>
+          <context context-type="sourcefile">aot/app/shop/page/home/home.component.ts</context>
           <context context-type="linenumber">38</context>
         </context-group>
         <note priority="1" from="description">how it works?</note>
@@ -145,11 +145,11 @@
         <source>Discover all the activities</source>
         <target/>
         <context-group purpose="location">
-          <context context-type="sourcefile">aot/app/page/home/home.component.ts</context>
+          <context context-type="sourcefile">aot/app/shop/page/home/home.component.ts</context>
           <context context-type="linenumber">50</context>
         </context-group>
         <context-group purpose="location">
-          <context context-type="sourcefile">aot/app/page/home_sale_how_to/home-sale.how-to.component.ts</context>
+          <context context-type="sourcefile">aot/app/shop/page/home_sale_how_to/home-sale.how-to.component.ts</context>
           <context context-type="linenumber">38</context>
         </context-group>
         <note priority="1" from="description">Discover all the activities button</note>
@@ -161,7 +161,7 @@
     </source>
         <target/>
         <context-group purpose="location">
-          <context context-type="sourcefile">aot/app/page/brands/list/brands.component.ts</context>
+          <context context-type="sourcefile">aot/app/shop/page/brands/list/brands.component.ts</context>
           <context context-type="linenumber">12</context>
         </context-group>
         <note priority="1" from="description"> No brands for a given activity</note>
@@ -173,7 +173,7 @@
         </source>
         <target/>
         <context-group purpose="location">
-          <context context-type="sourcefile">aot/app/page/brands/list/brands.component.ts</context>
+          <context context-type="sourcefile">aot/app/shop/page/brands/list/brands.component.ts</context>
           <context context-type="linenumber">18</context>
         </context-group>
         <note priority="1" from="description"> Discover all brands for a given activity</note>
@@ -183,7 +183,7 @@
         <source>Start my sale</source>
         <target/>
         <context-group purpose="location">
-          <context context-type="sourcefile">aot/app/page/brands/list/brands.component.ts</context>
+          <context context-type="sourcefile">aot/app/shop/page/brands/list/brands.component.ts</context>
           <context context-type="linenumber">40</context>
         </context-group>
         <note priority="1" from="description"> Organise a sale</note>
@@ -193,7 +193,7 @@
         <source>About <x id="INTERPOLATION"/></source>
         <target/>
         <context-group purpose="location">
-          <context context-type="sourcefile">aot/app/page/brands/detail/brand-detail.component.ts</context>
+          <context context-type="sourcefile">aot/app/shop/page/brands/detail/brand-detail.component.ts</context>
           <context context-type="linenumber">35</context>
         </context-group>
         <note priority="1" from="description"> company description</note>
@@ -203,7 +203,7 @@
         <source>The sale process</source>
         <target/>
         <context-group purpose="location">
-          <context context-type="sourcefile">aot/app/page/brands/detail/brand-detail.component.ts</context>
+          <context context-type="sourcefile">aot/app/shop/page/brands/detail/brand-detail.component.ts</context>
           <context context-type="linenumber">39</context>
         </context-group>
         <note priority="1" from="description"> sale process</note>
@@ -213,7 +213,7 @@
         <source>Book online</source>
         <target/>
         <context-group purpose="location">
-          <context context-type="sourcefile">aot/app/page/brands/detail/brand-detail.component.ts</context>
+          <context context-type="sourcefile">aot/app/shop/page/brands/detail/brand-detail.component.ts</context>
           <context context-type="linenumber">49</context>
         </context-group>
         <note priority="1" from="description"> Form with user&apos;s info - header</note>
@@ -223,7 +223,7 @@
         <source>Free, no commitment</source>
         <target/>
         <context-group purpose="location">
-          <context context-type="sourcefile">aot/app/page/brands/detail/brand-detail.component.ts</context>
+          <context context-type="sourcefile">aot/app/shop/page/brands/detail/brand-detail.component.ts</context>
           <context context-type="linenumber">50</context>
         </context-group>
         <note priority="1" from="description"> Form with user&apos;s info - sub-header</note>
@@ -233,7 +233,7 @@
         <source>Date and time</source>
         <target/>
         <context-group purpose="location">
-          <context context-type="sourcefile">aot/app/page/brands/detail/brand-detail.component.ts</context>
+          <context context-type="sourcefile">aot/app/shop/page/brands/detail/brand-detail.component.ts</context>
           <context context-type="linenumber">57</context>
         </context-group>
         <note priority="1" from="description"> Date time for the sale</note>
@@ -243,7 +243,7 @@
         <source>Address</source>
         <target/>
         <context-group purpose="location">
-          <context context-type="sourcefile">aot/app/page/brands/detail/brand-detail.component.ts</context>
+          <context context-type="sourcefile">aot/app/shop/page/brands/detail/brand-detail.component.ts</context>
           <context context-type="linenumber">92</context>
         </context-group>
         <note priority="1" from="description"> Address</note>
@@ -253,7 +253,7 @@
         <source>Meeting place</source>
         <target/>
         <context-group purpose="location">
-          <context context-type="sourcefile">aot/app/page/brands/detail/brand-detail.component.ts</context>
+          <context context-type="sourcefile">aot/app/shop/page/brands/detail/brand-detail.component.ts</context>
           <context context-type="linenumber">94</context>
         </context-group>
         <note priority="1" from="description"> address placeholder</note>
@@ -263,7 +263,7 @@
         <source>Number of stakeholders</source>
         <target/>
         <context-group purpose="location">
-          <context context-type="sourcefile">aot/app/page/brands/detail/brand-detail.component.ts</context>
+          <context context-type="sourcefile">aot/app/shop/page/brands/detail/brand-detail.component.ts</context>
           <context context-type="linenumber">98</context>
         </context-group>
         <note priority="1" from="description"> stakeholders count</note>
@@ -273,11 +273,11 @@
         <source>First name</source>
         <target/>
         <context-group purpose="location">
-          <context context-type="sourcefile">aot/app/page/brands/detail/brand-detail.component.ts</context>
+          <context context-type="sourcefile">aot/app/shop/page/brands/detail/brand-detail.component.ts</context>
           <context context-type="linenumber">105</context>
         </context-group>
         <context-group purpose="location">
-          <context context-type="sourcefile">aot/app/page/component/registration/contact-registration.ts</context>
+          <context context-type="sourcefile">aot/app/shop/page/component/registration/contact-registration.ts</context>
           <context context-type="linenumber">18</context>
         </context-group>
         <note priority="1" from="description"> common - first name</note>
@@ -287,11 +287,11 @@
         <source>Your first name</source>
         <target/>
         <context-group purpose="location">
-          <context context-type="sourcefile">aot/app/page/brands/detail/brand-detail.component.ts</context>
+          <context context-type="sourcefile">aot/app/shop/page/brands/detail/brand-detail.component.ts</context>
           <context context-type="linenumber">106</context>
         </context-group>
         <context-group purpose="location">
-          <context context-type="sourcefile">aot/app/page/component/registration/contact-registration.ts</context>
+          <context context-type="sourcefile">aot/app/shop/page/component/registration/contact-registration.ts</context>
           <context context-type="linenumber">19</context>
         </context-group>
         <note priority="1" from="description"> common - first name</note>
@@ -301,11 +301,11 @@
         <source>Last name</source>
         <target/>
         <context-group purpose="location">
-          <context context-type="sourcefile">aot/app/page/brands/detail/brand-detail.component.ts</context>
+          <context context-type="sourcefile">aot/app/shop/page/brands/detail/brand-detail.component.ts</context>
           <context context-type="linenumber">111</context>
         </context-group>
         <context-group purpose="location">
-          <context context-type="sourcefile">aot/app/page/component/registration/contact-registration.ts</context>
+          <context context-type="sourcefile">aot/app/shop/page/component/registration/contact-registration.ts</context>
           <context context-type="linenumber">25</context>
         </context-group>
         <note priority="1" from="description"> common - last name</note>
@@ -315,11 +315,11 @@
         <source>Your last name</source>
         <target/>
         <context-group purpose="location">
-          <context context-type="sourcefile">aot/app/page/brands/detail/brand-detail.component.ts</context>
+          <context context-type="sourcefile">aot/app/shop/page/brands/detail/brand-detail.component.ts</context>
           <context context-type="linenumber">112</context>
         </context-group>
         <context-group purpose="location">
-          <context context-type="sourcefile">aot/app/page/component/registration/contact-registration.ts</context>
+          <context context-type="sourcefile">aot/app/shop/page/component/registration/contact-registration.ts</context>
           <context context-type="linenumber">26</context>
         </context-group>
         <note priority="1" from="description"> common - last name</note>
@@ -329,7 +329,7 @@
         <source>Question ?</source>
         <target/>
         <context-group purpose="location">
-          <context context-type="sourcefile">aot/app/page/brands/detail/brand-detail.component.ts</context>
+          <context context-type="sourcefile">aot/app/shop/page/brands/detail/brand-detail.component.ts</context>
           <context context-type="linenumber">125</context>
         </context-group>
         <note priority="1" from="description"> Extra information </note>
@@ -340,7 +340,7 @@
                                 </source>
         <target/>
         <context-group purpose="location">
-          <context context-type="sourcefile">aot/app/page/brands/detail/brand-detail.component.ts</context>
+          <context context-type="sourcefile">aot/app/shop/page/brands/detail/brand-detail.component.ts</context>
           <context context-type="linenumber">131</context>
         </context-group>
         <note priority="1" from="description"> verify availabilities</note>
@@ -350,7 +350,7 @@
         <source>Submit</source>
         <target/>
         <context-group purpose="location">
-          <context context-type="sourcefile">aot/app/page/brands/detail/brand-detail.component.ts</context>
+          <context context-type="sourcefile">aot/app/shop/page/brands/detail/brand-detail.component.ts</context>
           <context context-type="linenumber">135</context>
         </context-group>
         <note priority="1" from="description"> Submit</note>
@@ -360,7 +360,7 @@
         <source>Page not found</source>
         <target/>
         <context-group purpose="location">
-          <context context-type="sourcefile">aot/app/page/page_not_found/page-not-found.component.ts</context>
+          <context context-type="sourcefile">aot/app/shop/page/page_not_found/page-not-found.component.ts</context>
           <context context-type="linenumber">4</context>
         </context-group>
         <note priority="1" from="description"> page not found header</note>
@@ -370,7 +370,7 @@
         <source>Back to previous page</source>
         <target/>
         <context-group purpose="location">
-          <context context-type="sourcefile">aot/app/page/page_not_found/page-not-found.component.ts</context>
+          <context context-type="sourcefile">aot/app/shop/page/page_not_found/page-not-found.component.ts</context>
           <context context-type="linenumber">6</context>
         </context-group>
         <note priority="1" from="description">Back to previous</note>
@@ -380,7 +380,7 @@
         <source>Back to home</source>
         <target/>
         <context-group purpose="location">
-          <context context-type="sourcefile">aot/app/page/page_not_found/page-not-found.component.ts</context>
+          <context context-type="sourcefile">aot/app/shop/page/page_not_found/page-not-found.component.ts</context>
           <context context-type="linenumber">7</context>
         </context-group>
         <note priority="1" from="description">Back to home</note>
@@ -390,7 +390,7 @@
         <source>How it works?</source>
         <target/>
         <context-group purpose="location">
-          <context context-type="sourcefile">aot/app/page/home_sale_how_to/home-sale.how-to.component.ts</context>
+          <context context-type="sourcefile">aot/app/shop/page/home_sale_how_to/home-sale.how-to.component.ts</context>
           <context context-type="linenumber">1</context>
         </context-group>
         <note priority="1" from="description">How it works ?</note>
@@ -402,7 +402,7 @@
     </source>
         <target/>
         <context-group purpose="location">
-          <context context-type="sourcefile">aot/app/page/home_sale_how_to/home-sale.how-to.component.ts</context>
+          <context context-type="sourcefile">aot/app/shop/page/home_sale_how_to/home-sale.how-to.component.ts</context>
           <context context-type="linenumber">5</context>
         </context-group>
         <note priority="1" from="description">kovadom presentation</note>
@@ -414,7 +414,7 @@
     </source>
         <target/>
         <context-group purpose="location">
-          <context context-type="sourcefile">aot/app/page/home_sale_how_to/home-sale.how-to.component.ts</context>
+          <context context-type="sourcefile">aot/app/shop/page/home_sale_how_to/home-sale.how-to.component.ts</context>
           <context context-type="linenumber">8</context>
         </context-group>
         <note priority="1" from="description">kovadom team</note>
@@ -426,7 +426,7 @@
         </source>
         <target/>
         <context-group purpose="location">
-          <context context-type="sourcefile">aot/app/page/home_sale_how_to/home-sale.how-to.component.ts</context>
+          <context context-type="sourcefile">aot/app/shop/page/home_sale_how_to/home-sale.how-to.component.ts</context>
           <context context-type="linenumber">17</context>
         </context-group>
         <note priority="1" from="description">easy to organise</note>
@@ -438,7 +438,7 @@
     </source>
         <target/>
         <context-group purpose="location">
-          <context context-type="sourcefile">aot/app/page/home_sale_how_to/home-sale.how-to.component.ts</context>
+          <context context-type="sourcefile">aot/app/shop/page/home_sale_how_to/home-sale.how-to.component.ts</context>
           <context context-type="linenumber">28</context>
         </context-group>
         <note priority="1" from="description">kovadom advantages title</note>
@@ -448,7 +448,7 @@
         <source>What atmosphere will you choose?</source>
         <target/>
         <context-group purpose="location">
-          <context context-type="sourcefile">aot/app/page/component/activity/activity.component.ts</context>
+          <context context-type="sourcefile">aot/app/shop/page/component/activity/activity.component.ts</context>
           <context context-type="linenumber">3</context>
         </context-group>
         <note priority="1" from="description">Which activity ?</note>
@@ -458,7 +458,7 @@
         <source>You are a home sales company?</source>
         <target/>
         <context-group purpose="location">
-          <context context-type="sourcefile">aot/app/page/component/contact/banner/contact.component.ts</context>
+          <context context-type="sourcefile">aot/app/shop/page/component/contact/banner/contact.component.ts</context>
           <context context-type="linenumber">16</context>
         </context-group>
         <note priority="1" from="description">Home sales business</note>
@@ -468,7 +468,7 @@
         <source>Register your company</source>
         <target/>
         <context-group purpose="location">
-          <context context-type="sourcefile">aot/app/page/component/contact/banner/contact.component.ts</context>
+          <context context-type="sourcefile">aot/app/shop/page/component/contact/banner/contact.component.ts</context>
           <context context-type="linenumber">17</context>
         </context-group>
         <note priority="1" from="description">Company registration</note>
@@ -478,7 +478,7 @@
         <source>Contact</source>
         <target/>
         <context-group purpose="location">
-          <context context-type="sourcefile">aot/app/page/component/contact/banner/contact.component.ts</context>
+          <context context-type="sourcefile">aot/app/shop/page/component/contact/banner/contact.component.ts</context>
           <context context-type="linenumber">21</context>
         </context-group>
         <note priority="1" from="description">contact-info</note>
@@ -488,7 +488,7 @@
         <source>Follow us</source>
         <target/>
         <context-group purpose="location">
-          <context context-type="sourcefile">aot/app/page/component/contact/banner/contact.component.ts</context>
+          <context context-type="sourcefile">aot/app/shop/page/component/contact/banner/contact.component.ts</context>
           <context context-type="linenumber">37</context>
         </context-group>
         <note priority="1" from="description">social-info</note>
@@ -498,7 +498,7 @@
         <source>You are a home sale?</source>
         <target/>
         <context-group purpose="location">
-          <context context-type="sourcefile">aot/app/page/component/contact/banner/contact.component.ts</context>
+          <context context-type="sourcefile">aot/app/shop/page/component/contact/banner/contact.component.ts</context>
           <context context-type="linenumber">45</context>
         </context-group>
         <note priority="1" from="description">Home sale business</note>
@@ -508,7 +508,7 @@
         <source>Register as a home sale</source>
         <target/>
         <context-group purpose="location">
-          <context context-type="sourcefile">aot/app/page/component/contact/banner/contact.component.ts</context>
+          <context context-type="sourcefile">aot/app/shop/page/component/contact/banner/contact.component.ts</context>
           <context context-type="linenumber">46</context>
         </context-group>
         <note priority="1" from="description">sale registration</note>
@@ -518,7 +518,7 @@
         <source>select an activity</source>
         <target/>
         <context-group purpose="location">
-          <context context-type="sourcefile">aot/app/page/component/brands/by_activity_search/brand-search-by-activity.component.ts</context>
+          <context context-type="sourcefile">aot/app/shop/page/component/brands/by_activity_search/brand-search-by-activity.component.ts</context>
           <context context-type="linenumber">6</context>
         </context-group>
         <note priority="1" from="description">select an activity</note>
@@ -528,7 +528,7 @@
         <source>Choose your sale</source>
         <target/>
         <context-group purpose="location">
-          <context context-type="sourcefile">aot/app/page/component/sale_how_to_steps/sale.how-to.steps.component.ts</context>
+          <context context-type="sourcefile">aot/app/shop/page/component/sale_how_to_steps/sale.how-to.steps.component.ts</context>
           <context context-type="linenumber">3</context>
         </context-group>
         <note priority="1" from="description">step1 title</note>
@@ -538,7 +538,7 @@
         <source>In a few clicks find the sale and</source>
         <target/>
         <context-group purpose="location">
-          <context context-type="sourcefile">aot/app/page/component/sale_how_to_steps/sale.how-to.steps.component.ts</context>
+          <context context-type="sourcefile">aot/app/shop/page/component/sale_how_to_steps/sale.how-to.steps.component.ts</context>
           <context context-type="linenumber">5</context>
         </context-group>
         <note priority="1" from="description">step1 description - part1</note>
@@ -548,7 +548,7 @@
         <source>the ambiance you would like to share</source>
         <target/>
         <context-group purpose="location">
-          <context context-type="sourcefile">aot/app/page/component/sale_how_to_steps/sale.how-to.steps.component.ts</context>
+          <context context-type="sourcefile">aot/app/shop/page/component/sale_how_to_steps/sale.how-to.steps.component.ts</context>
           <context context-type="linenumber">6</context>
         </context-group>
         <note priority="1" from="description">step1 emphasized description - part2</note>
@@ -558,7 +558,7 @@
         <source>with your friends.</source>
         <target/>
         <context-group purpose="location">
-          <context context-type="sourcefile">aot/app/page/component/sale_how_to_steps/sale.how-to.steps.component.ts</context>
+          <context context-type="sourcefile">aot/app/shop/page/component/sale_how_to_steps/sale.how-to.steps.component.ts</context>
           <context context-type="linenumber">8</context>
         </context-group>
         <note priority="1" from="description">step1 description - part3</note>
@@ -568,7 +568,7 @@
         <source>Send your request</source>
         <target/>
         <context-group purpose="location">
-          <context context-type="sourcefile">aot/app/page/component/sale_how_to_steps/sale.how-to.steps.component.ts</context>
+          <context context-type="sourcefile">aot/app/shop/page/component/sale_how_to_steps/sale.how-to.steps.component.ts</context>
           <context context-type="linenumber">14</context>
         </context-group>
         <note priority="1" from="description">step2 description</note>
@@ -578,7 +578,7 @@
         <source>Requests the brands you would like to test.</source>
         <target/>
         <context-group purpose="location">
-          <context context-type="sourcefile">aot/app/page/component/sale_how_to_steps/sale.how-to.steps.component.ts</context>
+          <context context-type="sourcefile">aot/app/shop/page/component/sale_how_to_steps/sale.how-to.steps.component.ts</context>
           <context context-type="linenumber">16</context>
         </context-group>
         <note priority="1" from="description">step2 description - part1</note>
@@ -588,7 +588,7 @@
         <source>It is free without any commitment!</source>
         <target/>
         <context-group purpose="location">
-          <context context-type="sourcefile">aot/app/page/component/sale_how_to_steps/sale.how-to.steps.component.ts</context>
+          <context context-type="sourcefile">aot/app/shop/page/component/sale_how_to_steps/sale.how-to.steps.component.ts</context>
           <context context-type="linenumber">17</context>
         </context-group>
         <note priority="1" from="description">step2 emphasized description - part2</note>
@@ -598,7 +598,7 @@
         <source>Follow your requests</source>
         <target/>
         <context-group purpose="location">
-          <context context-type="sourcefile">aot/app/page/component/sale_how_to_steps/sale.how-to.steps.component.ts</context>
+          <context context-type="sourcefile">aot/app/shop/page/component/sale_how_to_steps/sale.how-to.steps.component.ts</context>
           <context context-type="linenumber">23</context>
         </context-group>
         <note priority="1" from="description">step3 description</note>
@@ -608,7 +608,7 @@
         <source>Follow the progress of your requests, meet your seller and</source>
         <target/>
         <context-group purpose="location">
-          <context context-type="sourcefile">aot/app/page/component/sale_how_to_steps/sale.how-to.steps.component.ts</context>
+          <context context-type="sourcefile">aot/app/shop/page/component/sale_how_to_steps/sale.how-to.steps.component.ts</context>
           <context context-type="linenumber">25</context>
         </context-group>
         <note priority="1" from="description">step3 description - part1</note>
@@ -618,7 +618,7 @@
         <source>confirm your reservation in one click.</source>
         <target/>
         <context-group purpose="location">
-          <context context-type="sourcefile">aot/app/page/component/sale_how_to_steps/sale.how-to.steps.component.ts</context>
+          <context context-type="sourcefile">aot/app/shop/page/component/sale_how_to_steps/sale.how-to.steps.component.ts</context>
           <context context-type="linenumber">26</context>
         </context-group>
         <note priority="1" from="description">step3 emphasized description - part2</note>
@@ -628,7 +628,7 @@
         <source>Your email</source>
         <target/>
         <context-group purpose="location">
-          <context context-type="sourcefile">aot/app/page/component/form/email/email.form.component.ts</context>
+          <context context-type="sourcefile">aot/app/shop/page/component/form/email/email.form.component.ts</context>
           <context context-type="linenumber">7</context>
         </context-group>
         <note priority="1" from="description"> common - email</note>
@@ -638,7 +638,7 @@
         <source>Your phone number</source>
         <target/>
         <context-group purpose="location">
-          <context context-type="sourcefile">aot/app/page/component/form/phone/phone.form.component.ts</context>
+          <context context-type="sourcefile">aot/app/shop/page/component/form/phone/phone.form.component.ts</context>
           <context context-type="linenumber">8</context>
         </context-group>
         <note priority="1" from="description"> common - phone number</note>
@@ -648,7 +648,7 @@
         <source>This field is required</source>
         <target/>
         <context-group purpose="location">
-          <context context-type="sourcefile">aot/app/page/component/form/validation/validation.form.component.ts</context>
+          <context context-type="sourcefile">aot/app/shop/page/component/form/validation/validation.form.component.ts</context>
           <context context-type="linenumber">2</context>
         </context-group>
       </trans-unit>
@@ -656,7 +656,7 @@
         <source>This field is malformed</source>
         <target/>
         <context-group purpose="location">
-          <context context-type="sourcefile">aot/app/page/component/form/validation/validation.form.component.ts</context>
+          <context context-type="sourcefile">aot/app/shop/page/component/form/validation/validation.form.component.ts</context>
           <context context-type="linenumber">3</context>
         </context-group>
       </trans-unit>
@@ -664,7 +664,7 @@
         <source>Your request has been registered</source>
         <target/>
         <context-group purpose="location">
-          <context context-type="sourcefile">aot/app/page/component/form/message/confirmation-message.form.component.ts</context>
+          <context context-type="sourcefile">aot/app/shop/page/component/form/message/confirmation-message.form.component.ts</context>
           <context context-type="linenumber">2</context>
         </context-group>
         <note priority="1" from="description"> common - success</note>
@@ -674,7 +674,7 @@
         <source>An error has occurred while processing your request</source>
         <target/>
         <context-group purpose="location">
-          <context context-type="sourcefile">aot/app/page/component/form/message/confirmation-message.form.component.ts</context>
+          <context context-type="sourcefile">aot/app/shop/page/component/form/message/confirmation-message.form.component.ts</context>
           <context context-type="linenumber">3</context>
         </context-group>
         <note priority="1" from="description"> common - failed</note>
@@ -684,7 +684,7 @@
         <source>Company name</source>
         <target/>
         <context-group purpose="location">
-          <context context-type="sourcefile">aot/app/page/component/registration/contact-registration.ts</context>
+          <context context-type="sourcefile">aot/app/shop/page/component/registration/contact-registration.ts</context>
           <context context-type="linenumber">11</context>
         </context-group>
         <note priority="1" from="description"> common - company name</note>
@@ -694,7 +694,7 @@
         <source>Your company name</source>
         <target/>
         <context-group purpose="location">
-          <context context-type="sourcefile">aot/app/page/component/registration/contact-registration.ts</context>
+          <context context-type="sourcefile">aot/app/shop/page/component/registration/contact-registration.ts</context>
           <context context-type="linenumber">12</context>
         </context-group>
         <note priority="1" from="description"> common - company name</note>
@@ -704,7 +704,7 @@
         <source>Submit</source>
         <target/>
         <context-group purpose="location">
-          <context context-type="sourcefile">aot/app/page/component/registration/contact-registration.ts</context>
+          <context context-type="sourcefile">aot/app/shop/page/component/registration/contact-registration.ts</context>
           <context context-type="linenumber">44</context>
         </context-group>
         <note priority="1" from="description"> submit</note>
@@ -714,7 +714,7 @@
         <source>A moment of friendliness</source>
         <target/>
         <context-group purpose="location">
-          <context context-type="sourcefile">aot/app/page/component/new_shopping_xp/new-shopping-xp.component.ts</context>
+          <context context-type="sourcefile">aot/app/shop/page/component/new_shopping_xp/new-shopping-xp.component.ts</context>
           <context context-type="linenumber">3</context>
         </context-group>
         <note priority="1" from="description">friendliness moment</note>
@@ -724,7 +724,7 @@
         <source>Home sale is over all a moment of</source>
         <target/>
         <context-group purpose="location">
-          <context context-type="sourcefile">aot/app/page/component/new_shopping_xp/new-shopping-xp.component.ts</context>
+          <context context-type="sourcefile">aot/app/shop/page/component/new_shopping_xp/new-shopping-xp.component.ts</context>
           <context context-type="linenumber">5</context>
         </context-group>
         <note priority="1" from="description">friendliness moment - part1</note>
@@ -734,7 +734,7 @@
         <source>friendliness with friends.</source>
         <target/>
         <context-group purpose="location">
-          <context context-type="sourcefile">aot/app/page/component/new_shopping_xp/new-shopping-xp.component.ts</context>
+          <context context-type="sourcefile">aot/app/shop/page/component/new_shopping_xp/new-shopping-xp.component.ts</context>
           <context context-type="linenumber">6</context>
         </context-group>
         <note priority="1" from="description">friendliness moment - part2</note>
@@ -744,7 +744,7 @@
         <source>Quality and advice</source>
         <target/>
         <context-group purpose="location">
-          <context context-type="sourcefile">aot/app/page/component/new_shopping_xp/new-shopping-xp.component.ts</context>
+          <context context-type="sourcefile">aot/app/shop/page/component/new_shopping_xp/new-shopping-xp.component.ts</context>
           <context context-type="linenumber">12</context>
         </context-group>
         <note priority="1" from="description">quality and advices</note>
@@ -754,7 +754,7 @@
         <source>Home sale means</source>
         <target/>
         <context-group purpose="location">
-          <context context-type="sourcefile">aot/app/page/component/new_shopping_xp/new-shopping-xp.component.ts</context>
+          <context context-type="sourcefile">aot/app/shop/page/component/new_shopping_xp/new-shopping-xp.component.ts</context>
           <context context-type="linenumber">14</context>
         </context-group>
         <note priority="1" from="description">quality and advices - part1</note>
@@ -764,7 +764,7 @@
         <source>proximity products of quality. </source>
         <target/>
         <context-group purpose="location">
-          <context context-type="sourcefile">aot/app/page/component/new_shopping_xp/new-shopping-xp.component.ts</context>
+          <context context-type="sourcefile">aot/app/shop/page/component/new_shopping_xp/new-shopping-xp.component.ts</context>
           <context context-type="linenumber">15</context>
         </context-group>
         <note priority="1" from="description">quality and advices - part2</note>
@@ -774,7 +774,7 @@
         <source>Your sales consultant, passionate and available will guide you in your choice.</source>
         <target/>
         <context-group purpose="location">
-          <context context-type="sourcefile">aot/app/page/component/new_shopping_xp/new-shopping-xp.component.ts</context>
+          <context context-type="sourcefile">aot/app/shop/page/component/new_shopping_xp/new-shopping-xp.component.ts</context>
           <context context-type="linenumber">16</context>
         </context-group>
         <note priority="1" from="description">quality and advices - part3</note>
@@ -784,7 +784,7 @@
         <source>Specific advantages</source>
         <target/>
         <context-group purpose="location">
-          <context context-type="sourcefile">aot/app/page/component/new_shopping_xp/new-shopping-xp.component.ts</context>
+          <context context-type="sourcefile">aot/app/shop/page/component/new_shopping_xp/new-shopping-xp.component.ts</context>
           <context context-type="linenumber">22</context>
         </context-group>
         <note priority="1" from="description">advantages</note>
@@ -794,7 +794,7 @@
         <source>As a host, you can win</source>
         <target/>
         <context-group purpose="location">
-          <context context-type="sourcefile">aot/app/page/component/new_shopping_xp/new-shopping-xp.component.ts</context>
+          <context context-type="sourcefile">aot/app/shop/page/component/new_shopping_xp/new-shopping-xp.component.ts</context>
           <context context-type="linenumber">24</context>
         </context-group>
         <note priority="1" from="description">advantages - part1</note>
@@ -804,7 +804,7 @@
         <source>gift</source>
         <target/>
         <context-group purpose="location">
-          <context context-type="sourcefile">aot/app/page/component/new_shopping_xp/new-shopping-xp.component.ts</context>
+          <context context-type="sourcefile">aot/app/shop/page/component/new_shopping_xp/new-shopping-xp.component.ts</context>
           <context context-type="linenumber">25</context>
         </context-group>
         <note priority="1" from="description">advantages - part2</note>
@@ -814,7 +814,7 @@
         <source>,</source>
         <target/>
         <context-group purpose="location">
-          <context context-type="sourcefile">aot/app/page/component/new_shopping_xp/new-shopping-xp.component.ts</context>
+          <context context-type="sourcefile">aot/app/shop/page/component/new_shopping_xp/new-shopping-xp.component.ts</context>
           <context context-type="linenumber">26</context>
         </context-group>
         <note priority="1" from="description">advantages - part3</note>
@@ -824,7 +824,7 @@
         <source>discounts</source>
         <target/>
         <context-group purpose="location">
-          <context context-type="sourcefile">aot/app/page/component/new_shopping_xp/new-shopping-xp.component.ts</context>
+          <context context-type="sourcefile">aot/app/shop/page/component/new_shopping_xp/new-shopping-xp.component.ts</context>
           <context context-type="linenumber">27</context>
         </context-group>
         <note priority="1" from="description">advantages - part4</note>
@@ -834,7 +834,7 @@
         <source>or even </source>
         <target/>
         <context-group purpose="location">
-          <context context-type="sourcefile">aot/app/page/component/new_shopping_xp/new-shopping-xp.component.ts</context>
+          <context context-type="sourcefile">aot/app/shop/page/component/new_shopping_xp/new-shopping-xp.component.ts</context>
           <context context-type="linenumber">28</context>
         </context-group>
         <note priority="1" from="description">advantages - part5</note>
@@ -844,7 +844,7 @@
         <source>a percentage </source>
         <target/>
         <context-group purpose="location">
-          <context context-type="sourcefile">aot/app/page/component/new_shopping_xp/new-shopping-xp.component.ts</context>
+          <context context-type="sourcefile">aot/app/shop/page/component/new_shopping_xp/new-shopping-xp.component.ts</context>
           <context context-type="linenumber">29</context>
         </context-group>
         <note priority="1" from="description">advantages - part6</note>
@@ -854,7 +854,7 @@
         <source>on the sales.</source>
         <target/>
         <context-group purpose="location">
-          <context context-type="sourcefile">aot/app/page/component/new_shopping_xp/new-shopping-xp.component.ts</context>
+          <context context-type="sourcefile">aot/app/shop/page/component/new_shopping_xp/new-shopping-xp.component.ts</context>
           <context context-type="linenumber">30</context>
         </context-group>
         <note priority="1" from="description">advantages - part7</note>
@@ -864,7 +864,7 @@
         <source>Time saving</source>
         <target/>
         <context-group purpose="location">
-          <context context-type="sourcefile">aot/app/page/component/kovadom_advantages/kovadom.advantages.component.ts</context>
+          <context context-type="sourcefile">aot/app/shop/page/component/kovadom_advantages/kovadom.advantages.component.ts</context>
           <context context-type="linenumber">3</context>
         </context-group>
         <note priority="1" from="description">time image title</note>
@@ -876,7 +876,7 @@
     </source>
         <target/>
         <context-group purpose="location">
-          <context context-type="sourcefile">aot/app/page/component/kovadom_advantages/kovadom.advantages.component.ts</context>
+          <context context-type="sourcefile">aot/app/shop/page/component/kovadom_advantages/kovadom.advantages.component.ts</context>
           <context context-type="linenumber">4</context>
         </context-group>
         <note priority="1" from="description">description</note>
@@ -886,7 +886,7 @@
         <source>Specific advantages</source>
         <target/>
         <context-group purpose="location">
-          <context context-type="sourcefile">aot/app/page/component/kovadom_advantages/kovadom.advantages.component.ts</context>
+          <context context-type="sourcefile">aot/app/shop/page/component/kovadom_advantages/kovadom.advantages.component.ts</context>
           <context context-type="linenumber">11</context>
         </context-group>
         <note priority="1" from="description">host gift image title</note>
@@ -898,7 +898,7 @@
     </source>
         <target/>
         <context-group purpose="location">
-          <context context-type="sourcefile">aot/app/page/component/kovadom_advantages/kovadom.advantages.component.ts</context>
+          <context context-type="sourcefile">aot/app/shop/page/component/kovadom_advantages/kovadom.advantages.component.ts</context>
           <context context-type="linenumber">12</context>
         </context-group>
         <note priority="1" from="description">description</note>
@@ -908,7 +908,7 @@
         <source>A team at your service</source>
         <target/>
         <context-group purpose="location">
-          <context context-type="sourcefile">aot/app/page/component/kovadom_advantages/kovadom.advantages.component.ts</context>
+          <context context-type="sourcefile">aot/app/shop/page/component/kovadom_advantages/kovadom.advantages.component.ts</context>
           <context context-type="linenumber">19</context>
         </context-group>
         <note priority="1" from="description">team image title</note>
@@ -920,7 +920,7 @@
     </source>
         <target/>
         <context-group purpose="location">
-          <context context-type="sourcefile">aot/app/page/component/kovadom_advantages/kovadom.advantages.component.ts</context>
+          <context context-type="sourcefile">aot/app/shop/page/component/kovadom_advantages/kovadom.advantages.component.ts</context>
           <context context-type="linenumber">20</context>
         </context-group>
         <note priority="1" from="description">description</note>

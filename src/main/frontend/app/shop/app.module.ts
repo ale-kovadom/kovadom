@@ -12,7 +12,7 @@ import {FormsModule} from "@angular/forms";
 import {BrandService} from "./domain/brand/brand.service";
 import {ActivitySearchComponent} from "./page/component/brands/by_activity_search/brand-search-by-activity.component";
 import {BrandDetailComponent} from "./page/brands/detail/brand-detail.component";
-import {FrameworkModule} from "./framework/framework.module";
+import {FrameworkModule} from "../framework/framework.module";
 import {SaleService} from "./domain/sale/sale.service";
 import {Ng2PageScrollModule} from "ng2-page-scroll";
 import {ActivitiesComponent} from "./page/activities/activities.component";

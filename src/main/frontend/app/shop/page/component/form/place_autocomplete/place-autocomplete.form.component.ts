@@ -1,8 +1,8 @@
 import {Component, forwardRef, Input, ViewChild} from "@angular/core";
 import {NG_VALUE_ACCESSOR, ControlValueAccessor, NG_VALIDATORS, FormControl} from "@angular/forms";
 import {Place} from "../../../../domain/place/place";
-import {GeolocatorService, GeoPosition} from "../../../../framework/geolocator/geolocator.service";
-import {GlobalContext} from "../../../../framework/context/NativeGlobalContext";
+import {GeolocatorService, GeoPosition} from "../../../../../framework/geolocator/geolocator.service";
+import {GlobalContext} from "../../../../../framework/context/NativeGlobalContext";
 
 declare let google: any;
 
