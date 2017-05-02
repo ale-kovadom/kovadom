@@ -46,7 +46,7 @@
     <script src="${urls.getForLookupPath('/resources/generated/zone.js/dist/zone.min.js')}" defer></script>
     <script src="${urls.getForLookupPath('/resources/generated/swiper/dist/js/swiper.min.js')}" defer></script>
     <script src='https://maps.googleapis.com/maps/api/js?key=<c:out value="${googleApiKey}"/>&libraries=places' defer></script>
-    <script src="${urls.getForLookupPath('/resources/generated/geolocator/dist/geolocator.min.js')}"></script>
+    <script src="${urls.getForLookupPath('/resources/generated/geolocator/dist/geolocator.min.js')}" defer></script>
     <script>
         // TODO i18n
         window.kovadom = {
